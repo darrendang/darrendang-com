@@ -1,0 +1,1 @@
+import {InteriorPage} from '@/components/InteriorPage';export const metadata={title:'Writing'};export default function Writing(){return <InteriorPage eyebrow="Writing" title="Ideas in development."><p className="lead">Writing will launch when there are at least three substantive pieces ready. DarrenDang.com will not manufacture an empty archive to imply scale.</p></InteriorPage>}
