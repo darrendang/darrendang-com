@@ -1,13 +1,8 @@
 name: Deploy DarrenDang.com to GitHub Pages
 
-# PRE-LAUNCH SAFETY: deployment is manual. A one-time trigger path is temporarily
-# enabled so the first controlled Pages deployment can be validated end to end.
+# PRE-LAUNCH SAFETY: deployment is manual until Darren approves public launch.
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - .github/DEPLOY_PREVIEW_TRIGGER
 
 permissions:
   contents: read
