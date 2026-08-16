@@ -12,10 +12,8 @@
   },
   "dependencies": {
     "next": "latest",
-    "next-sanity": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "sanity": "latest"
+    "react-dom": "latest"
   },
   "devDependencies": {
     "@types/node": "latest",
