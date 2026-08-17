@@ -1,7 +1,9 @@
 name: Deploy DarrenDang.com to GitHub Pages
 
-# PRE-LAUNCH SAFETY: deployment is manual until Darren approves public launch.
+# PRE-LAUNCH SAFETY: push trigger is temporary for this controlled deployment.
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
