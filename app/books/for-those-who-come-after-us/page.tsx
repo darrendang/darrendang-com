@@ -11,9 +11,9 @@ export default function Book() {
         <div>
           <div className="book-covers" aria-label="Front and back covers of For Those Who Come After Us">
             <Image
-              src="/images/for-those-who-come-after-us-front.webp"
-              width={360}
-              height={576}
+              src="/images/for-those-who-come-after-us-front-v2.webp"
+              width={600}
+              height={959}
               alt="Front cover of For Those Who Come After Us: A Life in Lessons by Darren Dang."
               className="book-page-cover"
               sizes="(max-width: 900px) 47vw, 24vw"
