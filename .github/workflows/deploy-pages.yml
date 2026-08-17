@@ -1,8 +1,12 @@
 name: Deploy DarrenDang.com to GitHub Pages
 
-# PRE-LAUNCH SAFETY: deployment is manual until Darren approves public launch.
+# PRE-LAUNCH SAFETY: manual by default. This one-time path trigger deploys the approved book visual integration.
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/deploy-pages.yml
 
 permissions:
   contents: read
