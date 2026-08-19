@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./book-visuals.css";
+import "./book-excerpts.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://darrendang.com"),
