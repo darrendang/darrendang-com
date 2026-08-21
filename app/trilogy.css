@@ -1,0 +1,85 @@
+.button-dark{background:var(--navy);color:var(--ivory);border:1px solid var(--navy)}
+.button-dark:hover{background:var(--navy2)}
+.book-system{position:relative;overflow:hidden}
+.book-system:after{content:"";position:absolute;left:50%;bottom:-180px;transform:translateX(-50%);width:760px;height:300px;background:radial-gradient(ellipse,rgba(199,154,69,.1),transparent 68%);pointer-events:none}
+.system-movements{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--sand);border-bottom:1px solid var(--sand);margin-top:54px;position:relative;z-index:1}
+.system-movements article{padding:34px 34px 38px;border-right:1px solid var(--sand)}
+.system-movements article:last-child{border-right:0}
+.system-movements span,.book-status,.book-movement{display:block;text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600}
+.system-movements span,.book-status{color:var(--bronze)}
+.system-movements h3{font-family:'Cormorant Garamond',serif;font-size:36px;line-height:1.05;margin:13px 0 14px}
+.system-movements p{margin:0;color:var(--muted)}
+.system-loop{font-family:'Cormorant Garamond',serif;font-size:27px;line-height:1.35;text-align:center;color:var(--bronze);margin:44px auto 0;max-width:900px;position:relative;z-index:1}
+.book-grid-reverse{grid-template-columns:1.2fr .8fr}
+.book-grid-reverse>.book-cover-wrap{order:2}
+.book-grid-reverse>div:not(.book-cover-wrap){order:1}
+.book-cover-wrap{display:flex;justify-content:center;align-items:center}
+.book-cover-image{display:block;width:auto;max-width:100%;height:auto;box-shadow:0 30px 75px rgba(0,0,0,.3)}
+.book-hook{font-family:'Cormorant Garamond',serif;font-size:31px;line-height:1.25;color:#273340!important;margin:0 0 28px;max-width:720px}
+.navy .book-hook{color:var(--ivory)!important}
+.not-italic{font-style:normal!important;letter-spacing:.01em}
+.theme-line{color:var(--bronze);font-size:12px;letter-spacing:.13em;font-weight:600;margin:30px 0}
+.navy .theme-line{color:var(--gold)}
+.reading-wide{max-width:var(--max)}
+.books-library-intro{max-width:860px;margin-bottom:52px}
+.book-system-strip{display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;padding:22px 24px;border-top:1px solid var(--sand);border-bottom:1px solid var(--sand);margin-bottom:74px;text-transform:uppercase;letter-spacing:.13em;font-size:12px;font-weight:600;color:var(--bronze)}
+.book-system-strip b{color:var(--gold);font-size:18px;font-weight:400}
+.books-library{display:grid;gap:84px}
+.book-library-card{display:grid;grid-template-columns:.72fr 1.28fr;gap:72px;align-items:center;padding-bottom:82px;border-bottom:1px solid var(--sand)}
+.book-library-card:nth-child(even){grid-template-columns:1.28fr .72fr}
+.book-library-card:nth-child(even) .book-library-cover{order:2}
+.book-library-card:nth-child(even) .book-library-copy{order:1}
+.book-library-cover{display:flex;justify-content:center}
+.book-library-cover img{width:auto;max-width:100%;height:auto;max-height:570px;box-shadow:0 26px 65px rgba(13,31,49,.18)}
+.book-library-copy h2{font-size:52px;margin:9px 0 12px}
+.book-movement{color:var(--gold);margin-top:10px}
+.book-library-sub{font-family:'Cormorant Garamond',serif;font-size:25px;line-height:1.25;margin:0 0 19px;color:var(--muted)}
+.book-library-copy p:not(.book-library-sub){font-size:19px;color:var(--muted);max-width:680px}
+.books-system-note{padding:92px 0 10px;max-width:880px}
+.books-system-note h2{font-size:52px}
+.development-book-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:86px;align-items:center;margin-bottom:105px}
+.development-cover-wrap{text-align:center}
+.development-cover{display:block;width:auto;max-width:100%;height:auto;max-height:700px;margin:0 auto;box-shadow:0 28px 72px rgba(13,31,49,.24)}
+.book-caption{font-size:14px;color:var(--muted);margin-top:14px}
+.development-copy .book-status{margin-bottom:21px}
+.development-copy .book-hook,.development-copy .dots-line{font-family:'Cormorant Garamond',serif;font-size:35px;line-height:1.17;color:var(--ink)!important;margin:0 0 28px}
+.dots-line{font-style:italic}
+.development-copy>p:not(.lead):not(.book-hook):not(.dots-line){font-size:19px;color:var(--muted)}
+.development-actions{display:flex;gap:25px;align-items:center;margin-top:34px}
+.development-themes{padding:88px 0;border-top:1px solid var(--sand)}
+.development-themes h2,.development-question h2{max-width:900px}
+.theme-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--sand);border-left:1px solid var(--sand);margin-top:48px}
+.theme-grid article{padding:32px 34px;border-right:1px solid var(--sand);border-bottom:1px solid var(--sand)}
+.theme-grid h3{font-family:'Cormorant Garamond',serif;font-size:31px;line-height:1.1;margin:0 0 13px}
+.theme-grid p{margin:0;color:var(--muted)}
+.development-question{padding:88px 0;border-top:1px solid var(--sand);max-width:930px}
+.development-status-note{margin-top:12px;padding:28px 30px;background:#F4EEE5;border-left:3px solid var(--gold);max-width:900px}
+.development-status-note strong{text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:var(--bronze)}
+.development-status-note p{margin:8px 0 0;color:var(--muted)}
+
+@media(max-width:900px){
+  .system-movements{grid-template-columns:1fr}
+  .system-movements article{border-right:0;border-bottom:1px solid var(--sand)}
+  .system-movements article:last-child{border-bottom:0}
+  .book-grid-reverse{grid-template-columns:1fr}
+  .book-grid-reverse>.book-cover-wrap,.book-grid-reverse>div:not(.book-cover-wrap){order:initial}
+  .book-library-card,.book-library-card:nth-child(even){grid-template-columns:1fr;gap:44px}
+  .book-library-card:nth-child(even) .book-library-cover,.book-library-card:nth-child(even) .book-library-copy{order:initial}
+  .book-library-cover img{max-height:520px}
+  .development-book-grid{grid-template-columns:1fr;gap:50px}
+  .development-cover{max-height:600px}
+  .theme-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .system-movements article{padding:28px 0}
+  .system-movements{border-left:0;border-right:0}
+  .system-loop{font-size:23px;text-align:left}
+  .book-system-strip{justify-content:flex-start;gap:10px 14px}
+  .book-library-card{padding-bottom:60px}
+  .book-library-copy h2,.books-system-note h2{font-size:42px}
+  .development-copy .book-hook,.development-copy .dots-line{font-size:29px}
+  .development-actions{align-items:flex-start;flex-direction:column}
+  .theme-grid{border-left:0}
+  .theme-grid article{padding:27px 0;border-right:0}
+  .development-themes,.development-question{padding:65px 0}
+}

@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./trilogy.css";
 import "./book-visuals.css";
 import "./book-excerpts.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://darrendang.com"),
   title: { default: "Darren Dang | Ideas for the Path Forward", template: "%s | Darren Dang" },
-  description: "Ideas about how we learn, decide, lead, build, adapt, and pass something better forward.",
+  description: "Ideas about how we learn, decide, lead, build, adapt, connect, and pass something better forward.",
   openGraph: {
     title: "Darren Dang — Ideas for the Path Forward",
-    description: "Ideas about how we learn, decide, lead, build, adapt, and pass something better forward.",
+    description: "Ideas about how we learn, decide, lead, build, adapt, connect, and pass something better forward.",
     type: "website",
     url: "https://darrendang.com",
   },
