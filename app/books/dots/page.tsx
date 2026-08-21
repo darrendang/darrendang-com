@@ -19,7 +19,7 @@ export default function DotsBook() {
     <InteriorPage eyebrow="Book 3 · In development" title="D.O.T.S." wide>
       <div className="development-book-grid">
         <div className="development-cover-wrap">
-          <Image src="/images/dots-cover.svg" width={480} height={720} alt="Cover concept for D.O.T.S. by Darren Dang." className="development-cover" sizes="(max-width: 900px) 76vw, 34vw" priority />
+          <Image src="/images/dots-cover.webp" width={480} height={720} alt="Current cover for D.O.T.S. by Darren Dang." className="development-cover" sizes="(max-width: 900px) 76vw, 34vw" priority />
           <p className="book-caption">Current cover direction. The book remains in development.</p>
         </div>
         <div className="development-copy">
