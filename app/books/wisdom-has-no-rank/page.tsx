@@ -27,7 +27,7 @@ export default function WisdomHasNoRank() {
           <p className="book-hook">What happens when the person you expected to teach becomes someone capable of teaching you?</p>
           <p className="lead">Wisdom does not belong automatically to the oldest person, the highest-ranking person, the expert, the parent, or the leader.</p>
           <p>Experience, expertise, responsibility, and authority matter. They deserve respect. But none gives any one person a monopoly on wisdom.</p>
-          <p>This book turns familiar relationships around. The person Darren helped, led, taught, mentored, or parented may later become the person who changes his mind. The recurring movement is assumption → another person's insight → reconsideration → change.</p>
+          <p>This book turns familiar relationships around. The person Darren helped, led, taught, mentored, or parented may later become the person who changes his mind. The recurring movement is assumption → another person&apos;s insight → reconsideration → change.</p>
           <div className="development-actions">
             <Link className="button button-dark" href="/ideas/wisdom-has-no-rank/">Explore the core idea</Link>
             <Link className="text-link" href="/books/">All Books →</Link>
