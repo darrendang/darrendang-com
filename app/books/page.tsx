@@ -4,19 +4,19 @@ import { InteriorPage } from "@/components/InteriorPage";
 
 export const metadata = {
   title: "Books",
-  description: "Explore Darren Dang's published and developing books: For Those Who Come After Us, Wisdom Has No Rank, and D.O.T.S.",
+  description: "Explore Darren Dang's published and developing body of work: For Those Who Come After Us, Wisdom Has No Rank, and D.O.T.S.",
 };
 
 const books = [
   {
-    status: "Published",
+    status: "Preparing for publication",
     title: "For Those Who Come After Us",
     subtitle: "A Life in Lessons",
     cover: "/images/for-those-who-come-after-us-front-book-v3.webp",
     width: 360,
     height: 576,
     alt: "Front cover of For Those Who Come After Us: A Life in Lessons by Darren Dang.",
-    copy: "A life in lessons about inheritance, identity, learning, failure, systems, leadership, family, purpose, and what we pass forward.",
+    copy: "A life in lessons about inheritance, identity, learning, failure, systems, leadership, family, purpose, and what we pass forward. Publication is targeted for September 2026.",
     movement: "PASS FORWARD",
     href: "/books/for-those-who-come-after-us/",
   },
@@ -51,7 +51,7 @@ export default function Books() {
     <InteriorPage eyebrow="Books" title="Three books. One evolving body of thought." wide>
       <div className="books-library-intro">
         <p className="lead">Books are major expressions of the ideas—not the container for the whole platform. Together, these three works explore how wisdom is inherited, exchanged, connected, tested, and carried forward.</p>
-        <p>Book 1 is published. Books 2 and 3 are active works in development. Their ideas are strong enough to share now; their manuscripts, excerpts, and publication timing are still taking shape.</p>
+        <p>Book 1 is in final publication preparation, with publication targeted for September 2026. Books 2 and 3 are active works in development. Their ideas are strong enough to share now; their manuscripts, excerpts, and publication timing are still taking shape.</p>
       </div>
 
       <div className="book-system-strip" aria-label="Three-book intellectual progression">
