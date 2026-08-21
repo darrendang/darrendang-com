@@ -4,7 +4,7 @@ import { InteriorPage } from "@/components/InteriorPage";
 
 export const metadata = {
   title: "Books",
-  description: "Explore Darren Dang's published and developing body of work: For Those Who Come After Us, Wisdom Has No Rank, and D.O.T.S.",
+  description: "Explore Darren Dang's evolving body of work: For Those Who Come After Us, Wisdom Has No Rank, and D.O.T.S.",
 };
 
 const books = [
