@@ -19,7 +19,7 @@ export default function WisdomHasNoRank() {
     <InteriorPage eyebrow="Book 2 · In development" title="Wisdom Has No Rank" wide>
       <div className="development-book-grid">
         <div className="development-cover-wrap">
-          <Image src="/images/wisdom-has-no-rank-cover.svg" width={480} height={720} alt="Cover concept for Wisdom Has No Rank by Darren Dang." className="development-cover" sizes="(max-width: 900px) 76vw, 34vw" priority />
+          <Image src="/images/wisdom-has-no-rank-cover.webp" width={480} height={720} alt="Current cover for Wisdom Has No Rank by Darren Dang." className="development-cover" sizes="(max-width: 900px) 76vw, 34vw" priority />
           <p className="book-caption">Current cover direction. The book remains in development.</p>
         </div>
         <div className="development-copy">
