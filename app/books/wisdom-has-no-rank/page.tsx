@@ -8,10 +8,16 @@ export const metadata = {
 };
 
 const themes = [
-  ["Teachability", "Maturity requires remaining open to useful insight even when it comes from a direction we did not expect."],
+  ["Teachability", "Stay open to useful insight even after experience has given us reasons to trust ourselves."],
   ["Reciprocity", "Parents teach children and children teach parents. Leaders teach teams and teams teach leaders. Wisdom can move both ways."],
-  ["Recognition", "The difficult work is often not hearing advice. It is recognizing when another person's perspective exposes something we need to reconsider."],
-  ["Change", "Listening matters most when it can alter judgment, behavior, or the system we were previously defending."],
+  ["Listening", "Hear what is being said before defending the role, title, or authority we occupy."],
+  ["Reflection", "Separate discomfort from evidence that we may need to reconsider."],
+  ["Change", "A lesson matters most when it can alter judgment, behavior, or the system we were previously defending."],
+];
+
+const principles = [
+  ["Wisdom has no rank.", "Experience, expertise, responsibility, and authority matter. None gives any one person a monopoly on insight."],
+  ["To teach well, sometimes you have to become a student first.", "Remaining useful to others can require relearning, questioning, and becoming teachable again."],
 ];
 
 export default function WisdomHasNoRank() {
@@ -25,9 +31,9 @@ export default function WisdomHasNoRank() {
         <div className="development-copy">
           <div className="book-status">In development</div>
           <p className="book-hook">What happens when the person you expected to teach becomes someone capable of teaching you?</p>
-          <p className="lead">Wisdom does not belong automatically to the oldest person, the highest-ranking person, the expert, the parent, or the leader.</p>
-          <p>Experience, expertise, responsibility, and authority matter. They deserve respect. But none gives any one person a monopoly on wisdom.</p>
-          <p>This book turns familiar relationships around. The person Darren helped, led, taught, mentored, or parented may later become the person who changes his mind. The recurring movement is assumption → another person&apos;s insight → reconsideration → change.</p>
+          <p className="lead">Experience matters. Expertise matters. Responsibility matters. Rank matters. But none gives us a monopoly on wisdom.</p>
+          <p><em>Wisdom Has No Rank</em> explores what happens when familiar roles reverse—when children teach parents, teams teach leaders, students teach teachers, and the people we once helped become stronger become capable of making us stronger.</p>
+          <p>The challenge is not simply to listen. It is to remain teachable enough to recognize when another person has seen something we missed—and humble enough to change when the lesson earns it.</p>
           <div className="development-actions">
             <Link className="button button-dark" href="/ideas/wisdom-has-no-rank/">Explore the core idea</Link>
             <Link className="text-link" href="/books/">All Books →</Link>
@@ -45,13 +51,22 @@ export default function WisdomHasNoRank() {
 
       <section className="development-question">
         <div className="eyebrow bronze">The narrative engine</div>
-        <h2>When the teacher has to become the student again.</h2>
-        <p className="lead">The book is being built around moments of reversal: the people Darren was supposed to teach become the people who teach him. The value is not in pretending rank never matters. It is in refusing to confuse rank with a monopoly on insight.</p>
+        <h2>Sometimes the teacher has to become the student again.</h2>
+        <p className="lead">The person you once taught may eventually have something to teach you. The person you led may see what you missed. The child you raised may become the person who changes your mind.</p>
+        <p>The book is being built around those reversals. The point is not that hierarchy never matters. The point is that authority and wisdom are not the same thing.</p>
+      </section>
+
+      <section className="development-principles">
+        <div className="eyebrow bronze">Principles already traveling</div>
+        <h2>A small public thesis. The deeper stories remain in the book.</h2>
+        <div className="principle-grid">
+          {principles.map(([quote, copy]) => <article key={quote}><blockquote>{quote}</blockquote><p>{copy}</p></article>)}
+        </div>
       </section>
 
       <aside className="development-status-note">
         <strong>Development status</strong>
-        <p><em>Wisdom Has No Rank</em> is an active work in progress. The central thesis and themes are established, but the manuscript, chapter sequence, excerpts, and publication timing are still being developed.</p>
+        <p><em>Wisdom Has No Rank</em> is an active work in progress. The central thesis and themes are established, while the manuscript, chapter sequence, excerpts, stories, and publication timing are still being developed.</p>
       </aside>
     </InteriorPage>
   );

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./trilogy.css";
+import "./v2-brand.css";
 import "./book-visuals.css";
 import "./book-excerpts.css";
 
