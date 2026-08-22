@@ -15,14 +15,9 @@ const themes = [
   ["Change", "A lesson matters most when it can alter judgment, behavior, or the system we were previously defending."],
 ];
 
-const principles = [
-  ["Wisdom has no rank.", "Experience, expertise, responsibility, and authority matter. None gives any one person a monopoly on insight."],
-  ["To teach well, sometimes you have to become a student first.", "Remaining useful to others can require relearning, questioning, and becoming teachable again."],
-];
-
 export default function WisdomHasNoRank() {
   return (
-    <InteriorPage eyebrow="Book 2 · In development" title="Wisdom Has No Rank" wide>
+    <InteriorPage eyebrow="Book 2 · BECOME · In development" title="Wisdom Has No Rank" wide>
       <div className="development-book-grid">
         <div className="development-cover-wrap">
           <Image src="/images/wisdom-has-no-rank-cover.webp" width={480} height={720} alt="Current cover for Wisdom Has No Rank by Darren Dang." className="development-cover" sizes="(max-width: 900px) 76vw, 34vw" priority />
@@ -30,7 +25,7 @@ export default function WisdomHasNoRank() {
         </div>
         <div className="development-copy">
           <div className="book-status">In development</div>
-          <p className="book-hook">What happens when the person you expected to teach becomes someone capable of teaching you?</p>
+          <p className="book-hook">Who can I still learn from?</p>
           <p className="lead">Experience matters. Expertise matters. Responsibility matters. Rank matters. But none gives us a monopoly on wisdom.</p>
           <p><em>Wisdom Has No Rank</em> explores what happens when familiar roles reverse—when children teach parents, teams teach leaders, students teach teachers, and the people we once helped become stronger become capable of making us stronger.</p>
           <p>The challenge is not simply to listen. It is to remain teachable enough to recognize when another person has seen something we missed—and humble enough to change when the lesson earns it.</p>
@@ -44,7 +39,7 @@ export default function WisdomHasNoRank() {
       <section className="development-themes">
         <div className="eyebrow bronze">Key themes</div>
         <h2>Wisdom can move in any direction.</h2>
-        <div className="theme-grid">
+        <div className="theme-grid theme-grid-five">
           {themes.map(([title, copy]) => <article key={title}><h3>{title}</h3><p>{copy}</p></article>)}
         </div>
       </section>
@@ -53,15 +48,17 @@ export default function WisdomHasNoRank() {
         <div className="eyebrow bronze">The narrative engine</div>
         <h2>Sometimes the teacher has to become the student again.</h2>
         <p className="lead">The person you once taught may eventually have something to teach you. The person you led may see what you missed. The child you raised may become the person who changes your mind.</p>
-        <p>The book is being built around those reversals. The point is not that hierarchy never matters. The point is that authority and wisdom are not the same thing.</p>
+        <p>The point is not that hierarchy never matters. The point is that authority and wisdom are not the same thing.</p>
       </section>
 
       <section className="development-principles">
-        <div className="eyebrow bronze">Principles already traveling</div>
-        <h2>A small public thesis. The deeper stories remain in the book.</h2>
+        <div className="eyebrow bronze">The bridge to Book 3</div>
+        <h2>Book 2 expands the sources of wisdom. Book 3 expands the sources of solutions.</h2>
         <div className="principle-grid">
-          {principles.map(([quote, copy]) => <article key={quote}><blockquote>{quote}</blockquote><p>{copy}</p></article>)}
+          <article><blockquote>Wisdom has no rank.</blockquote><p>Useful insight can come from a direction we did not expect.</p></article>
+          <article><blockquote>To teach well, sometimes you have to become a student first.</blockquote><p>Remaining useful to others can require relearning, questioning, and becoming teachable again.</p></article>
         </div>
+        <p style={{marginTop:"28px"}}><Link className="text-link" href="/dots/">See how D.O.T.S. carries the idea across disciplines →</Link></p>
       </section>
 
       <aside className="development-status-note">
