@@ -8,10 +8,10 @@ import "./book-excerpts.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://darrendang.com"),
   title: { default: "Darren Dang | Ideas for the Path Forward", template: "%s | Darren Dang" },
-  description: "Ideas about how we learn, decide, lead, build, adapt, connect, and pass something better forward.",
+  description: "Ideas about how wisdom, ideas, and systems cross boundaries—and how what we learn can become better decisions, stronger systems, and something worth passing forward.",
   openGraph: {
     title: "Darren Dang — Ideas for the Path Forward",
-    description: "Ideas about how we learn, decide, lead, build, adapt, connect, and pass something better forward.",
+    description: "Books, papers, writing, and ideas about learning, judgment, systems, technology, leadership, and what we pass forward.",
     type: "website",
     url: "https://darrendang.com",
   },
