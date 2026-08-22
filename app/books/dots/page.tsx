@@ -27,7 +27,7 @@ export default function DotsBook() {
           <div className="book-status">In development</div>
           <p className="dots-line">Collect Dots. Connect Dots. Create Something New.</p>
           <p className="lead">D.O.T.S. is a way of seeing problems.</p>
-          <p>The world organizes knowledge into disciplines. Problems do not. The book explores what becomes possible when we stop letting a problem's label decide where we are allowed to look for answers.</p>
+          <p>The world organizes knowledge into disciplines. Problems do not. The book explores what becomes possible when we stop letting a problem&apos;s label decide where we are allowed to look for answers.</p>
           <p>The core move is perceptual before it is methodological: <strong>LABEL → STRUCTURE → SEARCH SPACE.</strong> See the structure beneath the category, expand where you look, then transfer carefully enough to create something that actually fits.</p>
           <div className="development-actions">
             <Link className="button button-dark" href="/dots/">Explore D.O.T.S.</Link>
