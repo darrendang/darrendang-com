@@ -14,6 +14,6 @@ export default function Papers(){return <InteriorPage eyebrow="Papers" title="Lo
     <p className="paper-subtitle">A Stewardship Agenda for Public Pension Boards and Executive Leaders</p>
     <p>How can a public pension system turn AI possibility into durable public value without outrunning trust?</p>
     <p>The paper examines mission, value, trust, risk, readiness, portfolio stewardship, governance at decision moments, institutional capability, and the need to reassess as evidence changes.</p>
-    <div className="actions"><Link className="button button-dark" href="/papers/from-ai-experiments-to-institutional-capability/">Read the paper</Link><a className="text-link" href="/papers/From_AI_Experiments_to_Institutional_Capability_Darren_Dang.pdf">Download PDF →</a></div>
+    <Link className="button button-dark" href="/papers/from-ai-experiments-to-institutional-capability/">Read the paper</Link>
   </div>
 </InteriorPage>}
