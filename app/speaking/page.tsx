@@ -4,15 +4,17 @@ import {InteriorPage} from '@/components/InteriorPage';
 export const metadata={title:'Speaking'};
 
 const talks=[
-  ['Collect Dots. Connect Dots. Create Something New.','How cross-disciplinary learning and structural connections can create useful new possibilities.','/books/dots/'],
+  ['D.O.T.S. — A Way of Seeing Problems','How moving from label to structure can expand the search space for better solutions.','/dots/'],
+  ['From AI Experiments to Institutional Capability','A stewardship lens on mission, evidence, governance, readiness, trust, and the institutional capability required to scale AI responsibly.','/papers/from-ai-experiments-to-institutional-capability/'],
+  ['Wisdom Has No Rank','What changes when useful insight comes from someone younger, more junior, or outside the expected hierarchy.','/books/wisdom-has-no-rank/'],
   ['Automate the Repetition. Preserve Human Judgment.','A human-centered way to think about AI, automation, accountability, and the work that should remain judgment-intensive.','/ideas/automate-the-repetition-preserve-human-judgment/'],
-  ['Wisdom Has No Rank.','What leaders, parents, and institutions miss when they assume useful insight must come from the top.','/books/wisdom-has-no-rank/'],
 ];
 
-export default function Speaking(){return <InteriorPage eyebrow="Speaking" title="Some ideas deserve more than a page. They deserve a room." wide>
-  <p className="lead">Darren has presented on AI, data, digital transformation, and public-sector innovation at conferences, webinars, podcasts, and professional forums. The next stage is deliberately developing the strongest recurring ideas into a distinctive keynote platform.</p>
-  <p>Books, writing, presentations, and conversations are not separate brands. They are different ways to test whether an idea is clear enough, useful enough, and human enough to travel.</p>
-  <h2>Developing talk territories</h2>
+export default function Speaking(){return <InteriorPage eyebrow="Speaking & professional conversations" title="Some ideas become clearer when people examine them together." wide>
+  <p className="lead">Darren has participated in conferences, webinars, podcasts, board discussions, and professional forums on AI, data, digital transformation, technology leadership, and public-sector innovation.</p>
+  <p>The purpose is the same as DarrenDang.com: share useful thinking, invite scrutiny, learn from the exchange, and make the next version of the idea better. This page is not a commercial speaker-services page.</p>
+  <h2>Current discussion territories</h2>
   <div className="card-list">{talks.map(([title,copy,href])=><article className="content-card" key={title}><h2>{title}</h2><p>{copy}</p><Link className="text-link" href={href}>Explore the idea →</Link></article>)}</div>
-  <p style={{marginTop:'42px'}}><Link className="text-link" href="/books/">Explore the three-book system →</Link></p>
+  <div className="speaking-note"><strong>Independent perspective</strong><p>Unless expressly identified as an official institutional presentation, views shared through DarrenDang.com and related speaking inquiries are Darren&apos;s own and do not necessarily represent OCERS or any other affiliated organization.</p></div>
+  <p style={{marginTop:'42px'}}><Link className="text-link" href="/connect/">Professional discussion or speaking inquiry →</Link></p>
 </InteriorPage>}
