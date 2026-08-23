@@ -9,6 +9,6 @@ export const ideas=[
 
 export const books=[
 {slug:'for-those-who-come-after-us',title:'For Those Who Come After Us',subtitle:'A Life in Lessons',status:'preparing-for-publication',movement:'INHERIT',summary:'A life in lessons about inheritance, identity, learning, failure, systems, leadership, family, purpose, and what we pass forward. Publication is targeted for September 2026.'},
-{slug:'wisdom-has-no-rank',title:'Wisdom Has No Rank',subtitle:'',status:'in-development',movement:'BECOME',summary:'An exploration of reciprocal wisdom and what changes when the person you expected to teach becomes someone capable of teaching you.'},
+{slug:'wisdom-has-no-rank',title:'Wisdom Has No Rank',subtitle:'',status:'final-editorial-stage',movement:'BECOME',summary:'A six-part book about reciprocal wisdom and what changes when the person you expected to teach becomes someone capable of teaching you. Selected excerpts are now available.'},
 {slug:'dots',title:'D.O.T.S.',subtitle:'Collect Dots. Connect Dots. Create Something New.',status:'in-development',movement:'CREATE',summary:'An exploration of D.O.T.S. as a way of seeing problems: label to structure to search space, followed by disciplined transfer and useful synthesis.'}
 ];
