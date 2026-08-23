@@ -39,6 +39,17 @@ jobs:
             npm install
           fi
 
+      - name: Prepare Book 1 audio
+        run: |
+          SOURCE="audio/for-those-who-come-after-us.mp3"
+          TARGET="public/audio/for-those-who-come-after-us.mp3"
+          if [ ! -f "$SOURCE" ]; then
+            echo "::error::Missing $SOURCE. Add the approved Book 1 song before deploying."
+            exit 1
+          fi
+          mkdir -p public/audio
+          cp "$SOURCE" "$TARGET"
+
       - name: Build static export
         env:
           NEXT_PUBLIC_SITE_URL: https://darrendang.com
@@ -49,7 +60,9 @@ jobs:
         run: npm run build
 
       - name: Verify export
-        run: npm run export:check
+        run: |
+          npm run export:check
+          test -f out/audio/for-those-who-come-after-us.mp3
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
