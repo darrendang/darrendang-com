@@ -48,6 +48,8 @@ export default function WisdomHasNoRank() {
         <div className="eyebrow bronze">The narrative engine</div>
         <h2>Sometimes the teacher has to become the student again.</h2>
         <p className="lead">The person you once taught may eventually have something to teach you. The person you led may see what you missed. The child you raised may become the person who changes your mind.</p>
+        <blockquote className="book-quote">The people who go before us give us a map. The people who come after us show us where the map is incomplete.</blockquote>
+        <p>Experience can give us a starting map without giving us the finished one. The people who follow may encounter terrain we never saw, revise what no longer fits, and teach us how to redraw the map.</p>
         <p>The point is not that hierarchy never matters. The point is that authority and wisdom are not the same thing.</p>
       </section>
 
