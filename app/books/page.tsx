@@ -87,7 +87,9 @@ export default function Books() {
       <section className="books-system-note">
         <div className="eyebrow bronze">The connection</div>
         <h2>Lessons cross generations. Wisdom crosses hierarchy. Ideas cross disciplines.</h2>
+        <blockquote className="book-quote">The people who go before us give us a map. The people who come after us show us where the map is incomplete.</blockquote>
         <p className="lead">The deeper conviction is that useful learning should not remain trapped in one person, one rank, one discipline, or one generation. It should be tested, shared, improved, recombined, and passed forward.</p>
+        <p>Book 1 is about receiving and passing forward. Book 2 makes that movement reciprocal: the next generation can reveal what the inherited map missed. Book 3 carries the same openness across disciplines, asking what becomes possible when we look beyond familiar boundaries.</p>
         <div className="actions"><Link className="text-link" href="/dots/">Explore D.O.T.S. →</Link><Link className="text-link" href="/ideas/">Explore the Ideas →</Link></div>
       </section>
     </InteriorPage>
