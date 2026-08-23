@@ -1,9 +1,7 @@
 name: Deploy DarrenDang.com to GitHub Pages
 
-# ONE-TIME RELEASE TRIGGER: publish approved Book 2 final-editorial preview.
+# PRE-LAUNCH SAFETY: deployment is manual until Darren approves public launch.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
