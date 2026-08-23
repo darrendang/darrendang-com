@@ -7,6 +7,7 @@ import "./map-motif.css";
 import "./paper-full.css";
 import "./book-visuals.css";
 import "./book-excerpts.css";
+import "./book2-preview.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://darrendang.com"),
