@@ -43,7 +43,7 @@ const discussionQuestions = [
   ["Governance", "At which decision moments should the board, executive team, or control functions become involved?"],
   ["Workforce", "How will employees learn to use AI responsibly while remaining accountable for judgment, service, records, and outcomes?"],
   ["Vendors", "What rights, dependencies, performance obligations, data protections, monitoring access, and exit options are being created?"],
-  ["Measurement", "How will we know whether the investment created Organizational Return and Trust Return™?"],
+  ["Measurement", "How will we know whether the investment created Organizational Return and Trust Return?"],
   ["Rebalancing", "What conditions would cause us to continue, condition, pause, stop, or scale—and how often will we revisit the thesis?"],
 ];
 
@@ -99,7 +99,7 @@ export default function PaperPage(){return <InteriorPage eyebrow="Public-sector 
     <div className="eyebrow bronze">4. Five questions before scale</div>
     <h2>Structure should improve judgment—not pretend to replace it.</h2>
     <div className="paper-question-grid">{fiveQuestions.map(([title,copy])=><article key={title}><span>{title}</span><p>{copy}</p></article>)}</div>
-    <p>Together, these questions form the public logic of the Dang Decision Test™. A score can organize evidence. It cannot accept accountability. Leaders still need to understand evidence quality, critical conditions, residual risk, reversibility, institutional capacity, ownership, and rationale.</p>
+    <p>Together, these questions form the public logic of the Dang Decision Test. A score can organize evidence. It cannot accept accountability. Leaders still need to understand evidence quality, critical conditions, residual risk, reversibility, institutional capacity, ownership, and rationale.</p>
   </section>
 
   <section className="paper-section">
@@ -110,17 +110,17 @@ export default function PaperPage(){return <InteriorPage eyebrow="Public-sector 
   </section>
 
   <section className="paper-section">
-    <div className="eyebrow bronze">6. Just-in-Time Governance™</div>
+    <div className="eyebrow bronze">6. Just-in-Time Governance</div>
     <h2>Govern the decision moments.</h2>
     <p>Governance often arrives too early and treats every idea like a production system, or too late—after a vendor has been selected, data has moved, users have formed dependencies, and schedule pressure has narrowed the available choices.</p>
-    <p>Just-in-Time Governance™ places oversight at moments when a decision changes the institution&apos;s exposure or commitment: intent, exploration, commitment, deployment, scaling, and reassessment. The level of oversight should rise with member impact, data sensitivity, dependency, financial exposure, reputational risk, legal consequence, irreversibility, and institutional unreadiness.</p>
+    <p>Just-in-Time Governance places oversight at moments when a decision changes the institution&apos;s exposure or commitment: intent, exploration, commitment, deployment, scaling, and reassessment. The level of oversight should rise with member impact, data sensitivity, dependency, financial exposure, reputational risk, legal consequence, irreversibility, and institutional unreadiness.</p>
     <blockquote className="paper-pullquote">The purpose of governance is not to make decisions slower. It is to make consequential decisions clearer, earlier, and more accountable.</blockquote>
   </section>
 
   <section className="paper-section">
     <div className="eyebrow bronze">7. Value without trust is incomplete</div>
     <h2>Measure dual return.</h2>
-    <div className="dual-return"><article><h3>Organizational Return</h3><p>Member service, decision quality, accuracy, timeliness, workforce capacity, productivity, resilience, cost avoidance, financial value, compliance, and other mission-specific results.</p></article><span>+</span><article><h3>Trust Return™</h3><p>Confidence, credibility, transparency, fairness, reliability, accountability, responsible use, stewardship, security, privacy, accessibility, data integrity, resilience, and public value.</p></article></div>
+    <div className="dual-return"><article><h3>Organizational Return</h3><p>Member service, decision quality, accuracy, timeliness, workforce capacity, productivity, resilience, cost avoidance, financial value, compliance, and other mission-specific results.</p></article><span>+</span><article><h3>Trust Return</h3><p>Confidence, credibility, transparency, fairness, reliability, accountability, responsible use, stewardship, security, privacy, accessibility, data integrity, resilience, and public value.</p></article></div>
     <p>Trust is not sentimental goodwill. It is an institutional outcome. It is built when people can rely on the service, understand appropriate parts of the decision, see who is accountable, challenge an error, and observe that the institution acts responsibly when evidence changes.</p>
   </section>
 
