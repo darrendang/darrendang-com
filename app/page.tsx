@@ -19,7 +19,7 @@ const books = [
   },
   {
     number: "02",
-    status: "In development",
+    status: "Final Editorial Stage",
     title: "Wisdom Has No Rank",
     subtitle: "",
     cover: "/images/wisdom-has-no-rank-cover.webp",
@@ -29,8 +29,8 @@ const books = [
     mapAction: "Question and revise the map.",
     question: "Who can I learn from?",
     bridge: "Wisdom can cross hierarchy.",
-    copy: "Experience matters. Expertise matters. Responsibility matters. Rank matters. None gives us a monopoly on wisdom.",
-    detail: "Teachability · Reciprocity · Listening · Reflection · Change",
+    copy: "Book 1 asks what we can learn from the lives before us. Book 2 asks whether we remain teachable when wisdom comes from someone younger, more junior, closer to us, or simply unexpected.",
+    detail: "Six-part manuscript · Selected excerpts available",
   },
   {
     number: "03",
@@ -50,7 +50,7 @@ const books = [
 ];
 
 const ideas = [
-  ["Learning & Innovation", "D.O.T.S. is a way of seeing problems.", "The label narrows where we look. The structure expands where we can look."],
+  ["Learning & Innovation", "D.O.T.S. is a way of seeing problems.", "The label narrows where you look. The structure expands where you can look."],
   ["Leadership", "Wisdom Has No Rank.", "Useful insight does not become less true because it came from someone younger, more junior, or outside the expected hierarchy."],
   ["Technology & AI", "Automate the Repetition. Preserve Human Judgment.", "Technology is most useful when it removes mechanical work without pretending that every decision is mechanical."],
   ["Learning & Scale", "Make Knowledge Travel.", "What we make understandable, reusable, and shareable can become someone else's starting point."],
@@ -189,7 +189,7 @@ export default function Home() {
             <div className="section-intro compact">
               <div className="eyebrow bronze">Three books. One evolving body of thought.</div>
               <h2>INHERIT → BECOME → CREATE</h2>
-              <p className="lead">The books are not three disconnected projects. They trace a larger movement: learn from life, remain teachable to others, then connect what you have learned to create something useful.</p>
+              <p className="lead">The books trace a larger movement: receive a map from what came before, remain teachable enough to question and revise it, then look beyond its boundaries to create something useful.</p>
             </div>
             <blockquote className="trilogy-map-quote">The people who go before us give us a map. The people who come after us show us where the map is incomplete.</blockquote>
             <div className="system-arc">
@@ -204,7 +204,7 @@ export default function Home() {
               ))}
             </div>
             <p className="map-not-script">A map helps us navigate. It does not tell us exactly where to go.</p>
-            <p className="system-loop">Learn → Receive → Connect → Create → Apply → Share → Pass Forward → Learn Again</p>
+            <p className="system-loop">Learn → Receive → Question → Revise → Connect → Create → Share → Pass Forward → Learn Again</p>
           </div>
         </section>
 
@@ -235,7 +235,7 @@ export default function Home() {
             <div className="section-intro compact">
               <div className="eyebrow bronze">Books</div>
               <h2>Three different questions. One intellectual universe.</h2>
-              <p className="lead">Book 1 is in final publication preparation. Books 2 and 3 are in development. The site shares enough of their public thesis to make the ideas useful now while preserving the deeper stories and methods for the books themselves.</p>
+              <p className="lead">Book 1 is in final publication preparation. Book 2 has entered final editorial review, with selected passages now available. Book 3 remains in development. Together they make the movement from inheritance to teachability to creation visible.</p>
             </div>
             <div className="book-cards">
               {books.map((book) => (
@@ -255,6 +255,9 @@ export default function Home() {
                       <Link className="text-link" href={book.href}>Explore the book →</Link>
                       {book.number === "01" && (
                         <Link className="text-link book-song-link" href="/books/for-those-who-come-after-us/#song">Listen to the song →</Link>
+                      )}
+                      {book.number === "02" && (
+                        <Link className="text-link book-song-link" href="/books/wisdom-has-no-rank/#inside-book-2">Read excerpts →</Link>
                       )}
                     </div>
                   </div>
