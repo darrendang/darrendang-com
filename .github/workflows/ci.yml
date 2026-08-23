@@ -32,6 +32,11 @@ jobs:
             npm install
           fi
 
+      - name: Verify public source assets
+        run: |
+          test -f public/audio/for-those-who-come-after-us.mp3
+          test -f public/docs/From_AI_Experiments_to_Institutional_Capability_Darren_Dang.pdf
+
       - name: Type check
         run: npm run typecheck
 
@@ -48,4 +53,7 @@ jobs:
         run: npm run build
 
       - name: Verify export
-        run: npm run export:check
+        run: |
+          npm run export:check
+          test -f out/audio/for-those-who-come-after-us.mp3
+          test -f out/docs/From_AI_Experiments_to_Institutional_Capability_Darren_Dang.pdf
