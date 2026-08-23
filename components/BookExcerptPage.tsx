@@ -7,13 +7,27 @@ type BookExcerptPageProps = {
   dek: string;
   ending: string;
   children: React.ReactNode;
+  bookHref?: string;
+  bookLabel?: string;
+  secondaryHref?: string;
+  secondaryLabel?: string;
 };
 
-export function BookExcerptPage({ eyebrow, title, dek, ending, children }: BookExcerptPageProps) {
+export function BookExcerptPage({
+  eyebrow,
+  title,
+  dek,
+  ending,
+  children,
+  bookHref = "/books/for-those-who-come-after-us/",
+  bookLabel = "For Those Who Come After Us",
+  secondaryHref = "/ideas/",
+  secondaryLabel = "Explore the Ideas →",
+}: BookExcerptPageProps) {
   return (
     <InteriorPage eyebrow={eyebrow} title={title}>
       <div className="excerpt-back">
-        <Link className="text-link" href="/books/for-those-who-come-after-us/">← For Those Who Come After Us</Link>
+        <Link className="text-link" href={bookHref}>← {bookLabel}</Link>
       </div>
       <p className="excerpt-dek">{dek}</p>
       <article className="book-excerpt">{children}</article>
@@ -22,8 +36,8 @@ export function BookExcerptPage({ eyebrow, title, dek, ending, children }: BookE
         <h2>Continue the journey.</h2>
         <p>{ending}</p>
         <div className="book-detail-actions">
-          <Link className="button button-light" href="/books/for-those-who-come-after-us/">Explore the Book</Link>
-          <Link className="text-link" href="/ideas/">Explore the Ideas →</Link>
+          <Link className="button button-light" href={bookHref}>Explore the Book</Link>
+          <Link className="text-link" href={secondaryHref}>{secondaryLabel}</Link>
         </div>
       </section>
     </InteriorPage>
