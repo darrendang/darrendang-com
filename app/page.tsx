@@ -251,7 +251,12 @@ export default function Home() {
                     <p className="book-card-hook">{book.question}</p>
                     <p>{book.copy}</p>
                     <div className="book-detail">{book.detail}</div>
-                    <Link className="text-link" href={book.href}>Explore the book →</Link>
+                    <div className="book-card-actions">
+                      <Link className="text-link" href={book.href}>Explore the book →</Link>
+                      {book.number === "01" && (
+                        <Link className="text-link book-song-link" href="/books/for-those-who-come-after-us/#song">Listen to the song →</Link>
+                      )}
+                    </div>
                   </div>
                 </article>
               ))}
