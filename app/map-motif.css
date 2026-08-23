@@ -1,0 +1,137 @@
+.trilogy-map-quote{
+  max-width:940px;
+  margin:8px 0 44px;
+  padding:0 0 0 28px;
+  border-left:2px solid var(--gold);
+  color:#273746;
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(30px,3.2vw,43px);
+  line-height:1.18;
+}
+.map-action{
+  margin:8px 0 2px;
+  color:var(--bronze);
+  font-family:'Cormorant Garamond',serif;
+  font-size:24px;
+  line-height:1.15;
+  font-weight:600;
+}
+.map-not-script{
+  max-width:760px;
+  margin:30px auto 0;
+  text-align:center;
+  color:var(--bronze);
+  font-family:'Cormorant Garamond',serif;
+  font-size:26px;
+  line-height:1.3;
+}
+.map-sequence{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  margin:44px 0 30px;
+  border-top:1px solid var(--sand);
+  border-left:1px solid var(--sand);
+}
+.map-sequence article{
+  min-height:220px;
+  padding:27px 24px 30px;
+  border-right:1px solid var(--sand);
+  border-bottom:1px solid var(--sand);
+  background:linear-gradient(180deg,rgba(245,239,228,.38),rgba(251,248,242,.15));
+}
+.map-sequence article>span{
+  display:grid;
+  place-items:center;
+  width:38px;
+  height:38px;
+  margin-bottom:20px;
+  border:1px solid var(--gold);
+  border-radius:50%;
+  color:var(--gold);
+  font-family:'Cormorant Garamond',serif;
+  font-size:21px;
+}
+.map-sequence small{
+  display:block;
+  color:var(--bronze);
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:.12em;
+  line-height:1.45;
+}
+.map-sequence strong{
+  display:block;
+  margin:8px 0 11px;
+  color:var(--ink);
+  font-family:'Cormorant Garamond',serif;
+  font-size:28px;
+  line-height:1.08;
+}
+.map-sequence p{
+  margin:0;
+  color:var(--muted);
+  font-size:16px;
+  line-height:1.5;
+}
+.map-bridge-text{
+  max-width:900px;
+  margin:4px 0 28px;
+  padding:22px 25px;
+  border-left:3px solid var(--gold);
+  background:#f5efe4;
+  color:#35414c;
+  font-family:'Cormorant Garamond',serif;
+  font-size:27px;
+  line-height:1.36;
+}
+.idea-canonical-intro{
+  max-width:930px;
+  padding-bottom:72px;
+}
+.idea-canonical-intro .book-quote{
+  margin-top:38px;
+}
+.related-idea-links{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  margin-top:42px;
+  border-top:1px solid var(--sand);
+  border-left:1px solid var(--sand);
+}
+.related-idea-links a{
+  display:block;
+  padding:28px 30px;
+  border-right:1px solid var(--sand);
+  border-bottom:1px solid var(--sand);
+  transition:background .18s ease;
+}
+.related-idea-links a:hover{
+  background:#f5efe4;
+}
+.related-idea-links strong{
+  display:block;
+  color:var(--ink);
+  font-family:'Cormorant Garamond',serif;
+  font-size:29px;
+  line-height:1.12;
+}
+.related-idea-links span{
+  display:block;
+  margin-top:9px;
+  color:var(--muted);
+  font-size:16px;
+  line-height:1.5;
+}
+@media(max-width:900px){
+  .map-sequence{grid-template-columns:1fr 1fr}
+  .related-idea-links{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .trilogy-map-quote{padding-left:20px;font-size:31px}
+  .map-not-script{text-align:left;font-size:23px}
+  .map-sequence{grid-template-columns:1fr;border-left:0}
+  .map-sequence article{min-height:0;padding:25px 0;border-right:0}
+  .map-bridge-text{padding:21px 20px;font-size:24px}
+  .related-idea-links{border-left:0}
+  .related-idea-links a{padding:25px 0;border-right:0}
+}

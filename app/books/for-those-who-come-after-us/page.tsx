@@ -80,6 +80,7 @@ export default function Book() {
           </aside>
 
           <h2>Beyond the book</h2>
+          <p>What we inherit is not a script. It is a starting map—routes others traveled, hazards they discovered, landmarks worth remembering, and questions they could not answer for us. The next generation still has to decide where to go.</p>
           <p>The book is the first major book-length artifact in a larger body of work. DarrenDang.com connects its lessons to evolving ideas, future writing, talks, and other artifacts.</p>
           <div className="book-detail-actions">
             <Link className="button button-light" href="#inside-the-book">Read Inside the Book</Link>

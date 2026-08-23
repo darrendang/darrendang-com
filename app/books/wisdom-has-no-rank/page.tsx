@@ -15,6 +15,13 @@ const themes = [
   ["Change", "A lesson matters most when it can alter judgment, behavior, or the system we were previously defending."],
 ];
 
+const mapStages = [
+  ["01", "WHAT CAME BEFORE", "Starting map", "Experience marks routes, hazards, and landmarks."],
+  ["02", "WHAT WE ENCOUNTER", "New terrain", "Different people and circumstances reveal what the map missed."],
+  ["03", "WHAT WE LEARN FROM OTHERS", "Revised map", "Wisdom can arrive from behind, beside, or ahead of us."],
+  ["04", "WHAT WE PASS FORWARD", "Better, still unfinished", "The next traveler gets a stronger starting point—not a script."],
+];
+
 export default function WisdomHasNoRank() {
   return (
     <InteriorPage eyebrow="Book 2 · BECOME · In development" title="Wisdom Has No Rank" wide>
@@ -50,6 +57,17 @@ export default function WisdomHasNoRank() {
         <p className="lead">The person you once taught may eventually have something to teach you. The person you led may see what you missed. The child you raised may become the person who changes your mind.</p>
         <blockquote className="book-quote">The people who go before us give us a map. The people who come after us show us where the map is incomplete.</blockquote>
         <p>Experience can give us a starting map without giving us the finished one. The people who follow may encounter terrain we never saw, revise what no longer fits, and teach us how to redraw the map.</p>
+        <div className="map-sequence" aria-label="How experience becomes a better but unfinished map">
+          {mapStages.map(([number, label, title, copy]) => (
+            <article key={number}>
+              <span>{number}</span>
+              <small>{label}</small>
+              <strong>{title}</strong>
+              <p>{copy}</p>
+            </article>
+          ))}
+        </div>
+        <p className="map-not-script">A map helps us navigate. It does not tell us exactly where to go.</p>
         <p>The point is not that hierarchy never matters. The point is that authority and wisdom are not the same thing.</p>
       </section>
 

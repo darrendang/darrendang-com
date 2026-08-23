@@ -3,6 +3,7 @@ import "./globals.css";
 import "./trilogy.css";
 import "./v2-brand.css";
 import "./v2-1.css";
+import "./map-motif.css";
 import "./paper-full.css";
 import "./book-visuals.css";
 import "./book-excerpts.css";

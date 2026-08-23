@@ -47,6 +47,7 @@ export default function DotsBook() {
       <section className="development-principles">
         <div className="eyebrow bronze">The public high-level model</div>
         <h2>Deconstruct → Observe → Transfer → Synthesize</h2>
+        <p className="map-bridge-text">Sometimes the existing map is useful. Sometimes the terrain has changed. And sometimes we enter territory no existing map describes very well. D.O.T.S. begins by helping us see what the existing map may have missed.</p>
         <p className="lead">The method begins by identifying what kind of problem is actually present, looks for the same structure elsewhere, tests what genuinely transfers, and adapts the insight for the new context.</p>
         <div className="principle-grid">
           <article><blockquote>The label narrows where you look. The structure expands where you can look.</blockquote><p>D.O.T.S. expands the search space before narrowing toward a solution.</p></article>
