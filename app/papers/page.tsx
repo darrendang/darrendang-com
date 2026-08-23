@@ -6,6 +6,8 @@ export const metadata = {
   description: "Public papers by Darren Dang on technology, institutional capability, governance, judgment, trust, and public-sector leadership.",
 };
 
+const aiPaperPdf = "https://github.com/darrendang/darrendang-com/blob/main/docs/From_AI_Experiments_to_Institutional_Capability_Darren_Dang.pdf";
+
 export default function Papers(){return <InteriorPage eyebrow="Papers" title="Longer-form thinking on consequential problems." wide>
   <p className="lead">Papers are one way to test an idea against a real institutional question. They are offered as independent educational and strategic writing—not as consulting materials or official positions of Darren&apos;s employer.</p>
   <div className="paper-index-card">
@@ -16,6 +18,7 @@ export default function Papers(){return <InteriorPage eyebrow="Papers" title="Lo
     <p>The paper examines mission, value, trust, risk, readiness, portfolio stewardship, governance at decision moments, institutional capability, and the need to reassess as evidence changes.</p>
     <div className="actions">
       <Link className="button button-dark" href="/papers/from-ai-experiments-to-institutional-capability/">Read the web edition</Link>
+      <a className="text-link" href={aiPaperPdf} target="_blank" rel="noreferrer">View the PDF →</a>
     </div>
   </div>
 </InteriorPage>}
