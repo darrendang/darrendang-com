@@ -4,7 +4,7 @@ import { InteriorPage } from "@/components/InteriorPage";
 
 export const metadata = {
   title: "For Those Who Come After Us",
-  description: "Explore For Those Who Come After Us — A Life in Lessons, now being prepared for publication, including the full Prologue, a complete middle chapter, and a selected excerpt near the end.",
+  description: "Explore For Those Who Come After Us — A Life in Lessons, including selected reading, the Book 1 companion song, and the ideas behind the book.",
 };
 
 const samples = [
@@ -88,6 +88,29 @@ export default function Book() {
           </div>
         </div>
       </div>
+
+      <section className="book-song" id="song" aria-labelledby="book-song-title">
+        <div className="book-song-grid">
+          <div>
+            <div className="eyebrow">A small companion to Book 1 · just for fun</div>
+            <h2 id="book-song-title">For Those Who Come After Us — The Song</h2>
+            <p className="lead-light">Books are where I develop the ideas. This one found its way into a song.</p>
+            <p>I made this as a small companion to <em>For Those Who Come After Us</em>—not a new direction for the site, just another way to experience the story and the idea of what we carry forward.</p>
+            <div className="song-relationship" aria-label="Book to ideas to story to song">Book → Ideas → Story → Song</div>
+          </div>
+          <div className="song-player">
+            <div className="song-player-label">
+              <strong>For Those Who Come After Us</strong>
+              <span>4:05</span>
+            </div>
+            <audio controls preload="metadata" aria-label="Listen to For Those Who Come After Us — The Song">
+              <source src="/audio/for-those-who-come-after-us.mp3" type="audio/mpeg" />
+              Your browser does not support the audio player. <a href="/audio/for-those-who-come-after-us.mp3">Open the song.</a>
+            </audio>
+            <small>A companion to the book. No autoplay—press play when you feel like listening.</small>
+          </div>
+        </div>
+      </section>
 
       <section className="book-samples" id="inside-the-book" aria-labelledby="inside-the-book-title">
         <div className="book-samples-intro">
