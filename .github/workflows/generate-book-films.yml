@@ -6,8 +6,9 @@ on:
     paths:
       - "scripts/generate-book-films.py"
       - ".github/workflows/generate-book-films.yml"
-  issues:
-    types: [opened]
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
   workflow_dispatch:
 
 permissions:
@@ -19,12 +20,12 @@ concurrency:
 
 jobs:
   generate:
-    if: github.event_name != 'issues' || github.event.issue.title == 'generate-book-films'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout main
         uses: actions/checkout@v6
         with:
+          ref: main
           fetch-depth: 0
 
       - name: Setup Python
@@ -50,7 +51,12 @@ jobs:
           test -s public/videos/wisdom-has-no-rank-book-film-poster.jpg
           test -s public/videos/dots-book-film-poster.jpg
           for f in public/videos/*-book-film.mp4; do
-            test "$(ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 "$f" | cut -d. -f1)" = "30"
+            duration="$(ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 "$f")"
+            python - "$duration" <<'PY'
+import sys
+seconds = float(sys.argv[1])
+assert 29.5 <= seconds <= 30.5, seconds
+PY
           done
 
       - name: Commit generated media
