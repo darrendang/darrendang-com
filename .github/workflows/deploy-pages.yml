@@ -1,6 +1,7 @@
 name: Deploy DarrenDang.com to GitHub Pages
 
 # PRODUCTION: every validated push to main deploys DarrenDang.com; manual dispatch remains available.
+# 2026-08-24: production refresh includes the upbeat trilogy Book Film soundtracks.
 on:
   push:
     branches:
