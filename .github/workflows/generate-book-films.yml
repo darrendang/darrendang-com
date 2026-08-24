@@ -44,6 +44,9 @@ jobs:
         run: |
           mkdir -p public/videos
           rm -f public/videos/test.mp4
+          rm -rf public/videos/for-those-who-come-after-us-book-film
+          rm -rf public/videos/wisdom-has-no-rank-book-film
+          rm -rf public/videos/dots-book-film
 
       - name: Recreate 30-second book films
         run: python scripts/generate-book-films.py --output public/videos
