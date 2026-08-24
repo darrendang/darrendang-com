@@ -40,7 +40,7 @@ export function BookFilm({
             <source src={videoSrc} type="video/mp4" />
             Your browser does not support the video player. <a href={videoSrc}>Open the 30-second book film.</a>
           </video>
-          <figcaption>30 seconds · Original instrumental score · No autoplay.</figcaption>
+          <figcaption>30 seconds · Silent film · No autoplay.</figcaption>
         </figure>
       </div>
     </section>
