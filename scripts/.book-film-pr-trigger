@@ -2,3 +2,4 @@ This branch exists only to trigger the one-time trilogy book-film production wor
 Retriggered after GitHub Actions permissions were enabled on 2026-08-24.
 Retriggered after the generator workflow YAML syntax was corrected.
 Retriggered after the FFmpeg-compatible renderer was validated locally.
+Final verification after production-video cleanup was added.
