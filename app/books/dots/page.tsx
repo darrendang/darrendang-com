@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
+import { BookFilm } from "@/components/BookFilm";
 
 export const metadata = {
   title: "D.O.T.S. — Book 3",
-  description: "Explore Darren Dang's developing Book 3, D.O.T.S. — Collect Dots. Connect Dots. Create Something New. See the core idea, selected chapter signals, and three story-led glimpses from the book in development.",
+  description: "Explore Darren Dang's developing Book 3, D.O.T.S. — Collect Dots. Connect Dots. Create Something New. Watch the 30-second book film and explore the core idea, selected chapter signals, and story-led glimpses from the book in development.",
 };
 
 const themes = [
@@ -75,6 +76,16 @@ export default function DotsBook() {
           </div>
         </div>
       </div>
+
+      <BookFilm
+        id="book-3-film"
+        eyebrow="A 30-second book film"
+        title="What becomes possible when the dots connect?"
+        copy="Separate points become relationships, then a system: collect widely, see past labels, transfer carefully, and create something useful from what you learn."
+        videoSrc="/videos/dots-book-film.mp4"
+        posterSrc="/videos/dots-book-film-poster.jpg"
+        ariaLabel="Watch the 30-second film for D.O.T.S."
+      />
 
       <section className="development-themes">
         <div className="eyebrow bronze">Key themes</div>
