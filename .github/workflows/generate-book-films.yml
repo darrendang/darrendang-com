@@ -61,3 +61,5 @@ jobs:
             git commit -m "Add generated trilogy book films"
             git push origin HEAD:main
           fi
+
+# This workflow intentionally commits only generated public media.
