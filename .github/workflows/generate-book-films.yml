@@ -59,6 +59,7 @@ jobs:
             echo "Book films are already current."
           else
             git commit -m "Add generated trilogy book films"
+            git pull --rebase origin main
             git push origin HEAD:main
           fi
 
