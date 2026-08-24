@@ -2,8 +2,12 @@ name: Deploy DarrenDang.com to GitHub Pages
 
 # PRE-LAUNCH SAFETY: deployment is manual until Darren approves public launch.
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
 
+  workflow_dispatch:
+  
 permissions:
   contents: read
   pages: write
