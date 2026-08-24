@@ -4,7 +4,7 @@ import { InteriorPage } from "@/components/InteriorPage";
 
 export const metadata = {
   title: "D.O.T.S. — Book 3",
-  description: "Explore Darren Dang's developing Book 3, D.O.T.S. — Collect Dots. Connect Dots. Create Something New. D.O.T.S. is a way of seeing problems.",
+  description: "Explore Darren Dang's developing Book 3, D.O.T.S. — Collect Dots. Connect Dots. Create Something New. See the core idea, selected chapter signals, and three story-led glimpses from the book in development.",
 };
 
 const themes = [
@@ -15,9 +15,49 @@ const themes = [
   ["Create usefully", "Novelty is not the objective. The connection matters when it produces a clearer decision, stronger system, or genuinely useful new possibility."],
 ];
 
+const samples = [
+  {
+    number: "01",
+    stage: "Beginning",
+    type: "Selected Chapter · Origin",
+    title: "The Pattern I Lived Before I Named It",
+    copy: "For years, Darren kept borrowing ideas from places that seemed unrelated to the problem in front of him. Only later did he recognize the pattern: sometimes you live a way of thinking before you know how to name it.",
+  },
+  {
+    number: "02",
+    stage: "Middle",
+    type: "Selected Chapter · Transfer",
+    title: "A Map Is Not a Script",
+    copy: "Experience can give us a map. Another discipline can give us a map. Neither tells us exactly what to do in new terrain. The useful question is where the underlying structure matches, where it breaks, and what must change.",
+  },
+  {
+    number: "03",
+    stage: "Later",
+    type: "Selected Chapter · Synthesis",
+    title: "When the Dots Became a System",
+    copy: "A useful connection rarely arrives fully formed. One borrowed idea leads to another. Some fit. Some fail. Some have to be rebuilt. Eventually, separate dots can become something coherent enough to stand on its own.",
+  },
+];
+
+const selectedChapters = [
+  ["01", "The Pattern I Lived Before I Named It", "The origin story: the behavior came before the label."],
+  ["02", "The Label Is Not the Problem", "Why a category can organize a problem while still narrowing the search for answers."],
+  ["03", "Who Has No Choice But to Be Good at This?", "A practical question for finding useful expertise in unexpected places."],
+  ["04", "A Map Is Not a Script", "How to borrow direction without surrendering judgment."],
+  ["05", "Build Your Own Synthesis Engine", "The reader's turn to collect, connect, test, adapt, and create."],
+];
+
+const progression = [
+  ["COLLECT", "Notice useful ideas, experiences, tools, patterns, and questions before you know exactly where they will matter."],
+  ["SEE", "Look beneath the label for the structure that actually shapes the problem."],
+  ["TRANSFER", "Search beyond the obvious domain and test what principle genuinely travels."],
+  ["SYNTHESIZE", "Adapt multiple useful dots into something coherent enough for the new context."],
+  ["CREATE", "Turn the connection into a clearer decision, stronger system, or useful new possibility."],
+];
+
 export default function DotsBook() {
   return (
-    <InteriorPage eyebrow="Book 3 · In development" title="D.O.T.S." wide>
+    <InteriorPage eyebrow="Book 3 · CREATE · In development" title="D.O.T.S." wide>
       <div className="development-book-grid">
         <div className="development-cover-wrap">
           <Image src="/images/dots-cover.webp" width={480} height={720} alt="Current cover for D.O.T.S. by Darren Dang." className="development-cover" sizes="(max-width: 900px) 76vw, 34vw" priority />
@@ -30,8 +70,8 @@ export default function DotsBook() {
           <p>The world organizes knowledge into disciplines. Problems do not. The book explores what becomes possible when we stop letting a problem&apos;s label decide where we are allowed to look for answers.</p>
           <p>The core move is perceptual before it is methodological: <strong>LABEL → STRUCTURE → SEARCH SPACE.</strong> See the structure beneath the category, expand where you look, then transfer carefully enough to create something that actually fits.</p>
           <div className="development-actions">
-            <Link className="button button-dark" href="/dots/">Explore D.O.T.S.</Link>
-            <Link className="text-link" href="/books/">All Books →</Link>
+            <Link className="button button-dark" href="#inside-book-3">Look Inside Book 3</Link>
+            <Link className="text-link" href="/dots/">Explore the public D.O.T.S. idea →</Link>
           </div>
         </div>
       </div>
@@ -55,6 +95,63 @@ export default function DotsBook() {
         </div>
       </section>
 
+      <section className="book-samples" id="inside-book-3" aria-labelledby="inside-book-3-title">
+        <div className="book-samples-intro">
+          <div className="eyebrow bronze">Inside Book 3</div>
+          <h2 id="inside-book-3-title">Three glimpses at how a connection becomes a new way of seeing.</h2>
+          <p className="lead">Book 3&apos;s narrative engine is discovery: an unexpected problem, a hidden structure, a surprising connection, and the judgment required to decide what actually transfers.</p>
+        </div>
+        <div className="sample-path">
+          {samples.map((sample) => (
+            <article className="sample-card" key={sample.number}>
+              <div className="sample-marker" aria-hidden="true"><span>{sample.number}</span></div>
+              <div className="sample-stage">{sample.stage}</div>
+              <div className="sample-type">{sample.type}</div>
+              <h3>{sample.title}</h3>
+              <p>{sample.copy}</p>
+            </article>
+          ))}
+        </div>
+        <p className="sample-note">These are intentionally selective chapter glimpses rather than full excerpts. The manuscript is still developing, so wording and sequence may continue to evolve.</p>
+      </section>
+
+      <section className="development-themes">
+        <div className="eyebrow bronze">Selected chapter signals</div>
+        <h2>A few titles from the emerging journey.</h2>
+        <p className="lead">The current architecture moves from recognizing the pattern, to seeing beneath labels, to transferring ideas responsibly, and finally to creating a synthesis of your own.</p>
+        <div className="theme-grid theme-grid-five">
+          {selectedChapters.map(([number, title, copy]) => (
+            <article key={number}>
+              <small>{number}</small>
+              <h3>{title}</h3>
+              <p>{copy}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="development-themes">
+        <div className="eyebrow bronze">From curiosity to creation</div>
+        <h2>You cannot connect a dot you never collected.</h2>
+        <div className="theme-grid theme-grid-five">
+          {progression.map(([title, copy]) => (
+            <article key={title}>
+              <h3>{title}</h3>
+              <p>{copy}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="development-principles">
+        <div className="eyebrow bronze">Questions that expand the search</div>
+        <h2>Sometimes the better question is where else to look.</h2>
+        <div className="principle-grid">
+          <article><blockquote>Who has no choice but to be good at this problem?</blockquote><p>Look for environments where the underlying challenge is unavoidable and competence is earned through repeated exposure.</p></article>
+          <article><blockquote>Where else has this problem already been solved?</blockquote><p>Search by structure rather than category, then test carefully whether the borrowed principle fits the new context.</p></article>
+        </div>
+      </section>
+
       <section className="example-panel">
         <div className="eyebrow bronze">D.O.T.S. in practice</div>
         <h3>AI experimentation looked like a technology problem.</h3>
@@ -64,7 +161,7 @@ export default function DotsBook() {
 
       <aside className="development-status-note">
         <strong>Development status</strong>
-        <p><em>D.O.T.S.</em> is an active work in progress. The title, core line, central thesis, and public high-level model are established, while the manuscript, chapter sequence, detailed method, case studies, excerpts, and publication timing are still being developed.</p>
+        <p><em>D.O.T.S.</em> is an active work in progress. The title, core line, central thesis, public high-level model, and current story-led architecture are established enough to share selectively. The manuscript, exact chapter wording and sequence, detailed method, case studies, excerpts, and publication timing may still change as the book develops.</p>
       </aside>
     </InteriorPage>
   );
