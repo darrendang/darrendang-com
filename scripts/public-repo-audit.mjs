@@ -13,6 +13,7 @@ const forbiddenPathFragments = [
   'LA Times High School',
 ];
 const forbiddenExtensions = new Set(['.docx', '.pptx']);
+const binaryExtensions = new Set(['.mp4', '.mp3', '.wav', '.jpg', '.jpeg', '.png', '.webp', '.avif', '.gif', '.pdf', '.ico']);
 const secretPatterns = [
   /-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/,
   /github_pat_[A-Za-z0-9_]+/,
@@ -39,10 +40,15 @@ function walk(dir) {
       continue;
     }
 
-    if (forbiddenExtensions.has(path.extname(entry.name).toLowerCase())) {
+    const extension = path.extname(entry.name).toLowerCase();
+    if (forbiddenExtensions.has(extension)) {
       failures.push(`Forbidden source-document extension: ${rel}`);
       continue;
     }
+
+    // Approved public media is binary. Path/extension checks still apply, but
+    // interpreting media bytes as UTF-8 creates noisy and unreliable secret scans.
+    if (binaryExtensions.has(extension)) continue;
 
     const stat = fs.statSync(full);
     if (stat.size > 2_000_000) continue;
