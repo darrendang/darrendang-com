@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
+import { BookFilm } from "@/components/BookFilm";
 
 export const metadata = {
   title: "For Those Who Come After Us",
-  description: "Explore For Those Who Come After Us — A Life in Lessons, including selected reading, the Book 1 companion song, and the ideas behind the book.",
+  description: "Explore For Those Who Come After Us — A Life in Lessons, including the 30-second book film, selected reading, the Book 1 companion song, and the ideas behind the book.",
 };
 
 const samples = [
@@ -88,6 +89,16 @@ export default function Book() {
           </div>
         </div>
       </div>
+
+      <BookFilm
+        id="book-film"
+        eyebrow="A 30-second book film"
+        title="What do we carry forward?"
+        copy="A short visual journey through inheritance, becoming, connection, leadership, time, and the responsibility to leave a better path for those who follow."
+        videoSrc="/videos/for-those-who-come-after-us-book-film.mp4"
+        posterSrc="/videos/for-those-who-come-after-us-book-film-poster.jpg"
+        ariaLabel="Watch the 30-second film for For Those Who Come After Us"
+      />
 
       <section className="book-song" id="song" aria-labelledby="book-song-title">
         <div className="book-song-grid">
