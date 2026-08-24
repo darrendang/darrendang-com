@@ -52,11 +52,7 @@ jobs:
           test -s public/videos/dots-book-film-poster.jpg
           for f in public/videos/*-book-film.mp4; do
             duration="$(ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 "$f")"
-            python - "$duration" <<'PY'
-import sys
-seconds = float(sys.argv[1])
-assert 29.5 <= seconds <= 30.5, seconds
-PY
+            python -c 'import sys; seconds=float(sys.argv[1]); assert 29.5 <= seconds <= 30.5, seconds' "$duration"
           done
 
       - name: Commit generated media
@@ -73,4 +69,3 @@ PY
           fi
 
 # This workflow intentionally commits only generated public media.
-# 2026-08-24: retriggered after repository Actions permissions were enabled.
