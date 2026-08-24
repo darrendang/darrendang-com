@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
+import { BookFilm } from "@/components/BookFilm";
 
 export const metadata = {
   title: "Wisdom Has No Rank",
-  description: "Explore Wisdom Has No Rank, Darren Dang's Book 2 in final editorial review, including selected excerpts, its six-part structure, and its place in the INHERIT → BECOME → CREATE trilogy.",
+  description: "Explore Wisdom Has No Rank, Darren Dang's Book 2 in final editorial review, including its 30-second book film, selected excerpts, six-part structure, and place in the INHERIT → BECOME → CREATE trilogy.",
 };
 
 const parts = [
@@ -72,6 +73,16 @@ export default function WisdomHasNoRank() {
           </div>
         </div>
       </div>
+
+      <BookFilm
+        id="book-2-film"
+        eyebrow="A 30-second book film"
+        title="What happens when the lesson comes back?"
+        copy="Two paths begin separately, cross, and continue toward shared light—a visual expression of teachability, reversal, and wisdom flowing both ways."
+        videoSrc="/videos/wisdom-has-no-rank-book-film.mp4"
+        posterSrc="/videos/wisdom-has-no-rank-book-film-poster.jpg"
+        ariaLabel="Watch the 30-second film for Wisdom Has No Rank"
+      />
 
       <section className="development-themes book2-trilogy-section">
         <div className="eyebrow bronze">The hinge in the trilogy</div>
