@@ -6,6 +6,8 @@ on:
     paths:
       - "scripts/generate-book-films.py"
       - ".github/workflows/generate-book-films.yml"
+  issues:
+    types: [opened]
   workflow_dispatch:
 
 permissions:
@@ -17,6 +19,7 @@ concurrency:
 
 jobs:
   generate:
+    if: github.event_name != 'issues' || github.event.issue.title == 'generate-book-films'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
