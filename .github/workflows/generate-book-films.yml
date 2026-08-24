@@ -6,9 +6,6 @@ on:
     paths:
       - "scripts/generate-book-films.py"
       - ".github/workflows/generate-book-films.yml"
-  pull_request:
-    branches: [main]
-    types: [opened, synchronize, reopened]
   workflow_dispatch:
 
 permissions:
