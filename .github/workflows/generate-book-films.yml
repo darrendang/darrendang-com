@@ -35,7 +35,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg fonts-noto-core
-          python -m pip install --disable-pip-version-check pillow numpy
+          python -m pip install --disable-pip-version-check pillow
 
       - name: Prepare public video directory
         run: |
@@ -45,10 +45,10 @@ jobs:
           rm -rf public/videos/wisdom-has-no-rank-book-film
           rm -rf public/videos/dots-book-film
 
-      - name: Recreate 30-second book films
+      - name: Recreate 30-second silent book films
         run: python scripts/generate-book-films.py --output public/videos
 
-      - name: Verify media outputs
+      - name: Verify silent media outputs
         run: |
           test -s public/videos/for-those-who-come-after-us-book-film.mp4
           test -s public/videos/wisdom-has-no-rank-book-film.mp4
@@ -59,6 +59,8 @@ jobs:
           for f in public/videos/*-book-film.mp4; do
             duration="$(ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 "$f")"
             python -c 'import sys; seconds=float(sys.argv[1]); assert 29.5 <= seconds <= 30.5, seconds' "$duration"
+            audio_streams="$(ffprobe -v error -select_streams a -show_entries stream=index -of csv=p=0 "$f" | wc -l | tr -d ' ')"
+            test "$audio_streams" = "0"
           done
 
       - name: Commit generated media
@@ -74,9 +76,9 @@ jobs:
           if git diff --cached --quiet; then
             echo "Book films are already current."
           else
-            git commit -m "Add generated trilogy book films"
+            git commit -m "Add generated silent trilogy book films"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
 
-# Public-safe generated media only. Refreshed 2026-08-24 after Actions permissions were enabled.
+# Public-safe generated media only. Book films are intentionally silent.
