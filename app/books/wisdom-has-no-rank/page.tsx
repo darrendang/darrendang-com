@@ -121,7 +121,7 @@ export default function WisdomHasNoRank() {
         <div className="book-samples-intro">
           <div className="eyebrow bronze">Inside Book 2</div>
           <h2 id="inside-book-2-title">Three glimpses at the changing direction of learning.</h2>
-          <p className="lead">These selections show the book's narrative engine: a correction from someone close, a reversal between teacher and learner, and a family map that becomes more useful because it remains unfinished.</p>
+          <p className="lead">These selections show the book&apos;s narrative engine: a correction from someone close, a reversal between teacher and learner, and a family map that becomes more useful because it remains unfinished.</p>
         </div>
         <div className="sample-path">
           {samples.map((sample) => (
