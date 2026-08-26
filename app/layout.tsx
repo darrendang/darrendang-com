@@ -12,10 +12,10 @@ import "./book2-preview.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://darrendang.com"),
   title: { default: "Darren Dang | Ideas for the Path Forward", template: "%s | Darren Dang" },
-  description: "Ideas about how wisdom, ideas, and systems cross boundaries—and how what we learn can become better decisions, stronger systems, and something worth passing forward.",
+  description: "Ideas about learning, judgment, systems, and stewardship—and how we preserve, connect, and pass wisdom forward so those who come after inherit a stronger starting point.",
   openGraph: {
     title: "Darren Dang — Ideas for the Path Forward",
-    description: "Books, papers, writing, and ideas about learning, judgment, systems, technology, leadership, and what we pass forward.",
+    description: "Books, papers, writing, and ideas about learning, judgment, systems, stewardship, and what we pass forward.",
     type: "website",
     url: "https://darrendang.com",
   },
