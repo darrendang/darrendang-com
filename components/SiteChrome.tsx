@@ -9,7 +9,6 @@ export function SiteHeader() {
           <Link href="/genome/">The Genome</Link>
           <Link href="/ideas/">Ideas</Link>
           <Link href="/books/">Books</Link>
-          <Link href="/writing/">Writing</Link>
           <Link href="/speaking/">Speaking</Link>
           <Link href="/about/">About</Link>
           <Link className="nav-cta" href="/share/">Share Wisdom</Link>
@@ -33,7 +32,6 @@ export function SiteFooter() {
           <Link href="/genome/">The Genome</Link>
           <Link href="/ideas/">Ideas</Link>
           <Link href="/dots/">D.O.T.S.</Link>
-          <Link href="/writing/">Writing</Link>
           <Link href="/papers/">Papers</Link>
           <Link href="/books/">Books</Link>
           <Link href="/speaking/">Speaking</Link>
@@ -44,6 +42,7 @@ export function SiteFooter() {
           <Link href="/share/">Share What You&apos;ve Learned</Link>
           <Link href="/about/">About Darren</Link>
           <Link href="/connect/">Connect</Link>
+          <a href="mailto:dangphibang@gmail.com">Email Darren</a>
           <Link href="/independence/">Independence</Link>
           <Link href="/privacy/">Privacy</Link>
           <Link href="/accessibility/">Accessibility</Link>

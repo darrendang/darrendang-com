@@ -16,5 +16,5 @@ export default function Speaking(){return <InteriorPage eyebrow="Speaking & prof
   <h2>Current discussion territories</h2>
   <div className="card-list">{talks.map(([title,copy,href])=><article className="content-card" key={title}><h2>{title}</h2><p>{copy}</p><Link className="text-link" href={href}>Explore the idea →</Link></article>)}</div>
   <div className="speaking-note"><strong>Independent perspective</strong><p>Unless expressly identified as an official institutional presentation, views shared through DarrenDang.com and related speaking inquiries are Darren&apos;s own and do not necessarily represent OCERS or any other affiliated organization.</p></div>
-  <p style={{marginTop:'42px'}}><Link className="text-link" href="/connect/">Professional discussion or speaking inquiry →</Link></p>
+  <p style={{marginTop:'42px'}}>For speaking or professional inquiries, email <a className="text-link" href="mailto:dangphibang@gmail.com?subject=Speaking%20or%20professional%20inquiry">dangphibang@gmail.com</a>.</p>
 </InteriorPage>}
