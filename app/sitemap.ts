@@ -13,7 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/share/',
     '/ideas/',
     '/dots/',
-    '/writing/',
     '/papers/',
     '/papers/from-ai-experiments-to-institutional-capability/',
     '/books/',
