@@ -14,6 +14,9 @@ const forbiddenPathFragments = [
 ];
 const forbiddenExtensions = new Set(['.docx', '.pptx']);
 const binaryExtensions = new Set(['.mp4', '.mp3', '.wav', '.jpg', '.jpeg', '.png', '.webp', '.avif', '.gif', '.pdf', '.ico']);
+const approvedPublicStrings = [
+  'dangphibang@gmail.com',
+];
 const secretPatterns = [
   /-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/,
   /github_pat_[A-Za-z0-9_]+/,
@@ -54,6 +57,13 @@ function walk(dir) {
     if (stat.size > 2_000_000) continue;
     let text;
     try { text = fs.readFileSync(full, 'utf8'); } catch { continue; }
+
+    // Explicitly approved public contact strings are allowed while all other
+    // personal email addresses remain blocked by the generic secret scan.
+    for (const approved of approvedPublicStrings) {
+      text = text.replaceAll(approved, '[APPROVED_PUBLIC_STRING]');
+    }
+
     for (const pattern of secretPatterns) {
       if (pattern.test(text)) {
         failures.push(`Potential private/secret content in: ${rel}`);
