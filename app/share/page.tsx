@@ -6,9 +6,10 @@ export const metadata = {
   description: 'Submit a reflection, story, or short video for editorial review and possible inclusion in Shared Wisdom.'
 };
 
+const DEFAULT_INTAKE_ENDPOINT = 'https://zlpjkixskskfcgmkajyd.supabase.co/functions/v1/shared-wisdom-intake';
+
 export default function ShareWisdomPage(){
-  const endpoint = process.env.SHARED_WISDOM_FORM_ENDPOINT || process.env.CONTACT_FORM_ENDPOINT || '';
-  const intakeEnabled = Boolean(endpoint);
+  const endpoint = process.env.SHARED_WISDOM_FORM_ENDPOINT || DEFAULT_INTAKE_ENDPOINT;
 
   return <InteriorPage eyebrow="Share Wisdom" title="What have you learned that you would want someone who comes after you to know?" wide>
     <div className="share-intro-grid">
@@ -24,10 +25,11 @@ export default function ShareWisdomPage(){
     <section className="share-form-section" aria-labelledby="share-form-title">
       <div className="eyebrow bronze">Contribution intake</div>
       <h2 id="share-form-title">Add a dot.</h2>
-      {!intakeEnabled && <div className="intake-status" role="status"><strong>The public contribution page is live; secure file intake is not yet connected.</strong><p>The form is built for private multipart storage, but it will not send your text or files until the secure intake endpoint is configured. This prevents private stories and videos from being routed into the public GitHub repository or an exposed personal inbox.</p></div>}
-      <form className="wisdom-form" action={intakeEnabled ? endpoint : undefined} method="post" encType="multipart/form-data">
+      <div className="intake-status intake-status-live" role="status"><strong>Secure contribution intake is active.</strong><p>Your written submission and any attachment are sent to a private review queue. They are not committed to the public website repository and are not published automatically.</p></div>
+      <form className="wisdom-form" action={endpoint} method="post" encType="multipart/form-data">
         <input type="hidden" name="form_type" value="shared_wisdom" />
         <input type="hidden" name="source" value="darrendang.com/share" />
+        <label className="honeypot" aria-hidden="true">Website<input name="website" type="text" tabIndex={-1} autoComplete="off" /></label>
         <div className="form-row two-col">
           <label>Your name<input name="name" type="text" autoComplete="name" required /></label>
           <label>Email for private follow-up<input name="email" type="email" autoComplete="email" required /></label>
@@ -56,7 +58,7 @@ export default function ShareWisdomPage(){
         <label>Who do you hope this might help?<input name="audience" type="text" placeholder="For example: my children, a new leader, someone starting over" /></label>
         <label>Optional attachment or short video
           <input name="attachment" type="file" accept=".txt,.pdf,.doc,.docx,.rtf,.jpg,.jpeg,.png,.webp,.mp4,.mov,.m4v,.webm" />
-          <span className="field-help">Written documents, images, or short video clips. Keep video focused on one experience and one lesson. The secure intake service may enforce file-size limits.</span>
+          <span className="field-help">Written documents, images, or short video clips up to 25 MB. Keep video focused on one experience and one lesson.</span>
         </label>
         <fieldset className="permission-fieldset">
           <legend>Permission and review</legend>
@@ -65,7 +67,7 @@ export default function ShareWisdomPage(){
           <label className="check-label"><input name="publication_permission" type="checkbox" required />If selected, I give permission for the contribution to be edited for clarity or length and published with my chosen attribution, subject to final editorial approval.</label>
         </fieldset>
         <div className="form-submit-row">
-          <button className="button button-dark" type="submit" disabled={!intakeEnabled}>{intakeEnabled ? 'Submit for review' : 'Secure intake connection pending'}</button>
+          <button className="button button-dark" type="submit">Submit for review</button>
           <p className="note">Submission does not guarantee publication. Contributor contact information is not displayed publicly.</p>
         </div>
       </form>
