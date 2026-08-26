@@ -1,5 +1,17 @@
-import Link from "next/link";
+import { SiteFooter, SiteHeader } from '@/components/SiteChrome';
 
-function Header(){return <header className="site-header"><div className="container nav"><Link href="/" className="wordmark">Darren Dang <span>✦</span></Link><nav aria-label="Primary"><Link href="/ideas/">Ideas</Link><Link href="/dots/">D.O.T.S.</Link><Link href="/books/">Books</Link><Link href="/speaking/">Speaking</Link><Link href="/about/">About</Link><Link className="nav-cta" href="/connect/">Connect</Link></nav></div></header>}
-function Footer(){return <footer><div className="container footer-grid"><div><div className="wordmark">Darren Dang</div><p>Ideas about how we learn, decide, lead, build, adapt, connect, and pass something better forward.</p><p className="footer-independence">Independent ideas and writing. Views expressed here are Darren&apos;s own and do not necessarily represent OCERS or any other institution with which he is affiliated.</p></div><div><strong>Explore</strong><Link href="/ideas/">Ideas</Link><Link href="/ideas/living-legacy/">Living Legacy</Link><Link href="/dots/">D.O.T.S.</Link><Link href="/writing/">Writing</Link><Link href="/papers/">Papers</Link><Link href="/books/">Books</Link><Link href="/speaking/">Speaking</Link></div><div><strong>Darren</strong><Link href="/about/">About</Link><Link href="/connect/">Connect</Link><Link href="/independence/">Independence</Link><Link href="/privacy/">Privacy</Link><Link href="/accessibility/">Accessibility</Link></div></div><div className="container copyright">© 2026 Darren Dang. All rights reserved.</div></footer>}
-export function InteriorPage({eyebrow,title,children,wide=false}:{eyebrow:string;title:string;children:React.ReactNode;wide?:boolean}){return <><div className="interior-header"><Header/><div className="container"><div className="eyebrow">{eyebrow}</div><h1 className="interior-title">{title}</h1></div></div><main id="main" className="interior-main"><div className={`container ${wide ? "reading reading-wide" : "reading"}`}>{children}</div></main><Footer/></>}
+export function InteriorPage({eyebrow,title,children,wide=false}:{eyebrow:string;title:string;children:React.ReactNode;wide?:boolean}){
+  return <>
+    <div className="interior-header">
+      <SiteHeader/>
+      <div className="container">
+        <div className="eyebrow">{eyebrow}</div>
+        <h1 className="interior-title">{title}</h1>
+      </div>
+    </div>
+    <main id="main" className="interior-main">
+      <div className={`container ${wide ? "reading reading-wide" : "reading"}`}>{children}</div>
+    </main>
+    <SiteFooter/>
+  </>
+}

@@ -1,0 +1,86 @@
+import Link from 'next/link';
+import { InteriorPage } from '@/components/InteriorPage';
+
+export const metadata = {
+  title: 'Share Wisdom',
+  description: 'Submit a reflection, story, or short video for editorial review and possible inclusion in Shared Wisdom.'
+};
+
+export default function ShareWisdomPage(){
+  const endpoint = process.env.SHARED_WISDOM_FORM_ENDPOINT || process.env.CONTACT_FORM_ENDPOINT || '';
+  const intakeEnabled = Boolean(endpoint);
+
+  return <InteriorPage eyebrow="Share Wisdom" title="What have you learned that you would want someone who comes after you to know?" wide>
+    <div className="share-intro-grid">
+      <div>
+        <p className="lead">You can share a short written reflection, a longer story, or a brief video. Submissions enter a private review process. Nothing is published automatically.</p>
+        <p>The strongest contributions usually begin with something specific: what happened, what changed your thinking, what you learned, and why that lesson might help someone else.</p>
+      </div>
+      <aside className="intake-flow" aria-label="Contribution review process">
+        <span>Submit</span><b>→</b><span>Receive</span><b>→</b><span>Review</span><b>→</b><span>Select</span><b>→</b><span>Edit</span><b>→</b><span>Approve</span><b>→</b><span>Publish</span>
+      </aside>
+    </div>
+
+    <section className="share-form-section" aria-labelledby="share-form-title">
+      <div className="eyebrow bronze">Contribution intake</div>
+      <h2 id="share-form-title">Add a dot.</h2>
+      {!intakeEnabled && <div className="intake-status" role="status"><strong>The public contribution page is live; secure file intake is not yet connected.</strong><p>The form is built for private multipart storage, but it will not send your text or files until the secure intake endpoint is configured. This prevents private stories and videos from being routed into the public GitHub repository or an exposed personal inbox.</p></div>}
+      <form className="wisdom-form" action={intakeEnabled ? endpoint : undefined} method="post" encType="multipart/form-data">
+        <input type="hidden" name="form_type" value="shared_wisdom" />
+        <input type="hidden" name="source" value="darrendang.com/share" />
+        <div className="form-row two-col">
+          <label>Your name<input name="name" type="text" autoComplete="name" required /></label>
+          <label>Email for private follow-up<input name="email" type="email" autoComplete="email" required /></label>
+        </div>
+        <div className="form-row two-col">
+          <label>What are you sharing?
+            <select name="contribution_type" required defaultValue="">
+              <option value="" disabled>Select one</option>
+              <option value="wisdom-note">Wisdom Note</option>
+              <option value="story">Story</option>
+              <option value="video">Short video</option>
+              <option value="story-and-media">Story with an attachment</option>
+            </select>
+          </label>
+          <label>Public attribution preference
+            <select name="attribution" required defaultValue="full-name">
+              <option value="full-name">Full name</option>
+              <option value="first-name">First name only</option>
+              <option value="anonymous">Anonymous publicly</option>
+            </select>
+          </label>
+        </div>
+        <label>Working title<input name="title" type="text" maxLength={140} placeholder="A short title for your story or lesson" /></label>
+        <label>What happened, or what would you like to pass forward?<textarea name="contribution" rows={10} required placeholder="Tell the story in your own words. Specific experiences are more useful than general advice." /></label>
+        <label>What did you learn?<textarea name="lesson" rows={5} required placeholder="What changed in how you think, decide, lead, live, or relate to others?" /></label>
+        <label>Who do you hope this might help?<input name="audience" type="text" placeholder="For example: my children, a new leader, someone starting over" /></label>
+        <label>Optional attachment or short video
+          <input name="attachment" type="file" accept=".txt,.pdf,.doc,.docx,.rtf,.jpg,.jpeg,.png,.webp,.mp4,.mov,.m4v,.webm" />
+          <span className="field-help">Written documents, images, or short video clips. Keep video focused on one experience and one lesson. The secure intake service may enforce file-size limits.</span>
+        </label>
+        <fieldset className="permission-fieldset">
+          <legend>Permission and review</legend>
+          <label className="check-label"><input name="rights_confirmed" type="checkbox" required />I created this contribution or have permission to share it and any attached media.</label>
+          <label className="check-label"><input name="review_permission" type="checkbox" required />I give DarrenDang.com permission to privately review this submission and contact me about it.</label>
+          <label className="check-label"><input name="publication_permission" type="checkbox" required />If selected, I give permission for the contribution to be edited for clarity or length and published with my chosen attribution, subject to final editorial approval.</label>
+        </fieldset>
+        <div className="form-submit-row">
+          <button className="button button-dark" type="submit" disabled={!intakeEnabled}>{intakeEnabled ? 'Submit for review' : 'Secure intake connection pending'}</button>
+          <p className="note">Submission does not guarantee publication. Contributor contact information is not displayed publicly.</p>
+        </div>
+      </form>
+    </section>
+
+    <section className="contribution-policy">
+      <div className="eyebrow bronze">Editorial principles</div>
+      <h2>Curated for usefulness, not volume.</h2>
+      <div className="policy-grid">
+        <article><h3>Nothing publishes automatically.</h3><p>Every contribution is reviewed before it can appear on the site.</p></article>
+        <article><h3>Authorship stays visible.</h3><p>A contributor&apos;s story remains the contributor&apos;s story. Connections to Darren&apos;s ideas do not erase provenance.</p></article>
+        <article><h3>Privacy comes before content.</h3><p>Do not submit private information about another person that you do not have the right to share.</p></article>
+        <article><h3>The lesson must earn its place.</h3><p>Selection is based on whether the contribution offers something specific, human, credible, and useful to carry forward.</p></article>
+      </div>
+      <p className="note">For professional, media, or speaking inquiries rather than a Shared Wisdom contribution, use <Link className="text-link" href="/connect/">Connect</Link>.</p>
+    </section>
+  </InteriorPage>
+}

@@ -8,14 +8,15 @@ import "./paper-full.css";
 import "./book-visuals.css";
 import "./book-excerpts.css";
 import "./book2-preview.css";
+import "./genome.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://darrendang.com"),
-  title: { default: "Darren Dang | Ideas for the Path Forward", template: "%s | Darren Dang" },
-  description: "Ideas about learning, judgment, systems, and stewardship—and how we preserve, connect, and pass wisdom forward so those who come after inherit a stronger starting point.",
+  title: { default: "Darren Dang | The Dang Genome", template: "%s | Darren Dang" },
+  description: "The public home of The Dang Genome—a living body of ideas, stories, lessons, and wisdom preserved, connected, improved, and passed forward so those who come after inherit a stronger starting point.",
   openGraph: {
-    title: "Darren Dang — Ideas for the Path Forward",
-    description: "Books, papers, writing, and ideas about learning, judgment, systems, stewardship, and what we pass forward.",
+    title: "Darren Dang — The Dang Genome",
+    description: "Ideas, stories, books, writing, talks, and shared wisdom preserved, connected, improved, and passed forward.",
     type: "website",
     url: "https://darrendang.com",
   },

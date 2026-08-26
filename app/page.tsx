@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 
 const books = [
   {
@@ -56,56 +57,6 @@ const ideas = [
   ["Learning & Scale", "Make Knowledge Travel.", "What we make understandable, reusable, and shareable can become someone else's starting point."],
 ];
 
-function Header() {
-  return (
-    <header className="site-header">
-      <div className="container nav">
-        <Link href="/" className="wordmark">Darren Dang <span>✦</span></Link>
-        <nav aria-label="Primary">
-          <Link href="/ideas/">Ideas</Link>
-          <Link href="/dots/">D.O.T.S.</Link>
-          <Link href="/books/">Books</Link>
-          <Link href="/speaking/">Speaking</Link>
-          <Link href="/about/">About</Link>
-          <Link className="nav-cta" href="/connect/">Connect</Link>
-        </nav>
-      </div>
-    </header>
-  );
-}
-
-function Footer() {
-  return (
-    <footer>
-      <div className="container footer-grid">
-        <div>
-          <div className="wordmark">Darren Dang</div>
-          <p>Ideas about how we learn, decide, lead, build, adapt, connect, and pass something better forward.</p>
-          <p className="footer-independence">Independent ideas and writing. Views expressed here are Darren&apos;s own and do not necessarily represent OCERS or any other institution with which he is affiliated.</p>
-        </div>
-        <div>
-          <strong>Explore</strong>
-          <Link href="/ideas/">Ideas</Link>
-          <Link href="/dots/">D.O.T.S.</Link>
-          <Link href="/writing/">Writing</Link>
-          <Link href="/papers/">Papers</Link>
-          <Link href="/books/">Books</Link>
-          <Link href="/speaking/">Speaking</Link>
-        </div>
-        <div>
-          <strong>Darren</strong>
-          <Link href="/about/">About</Link>
-          <Link href="/connect/">Connect</Link>
-          <Link href="/independence/">Independence</Link>
-          <Link href="/privacy/">Privacy</Link>
-          <Link href="/accessibility/">Accessibility</Link>
-        </div>
-      </div>
-      <div className="container copyright">© 2026 Darren Dang. All rights reserved.</div>
-    </footer>
-  );
-}
-
 function HeroNetwork() {
   return (
     <div className="hero-visual" aria-hidden="true">
@@ -147,24 +98,40 @@ function HeroNetwork() {
 export default function Home() {
   return (
     <>
-      <Header />
+      <SiteHeader />
       <main id="main">
-        <section className="hero brand-hero">
+        <section className="hero brand-hero genome-hero">
           <div className="container hero-grid">
             <div className="hero-copy">
-              <div className="eyebrow">Ideas for the Path Forward</div>
+              <div className="eyebrow">The Dang Genome</div>
               <h1>Useful ideas should travel farther than the person who first had them.</h1>
-              <p>I write about how wisdom, ideas, and systems cross boundaries—and how what we learn can become better decisions, stronger systems, and something worth passing forward.</p>
+              <p>A living body of ideas, stories, lessons, and wisdom—preserved, connected, tested, improved, and passed forward so those who come after inherit a stronger starting point.</p>
               <div className="actions">
-                <Link className="button button-gold" href="/ideas/">Explore the Ideas</Link>
-                <Link className="button button-outline" href="/dots/">Explore D.O.T.S.</Link>
+                <Link className="button button-gold" href="/genome/">Explore the Genome</Link>
+                <Link className="button button-outline" href="/share/">Share What You&apos;ve Learned</Link>
               </div>
             </div>
             <HeroNetwork />
           </div>
           <div className="container hero-note">
-            <strong>The place where Darren&apos;s ideas live.</strong>
-            <span>Books, papers, writing, talks, and frameworks are different ways those ideas get tested and shared.</span>
+            <strong>DarrenDang.com is the public home of The Dang Genome.</strong>
+            <span>Books, ideas, papers, stories, talks, media, and shared wisdom are different ways learning is preserved, connected, tested, and carried forward.</span>
+          </div>
+        </section>
+
+        <section className="section genome-purpose-home">
+          <div className="container">
+            <div className="section-intro compact">
+              <div className="eyebrow bronze">Why the Genome exists</div>
+              <h2>Wisdom should be treated as an inheritance.</h2>
+              <p className="lead">Not a finished script. A stronger starting point: better context, better questions, useful stories, and lessons someone else can test, improve, and carry farther.</p>
+            </div>
+            <div className="purpose-grid home-purpose-grid">
+              <article><span>Mission</span><h3>Help people preserve, connect, and pass forward wisdom, so those who come after inherit a stronger starting point.</h3></article>
+              <article><span>Vision</span><h3>A world where wisdom is preserved as intentionally as wealth and passed forward as naturally as love.</h3></article>
+              <article><span>North Star</span><h3>Leave those who come after us with a stronger starting point.</h3></article>
+            </div>
+            <div className="section-link"><Link className="text-link" href="/genome/">How The Dang Genome works →</Link></div>
           </div>
         </section>
 
@@ -208,10 +175,27 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="section shared-wisdom-home">
+          <div className="container shared-wisdom-home-grid">
+            <div>
+              <div className="eyebrow bronze">Shared Wisdom</div>
+              <h2>Wisdom does not belong to one person.</h2>
+              <p className="lead">Some lessons come from books. Some from parents, children, colleagues, strangers, cultures, professions, failures, and lives very different from our own.</p>
+              <p>The Dang Genome should grow by listening. Readers can submit a written reflection, attach a longer story, or share a brief video for review. Selected contributions will remain clearly attributed to their source and may be connected to related ideas without erasing authorship.</p>
+              <div className="actions"><Link className="button button-dark" href="/share/">Share What You&apos;ve Learned</Link><Link className="text-link" href="/shared-wisdom/">Explore Shared Wisdom →</Link></div>
+            </div>
+            <div className="shared-wisdom-principles">
+              <article><span>01</span><strong>Nothing publishes automatically.</strong><p>Every contribution is reviewed.</p></article>
+              <article><span>02</span><strong>Authorship stays visible.</strong><p>A contributor&apos;s story remains the contributor&apos;s story.</p></article>
+              <article><span>03</span><strong>Useful beats numerous.</strong><p>The collection grows through editorial judgment, not volume.</p></article>
+            </div>
+          </div>
+        </section>
+
         <section className="section dots-feature">
           <div className="container dots-feature-grid">
             <div>
-              <div className="eyebrow">Flagship idea</div>
+              <div className="eyebrow">A major method inside the Genome</div>
               <h2>D.O.T.S. is a way of seeing problems.</h2>
               <p className="lead-light">See past the label. Find the structure. Expand the search space. Transfer what fits. Create something new.</p>
               <p>Most organizations begin with the category already attached to a problem: an AI problem, a technology problem, a workforce problem, an education problem. D.O.T.S. asks what kind of problem it actually is underneath the label.</p>
@@ -233,7 +217,7 @@ export default function Home() {
         <section className="section book-showcase">
           <div className="container">
             <div className="section-intro compact">
-              <div className="eyebrow bronze">Books</div>
+              <div className="eyebrow bronze">Books · The Path Forward</div>
               <h2>Three different questions. One intellectual universe.</h2>
               <p className="lead">Book 1 is in final publication preparation. Book 2 has entered final editorial review, with selected passages now available. Book 3 remains in development. Together they make the movement from inheritance to teachability to creation visible.</p>
             </div>
@@ -253,12 +237,8 @@ export default function Home() {
                     <div className="book-detail">{book.detail}</div>
                     <div className="book-card-actions">
                       <Link className="text-link" href={book.href}>Explore the book →</Link>
-                      {book.number === "01" && (
-                        <Link className="text-link book-song-link" href="/books/for-those-who-come-after-us/#song">Listen to the song →</Link>
-                      )}
-                      {book.number === "02" && (
-                        <Link className="text-link book-song-link" href="/books/wisdom-has-no-rank/#inside-book-2">Read excerpts →</Link>
-                      )}
+                      {book.number === "01" && <Link className="text-link book-song-link" href="/books/for-those-who-come-after-us/#song">Listen to the song →</Link>}
+                      {book.number === "02" && <Link className="text-link book-song-link" href="/books/wisdom-has-no-rank/#inside-book-2">Read excerpts →</Link>}
                     </div>
                   </div>
                 </article>
@@ -270,7 +250,7 @@ export default function Home() {
         <section className="section paper-feature">
           <div className="container paper-feature-grid">
             <div>
-              <div className="eyebrow bronze">Public-sector AI white paper</div>
+              <div className="eyebrow bronze">Ideas in practice · Public-sector AI white paper</div>
               <h2>From AI Experiments to Institutional Capability</h2>
               <p className="paper-subtitle">A Stewardship Agenda for Public Pension Boards and Executive Leaders</p>
               <p className="lead">How can a public pension system turn AI possibility into durable public value without outrunning trust?</p>
@@ -321,12 +301,14 @@ export default function Home() {
             </div>
             <div>
               <div className="eyebrow bronze">About Darren</div>
-              <h2>A practitioner who likes connecting ideas across boundaries.</h2>
+              <h2>A practitioner, writer, and steward of wisdom.</h2>
               <p className="lead">Vietnam and America. Computer science and business. Technology and public institutions. Analysis and judgment. Leadership and family. One generation and the next.</p>
-              <p>Darren Dang currently serves as Chief Technology Officer at the Orange County Employees Retirement System. His professional experience informs how he thinks, but DarrenDang.com is an independent place for his own ideas, writing, books, papers, and reflections.</p>
+              <p>Darren Dang currently serves as Chief Technology Officer at the Orange County Employees Retirement System. His professional experience informs how he thinks, but DarrenDang.com is an independent place for his own ideas, writing, books, papers, reflections, and the public expression of The Dang Genome.</p>
+              <p>Stewardship is not a claim to possess all the wisdom. It is a responsibility to preserve what matters, remain teachable, connect what can help, give credit to the people behind the lesson, and pass useful learning forward.</p>
               <p className="independence-callout">The views expressed here are Darren&apos;s own and do not necessarily represent OCERS or any other institution with which he is affiliated.</p>
               <div className="actions">
                 <Link className="text-link" href="/about/">About Darren →</Link>
+                <Link className="text-link" href="/genome/">The Dang Genome →</Link>
                 <Link className="text-link" href="/independence/">Editorial independence →</Link>
               </div>
             </div>
@@ -356,13 +338,13 @@ export default function Home() {
             <h2>Take what is useful. Carry it farther.</h2>
             <p>An idea becomes valuable when someone can use it, question it, improve it, connect it to something else, and pass something better forward.</p>
             <div className="actions center">
-              <Link className="button button-gold" href="/ideas/">Explore the Ideas</Link>
-              <Link className="button button-outline" href="/dots/">Explore D.O.T.S.</Link>
+              <Link className="button button-gold" href="/genome/">Explore the Genome</Link>
+              <Link className="button button-outline" href="/share/">Add a Dot</Link>
             </div>
           </div>
         </section>
       </main>
-      <Footer />
+      <SiteFooter />
     </>
   );
 }

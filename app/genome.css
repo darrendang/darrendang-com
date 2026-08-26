@@ -1,0 +1,43 @@
+.genome-hero .hero-copy{position:relative;z-index:2}
+.genome-purpose-home{background:linear-gradient(180deg,#fbf8f2,#f5efe4)}
+.home-purpose-grid{margin-top:54px}
+.purpose-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--sand);border-bottom:1px solid var(--sand)}
+.purpose-grid article{padding:34px 34px 38px;border-right:1px solid var(--sand)}
+.purpose-grid article:first-child{padding-left:0}.purpose-grid article:last-child{border-right:0;padding-right:0}
+.purpose-grid span,.wisdom-format-grid span,.shared-wisdom-principles span{display:block;color:var(--bronze);font-size:12px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;margin-bottom:14px}
+.purpose-grid h3{font-family:'Cormorant Garamond',serif;font-size:29px;line-height:1.22;margin:0;font-weight:600}
+.shared-wisdom-home{background:#f8f3eb}
+.shared-wisdom-home-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:88px;align-items:start}
+.shared-wisdom-principles{border-top:1px solid var(--sand)}
+.shared-wisdom-principles article{padding:24px 0;border-bottom:1px solid var(--sand)}
+.shared-wisdom-principles strong{font-family:'Cormorant Garamond',serif;font-size:27px;line-height:1.15;display:block;margin-bottom:5px}
+.shared-wisdom-principles p{font-size:16px;color:var(--muted);margin:0}
+.genome-lead-grid,.shared-intro-grid,.share-intro-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:start;margin-bottom:90px}
+.steward-card,.curation-card,.intake-status{padding:32px;border:1px solid var(--sand);background:#f8f3eb}
+.steward-card h2{font-size:43px;margin:0 0 18px}.steward-card p,.curation-card p{margin-bottom:0}
+.genome-purpose,.genome-layers,.genome-boundary,.genome-invitation,.contribution-policy{margin-top:100px;padding-top:70px;border-top:1px solid var(--sand)}
+.genome-cycle{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--sand);border-bottom:1px solid var(--sand);margin-top:45px}
+.genome-cycle div{padding:25px 20px;border-right:1px solid var(--sand);min-height:104px}
+.genome-cycle div:nth-child(4n){border-right:0}.genome-cycle div:nth-child(-n+4){border-bottom:1px solid var(--sand)}
+.genome-cycle span{display:block;color:var(--bronze);font-size:12px;letter-spacing:.13em;margin-bottom:8px}.genome-cycle strong{font-size:20px}
+.layer-grid,.policy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--sand);margin-top:42px}
+.layer-grid article,.policy-grid article{padding:30px 30px 34px 0;border-bottom:1px solid var(--sand)}
+.layer-grid article:nth-child(3n+2),.policy-grid article:nth-child(3n+2){padding-left:30px}
+.layer-grid article:nth-child(3n),.policy-grid article:nth-child(3n){padding-left:30px;padding-right:0}
+.layer-grid h3,.wisdom-format-grid h3,.policy-grid h3{font-family:'Cormorant Garamond',serif;font-size:31px;line-height:1.12;margin:0 0 10px}
+.layer-grid p,.policy-grid p{color:var(--muted)}
+.genome-boundary{background:linear-gradient(135deg,#f8f3eb,transparent);padding:70px 45px 45px;border-top:1px solid var(--sand)}
+.genome-invitation,.shared-callout{text-align:left;padding-bottom:20px}.genome-invitation .lead,.shared-callout .lead{max-width:760px}
+.shared-intro-grid{margin-bottom:80px}.curation-card strong{font-family:'Cormorant Garamond',serif;font-size:30px;line-height:1.15;display:block}
+.wisdom-format-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--sand);border-bottom:1px solid var(--sand);margin-top:45px}
+.wisdom-format-grid article{padding:34px;border-right:1px solid var(--sand)}.wisdom-format-grid article:first-child{padding-left:0}.wisdom-format-grid article:last-child{border-right:0;padding-right:0}
+.shared-callout{margin-top:95px;padding:65px 0 0;border-top:1px solid var(--sand)}
+.intake-flow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:26px;border:1px solid var(--sand);background:#f8f3eb;font-size:14px}
+.intake-flow span{font-weight:600}.intake-flow b{color:var(--gold);font-weight:500}
+.share-form-section{margin-top:30px;padding-top:65px;border-top:1px solid var(--sand)}
+.intake-status{margin:28px 0 36px;border-left:4px solid var(--gold)}.intake-status strong{font-size:20px}.intake-status p{margin-bottom:0;color:var(--muted)}
+.wisdom-form{display:grid;gap:24px;margin-top:38px;max-width:980px}.wisdom-form label{display:grid;gap:8px;font-weight:600}.wisdom-form input,.wisdom-form select,.wisdom-form textarea{font:inherit;color:var(--ink);background:#fff;border:1px solid #b9b0a4;border-radius:2px;padding:12px 13px;width:100%}.wisdom-form textarea{resize:vertical}.wisdom-form input[type=file]{padding:16px;background:#fdfbf7}.form-row.two-col{display:grid;grid-template-columns:1fr 1fr;gap:22px}.field-help{font-weight:400;font-size:14px;color:var(--muted)}
+.permission-fieldset{border:1px solid var(--sand);padding:24px;display:grid;gap:15px}.permission-fieldset legend{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:25px;padding:0 8px}.check-label{display:grid!important;grid-template-columns:22px 1fr;gap:11px!important;align-items:start;font-weight:400!important}.check-label input{width:18px!important;height:18px;margin-top:4px}.form-submit-row{display:flex;gap:25px;align-items:center}.form-submit-row .note{max-width:520px;margin:0}.button:disabled{opacity:.55;cursor:not-allowed}
+.genome-footer{grid-template-columns:1.45fr .85fr 1fr}
+@media(max-width:1000px){.purpose-grid,.wisdom-format-grid{grid-template-columns:1fr}.purpose-grid article,.wisdom-format-grid article{padding:28px 0;border-right:0;border-bottom:1px solid var(--sand)}.purpose-grid article:last-child,.wisdom-format-grid article:last-child{border-bottom:0}.shared-wisdom-home-grid,.genome-lead-grid,.shared-intro-grid,.share-intro-grid{grid-template-columns:1fr;gap:45px}.genome-cycle{grid-template-columns:repeat(2,1fr)}.genome-cycle div{border-bottom:1px solid var(--sand)!important}.genome-cycle div:nth-child(2n){border-right:0}.layer-grid,.policy-grid{grid-template-columns:1fr 1fr}.layer-grid article,.layer-grid article:nth-child(3n+2),.layer-grid article:nth-child(3n),.policy-grid article,.policy-grid article:nth-child(3n+2),.policy-grid article:nth-child(3n){padding:27px 26px 27px 0}.layer-grid article:nth-child(2n),.policy-grid article:nth-child(2n){padding-left:26px;padding-right:0}.form-row.two-col{grid-template-columns:1fr}}
+@media(max-width:700px){.genome-cycle,.layer-grid,.policy-grid{grid-template-columns:1fr}.genome-cycle div{border-right:0}.layer-grid article,.layer-grid article:nth-child(2n),.layer-grid article:nth-child(3n+2),.layer-grid article:nth-child(3n),.policy-grid article,.policy-grid article:nth-child(2n),.policy-grid article:nth-child(3n+2),.policy-grid article:nth-child(3n){padding:25px 0}.genome-boundary{padding:50px 24px 30px}.form-submit-row{align-items:flex-start;flex-direction:column}.genome-footer{grid-template-columns:1fr}}
