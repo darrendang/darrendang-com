@@ -8,6 +8,8 @@ export const metadata = {
 
 export default function SharedWisdomPage(){
   return <InteriorPage eyebrow="Shared Wisdom" title="What others are passing forward." wide>
+    <link rel="stylesheet" href="/shared-wisdom-public.css" />
+
     <div className="shared-intro-grid">
       <div>
         <p className="lead">Wisdom does not belong to one person. Some lessons come from parents or children. Some from work, failure, service, migration, friendship, culture, faith, loss, rebuilding, or a life very different from our own.</p>
@@ -15,14 +17,23 @@ export default function SharedWisdomPage(){
       </div>
       <aside className="curation-card">
         <strong>Curated, not open comments.</strong>
-        <p>Nothing appears automatically. Contributions are reviewed for relevance, clarity, permission, privacy, attribution, and whether there is a real lesson worth passing forward.</p>
+        <p>Nothing appears automatically. Contributions pass an editorial review and a separate publishing review for relevance, clarity, permission, privacy, attribution, public presentation, and whether there is a real lesson worth passing forward.</p>
       </aside>
     </div>
 
+    <section id="shared-wisdom-collection">
+      <div className="eyebrow bronze">The collection</div>
+      <h2>Selected wisdom, published intentionally.</h2>
+      <p>These contributions appear only after publication approval. If an item is later removed, its private record remains preserved while the public version disappears from this collection.</p>
+      <div id="published-shared-wisdom" className="shared-wisdom-feed" aria-live="polite">
+        <div className="shared-wisdom-loading">Loading the published collection…</div>
+      </div>
+      <noscript><p>JavaScript is required to load the published Shared Wisdom collection.</p></noscript>
+    </section>
+
     <section>
-      <div className="eyebrow bronze">Opening the collection</div>
-      <h2>The first shared stories will appear here after review.</h2>
-      <p>Rather than manufacture a library before it exists, this page will grow from real contributions. Future entries may include written Wisdom Notes, longer Stories, and short In Their Own Voice video clips.</p>
+      <div className="eyebrow bronze">What you&apos;ll find</div>
+      <h2>Different forms. The same question: what is worth passing forward?</h2>
       <div className="wisdom-format-grid">
         <article><span>01</span><h3>Wisdom Notes</h3><p>Short observations, principles, or reflections that can stand on their own.</p></article>
         <article><span>02</span><h3>Stories</h3><p>Experiences with enough context to understand what happened, what changed, and what was learned.</p></article>
@@ -43,5 +54,7 @@ export default function SharedWisdomPage(){
       <p className="lead">Share a written reflection, attach a longer story, or submit a short video for Darren to review.</p>
       <Link className="button button-dark" href="/share/">Share what you&apos;ve learned</Link>
     </section>
+
+    <script src="/shared-wisdom-public.js" defer></script>
   </InteriorPage>
 }
