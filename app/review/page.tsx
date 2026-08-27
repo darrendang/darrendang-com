@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import { InteriorPage } from '@/components/InteriorPage';
 
 export const metadata = {
@@ -101,7 +102,7 @@ export default function ReviewPage() {
         </section>
       </div>
 
-      <script src="/review-console-v2.js" defer></script>
+      <Script id="shared-wisdom-review-console" src="/review-console-v2.js?v=20260826-2" strategy="afterInteractive" />
     </InteriorPage>
   );
 }
