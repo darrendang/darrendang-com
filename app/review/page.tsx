@@ -2,7 +2,7 @@ import { InteriorPage } from '@/components/InteriorPage';
 
 export const metadata = {
   title: 'Private Review',
-  description: 'Private editorial review console for Shared Wisdom submissions.',
+  description: 'Private editorial and publishing review console for Shared Wisdom submissions.',
   robots: {
     index: false,
     follow: false,
@@ -17,6 +17,7 @@ export default function ReviewPage() {
   return (
     <InteriorPage eyebrow="Private editorial workspace" title="Shared Wisdom Review" wide>
       <link rel="stylesheet" href="/review-console.css" />
+      <link rel="stylesheet" href="/review-publishing.css" />
 
       <div id="review-console" className="review-console" aria-live="polite">
         <section id="review-loading" className="review-state-card">
@@ -44,13 +45,17 @@ export default function ReviewPage() {
           <div className="review-toolbar">
             <div>
               <div className="eyebrow bronze">Private review queue</div>
-              <h2>What is worth passing forward?</h2>
+              <h2>Review. Approve. Publish intentionally.</h2>
               <p id="review-session-label" className="review-small-note"></p>
             </div>
             <div className="review-toolbar-actions">
               <button id="review-refresh" className="button button-outline" type="button">Refresh</button>
               <button id="review-signout" className="button button-dark" type="button">Sign out</button>
             </div>
+          </div>
+
+          <div className="review-workflow-strip" aria-label="Review workflow">
+            <span>Editorial review</span><b>→</b><span>Approved</span><b>→</b><span>Publishing review</span><b>→</b><span>Ready</span><b>→</b><span>Published</span>
           </div>
 
           <div id="review-metrics" className="review-metrics" aria-label="Submission counts"></div>
@@ -66,7 +71,9 @@ export default function ReviewPage() {
                 <option value="selected">Selected</option>
                 <option value="editing">Editing</option>
                 <option value="approved">Approved</option>
+                <option value="ready_to_publish">Ready to publish</option>
                 <option value="published">Published</option>
+                <option value="unpublished">Removed from public</option>
                 <option value="declined">Declined</option>
                 <option value="archived">Archived</option>
               </select>
@@ -87,14 +94,14 @@ export default function ReviewPage() {
               <div className="review-empty-detail">
                 <div className="eyebrow bronze">Submission detail</div>
                 <h3>Select a contribution to review.</h3>
-                <p>The full story, permissions, attachment, editorial status, and notes will appear here.</p>
+                <p>The full story, permissions, editorial decision, publishing review, and publication controls will appear here.</p>
               </div>
             </section>
           </div>
         </section>
       </div>
 
-      <script src="/review-console.js" defer></script>
+      <script src="/review-console-v2.js" defer></script>
     </InteriorPage>
   );
 }
