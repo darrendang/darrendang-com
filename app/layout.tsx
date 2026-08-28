@@ -12,11 +12,11 @@ import "./genome.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://darrendang.com"),
-  title: { default: "Darren Dang | The Dang Genome", template: "%s | Darren Dang" },
-  description: "The public home of The Dang Genome—a living body of ideas, stories, lessons, and wisdom preserved, connected, improved, and passed forward so those who come after inherit a stronger starting point.",
+  title: { default: "Darren Dang | The Way", template: "%s | Darren Dang" },
+  description: "The public expression of The Way: ideas, stories, Letters from Darren, books, and shared wisdom preserved, connected, tested, improved, and passed forward so those who come after inherit a stronger starting point.",
   openGraph: {
-    title: "Darren Dang — The Dang Genome",
-    description: "Ideas, stories, books, writing, talks, and shared wisdom preserved, connected, improved, and passed forward.",
+    title: "Darren Dang — The Way",
+    description: "Pass down a way of thinking. Explore Letters from Darren, ideas, books, The Dang Genome, and shared wisdom.",
     type: "website",
     url: "https://darrendang.com",
   },
