@@ -38,10 +38,8 @@ export default function ShareWisdomPage(){
           <label>What are you sharing?
             <select name="contribution_type" required defaultValue="">
               <option value="" disabled>Select one</option>
-              <option value="wisdom-note">Wisdom Note or reflection</option>
+              <option value="wisdom-note">Wisdom Note, reflection, question, correction, or connection</option>
               <option value="story">Story or lesson</option>
-              <option value="question-correction">Question, correction, or alternate perspective</option>
-              <option value="connection">New connection or example</option>
               <option value="video">Short video</option>
               <option value="story-and-media">Story with an attachment</option>
             </select>
