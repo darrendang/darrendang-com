@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 import { BookFilm } from "@/components/BookFilm";
+import { ConnectedDots } from "@/components/ConnectedDots";
 
 export const metadata = {
   title: "For Those Who Come After Us",
@@ -144,6 +145,17 @@ export default function Book() {
         </div>
         <p className="sample-note">The final handoff remains in the book. These selections are meant to open the door, not replace the journey.</p>
       </section>
+
+      <ConnectedDots
+        intro="Book 1 is an artifact inside a wider graph. Its questions about inheritance, legacy, learning, and handoff continue in Letters, later books, and the constitutional agency of Your Way."
+        question="What have you inherited that you want to understand well enough to keep, change, or deliberately leave behind?"
+        connections={[
+          { label: "LETTER", title: "Why These Letters", copy: "The book began a handoff that continues through shorter reflections while the thinking is still moving.", href: "/letters/why-these-letters/" },
+          { label: "IDEA", title: "Living Legacy", copy: "The deeper architecture of preserving useful learning without turning it into a cage for the future.", href: "/ideas/living-legacy/" },
+          { label: "BOOK 2", title: "Wisdom Has No Rank", copy: "Inheritance becomes stronger when the person receiving the map remains free—and willing—to revise it.", href: "/books/wisdom-has-no-rank/" },
+          { label: "METHOD", title: "D.O.T.S.", copy: "The Connect the Dots chapter points toward the cross-domain way of seeing developed more fully in Book 3.", href: "/dots/" },
+        ]}
+      />
     </InteriorPage>
   );
 }
