@@ -11,10 +11,8 @@ const books = [
     cover: "/images/for-those-who-come-after-us-front-home-v3.webp",
     alt: "Front cover of For Those Who Come After Us: A Life in Lessons by Darren Dang.",
     href: "/books/for-those-who-come-after-us/",
-    movement: "LEARN FROM LIFE",
-    mapAction: "Receive the map.",
-    question: "What have I learned?",
-    bridge: "Lessons can cross generations.",
+    movement: "INHERIT",
+    question: "What have I learned that is worth passing forward?",
     copy: "A life in lessons about inheritance, identity, learning, failure, systems, leadership, family, purpose, and what we pass forward.",
   },
   {
@@ -26,10 +24,8 @@ const books = [
     alt: "Current cover for Wisdom Has No Rank by Darren Dang.",
     href: "/books/wisdom-has-no-rank/",
     movement: "REMAIN TEACHABLE",
-    mapAction: "Question and revise the map.",
-    question: "Who can I learn from?",
-    bridge: "Wisdom can cross hierarchy.",
-    copy: "A book about remaining teachable when wisdom comes from someone younger, more junior, closer to us, or simply unexpected.",
+    question: "Who can I learn from that I did not expect to teach me?",
+    copy: "A book about reciprocal learning and the wisdom that can move through real relationships regardless of age, title, or hierarchy.",
   },
   {
     number: "03",
@@ -40,10 +36,8 @@ const books = [
     alt: "Current cover for D.O.T.S. by Darren Dang.",
     href: "/books/dots/",
     movement: "CREATE",
-    mapAction: "Explore beyond the map.",
-    question: "What can I create from what I learn?",
-    bridge: "Ideas can cross disciplines.",
-    copy: "A book about seeing past labels, recognizing structural relationships, transferring carefully, and creating useful new possibilities.",
+    question: "What becomes possible when I see beyond familiar labels?",
+    copy: "A book about seeing hidden relationships, transferring useful principles across domains, and creating something new from a wider field of experience.",
   },
 ];
 
@@ -86,55 +80,55 @@ export default function Home() {
         <section className="hero brand-hero genome-hero">
           <div className="container hero-grid">
             <div className="hero-copy">
-              <div className="eyebrow">The Way</div>
-              <h1>Pass down a way of thinking.</h1>
-              <p>We cannot leave the people who come after us an answer for every situation. We can leave them better stories, better questions, useful ideas, and a stronger place from which to begin.</p>
+              <div className="eyebrow">The Way → Your Way → The Way Forward</div>
+              <h1>A stronger starting point. The freedom to go farther.</h1>
+              <p>We cannot leave the people who come after us an answer for every situation. We can preserve what experience taught us, leave room for them to make it their own, and invite them to add what the next context requires.</p>
               <div className="actions">
-                <Link className="button button-gold" href="/letters/">Read Letters from Darren</Link>
-                <Link className="button button-outline" href="/the-way/">Explore The Way</Link>
+                <Link className="button button-gold" href="/the-way/">Explore The Way</Link>
+                <Link className="button button-outline" href="/genome/">Explore the Dang Genome</Link>
               </div>
             </div>
             <HeroNetwork />
           </div>
           <div className="container hero-note">
-            <strong>DarrenDang.com is the public expression of The Way.</strong>
-            <span>Ideas, stories, letters, books, talks, media, and shared wisdom can be preserved, connected, tested, improved, and passed forward.</span>
+            <strong>Leave those who come after a stronger starting point and the freedom to go farther.</strong>
+            <span>DarrenDang.com is the public home where The Way becomes discoverable, connected, lived, questioned, and carried forward.</span>
           </div>
         </section>
 
         <section className="section genome-purpose-home">
           <div className="container">
             <div className="section-intro compact">
-              <div className="eyebrow bronze">A stronger starting point</div>
+              <div className="eyebrow bronze">The constitution</div>
               <h2>Inheritance should create possibility, not obligation.</h2>
-              <p className="lead">The goal is not to freeze one generation&apos;s answers in time. It is to preserve enough context, experience, judgment, and useful thinking that the next generation can begin farther ahead—and still choose its own path.</p>
+              <p className="lead">The Way gives us something useful to begin with. Your Way protects the freedom to test, adapt, and live what we inherit. The Way Forward turns new experience into contribution for someone who comes next.</p>
             </div>
             <div className="purpose-grid home-purpose-grid">
-              <article><span>Purpose</span><h3>Pass down a way of thinking.</h3></article>
-              <article><span>Mission</span><h3>Help people preserve, connect, and pass forward wisdom, so those who come after inherit a stronger starting point.</h3></article>
-              <article><span>North Star</span><h3>Strengthen the starting point for someone who comes after.</h3></article>
+              <article><span>01 · The Way</span><h3>Receive a stronger starting point.</h3><p>Stories, principles, questions, tools, relationships, mistakes, discoveries, and accumulated learning.</p></article>
+              <article><span>02 · Your Way</span><h3>Make the inheritance your own.</h3><p>Keep what helps. Question what does not. Test it against your context, evidence, responsibilities, and lived experience.</p></article>
+              <article><span>03 · The Way Forward</span><h3>Add what you learn.</h3><p>Carry forward what proved useful, correct what no longer serves, create what is missing, and make the learning available to others.</p></article>
             </div>
             <blockquote className="trilogy-map-quote">Each generation should inherit a stronger starting point, not a narrower future.</blockquote>
-            <div className="section-link"><Link className="text-link" href="/the-way/">Explore The Way →</Link></div>
+            <div className="section-link"><Link className="text-link" href="/the-way/">Read the constitution of The Way →</Link></div>
           </div>
         </section>
 
         <section className="section shared-wisdom-home">
           <div className="container shared-wisdom-home-grid">
             <div>
-              <div className="eyebrow bronze">Letters from Darren</div>
-              <h2>Things I am still learning.</h2>
-              <p className="lead">Books hold developed bodies of thought. Letters make room for ideas that are still moving: a conversation, a story, a question, a failure, an unexpected connection, or something I understand differently now than I did before.</p>
-              <p>The Letters are meant to be useful without pretending to be final. Take what helps. Question what does not. Improve what you can.</p>
+              <div className="eyebrow bronze">The Dang Genome</div>
+              <h2>The living body beneath the philosophy.</h2>
+              <p className="lead">The Way is the philosophical root. The Dang Genome is the connected body of ideas, stories, lessons, books, letters, frameworks, relationships, and contributions through which that philosophy can be explored and expanded.</p>
+              <p>DarrenDang.com is the public experience layer. Dang OS privately governs provenance, permissions, review, privacy, and publication.</p>
               <div className="actions">
-                <Link className="button button-dark" href="/letters/why-these-letters/">Read the introduction</Link>
-                <Link className="text-link" href="/letters/">Explore all Letters →</Link>
+                <Link className="button button-dark" href="/genome/">How the Genome works</Link>
+                <Link className="text-link" href="/contribute/">Contribute to The Way Forward →</Link>
               </div>
             </div>
             <div className="shared-wisdom-principles">
-              <article><span>STORY</span><strong>Begin with something real.</strong><p>An experience gives the idea human stakes.</p></article>
-              <article><span>INSIGHT</span><strong>Ask what changed.</strong><p>The useful lesson is often the shift in judgment.</p></article>
-              <article><span>HANDOFF</span><strong>Leave room for revision.</strong><p>A lesson should become someone else&apos;s starting point, not their script.</p></article>
+              <article><span>EXPLORE</span><strong>Ideas</strong><p>Durable principles and questions connected to the stories and artifacts that shaped them.</p></article>
+              <article><span>DISCOVER</span><strong>Books & Letters</strong><p>Developed bodies of thought and ongoing reflections still being tested.</p></article>
+              <article><span>CONTRIBUTE</span><strong>Shared Wisdom</strong><p>New stories, lessons, corrections, and connections preserved with their source intact.</p></article>
             </div>
           </div>
         </section>
@@ -142,9 +136,9 @@ export default function Home() {
         <section className="section worldview-section">
           <div className="container worldview-grid">
             <div>
-              <div className="eyebrow bronze">Ideas worth carrying forward</div>
+              <div className="eyebrow bronze">Ideas</div>
               <h2>The useful ones rarely stay in one part of life.</h2>
-              <p className="lead">Some ideas began in technology or public institutions. Some came from family, failure, education, or people I did not expect to teach me. The deeper test is whether an idea helps us see a choice, system, relationship, or responsibility more clearly.</p>
+              <p className="lead">Some ideas began in technology or public institutions. Some came from family, failure, education, or people Darren did not expect to teach him. The deeper test is whether an idea helps us see a choice, system, relationship, or responsibility more clearly.</p>
               <Link className="text-link" href="/ideas/">Explore the Ideas →</Link>
             </div>
             <div className="boundary-stack">
@@ -162,10 +156,10 @@ export default function Home() {
           <div className="container">
             <div className="section-intro compact">
               <div className="eyebrow bronze">Books · The Path Forward</div>
-              <h2>Three books. Three movements in The Way.</h2>
-              <p className="lead">Receive a map from what came before. Remain teachable enough to question and revise it. Then look beyond its boundaries and create something useful.</p>
+              <h2>Three major artifacts inside The Way.</h2>
+              <p className="lead">The trilogy remains The Path Forward: learning from what came before, staying teachable in real relationships, and seeing hidden connections well enough to create something useful for what comes next.</p>
             </div>
-            <blockquote className="trilogy-map-quote">The people who go before us give us a map. The people who come after us show us where the map is incomplete.</blockquote>
+            <blockquote className="trilogy-map-quote">A map helps you navigate. It should never become a cage.</blockquote>
             <div className="book-cards">
               {books.map((book) => (
                 <article className="book-card" key={book.title}>
@@ -174,13 +168,11 @@ export default function Home() {
                   </Link>
                   <div className="book-card-copy">
                     <div className="book-status">{book.status}</div>
-                    <div className="book-movement">{book.movement}</div>
+                    <div className="book-movement">{book.number} · {book.movement}</div>
                     <h3>{book.title}</h3>
                     {book.subtitle && <p className="book-card-sub">{book.subtitle}</p>}
                     <p className="book-card-hook">{book.question}</p>
                     <p>{book.copy}</p>
-                    <div className="map-action">{book.mapAction}</div>
-                    <div className="book-detail">{book.bridge}</div>
                     <div className="book-card-actions"><Link className="text-link" href={book.href}>Explore the book →</Link></div>
                   </div>
                 </article>
@@ -192,19 +184,19 @@ export default function Home() {
         <section className="section shared-wisdom-home">
           <div className="container shared-wisdom-home-grid">
             <div>
-              <div className="eyebrow bronze">Shared Wisdom</div>
-              <h2>Wisdom does not belong to one person.</h2>
-              <p className="lead">Some lessons come from parents, children, colleagues, strangers, cultures, professions, failures, and lives very different from our own. The Way should grow by listening.</p>
-              <p>You can submit a reflection, story, lesson, or brief video for review. Selected contributions remain attributed to their source. Nothing publishes automatically, and publication does not turn someone else&apos;s wisdom into Darren&apos;s canon.</p>
+              <div className="eyebrow bronze">Letters from Darren</div>
+              <h2>Wisdom in motion.</h2>
+              <p className="lead">Books hold developed bodies of thought. Letters make room for ideas that are still moving: a conversation, a story, a question, a failure, an unexpected connection, or something Darren understands differently now than he did before.</p>
+              <p>A Letter can offer a starting point without pretending to be the final word.</p>
               <div className="actions">
-                <Link className="button button-dark" href="/share/">Share What You&apos;ve Learned</Link>
-                <Link className="text-link" href="/shared-wisdom/">Explore Shared Wisdom →</Link>
+                <Link className="button button-dark" href="/letters/">Read Letters from Darren</Link>
+                <Link className="text-link" href="/letters/why-these-letters/">Why these Letters →</Link>
               </div>
             </div>
             <div className="shared-wisdom-principles">
-              <article><span>01</span><strong>Nothing publishes automatically.</strong><p>Every contribution is reviewed.</p></article>
-              <article><span>02</span><strong>Authorship stays visible.</strong><p>A contributor&apos;s story remains the contributor&apos;s story.</p></article>
-              <article><span>03</span><strong>Useful beats numerous.</strong><p>The collection grows through editorial judgment, not volume.</p></article>
+              <article><span>STORY</span><strong>Begin with something real.</strong><p>Experience gives the idea stakes and context.</p></article>
+              <article><span>REFLECTION</span><strong>Ask what changed.</strong><p>The useful lesson is often the shift in judgment.</p></article>
+              <article><span>FREEDOM</span><strong>Leave room for revision.</strong><p>A lesson should become someone else&apos;s starting point, not their script.</p></article>
             </div>
           </div>
         </section>
@@ -212,37 +204,40 @@ export default function Home() {
         <section className="section genome-purpose-home">
           <div className="container">
             <div className="section-intro compact">
-              <div className="eyebrow bronze">The Dang Genome</div>
-              <h2>A living legacy, not a static archive.</h2>
-              <p className="lead">Stories connect to lessons. Lessons become ideas. Ideas appear in Letters, books, talks, frameworks, papers, and media. Other people add what life has taught them. New experience challenges old assumptions. The Genome preserves those relationships without pretending every item is equally final—or equally public.</p>
+              <div className="eyebrow bronze">The Way Forward</div>
+              <h2>The reader is not only an audience.</h2>
+              <p className="lead">The reader journey moves from curiosity to connection, discovery, transformation, contribution, and stewardship. A living body of wisdom should be able to receive new experience without confusing someone else&apos;s contribution with Darren&apos;s canon.</p>
             </div>
             <div className="system-arc">
-              <article><span>01</span><div className="book-movement">EXPERIENCE</div><h3>Notice what life teaches.</h3><p>People, events, decisions, failures, and relationships create the raw material.</p></article>
-              <article><span>02</span><div className="book-movement">CONNECT</div><h3>Find the lesson and relationship.</h3><p>Stories, ideas, frameworks, and shared wisdom gain meaning through context and provenance.</p></article>
-              <article><span>03</span><div className="book-movement">PASS FORWARD</div><h3>Make it useful to someone else.</h3><p>Publication is intentional. The aim is a stronger starting point, not more content.</p></article>
+              <article><span>01</span><div className="book-movement">CURIOSITY → DISCOVERY</div><h3>Find something worth testing.</h3><p>Enter through an idea, story, Letter, book, framework, or question and follow the relationships around it.</p></article>
+              <article><span>02</span><div className="book-movement">TRANSFORMATION</div><h3>Make it part of Your Way.</h3><p>Apply what is useful in your own context rather than reproducing someone else&apos;s conclusions.</p></article>
+              <article><span>03</span><div className="book-movement">CONTRIBUTION → STEWARDSHIP</div><h3>Add what life taught you.</h3><p>Share a story, lesson, correction, question, or new connection for review and possible preservation.</p></article>
             </div>
-            <div className="section-link"><Link className="text-link" href="/genome/">How The Dang Genome works →</Link></div>
+            <div className="actions">
+              <Link className="button button-dark" href="/contribute/">Contribute to The Way Forward</Link>
+              <Link className="text-link" href="/shared-wisdom/">Explore Shared Wisdom →</Link>
+            </div>
           </div>
         </section>
 
         <section className="section dots-feature">
           <div className="container dots-feature-grid">
             <div>
-              <div className="eyebrow">One important method inside the ecosystem</div>
+              <div className="eyebrow">A methodology inside the ecosystem</div>
               <h2>D.O.T.S. is a way of seeing problems.</h2>
               <p className="lead-light">Collect dots. See past the label. Find the structure. Connect what others keep separate. Transfer what fits. Create something new.</p>
-              <p>D.O.T.S. is not The Way itself. It is one method for learning across boundaries and seeing possibilities that a familiar label may hide.</p>
+              <p>D.O.T.S. helps The Way evolve. It is not the philosophical layer above The Way.</p>
               <div className="actions">
                 <Link className="button button-light" href="/dots/">Explore D.O.T.S.</Link>
                 <Link className="text-link light" href="/books/dots/">Explore Book 3 →</Link>
               </div>
             </div>
             <div className="perception-panel">
-              <div><small>LABEL</small><strong>What category is this?</strong><p>The label can narrow where we look.</p></div>
+              <div><small>COLLECT</small><strong>What useful dots exist?</strong><p>Experience and learning widen the available field.</p></div>
               <span>→</span>
-              <div><small>STRUCTURE</small><strong>What kind of problem is underneath?</strong><p>Structure reveals transferable patterns.</p></div>
+              <div><small>CONNECT</small><strong>What structure links them?</strong><p>Structural similarity can cross familiar domain boundaries.</p></div>
               <span>→</span>
-              <div><small>CONNECTION</small><strong>Where else has this problem appeared?</strong><p>A larger search space creates new possibilities.</p></div>
+              <div><small>CREATE</small><strong>What does this context require?</strong><p>The goal is an adapted response, not mechanical copying.</p></div>
             </div>
           </div>
         </section>
@@ -265,13 +260,13 @@ export default function Home() {
         <section className="section system-section">
           <div className="container">
             <div className="section-intro compact">
-              <div className="eyebrow bronze">Your turn</div>
-              <h2>Take what is useful. Carry it farther.</h2>
-              <p className="lead">Read a Letter. Follow an idea. Share something life taught you. The point is not to preserve Darren&apos;s conclusions unchanged. The point is to strengthen the starting point for whoever comes next.</p>
+              <div className="eyebrow bronze">Your Way</div>
+              <h2>Take what is useful. Make it your own. Add what you learn.</h2>
+              <p className="lead">The point is not to preserve Darren&apos;s conclusions unchanged. It is to help each person start stronger, remain free to choose, and leave something useful for whoever comes next.</p>
             </div>
             <div className="actions">
-              <Link className="button button-dark" href="/letters/">Read Letters from Darren</Link>
-              <Link className="text-link" href="/share/">Share what you&apos;ve learned →</Link>
+              <Link className="button button-dark" href="/the-way/">Explore The Way</Link>
+              <Link className="text-link" href="/contribute/">Contribute to The Way Forward →</Link>
             </div>
           </div>
         </section>
