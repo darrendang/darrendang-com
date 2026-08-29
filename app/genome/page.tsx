@@ -51,7 +51,7 @@ export default function GenomePage(){
         <article><h3>Books</h3><p>Major artifacts where connected ideas are developed into sustained bodies of thought.</p><Link className="text-link" href="/books/">Explore Books →</Link></article>
         <article><h3>Letters</h3><p>Ongoing reflections that preserve voice, context, unfinished questions, and learning still in motion.</p><Link className="text-link" href="/letters/">Read Letters →</Link></article>
         <article><h3>D.O.T.S.</h3><p>A methodology inside the ecosystem for seeing structural relationships and creating adapted responses.</p><Link className="text-link" href="/dots/">Explore D.O.T.S. →</Link></article>
-        <article><h3>Contributions</h3><p>Stories, lessons, questions, corrections, and shared wisdom from other people—kept distinct in provenance and connected where the learning is real.</p><Link className="text-link" href="/contribute/">Contribute →</Link></article>
+        <article><h3>Contributions</h3><p>Stories, lessons, questions, corrections, and shared wisdom from other people—kept distinct in provenance and connected where the learning is real.</p><Link className="text-link" href="/contribute/">Pass something forward →</Link></article>
       </div>
     </section>
 
@@ -63,10 +63,10 @@ export default function GenomePage(){
     </section>
 
     <section className="genome-invitation">
-      <div className="eyebrow bronze">The Way Forward</div>
+      <div className="eyebrow bronze">Pass It Forward</div>
       <h2>What have you learned that may help someone who comes after you?</h2>
       <p className="lead">A living Genome should be able to receive new experience without confusing contribution with canon. Share a reflection, story, lesson, question, correction, alternate perspective, or new connection for private editorial review.</p>
-      <div className="actions"><Link className="button button-dark" href="/contribute/">Contribute to The Way Forward</Link><Link className="text-link" href="/shared-wisdom/">Explore Shared Wisdom →</Link></div>
+      <div className="actions"><Link className="button button-dark" href="/contribute/">Pass Something Forward</Link><Link className="text-link" href="/the-way-forward/">The Way Forward is your direction →</Link></div>
     </section>
   </InteriorPage>
 }
