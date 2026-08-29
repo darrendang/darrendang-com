@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 import { BookFilm } from "@/components/BookFilm";
+import { ConnectedDots } from "@/components/ConnectedDots";
 
 export const metadata = {
   title: "D.O.T.S. — Book 3",
@@ -169,6 +170,17 @@ export default function DotsBook() {
         <p>Look beneath the label and the structure also includes allocation, uncertainty, evidence, governance, capability, trust, and rebalancing. That opens a larger search space—while still requiring judgment about which analogies genuinely transfer.</p>
         <Link className="text-link" href="/papers/from-ai-experiments-to-institutional-capability/">Read From AI Experiments to Institutional Capability →</Link>
       </section>
+
+      <ConnectedDots
+        intro="Book 3 sits at the creation edge of the trilogy, but the method depends on dots collected from earlier experience, unexpected teachers, applied work, and the reader's own context."
+        question="What problem in your life or work may be described too narrowly by the label you currently use for it?"
+        connections={[
+          { label: "METHOD", title: "D.O.T.S. — the public model", copy: "Explore the method as a reusable way of seeing problems beyond the book manuscript.", href: "/dots/" },
+          { label: "BOOK 1 CASE", title: "Connect the Dots", copy: "A real cross-domain planning case that shows the behavior before the larger method was fully named.", href: "/books/for-those-who-come-after-us/connect-the-dots/" },
+          { label: "BOOK 2", title: "Wisdom Has No Rank", copy: "Book 2 widens who can teach us. Book 3 widens where useful ideas can come from.", href: "/books/wisdom-has-no-rank/" },
+          { label: "APPLIED CASE", title: "From AI Experiments to Institutional Capability", copy: "See D.O.T.S.-style structural transfer applied to AI strategy, evidence, governance, capability, and trust.", href: "/papers/from-ai-experiments-to-institutional-capability/" },
+        ]}
+      />
 
       <aside className="development-status-note">
         <strong>Development status</strong>

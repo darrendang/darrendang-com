@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 import { BookFilm } from "@/components/BookFilm";
+import { ConnectedDots } from "@/components/ConnectedDots";
 
 export const metadata = {
   title: "Wisdom Has No Rank",
@@ -159,6 +160,17 @@ export default function WisdomHasNoRank() {
           <Link className="text-link" href="/books/">Explore all three books →</Link>
         </div>
       </section>
+
+      <ConnectedDots
+        intro="Book 2 is where the inherited map becomes explicitly revisable. Its stories connect the trilogy, the constitutional principle of teachability, other people's wisdom, and the reader's own willingness to change."
+        question="Who might understand part of your current terrain better than you do—even if they have less age, rank, status, or experience overall?"
+        connections={[
+          { label: "IDEA", title: "Wisdom Has No Rank", copy: "Explore the durable idea beneath the book, including what the principle means and what it does not mean.", href: "/ideas/wisdom-has-no-rank/" },
+          { label: "BOOK 1", title: "For Those Who Come After Us", copy: "Book 1 supplies the starting map. Book 2 asks whether you can remain teachable enough to revise it.", href: "/books/for-those-who-come-after-us/" },
+          { label: "BOOK 3", title: "D.O.T.S.", copy: "Once wisdom can arrive from any rank, the next question is whether useful ideas can arrive from any discipline or domain.", href: "/books/dots/" },
+          { label: "OTHER VOICES", title: "Shared Wisdom", copy: "The public Genome preserves selected lessons from lives other than Darren's without erasing their authorship.", href: "/shared-wisdom/" },
+        ]}
+      />
 
       <aside className="development-status-note">
         <strong>Editorial status</strong>
