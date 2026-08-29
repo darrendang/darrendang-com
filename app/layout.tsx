@@ -13,10 +13,10 @@ import "./genome.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://darrendang.com"),
   title: { default: "Darren Dang | The Way", template: "%s | Darren Dang" },
-  description: "The public expression of The Way: ideas, stories, Letters from Darren, books, and shared wisdom preserved, connected, tested, improved, and passed forward so those who come after inherit a stronger starting point.",
+  description: "The public home where people can encounter The Way, explore the Dang Genome, develop Your Way, and contribute to The Way Forward.",
   openGraph: {
     title: "Darren Dang — The Way",
-    description: "Pass down a way of thinking. Explore Letters from Darren, ideas, books, The Dang Genome, and shared wisdom.",
+    description: "The Way → Your Way → The Way Forward. Explore ideas, stories, books, Letters from Darren, the Dang Genome, and contributions worth carrying forward.",
     type: "website",
     url: "https://darrendang.com",
   },
