@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
+import { ConnectedDots } from "@/components/ConnectedDots";
 
 export const metadata: Metadata = {
   title: "Why These Letters",
@@ -48,9 +49,20 @@ export default function WhyTheseLettersPage() {
               <p>— Darren</p>
             </article>
 
+            <ConnectedDots
+              intro="This introductory Letter sits between the constitutional philosophy, the first book, the living-legacy idea, and the continuing practice of revising what we think we know."
+              question="What belief, lesson, or story in your own life deserves to stay revisable rather than becoming a finished answer?"
+              connections={[
+                { label: "THE WAY", title: "A stronger starting point, not a finished script.", copy: "See the philosophy and constitutional guardrails that give the Letters their purpose.", href: "/the-way/" },
+                { label: "BOOK 1", title: "For Those Who Come After Us", copy: "The book that began with the question of what thinking might still be useful when Darren is no longer there to answer directly.", href: "/books/for-those-who-come-after-us/" },
+                { label: "IDEA", title: "Living Legacy", copy: "Preserve what matters without freezing it in place or turning stewardship into ownership of the future.", href: "/ideas/living-legacy/" },
+                { label: "TEACHABILITY", title: "Wisdom Has No Rank", copy: "New evidence and unexpected teachers are part of why a Letter can remain open to correction.", href: "/ideas/wisdom-has-no-rank/" },
+              ]}
+            />
+
             <div className="actions" style={{ marginTop: "3rem" }}>
               <Link className="button button-dark" href="/letters/">All Letters</Link>
-              <Link className="text-link" href="/share/">Share what you&apos;ve learned →</Link>
+              <Link className="text-link" href="/explore/">Explore more connected dots →</Link>
             </div>
           </div>
         </section>
