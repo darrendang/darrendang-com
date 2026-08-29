@@ -3,21 +3,21 @@ import { InteriorPage } from '@/components/InteriorPage';
 
 export const metadata = {
   title: 'Shared Wisdom',
-  description: 'A curated collection of contributions to The Way Forward: lessons, stories, reflections, questions, and lived experience preserved with provenance.'
+  description: 'A curated collection of lessons, stories, reflections, questions, and lived experience that people have chosen to pass forward with provenance intact.'
 };
 
 export default function SharedWisdomPage(){
-  return <InteriorPage eyebrow="The Way Forward · Shared Wisdom" title="What others are passing forward." wide>
+  return <InteriorPage eyebrow="Pass It Forward · Shared Wisdom" title="What others are passing forward." wide>
     <link rel="stylesheet" href="/shared-wisdom-public.css" />
 
     <div className="shared-intro-grid">
       <div>
         <p className="lead">Wisdom does not belong to one person. Some lessons come from parents or children. Some from work, failure, service, migration, friendship, culture, faith, loss, rebuilding, or a life very different from our own.</p>
-        <p>Shared Wisdom is the public collection of selected contributions to The Way Forward. Every contribution retains its own provenance. A contributor&apos;s story does not become Darren&apos;s story or Darren&apos;s canon simply because it appears here.</p>
+        <p>Shared Wisdom is the public collection of selected lessons people have chosen to pass forward after lived experience and reflection. Every contribution retains its own provenance. A contributor&apos;s story does not become Darren&apos;s story or Darren&apos;s canon simply because it appears here.</p>
       </div>
       <aside className="curation-card">
         <strong>Curated, not open comments.</strong>
-        <p>Nothing appears automatically. Contributions pass private editorial and publishing review for usefulness, permission, privacy, attribution, clarity, context, and whether there is a real lesson worth preserving.</p>
+        <p>Nothing appears automatically. Contributions pass private editorial review, contributor approval of the proposed public version, and final publishing review for usefulness, privacy, attribution, clarity, context, and whether there is a real lesson worth preserving.</p>
       </aside>
     </div>
 
@@ -49,10 +49,10 @@ export default function SharedWisdomPage(){
     </section>
 
     <section className="shared-callout">
-      <div className="eyebrow bronze">The Way Forward</div>
+      <div className="eyebrow bronze">Pass It Forward</div>
       <h2>One story can become someone else&apos;s stronger starting point.</h2>
       <p className="lead">If life taught you something worth preserving, begin with the contribution guide and then submit it for private review.</p>
-      <div className="actions"><Link className="button button-dark" href="/contribute/">How to contribute</Link><Link className="text-link" href="/share/">Submit directly →</Link></div>
+      <div className="actions"><Link className="button button-dark" href="/contribute/">How to pass it forward</Link><Link className="text-link" href="/share/">Submit for private review →</Link></div>
     </section>
 
     <script src="/shared-wisdom-public.js" defer></script>

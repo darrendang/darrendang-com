@@ -9,14 +9,15 @@ import "./book-visuals.css";
 import "./book-excerpts.css";
 import "./book2-preview.css";
 import "./genome.css";
+import "./way-ux.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://darrendang.com"),
   title: { default: "Darren Dang | The Way", template: "%s | Darren Dang" },
-  description: "The public home where people can encounter The Way, explore the Dang Genome, develop Your Way, and contribute to The Way Forward.",
+  description: "The Way → Your Way → The Way Forward. Learn from what came before, make it your own, choose what comes next, and pass forward what life teaches you.",
   openGraph: {
     title: "Darren Dang — The Way",
-    description: "The Way → Your Way → The Way Forward. Explore ideas, stories, books, Letters from Darren, the Dang Genome, and contributions worth carrying forward.",
+    description: "A stronger starting point. The freedom to go farther. Explore The Way, the Dang Genome, Your Way, The Way Forward, Letters from Darren, The Path Forward, and Shared Wisdom.",
     type: "website",
     url: "https://darrendang.com",
   },

@@ -1,0 +1,11 @@
+.constitution-intro{margin-bottom:50px}
+.constitution-article{max-width:900px;margin:0 auto;padding:78px 0 20px;border-top:1px solid var(--sand)}
+.constitution-article:first-of-type{border-top:0}
+.constitution-article h2{font-size:clamp(40px,4vw,56px)}
+.constitution-article h3{font-family:'Cormorant Garamond',serif;font-size:31px;line-height:1.15;margin:42px 0 14px}
+.constitution-article p{max-width:820px}
+.constitution-article ul,.constitution-article ol{max-width:760px;padding-left:25px;color:var(--muted)}
+.constitution-article li{margin:5px 0}
+.constitution-article .trilogy-map-quote{margin:38px 0}
+.constitution-article+.constitution-article{margin-top:30px}
+@media(max-width:700px){.constitution-article{padding-top:58px}.constitution-article h3{font-size:28px}}
