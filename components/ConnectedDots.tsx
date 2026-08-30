@@ -37,8 +37,8 @@ export function ConnectedDots({ connections, question, intro }: ConnectedDotsPro
         <h2 id="for-your-way-title">{question}</h2>
         <p>The point is not to inherit the conclusion unchanged. Use the question to test the idea against your own evidence, relationships, responsibilities, and lived experience.</p>
         <div className="actions">
-          <Link className="button button-dark" href="/your-way/">Reflect through Your Way</Link>
-          <Link className="text-link" href="/contribute/">Pass something forward →</Link>
+          <Link className="button button-dark" href="/use-the-way/">Use the Five Movements</Link>
+          <Link className="text-link" href="/your-way/">Reflect through Your Way →</Link>
         </div>
       </section>
     </>

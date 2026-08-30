@@ -19,13 +19,13 @@ export default function ExplorePage() {
     <InteriorPage eyebrow="Explore" title="Start with the question that is alive for you." wide>
       <div className="genome-lead-grid">
         <div>
-          <p className="lead">The Dang Genome is connected by meaning, not by the folder a piece of content happens to live in. You can enter through a story, Letter, book, idea, framework, question, or contribution and follow the relationships outward.</p>
+          <p className="lead">The public Genome is connected by meaning, not by the folder a piece of content happens to live in. You can enter through a story, Letter, book, idea, framework, question, disagreement, or method and follow the relationships outward.</p>
           <p>You do not need to learn the architecture before something becomes useful. Begin where your curiosity already is.</p>
         </div>
         <aside className="steward-card">
-          <div className="eyebrow bronze">Reader journey</div>
-          <h2>Curiosity → Connection → Discovery → Transformation</h2>
-          <p>Exploration matters when it moves beyond consuming information and helps you see a relationship, question an assumption, or recognize something differently in your own life.</p>
+          <div className="eyebrow bronze">A possible human journey</div>
+          <h2>Curiosity → Connection → Discovery → Transformation → Contribution → Stewardship</h2>
+          <p>This is not a required sequence. You may enter anywhere, move in either direction, pause, disagree, contribute early, or simply take what is useful and leave.</p>
         </aside>
       </div>
 
@@ -57,10 +57,10 @@ export default function ExplorePage() {
       </section>
 
       <section className="genome-boundary">
-        <div className="eyebrow bronze">Follow the connections</div>
-        <h2>A piece of knowledge becomes more useful when you can see what shaped it and what it shaped next.</h2>
-        <p>Over time, each major page will expose its related stories, ideas, Letters, book passages, people, alternate perspectives, and contributions. That public relationship layer is how the Genome becomes something you can experience rather than merely read about.</p>
-        <div className="actions"><Link className="button button-dark" href="/genome/">How the Genome works</Link><Link className="text-link" href="/your-way/">Then make it Your Way →</Link></div>
+        <div className="eyebrow bronze">Use what you find</div>
+        <h2>Exploration becomes more useful when it meets your own context.</h2>
+        <p>The Five Movements offer five pocket questions for receiving, examining, connecting, practicing, and eventually passing forward what remains useful.</p>
+        <div className="actions"><Link className="button button-dark" href="/use-the-way/">Use the Five Movements</Link><Link className="text-link" href="/genome/">How the Genome works →</Link></div>
       </section>
     </InteriorPage>
   );

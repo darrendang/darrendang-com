@@ -12,7 +12,7 @@ export default function TheWayForwardPage() {
       <div className="genome-lead-grid">
         <div>
           <p className="lead">The Way Forward is the direction you choose when inherited wisdom meets present reality. It is not one universal definition of progress, and it is not the same thing as contributing content to this website.</p>
-          <p>Your direction may involve building, healing, learning, serving, changing course, strengthening a relationship, becoming more independent, becoming more connected, pursuing greater achievement, choosing less, letting go, or beginning again.</p>
+          <p>Your direction may involve building, healing, learning, serving, changing course, strengthening a relationship, becoming more independent, becoming more connected, pursuing greater achievement, choosing less, waiting, letting go, or beginning again.</p>
         </div>
         <aside className="steward-card">
           <div className="eyebrow bronze">The test</div>
@@ -40,22 +40,22 @@ export default function TheWayForwardPage() {
           <article><h3>Change direction</h3><p>Leave a path that no longer fits simply because it once made sense or others still expect it.</p></article>
           <article><h3>Deepen</h3><p>Become more capable, faithful, present, skilled, connected, disciplined, or thoughtful in something that already matters.</p></article>
           <article><h3>Choose less</h3><p>Progress can mean removing, simplifying, slowing down, declining an opportunity, or protecting what matters from unnecessary expansion.</p></article>
-          <article><h3>Begin again</h3><p>A stronger starting point does not eliminate failure. It can make rebuilding more informed, more humane, and more possible.</p></article>
+          <article><h3>Wait</h3><p>Responsible non-action can mean listening, gathering evidence, preserving optionality, letting another person choose, or revisiting later.</p></article>
         </div>
       </section>
 
       <section className="genome-boundary">
         <div className="eyebrow bronze">The recursive model</div>
-        <h2>The Way Forward can become part of someone else&apos;s starting point.</h2>
-        <p>When you act, reality answers. When you reflect on what happened, experience can become learning. If that learning is worth preserving, you may eventually pass it forward as a story, correction, question, practice, discovery, or new connection.</p>
-        <p>That contribution is a later movement. The Way Forward begins with living, not publishing.</p>
+        <h2>What you learn may eventually become part of someone else&apos;s starting point.</h2>
+        <p>When you act—or deliberately do not act—reality answers. Reflection can turn consequence into learning. Some learning may later be worth preserving as a story, correction, question, practice, discovery, or new connection.</p>
+        <p>Pass Forward is a separate, optional act. The Way Forward begins with living, not publishing.</p>
       </section>
 
       <section className="genome-invitation">
-        <div className="eyebrow bronze">Pass it forward</div>
-        <h2>What did life teach you that may help someone else begin stronger?</h2>
-        <p className="lead">Contribution is optional. When something has been lived, tested, and reflected upon long enough to become useful to another person, the public Genome can preserve selected learning with attribution, consent, and context intact.</p>
-        <div className="actions"><Link className="button button-dark" href="/contribute/">Pass Something Forward</Link><Link className="text-link" href="/shared-wisdom/">Explore Shared Wisdom →</Link></div>
+        <div className="eyebrow bronze">Use The Way</div>
+        <h2>Need a practice for thinking through the decision?</h2>
+        <p className="lead">Receive, Examine, Connect, Practice, and Pass Forward can help you work the question without deciding the answer for you.</p>
+        <div className="actions"><Link className="button button-dark" href="/use-the-way/">Use the Five Movements</Link><Link className="text-link" href="/contribute/">Understand Pass Forward →</Link></div>
       </section>
     </InteriorPage>
   );

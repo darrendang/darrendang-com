@@ -23,12 +23,13 @@ export function SiteFooter() {
       <div className="container footer-grid genome-footer">
         <div>
           <div className="wordmark">Darren Dang</div>
-          <p>The public experience layer for The Way: begin with inherited wisdom, make it your own, choose The Way Forward, and pass forward what life teaches you.</p>
+          <p>The public experience layer for The Way: learn from what came before, use the Five Movements, develop Your Way, choose The Way Forward, and pass forward what life teaches without narrowing another person&apos;s future.</p>
           <p className="footer-independence">Independent ideas and writing. Views expressed here are Darren&apos;s own and do not necessarily represent OCERS or any other institution with which he is affiliated.</p>
         </div>
         <div>
           <strong>Begin & Explore</strong>
           <Link href="/the-way/">The Way</Link>
+          <Link href="/use-the-way/">Use The Way</Link>
           <Link href="/the-way/constitution/">The Constitution</Link>
           <Link href="/explore/">Explore the Genome</Link>
           <Link href="/letters/">Letters from Darren</Link>

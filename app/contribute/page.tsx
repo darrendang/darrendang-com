@@ -3,49 +3,50 @@ import { InteriorPage } from '@/components/InteriorPage';
 
 export const metadata = {
   title: 'Pass It Forward',
-  description: 'Pass forward a story, lesson, question, correction, perspective, or new connection for private editorial review and possible preservation.'
+  description: 'Understand contribution and stewardship in The Way: add stories, corrections, questions, practices, counterexamples, connections, and creations without surrendering ownership or agency.'
 };
 
 export default function ContributePage(){
-  return <InteriorPage eyebrow="Pass It Forward" title="What has life taught you that may help someone who comes after you?" wide>
+  return <InteriorPage eyebrow="Pass It Forward" title="What might your lived experience add for someone who comes after you?" wide>
     <div className="genome-lead-grid">
       <div>
-        <p className="lead">The Way Forward begins with the direction you choose and live. Contribution comes later, when experience has taught you something specific enough that it may become a stronger starting point for someone else.</p>
-        <p>Your contribution remains yours. Submission does not make it Darren&apos;s idea, does not make it canon, and does not publish it automatically. The purpose is stewardship: preserve useful learning with its source and context intact.</p>
+        <p className="lead">Contribution is optional. It is what may happen when lived experience becomes specific enough to preserve, correct, question, connect, or offer as a stronger starting point for someone else.</p>
+        <p>Your contribution remains yours. Offering something does not make it Darren&apos;s idea, does not make it canon, does not transfer ownership, and does not authorize publication automatically.</p>
         <p>If you are still deciding what your own next direction requires, begin with <Link className="text-link" href="/the-way-forward/">The Way Forward</Link>.</p>
       </div>
       <aside className="steward-card">
-        <div className="eyebrow bronze">Reader journey</div>
+        <div className="eyebrow bronze">A possible human journey</div>
         <h2>Curiosity → Connection → Discovery → Transformation → Contribution → Stewardship</h2>
-        <p>Contribution is not an engagement tactic. It is the point where lived and reflected experience can become part of a stronger inheritance for someone else.</p>
+        <p>This is a map of relationship and responsibility—not a required sequence, score, or ladder of people.</p>
       </aside>
     </div>
 
     <section className="genome-purpose" aria-labelledby="contribution-types-title">
-      <div className="eyebrow bronze">What you can pass forward</div>
-      <h2 id="contribution-types-title">Add something specific enough to be useful.</h2>
+      <div className="eyebrow bronze">What contribution can mean</div>
+      <h2 id="contribution-types-title">Add knowledge or perspective without surrendering your story.</h2>
       <div className="purpose-grid">
-        <article><span>Story or lesson</span><h3>What happened, and what changed your thinking?</h3><p>Specific experience gives a lesson context, limits, and human consequence.</p></article>
-        <article><span>Question or correction</span><h3>Where might an inherited idea be incomplete?</h3><p>The Way should become more accurate and more useful when new evidence or perspective deserves to change it.</p></article>
-        <article><span>New connection</span><h3>What dots belong together that others may keep separate?</h3><p>A contribution can connect an existing idea to another domain, experience, culture, or problem structure.</p></article>
+        <article><span>Experience</span><h3>Story · Reflection · Practice</h3><p>What happened, what changed your thinking, and what did living it reveal?</p></article>
+        <article><span>Challenge</span><h3>Correction · Question · Counterexample</h3><p>Where might an inherited idea, Darren&apos;s interpretation, or existing public understanding be incomplete?</p></article>
+        <article><span>Creation</span><h3>Connection · Creation · Source Referral</h3><p>What new relationship, artifact, method, source, or perspective may help someone see more clearly?</p></article>
       </div>
     </section>
 
     <section className="shared-wisdom-home">
       <div className="shared-wisdom-home-grid">
         <div>
-          <div className="eyebrow bronze">Private review first</div>
-          <h2>Stewardship before publication.</h2>
-          <p className="lead">Every submission enters a private review process. Nothing publishes automatically. If something is selected, the proposed public version should return to the contributor for explicit publication approval before it appears as Shared Wisdom.</p>
+          <div className="eyebrow bronze">Production gate</div>
+          <h2>Rich public contribution intake is temporarily closed.</h2>
+          <p className="lead">The earlier private-review workflow remains preserved, but the public intake surface is paused while the governance catches up to the newly canonical Contribution Architecture 1.0.</p>
+          <p>Before reopening, the system must complete contribution permission, review, minor/vulnerable contributor, acceptance and safety, correction/representation challenge/withdrawal, storage and AI-analysis, public notice, and appropriate legal controls.</p>
           <div className="actions">
-            <Link className="button button-dark" href="/share/">Submit for Private Review</Link>
-            <Link className="text-link" href="/shared-wisdom/">Explore Shared Wisdom →</Link>
+            <Link className="button button-dark" href="/shared-wisdom/">Explore Shared Wisdom</Link>
+            <Link className="text-link" href="/use-the-way/">Use the Five Movements →</Link>
           </div>
         </div>
         <div className="shared-wisdom-principles">
-          <article><span>01</span><strong>Provenance stays visible.</strong><p>A contributor&apos;s story remains the contributor&apos;s story.</p></article>
-          <article><span>02</span><strong>Publication requires a second yes.</strong><p>Private review permission and public publication permission are separate decisions.</p></article>
-          <article><span>03</span><strong>Useful beats numerous.</strong><p>The Genome grows through judgment, not volume.</p></article>
+          <article><span>OWNERSHIP</span><strong>Contribution is not surrender.</strong><p>Submission must never silently transfer identity, authorship, or future control.</p></article>
+          <article><span>AUTHORITY</span><strong>Possession is not ownership.</strong><p>The system must distinguish who supplied material, who created or experienced it, what authority exists, and what uses are allowed.</p></article>
+          <article><span>PUBLICATION</span><strong>Canonization and publication are separate.</strong><p>A contribution can be useful, private, or canonical without becoming public.</p></article>
         </div>
       </div>
     </section>
@@ -53,8 +54,8 @@ export default function ContributePage(){
     <section className="genome-boundary">
       <div className="eyebrow bronze">The constitutional test</div>
       <h2>Does this help someone start stronger without narrowing their future?</h2>
-      <p>A contribution earns a place when it adds context, evidence, experience, a useful question, a meaningful correction, or a connection that helps another person see more clearly.</p>
-      <p>The goal is not agreement. The goal is responsible learning that can travel.</p>
+      <p>Disagreement with Darren, existing canon, family memory, community consensus, or AI must not reduce a contribution&apos;s eligibility for fair review. Correction and dissent are part of teachability.</p>
+      <p>The goal is not agreement. The goal is responsible learning that can travel with attribution, privacy, dignity, and freedom intact.</p>
     </section>
   </InteriorPage>
 }

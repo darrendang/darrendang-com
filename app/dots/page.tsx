@@ -27,6 +27,13 @@ export default function DotsPage() {
       <p>D.O.T.S. starts with a simple shift: do not let the label attached to a problem decide where you are allowed to look for answers. See past the label. Find the structure. Expand the search space. Transfer what fits. Create something new.</p>
     </section>
 
+    <section className="genome-boundary">
+      <div className="eyebrow bronze">Where this fits</div>
+      <h2>D.O.T.S. is one signature method within The Way—not The Way itself.</h2>
+      <p>D.O.T.S. is especially useful inside <strong>Connect</strong>, where the Five Movements ask what relationships, perspectives, structures, and consequences may be missing. It can also be useful on its own for professional, analytical, systems, and cross-disciplinary problems.</p>
+      <div className="actions"><Link className="button button-dark" href="/use-the-way/">Use the Five Movements</Link><Link className="text-link" href="/the-way/">How it connects to The Way →</Link></div>
+    </section>
+
     <section className="dots-perception-section">
       <div className="eyebrow bronze">The perceptual shift</div>
       <h2>LABEL → STRUCTURE → SEARCH SPACE</h2>
