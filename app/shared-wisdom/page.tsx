@@ -51,8 +51,8 @@ export default function SharedWisdomPage(){
     <section className="shared-callout">
       <div className="eyebrow bronze">Pass It Forward</div>
       <h2>One story can become someone else&apos;s stronger starting point.</h2>
-      <p className="lead">If life taught you something worth preserving, begin with the contribution guide and then submit it for private review.</p>
-      <div className="actions"><Link className="button button-dark" href="/contribute/">How to pass it forward</Link><Link className="text-link" href="/share/">Submit for private review →</Link></div>
+      <p className="lead">If life taught you something worth preserving, explore how contribution works. Rich public intake remains temporarily closed while the production gate completes legal review and final public notices.</p>
+      <div className="actions"><Link className="button button-dark" href="/contribute/">How to pass it forward</Link><Link className="text-link" href="/share/">Why intake is paused →</Link></div>
     </section>
 
     <script src="/shared-wisdom-public.js" defer></script>
