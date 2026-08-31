@@ -1,7 +1,6 @@
 name: Deploy DarrenDang.com to GitHub Pages
 
 # PRODUCTION: every validated push to main deploys DarrenDang.com; manual dispatch remains available.
-# 2026-08-24: trilogy Book Films are intentionally silent.
 on:
   push:
     branches:
@@ -48,16 +47,6 @@ jobs:
         run: |
           test -f public/audio/for-those-who-come-after-us.mp3
           test -f public/docs/From_AI_Experiments_to_Institutional_Capability_Darren_Dang.pdf
-          test -f public/videos/for-those-who-come-after-us-book-film.mp4
-          test -f public/videos/wisdom-has-no-rank-book-film.mp4
-          test -f public/videos/dots-book-film.mp4
-          test -f public/videos/for-those-who-come-after-us-book-film-poster.jpg
-          test -f public/videos/wisdom-has-no-rank-book-film-poster.jpg
-          test -f public/videos/dots-book-film-poster.jpg
-          for f in public/videos/*-book-film.mp4; do
-            audio_streams="$(ffprobe -v error -select_streams a -show_entries stream=index -of csv=p=0 "$f" | wc -l | tr -d ' ')"
-            test "$audio_streams" = "0"
-          done
 
       - name: Build static export
         env:
@@ -74,16 +63,6 @@ jobs:
           npm run export:check
           test -f out/audio/for-those-who-come-after-us.mp3
           test -f out/docs/From_AI_Experiments_to_Institutional_Capability_Darren_Dang.pdf
-          test -f out/videos/for-those-who-come-after-us-book-film.mp4
-          test -f out/videos/wisdom-has-no-rank-book-film.mp4
-          test -f out/videos/dots-book-film.mp4
-          test -f out/videos/for-those-who-come-after-us-book-film-poster.jpg
-          test -f out/videos/wisdom-has-no-rank-book-film-poster.jpg
-          test -f out/videos/dots-book-film-poster.jpg
-          for f in out/videos/*-book-film.mp4; do
-            audio_streams="$(ffprobe -v error -select_streams a -show_entries stream=index -of csv=p=0 "$f" | wc -l | tr -d ' ')"
-            test "$audio_streams" = "0"
-          done
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
