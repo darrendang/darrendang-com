@@ -3,7 +3,7 @@ import { InteriorPage } from "@/components/InteriorPage";
 
 export const metadata = {
   title: "Explore",
-  description: "Enter the public Dang Genome through the question, story, Letter, book, idea, or method that speaks to you.",
+  description: "Enter the public Dang Genome through a question, story, Letter, book, living idea, demonstrated practice, or method that speaks to you.",
 };
 
 const questions = [
@@ -19,7 +19,7 @@ export default function ExplorePage() {
     <InteriorPage eyebrow="Explore" title="Start with the question that is alive for you." wide>
       <div className="genome-lead-grid">
         <div>
-          <p className="lead">The public Genome is connected by meaning, not by the folder a piece of content happens to live in. You can enter through a story, Letter, book, idea, framework, question, disagreement, or method and follow the relationships outward.</p>
+          <p className="lead">The public Genome is connected by meaning, not by the folder a piece of content happens to live in. You can enter through a story, Letter, book, idea, framework, question, disagreement, case, or method and follow the relationships outward.</p>
           <p>You do not need to learn the architecture before something becomes useful. Begin where your curiosity already is.</p>
         </div>
         <aside className="steward-card">
@@ -44,16 +44,32 @@ export default function ExplorePage() {
       </section>
 
       <section className="genome-layers">
-        <div className="eyebrow bronze">Explore by form</div>
-        <h2>Different forms hold different kinds of learning.</h2>
+        <div className="eyebrow bronze">Expressions of The Way</div>
+        <h2>Different forms do different intellectual work.</h2>
+        <p className="lead">You do not need to choose a format first. But when you want to understand how the work fits together, these four expressions have distinct jobs.</p>
         <div className="layer-grid">
-          <article><h3>Letters from Darren</h3><p>Learning in motion: observations, stories, questions, changed judgments, and ideas still open to revision.</p><Link className="text-link" href="/letters/">Read Letters →</Link></article>
-          <article><h3>The Path Forward</h3><p>Three books that develop inheritance, reciprocal wisdom, and cross-domain creation into sustained bodies of thought.</p><Link className="text-link" href="/books/">Explore the books →</Link></article>
-          <article><h3>Ideas</h3><p>Durable intellectual nodes that recur across stories, books, talks, decisions, family life, technology, and institutions.</p><Link className="text-link" href="/ideas/">Explore Ideas →</Link></article>
-          <article><h3>D.O.T.S.</h3><p>A signature method inside The Way for seeing underlying structures, transferring carefully, and creating adapted responses.</p><Link className="text-link" href="/dots/">Explore D.O.T.S. →</Link></article>
-          <article><h3>Papers & Talks</h3><p>Applied expressions of the ideas in technology, AI, governance, leadership, institutions, and public service.</p><Link className="text-link" href="/papers/">Explore papers →</Link></article>
-          <article><h3>Shared Wisdom</h3><p>Selected lessons and stories from other people, preserved with their authorship and provenance intact.</p><Link className="text-link" href="/shared-wisdom/">Explore other voices →</Link></article>
+          <article><div className="book-movement">LIVED REFLECTION</div><h3>Letters from Darren</h3><p>Stories, questions, changed judgments, and lessons still unfolding. The most human entry point into The Way.</p><Link className="text-link" href="/letters/">Read Letters →</Link></article>
+          <article><div className="book-movement">PRESERVED WISDOM</div><h3>Books · The Path Forward</h3><p>Bounded works that preserve stories, principles, lessons, and methods that have matured enough to hold in durable form.</p><Link className="text-link" href="/books/">Explore the books →</Link></article>
+          <article><div className="book-movement">LIVING IDEAS</div><h3>The Way Papers</h3><p>Longer-form thinking that develops consequential ideas while leaving room for challenge, evidence, and revision.</p><Link className="text-link" href="/papers/">Explore papers →</Link></article>
+          <article><div className="book-movement">DEMONSTRATED PRACTICE</div><h3>The Way in Motion</h3><p>Cases that ask what actually happened when an idea met reality—including evidence, limits, consequences, and what changed afterward.</p><Link className="text-link" href="/the-way-in-motion/">Explore The Way in Motion →</Link></article>
         </div>
+      </section>
+
+      <section className="genome-layers">
+        <div className="eyebrow bronze">Ideas & methods</div>
+        <h2>Explore the connected thinking beneath the publications.</h2>
+        <div className="layer-grid">
+          <article><h3>Ideas</h3><p>Durable intellectual nodes that recur across stories, books, Letters, cases, decisions, family life, technology, and institutions.</p><Link className="text-link" href="/ideas/">Explore Ideas →</Link></article>
+          <article><h3>D.O.T.S.</h3><p>A signature way of seeing problems: deconstruct, observe, transfer, synthesize—then create something that fits the new context.</p><Link className="text-link" href="/dots/">Explore D.O.T.S. →</Link></article>
+          <article><h3>The Five Movements</h3><p>Portable questions for receiving, examining, connecting, practicing, and passing forward what remains useful.</p><Link className="text-link" href="/use-the-way/">Use The Way →</Link></article>
+        </div>
+      </section>
+
+      <section className="genome-boundary">
+        <div className="eyebrow bronze">Other voices</div>
+        <h2>The Way should not become one person talking forever.</h2>
+        <p>Shared Wisdom preserves selected lessons and stories from other people with their authorship and provenance intact. Difference, correction, and disagreement belong in a living body of learning.</p>
+        <div className="actions"><Link className="button button-dark" href="/shared-wisdom/">Explore Shared Wisdom</Link><Link className="text-link" href="/contribute/">How contribution works →</Link></div>
       </section>
 
       <section className="genome-boundary">

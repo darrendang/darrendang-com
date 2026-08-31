@@ -3,7 +3,7 @@ import { InteriorPage } from "@/components/InteriorPage";
 
 export const metadata = {
   title: "D.O.T.S. — A Way of Seeing Problems",
-  description: "D.O.T.S. is Darren Dang's way of seeing problems: move from label to structure, expand the search space, transfer what fits, and create something useful.",
+  description: "D.O.T.S. is Darren Dang's way of seeing problems: deconstruct the label, observe underlying structure, transfer carefully, synthesize for context, then create something useful.",
 };
 
 const labels = [
@@ -16,15 +16,16 @@ const sequence = [
   ["D", "Deconstruct", "What kind of problem is this underneath the label?"],
   ["O", "Observe", "Who else has faced a problem with the same underlying structure?"],
   ["T", "Transfer", "What principle actually travels—and where does the analogy stop?"],
-  ["S", "Synthesize", "What must change to create something useful in this context?"],
+  ["S", "Synthesize", "What must change so the transferred insight fits this context?"],
 ];
 
 export default function DotsPage() {
   return <InteriorPage eyebrow="D.O.T.S." title="A way of seeing problems." wide>
     <section className="dots-intro">
-      <p className="dots-line">Collect Dots. Connect Dots. Create Something New.</p>
+      <p className="dots-line">Deconstruct → Observe → Transfer → Synthesize → Create</p>
       <p className="lead">The world organizes knowledge into disciplines. Problems do not.</p>
-      <p>D.O.T.S. starts with a simple shift: do not let the label attached to a problem decide where you are allowed to look for answers. See past the label. Find the structure. Expand the search space. Transfer what fits. Create something new.</p>
+      <p>D.O.T.S. starts with a perceptual shift: do not let the label attached to a problem decide where you are allowed to look for answers. Deconstruct the label, observe the underlying structure, transfer only what genuinely travels, synthesize for the new context—then create something useful.</p>
+      <p className="note"><strong>Origin line:</strong> “Collect Dots. Connect Dots. Create Something New.” That phrase remains part of the idea&apos;s lineage. The current public model makes the discipline inside the connection more explicit.</p>
     </section>
 
     <section className="genome-boundary">
@@ -44,12 +45,13 @@ export default function DotsPage() {
     </section>
 
     <section className="dots-questions-section">
-      <div className="eyebrow bronze">Four public questions</div>
+      <div className="eyebrow bronze">The four D.O.T.S. moves</div>
       <h2>See differently before solving differently.</h2>
       <div className="framework-sequence dots-sequence">
         {sequence.map(([letter,title,copy]) => <article key={title}><span>{letter}</span><h3>{title}</h3><p>{copy}</p></article>)}
       </div>
-      <p className="method-note">This is the public thesis, not a proprietary implementation manual. The point is disciplined transfer, not clever analogy.</p>
+      <p className="dots-line">Then: CREATE — turn the synthesis into a decision, system, practice, or possibility that fits the new context.</p>
+      <p className="method-note">This is the public thesis, not a proprietary implementation manual. The point is disciplined transfer, not clever analogy. CREATE follows D.O.T.S.; it is the outcome stage rather than another letter in the acronym.</p>
     </section>
 
     <section className="dots-cases-section">
@@ -72,7 +74,7 @@ export default function DotsPage() {
     <section className="dots-book-bridge">
       <div className="eyebrow bronze">Book 3 · In development</div>
       <h2>D.O.T.S.</h2>
-      <p className="lead">The book develops this way of seeing through stories, cases, principles, limits, and the deeper discipline of collecting broadly, connecting structurally, and creating usefully.</p>
+      <p className="lead">The book develops this way of seeing through stories, cases, principles, limits, and the deeper discipline of deconstructing, observing, transferring, synthesizing, and creating usefully.</p>
       <div className="actions"><Link className="button button-dark" href="/books/dots/">Explore Book 3</Link><Link className="text-link" href="/ideas/collect-dots-connect-dots-create-something-new/">Explore the origin idea →</Link></div>
     </section>
   </InteriorPage>;

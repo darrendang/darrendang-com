@@ -35,7 +35,7 @@ export default function LettersPage() {
             <div className="section-intro compact">
               <div className="eyebrow bronze">Why letters</div>
               <h2>Some ideas need room to stay unfinished.</h2>
-              <p className="lead">Books are developed artifacts. Frameworks organize thinking. A Letter can do something different: begin with a moment, follow the question it creates, and leave the reader with something useful without forcing the experience into a final doctrine.</p>
+              <p className="lead">Books preserve thought that has matured into a bounded work. The Way Papers develop living ideas. The Way in Motion examines demonstrated practice. A Letter can do something different: begin with a moment, follow the question it creates, and leave the reader with something useful without forcing the experience into a final doctrine.</p>
             </div>
             <div className="purpose-grid home-purpose-grid">
               <article><span>Story</span><h3>Start with something that actually happened, not a slogan.</h3></article>
@@ -65,15 +65,30 @@ export default function LettersPage() {
         <section className="section shared-wisdom-home">
           <div className="container shared-wisdom-home-grid">
             <div>
-              <div className="eyebrow bronze">The collection</div>
-              <h2>A growing series, curated rather than filled.</h2>
-              <p className="lead">The first collection is being promoted from approved source drafts with provenance intact. New Letters will be added when they are ready—not to satisfy a publishing calendar, but because the idea is useful enough to preserve and share.</p>
-              <p>Each Letter can connect to related Ideas, books, talks, stories, or Shared Wisdom while remaining its own piece of writing.</p>
+              <div className="eyebrow bronze">The opening collection</div>
+              <h2>Twelve Letters. Released one at a time.</h2>
+              <p className="lead">The first twelve-Letter collection has been developed and preserved. Individual Letters will appear here only after each one clears its public-release review. The collection is curated rather than filled; publication cadence should never become a reason to manufacture certainty or content.</p>
+              <p>The opening collection moves through three quiet arcs. You do not need to read them as a course, and the unpublished Letters are not being posted as teasers. The structure simply shows how the conversation develops.</p>
             </div>
             <div className="shared-wisdom-principles">
-              <article><span>01</span><strong>No content treadmill.</strong><p>Publish because there is something worth saying.</p></article>
-              <article><span>02</span><strong>No artificial certainty.</strong><p>Questions and tensions may remain visible.</p></article>
-              <article><span>03</span><strong>No isolated posts.</strong><p>Letters become part of the larger intellectual graph.</p></article>
+              <article><span>01–04</span><strong>Orientation</strong><p>Agency · Inheritance · Humility · Stewardship</p></article>
+              <article><span>05–08</span><strong>Formation</strong><p>Practice · Example · Culture · Release</p></article>
+              <article><span>09–12</span><strong>Learning &amp; Legacy</strong><p>Questions · Interpretation · Perspective · Transmission</p></article>
+            </div>
+          </div>
+        </section>
+
+        <section className="section genome-purpose-home">
+          <div className="container">
+            <div className="section-intro compact">
+              <div className="eyebrow bronze">Publication discipline</div>
+              <h2>A steady rhythm without a content treadmill.</h2>
+              <p className="lead">Letters are intended to arrive with enough space to be read, considered, and connected to the larger body of thought. New work appears because it is ready—not because an empty slot needs to be filled.</p>
+            </div>
+            <div className="purpose-grid home-purpose-grid">
+              <article><span>01</span><h3>No artificial certainty.</h3><p>Questions and tensions may remain visible.</p></article>
+              <article><span>02</span><h3>No isolated posts.</h3><p>Letters can connect to related Ideas, books, Papers, and Motion cases while remaining their own work.</p></article>
+              <article><span>03</span><h3>Public release is earned.</h3><p>Private preservation and public publication are separate decisions.</p></article>
             </div>
           </div>
         </section>
@@ -83,11 +98,11 @@ export default function LettersPage() {
             <div className="section-intro compact">
               <div className="eyebrow bronze">A two-way conversation</div>
               <h2>What have you learned?</h2>
-              <p className="lead">The Way is not supposed to become one person talking forever. If a Letter brings to mind a lesson, story, correction, or piece of wisdom from your own life, you can pass it forward too.</p>
+              <p className="lead">The Way is not supposed to become one person talking forever. If a Letter brings to mind a lesson, story, correction, or piece of wisdom from your own life, Shared Wisdom shows how other voices can become part of the larger conversation.</p>
             </div>
             <div className="actions">
-              <Link className="button button-dark" href="/share/">Share What You&apos;ve Learned</Link>
-              <Link className="text-link" href="/shared-wisdom/">Explore Shared Wisdom →</Link>
+              <Link className="button button-dark" href="/shared-wisdom/">Explore Shared Wisdom</Link>
+              <Link className="text-link" href="/contribute/">How contribution works →</Link>
             </div>
           </div>
         </section>
