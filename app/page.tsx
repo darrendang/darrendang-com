@@ -29,7 +29,7 @@ const books = [
     number: "03",
     status: "In development",
     title: "D.O.T.S.",
-    subtitle: "Collect Dots. Connect Dots. Create Something New.",
+    subtitle: "A Way of Seeing Problems",
     cover: "/images/dots-cover.webp",
     alt: "Current cover for D.O.T.S. by Darren Dang.",
     href: "/books/dots/",
@@ -106,7 +106,7 @@ export default function Home() {
             <div>
               <div className="eyebrow bronze">Start with a human question</div>
               <h2>You do not need to understand the whole system before something becomes useful.</h2>
-              <p className="lead">Begin with what is already alive in your life. Questions can lead into stories, Letters, books, ideas, methods, and other perspectives without forcing you through a prescribed sequence.</p>
+              <p className="lead">Begin with what is already alive in your life. Questions can lead into stories, Letters, books, ideas, methods, cases, and other perspectives without forcing you through a prescribed sequence.</p>
               <Link className="text-link" href="/explore/">Explore by question →</Link>
             </div>
             <div className="boundary-stack">
@@ -124,10 +124,10 @@ export default function Home() {
             <div>
               <div className="eyebrow bronze">Letters from Darren</div>
               <h2>Things I am still learning.</h2>
-              <p className="lead">The Way begins in lived experience, not doctrine. Letters preserve a story, question, failure, discovery, changed judgment, or connection while the learning is still moving.</p>
+              <p className="lead">The Way begins in lived experience, not doctrine. Letters preserve a story, question, failure, discovery, changed judgment, or connection while the learning is still unfolding.</p>
               <div className="actions">
                 <Link className="button button-dark" href="/letters/why-these-letters/">Read “Why These Letters”</Link>
-                <Link className="text-link" href="/letters/">All Letters →</Link>
+                <Link className="text-link" href="/letters/">Explore Letters →</Link>
               </div>
             </div>
             <div className="shared-wisdom-principles">
@@ -194,6 +194,20 @@ export default function Home() {
               ))}
             </div>
             <div className="section-link"><Link className="text-link" href="/books/">Explore The Path Forward →</Link></div>
+          </div>
+        </section>
+
+        <section className="section genome-purpose-home">
+          <div className="container">
+            <div className="section-intro compact">
+              <div className="eyebrow bronze">Living thought · demonstrated practice</div>
+              <h2>Some ideas are still developing. Some need to meet reality.</h2>
+              <p className="lead">The public ecosystem makes that difference visible. The Way Papers develop living ideas; The Way in Motion preserves what happened when ideas were practiced, tested, limited, or changed.</p>
+            </div>
+            <div className="purpose-grid home-purpose-grid">
+              <article><span>THE WAY PAPERS</span><h3>Develop the thinking.</h3><p>Consequential propositions, frameworks, inquiries, and syntheses with room for evidence, challenge, and revision.</p><Link className="text-link" href="/papers/">Explore Papers →</Link></article>
+              <article><span>THE WAY IN MOTION</span><h3>Examine what happened.</h3><p>Cases that preserve context, practice, observed change, evidence, limitations, interpretation, and what should happen next.</p><Link className="text-link" href="/the-way-in-motion/">Explore The Way in Motion →</Link></article>
+            </div>
           </div>
         </section>
 

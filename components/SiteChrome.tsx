@@ -27,16 +27,17 @@ export function SiteFooter() {
           <p className="footer-independence">Independent ideas and writing. Views expressed here are Darren&apos;s own and do not necessarily represent OCERS or any other institution with which he is affiliated.</p>
         </div>
         <div>
-          <strong>Begin & Explore</strong>
+          <strong>Begin &amp; Explore</strong>
           <Link href="/the-way/">The Way</Link>
           <Link href="/use-the-way/">Use The Way</Link>
           <Link href="/the-way/constitution/">The Constitution</Link>
           <Link href="/explore/">Explore the Genome</Link>
           <Link href="/letters/">Letters from Darren</Link>
           <Link href="/books/">Books · The Path Forward</Link>
+          <Link href="/papers/">Papers &amp; Talks</Link>
+          <Link href="/the-way-in-motion/">The Way in Motion</Link>
           <Link href="/ideas/">Ideas</Link>
           <Link href="/dots/">D.O.T.S.</Link>
-          <Link href="/papers/">Papers & Talks</Link>
         </div>
         <div>
           <strong>Make It Your Own</strong>

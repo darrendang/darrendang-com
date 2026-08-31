@@ -5,7 +5,7 @@ export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://darrendang.com';
-  const lastModified = new Date('2026-08-30T00:00:00Z');
+  const lastModified = new Date('2026-08-31T00:00:00Z');
   const routes = [
     '',
     '/the-way/',
@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/dots/',
     '/papers/',
     '/papers/from-ai-experiments-to-institutional-capability/',
+    '/the-way-in-motion/',
     '/speaking/',
     '/shared-wisdom/',
     '/contribute/',
