@@ -19,6 +19,7 @@ export default function ReviewPage() {
     <InteriorPage eyebrow="Private editorial workspace" title="Shared Wisdom Review" wide>
       <link rel="stylesheet" href="/review-console.css" />
       <link rel="stylesheet" href="/review-publishing.css" />
+      <link rel="stylesheet" href="/review-governance.css" />
 
       <div id="review-console" className="review-console" aria-live="polite">
         <section id="review-loading" className="review-state-card">
@@ -46,7 +47,7 @@ export default function ReviewPage() {
           <div className="review-toolbar">
             <div>
               <div className="eyebrow bronze">Private review queue</div>
-              <h2>Review. Approve. Publish intentionally.</h2>
+              <h2>Review. Govern. Publish intentionally.</h2>
               <p id="review-session-label" className="review-small-note"></p>
             </div>
             <div className="review-toolbar-actions">
@@ -56,7 +57,7 @@ export default function ReviewPage() {
           </div>
 
           <div className="review-workflow-strip" aria-label="Review workflow">
-            <span>Editorial review</span><b>→</b><span>Approved</span><b>→</b><span>Publishing review</span><b>→</b><span>Ready</span><b>→</b><span>Published</span>
+            <span>Editorial review</span><b>→</b><span>Governance</span><b>→</b><span>Exact authorization</span><b>→</b><span>Published intentionally</span>
           </div>
 
           <div id="review-metrics" className="review-metrics" aria-label="Submission counts"></div>
@@ -95,14 +96,17 @@ export default function ReviewPage() {
               <div className="review-empty-detail">
                 <div className="eyebrow bronze">Submission detail</div>
                 <h3>Select a contribution to review.</h3>
-                <p>The full story, permissions, editorial decision, publishing review, and publication controls will appear here.</p>
+                <p>The source record, editorial decision, governance state, permission matrix, holds, and exact publication authorization will appear here.</p>
               </div>
             </section>
           </div>
+
+          <section id="review-governance-panel" className="review-governance-panel" aria-label="Contribution governance"></section>
         </section>
       </div>
 
       <Script id="shared-wisdom-review-console" src="/review-console-v2.js?v=20260826-2" strategy="afterInteractive" />
+      <Script id="contribution-governance-review-console" src="/review-governance.js?v=20260830-1" strategy="afterInteractive" />
     </InteriorPage>
   );
 }
