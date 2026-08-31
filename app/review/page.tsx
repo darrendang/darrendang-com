@@ -100,6 +100,8 @@ export default function ReviewPage() {
               </div>
             </section>
           </div>
+
+          <section id="review-governance-panel" className="review-governance-panel" aria-label="Contribution governance"></section>
         </section>
       </div>
 
