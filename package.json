@@ -8,7 +8,8 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "export:check": "test -f out/index.html",
-    "audit:public": "node scripts/public-repo-audit.mjs"
+    "audit:public": "node scripts/public-repo-audit.mjs",
+    "audit:audio": "node scripts/check-audio-review.mjs"
   },
   "dependencies": {
     "next": "latest",
