@@ -24,6 +24,9 @@ jobs:
       - name: Audit public repository
         run: node scripts/public-repo-audit.mjs
 
+      - name: Verify audio review fingerprints
+        run: node scripts/check-audio-review.mjs
+
       - name: Install dependencies
         run: |
           if [ -f package-lock.json ]; then
