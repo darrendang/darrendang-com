@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ListeningLayer } from "@/components/ListeningLayer";
 import "./globals.css";
 import "./trilogy.css";
 import "./v2-brand.css";
@@ -10,6 +11,7 @@ import "./book-excerpts.css";
 import "./book2-preview.css";
 import "./genome.css";
 import "./way-ux.css";
+import "./listen.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://darrendang.com"),
@@ -29,6 +31,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body>
         <a className="skip-link" href="#main">Skip to content</a>
         {children}
+        <ListeningLayer />
       </body>
     </html>
   );
