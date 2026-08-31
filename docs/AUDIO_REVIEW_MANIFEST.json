@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "policy": "Do not re-review an unchanged audio file. Re-review is required only when the file fingerprint changes, the relevant public canon baseline changes materially, or a prior review is explicitly reopened.",
+  "canon_baseline": "DarrenDang.com public expression architecture synchronized 2026-08-31",
+  "fingerprint_type": "git_blob_sha1",
+  "baseline_recorded_on": "2026-08-31",
+  "review_notes": "This manifest fingerprints the exact MP3 bytes currently in the public repository. A matching Git blob SHA proves the file is byte-for-byte unchanged. Semantic review state is tracked separately from fingerprint state so provenance is not overstated.",
+  "files": [
+    {
+      "path": "public/audio/about-what-im-trying-to-leave-behind.mp3",
+      "git_blob_sha1": "c80ed0e9537ba81f874cd39f7d0da1562c3c8be7",
+      "size_bytes": 953639,
+      "public_role": "About page orientation",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-08-31",
+      "review_basis": "approved site audio architecture and current public framing; exact spoken transcript not independently re-transcribed in this review"
+    },
+    {
+      "path": "public/audio/book1-ch09-connect-the-dots.mp3",
+      "git_blob_sha1": "8ecfcb52c17461c0c21f5f180f24a30aebfba2c4",
+      "size_bytes": 2054705,
+      "public_role": "Book 1 author-read preview — Chapter 9",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-08-31",
+      "review_basis": "author-read preview tied to approved Book 1 preview"
+    },
+    {
+      "path": "public/audio/book1-ch29-what-i-hope-you-keep.mp3",
+      "git_blob_sha1": "5d73c6694f30aed14f8a803fa6ed4a34ec53c833",
+      "size_bytes": 1712835,
+      "public_role": "Book 1 author-read preview — Chapter 29 excerpt",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-08-31",
+      "review_basis": "author-read preview tied to approved Book 1 preview"
+    },
+    {
+      "path": "public/audio/book1-prologue-when-you-need-me.mp3",
+      "git_blob_sha1": "5b8b4e837e38e555d02f510e4aebe5b5b7202822",
+      "size_bytes": 998179,
+      "public_role": "Book 1 author-read preview — Prologue",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-08-31",
+      "review_basis": "author-read preview tied to approved Book 1 preview"
+    },
+    {
+      "path": "public/audio/for-those-who-come-after-us.mp3",
+      "git_blob_sha1": "155bb04411e73cbcbf71b59157e0a2bfc7e8b4e1",
+      "size_bytes": 5639181,
+      "public_role": "Book 1 promotional audio asset",
+      "review_state": "fingerprinted_not_in_listening_layer",
+      "last_reviewed_on": "2026-08-31",
+      "review_basis": "tracked for change detection; not part of the route-based ListeningLayer"
+    },
+    {
+      "path": "public/audio/letters-why-these-letters.mp3",
+      "git_blob_sha1": "071ac4384c92ee30c0a3b2db16281e0f3059e48a",
+      "size_bytes": 1172127,
+      "public_role": "Letters from Darren — Letter 00 introduction",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-08-31",
+      "review_basis": "approved Letters introduction and current LFD positioning"
+    },
+    {
+      "path": "public/audio/pass-it-forward-add-your-dot.mp3",
+      "git_blob_sha1": "330136f9dd81c902282f817cd46d49810154f3a3",
+      "size_bytes": 610964,
+      "public_role": "Contribute page orientation",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-08-31",
+      "review_basis": "approved contribution invitation and current public framing"
+    },
+    {
+      "path": "public/audio/the-way-constitution-introduction.mp3",
+      "git_blob_sha1": "1d01ad9366689ee9e6862174c1ce1cd5b435ddae",
+      "size_bytes": 565994,
+      "public_role": "The Way Constitution orientation",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-08-31",
+      "review_basis": "orientation only; written Constitution remains authoritative"
+    },
+    {
+      "path": "public/audio/the-way-homepage-why-this-exists.mp3",
+      "git_blob_sha1": "377051ad0abcef762ed1a16f5f78d423e3cf3009",
+      "size_bytes": 670176,
+      "public_role": "Homepage welcome",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-08-31",
+      "review_basis": "approved site audio architecture and current public framing; exact spoken transcript not independently re-transcribed in this review"
+    },
+    {
+      "path": "public/audio/the-way-stronger-starting-point.mp3",
+      "git_blob_sha1": "334930e84cfce7575668eb8cb75413c8a98f6f94",
+      "size_bytes": 3684517,
+      "public_role": "The Way flagship spoken introduction",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-08-31",
+      "review_basis": "current framing is inheritance without a predetermined destination; exact spoken transcript not independently re-transcribed in this review"
+    },
+    {
+      "path": "public/audio/your-way-now-it-becomes-yours.mp3",
+      "git_blob_sha1": "7dfff57738530cc3ec17069c771cd60181e1e18d",
+      "size_bytes": 1105545,
+      "public_role": "Your Way handoff",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-08-31",
+      "review_basis": "approved handoff framing: take what helps, question what does not, make the learning your own"
+    }
+  ]
+}
