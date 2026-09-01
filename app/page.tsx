@@ -200,13 +200,35 @@ export default function Home() {
         <section className="section genome-purpose-home">
           <div className="container">
             <div className="section-intro compact">
-              <div className="eyebrow bronze">Living thought · demonstrated practice</div>
-              <h2>Some ideas are still developing. Some need to meet reality.</h2>
-              <p className="lead">The public ecosystem makes that difference visible. The Way Papers develop living ideas; The Way in Motion preserves what happened when ideas were practiced, tested, limited, or changed.</p>
+              <div className="eyebrow bronze">Ways The Way Is Expressed</div>
+              <h2>One philosophy can travel through different forms.</h2>
+              <p className="lead">Each expression does different work. You can enter through the form that is useful to you without first learning the architecture behind it.</p>
             </div>
             <div className="purpose-grid home-purpose-grid">
-              <article><span>THE WAY PAPERS</span><h3>Develop the thinking.</h3><p>Consequential propositions, frameworks, inquiries, and syntheses with room for evidence, challenge, and revision.</p><Link className="text-link" href="/papers/">Explore Papers →</Link></article>
-              <article><span>THE WAY IN MOTION</span><h3>Examine what happened.</h3><p>Cases that preserve context, practice, observed change, evidence, limitations, interpretation, and what should happen next.</p><Link className="text-link" href="/the-way-in-motion/">Explore The Way in Motion →</Link></article>
+              <article><span>LETTERS FROM DARREN</span><h3>Lived reflection.</h3><p>Personal stories, questions, failures, discoveries, and learning that is still unfolding.</p><Link className="text-link" href="/letters/">Explore Letters →</Link></article>
+              <article><span>BOOKS · THE PATH FORWARD</span><h3>Preserved wisdom.</h3><p>Durable stories, principles, and bounded thought gathered into longer-form works.</p><Link className="text-link" href="/books/">Explore Books →</Link></article>
+              <article><span>THE WAY PAPERS</span><h3>Living ideas.</h3><p>Consequential propositions, frameworks, inquiries, and syntheses with room for evidence, challenge, and revision.</p><Link className="text-link" href="/papers/">Explore The Way Papers →</Link></article>
+              <article><span>THE WAY IN MOTION</span><h3>Demonstrated practice.</h3><p>Cases that preserve what happened when ideas met reality, including evidence, limits, consequences, and revision.</p><Link className="text-link" href="/the-way-in-motion/">Explore The Way in Motion →</Link></article>
+              <article><span>D.O.T.S.</span><h3>A way of seeing.</h3><p>A signature method for collecting dots, observing patterns, transferring useful structure, and synthesizing something new.</p><Link className="text-link" href="/dots/">Explore D.O.T.S. →</Link></article>
+              <article><span>TALKS &amp; AUDIO</span><h3>Ideas in another voice.</h3><p>Selective conversations, readings, and alternate formats where hearing or discussing the idea adds meaning.</p><Link className="text-link" href="/speaking/">Explore Speaking &amp; Talks →</Link></article>
+            </div>
+          </div>
+        </section>
+
+        <section className="section worldview-section">
+          <div className="container worldview-grid">
+            <div>
+              <div className="eyebrow bronze">Lifecycle of Wisdom</div>
+              <h2>Wisdom stays alive by moving.</h2>
+              <p className="lead">Experience can become reflection, principles, preserved wisdom, living ideas, demonstrated practice, connected knowledge, and renewed contribution. What is passed forward can then become new experience for someone else.</p>
+              <p>This is a cycle, not a ladder. The stages are not rankings, and they do not all have to happen inside one person. The point is to preserve enough context for wisdom to travel while remaining open to evidence, correction, and new experience.</p>
+              <Link className="text-link" href="/genome/">Explore the deeper architecture →</Link>
+            </div>
+            <div className="boundary-stack">
+              <article><span>Experience → Reflection</span><strong>What happened, and what might it mean?</strong></article>
+              <article><span>Principles → Preserved Wisdom</span><strong>What is worth carrying forward, and what context must travel with it?</strong></article>
+              <article><span>Living Ideas → Demonstrated Practice</span><strong>What still holds when inherited wisdom meets present reality?</strong></article>
+              <article><span>Connected Knowledge → Renewed Contribution</span><strong>What becomes more useful when ideas connect—and what should return to the world?</strong></article>
             </div>
           </div>
         </section>
