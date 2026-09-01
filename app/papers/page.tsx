@@ -6,8 +6,6 @@ export const metadata = {
   description: "Explore The Way Papers: living ideas and evolving thought examined through evidence, challenge, revision, and open questions.",
 };
 
-const aiPaperPdf = "/docs/From_AI_Experiments_to_Institutional_Capability_Darren_Dang.pdf";
-
 export default function Papers() {
   return <InteriorPage eyebrow="The Way Papers" title="Living ideas and evolving thought." wide>
     <p className="lead">The Way Papers give consequential ideas room for disciplined examination without turning evolving thought into doctrine. Each paper should leave the reader with a stronger place from which to think and the freedom to reach a different conclusion.</p>
@@ -29,14 +27,13 @@ export default function Papers() {
       <h2>Professional and institutional questions remain a separate category.</h2>
       <p>Applied writing can connect to The Way without becoming a Way Paper. These works are independent educational and strategic perspectives, not consulting materials or official positions of Darren&apos;s employer.</p>
       <div className="paper-index-card">
-        <div className="book-status">August 2026 · Public-sector AI</div>
+        <div className="book-status">Version 1.1 · September 2026 · Public-sector AI</div>
         <h2>From AI Experiments to Institutional Capability</h2>
         <p className="paper-subtitle">A Stewardship Agenda for Public Pension Boards and Executive Leaders</p>
         <p>How can a public pension system turn AI possibility into durable public value without outrunning trust?</p>
         <p>The paper examines mission, value, trust, risk, readiness, portfolio stewardship, governance at decision moments, institutional capability, and the need to reassess as evidence changes.</p>
         <div className="actions">
-          <Link className="button button-dark" href="/papers/from-ai-experiments-to-institutional-capability/">Read the web edition</Link>
-          <a className="text-link" href={aiPaperPdf} target="_blank" rel="noreferrer">View the PDF →</a>
+          <Link className="button button-dark" href="/papers/from-ai-experiments-to-institutional-capability/">Read version 1.1</Link>
         </div>
       </div>
       <p className="note">Talks and speaking are a different expression surface. <Link className="text-link" href="/speaking/">Explore Speaking &amp; Talks →</Link></p>
