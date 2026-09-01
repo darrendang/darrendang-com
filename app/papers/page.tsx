@@ -6,8 +6,6 @@ export const metadata = {
   description: "Explore The Way Papers and Darren Dang's applied papers and talks on technology, AI, governance, institutional capability, judgment, trust, and public service.",
 };
 
-const aiPaperPdf = "/docs/From_AI_Experiments_to_Institutional_Capability_Darren_Dang.pdf";
-
 export default function Papers() {
   return <InteriorPage eyebrow="Papers & Talks" title="Different kinds of longer-form thinking." wide>
     <p className="lead">Some writing develops the living ideas of The Way. Other work applies ideas to professional and institutional questions. They can inform one another without becoming the same publication stream.</p>
@@ -30,14 +28,13 @@ export default function Papers() {
       <h2>Ideas meeting professional and institutional questions.</h2>
       <p>These are independent educational and strategic works, not consulting materials or official positions of Darren&apos;s employer. Applied work remains distinct from The Way Papers even when the underlying ideas connect.</p>
       <div className="paper-index-card">
-        <div className="book-status">August 2026 · Public-sector AI</div>
+        <div className="book-status">Version 1.1 · September 2026 · Public-sector AI</div>
         <h2>From AI Experiments to Institutional Capability</h2>
         <p className="paper-subtitle">A Stewardship Agenda for Public Pension Boards and Executive Leaders</p>
         <p>How can a public pension system turn AI possibility into durable public value without outrunning trust?</p>
         <p>The paper examines mission, value, trust, risk, readiness, portfolio stewardship, governance at decision moments, institutional capability, and the need to reassess as evidence changes.</p>
         <div className="actions">
-          <Link className="button button-dark" href="/papers/from-ai-experiments-to-institutional-capability/">Read the web edition</Link>
-          <a className="text-link" href={aiPaperPdf} target="_blank" rel="noreferrer">View the PDF →</a>
+          <Link className="button button-dark" href="/papers/from-ai-experiments-to-institutional-capability/">Read version 1.1</Link>
         </div>
       </div>
     </section>

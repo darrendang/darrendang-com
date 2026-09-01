@@ -3,7 +3,7 @@ import { InteriorPage } from "@/components/InteriorPage";
 
 export const metadata = {
   title: "From AI Experiments to Institutional Capability",
-  description: "A Stewardship Agenda for Public Pension Boards and Executive Leaders by Darren Dang. A public leadership lens on AI experimentation, evidence, governance, readiness, trust, and institutional capability.",
+  description: "Version 1.1 of A Stewardship Agenda for Public Pension Boards and Executive Leaders by Darren Dang. A public leadership lens on AI experimentation, evidence, governance, readiness, trust, and institutional capability.",
 };
 
 const fiveQuestions = [
@@ -47,7 +47,7 @@ const discussionQuestions = [
   ["Rebalancing", "What conditions would cause us to continue, condition, pause, stop, or scale—and how often will we revisit the thesis?"],
 ];
 
-export default function PaperPage(){return <InteriorPage eyebrow="Public-sector AI white paper · August 2026" title="From AI Experiments to Institutional Capability" wide>
+export default function PaperPage(){return <InteriorPage eyebrow="Public-sector AI white paper · Version 1.1 · September 2026" title="From AI Experiments to Institutional Capability" wide>
   <section className="paper-hero-copy">
     <p className="paper-subtitle">A Stewardship Agenda for Public Pension Boards and Executive Leaders</p>
     <div className="paper-governing-question"><small>Governing question</small><strong>How can a public pension system turn AI possibility into durable public value without outrunning trust?</strong></div>
@@ -60,6 +60,7 @@ export default function PaperPage(){return <InteriorPage eyebrow="Public-sector 
     <p>The paper offers a public leadership lens—not a proprietary implementation manual. It shares principles and high-level architecture while protecting detailed scoring, weights, thresholds, diagnostic instruments, playbooks, and institution-specific methods.</p>
     <p>The views expressed are Darren&apos;s own and do not necessarily represent the official position of OCERS, NCPERS, or any other institution. This paper is educational and strategic in nature; it is not legal, investment, cybersecurity, procurement, or regulatory advice.</p>
     <p><strong>Public thesis. Private method.</strong> Teach the logic generously. Protect implementation selectively.</p>
+    <p><strong>Version 1.1.</strong> The September 2026 alignment preserves the original thesis and structure while making explicit three institutional-AI principles sharpened through subsequent work.</p>
   </section>
 
   <section className="paper-section">
@@ -153,7 +154,7 @@ export default function PaperPage(){return <InteriorPage eyebrow="Public-sector 
     <p className="lead">The most important AI advantage available to a public pension system is not early access to a model. Models will change. Vendors will change. The language of the market will change.</p>
     <p>The enduring advantage is an institution capable of learning, choosing, governing, executing, measuring, and adapting with purpose. Such an institution can use today&apos;s technology without becoming captive to it.</p>
     <p><strong>Technology changes. Principles endure.</strong></p>
-    <p>The standard is not whether technology was delivered. The standard is whether the institution became stronger.</p>
+    <p><strong>The standard is not whether AI was deployed. The standard is whether the institution became stronger.</strong></p>
     <blockquote className="paper-pullquote">Make technology a force that elevates people and mission.</blockquote>
   </section>
 
@@ -177,5 +178,14 @@ export default function PaperPage(){return <InteriorPage eyebrow="Public-sector 
     </ol>
     <p>The public standards above provide context and corroboration. They do not define Darren Dang&apos;s institutional technology philosophy and public thought leadership.</p>
     <div className="actions"><Link className="button button-dark" href="/dots/">Explore D.O.T.S.</Link><Link className="text-link" href="/papers/">All Papers →</Link></div>
+  </section>
+
+  <section className="paper-section">
+    <div className="eyebrow bronze">Version 1.1 · Institutional alignment</div>
+    <h2>Three principles made explicit.</h2>
+    <blockquote className="paper-pullquote">AI is decision support, not decision authority.</blockquote>
+    <blockquote className="paper-pullquote">The goal is not AI that knows everything. It is an institution that can connect what it already knows.</blockquote>
+    <blockquote className="paper-pullquote">AI capability is not principally a technology capability. It is an institutional capability enabled by technology.</blockquote>
+    <p><strong>The standard is not whether AI was deployed. The standard is whether the institution became stronger.</strong></p>
   </section>
 </InteriorPage>}
