@@ -1,4 +1,5 @@
 export const ideas=[
+{slug:'generative-dialogue',title:'DANG Generative Dialogue™',topic:'Human–AI Collaboration & Discovery',summary:'A disciplined, recursive dialogue in which questions, challenge, reflection, refinement, and human judgment create insight that neither participant began with alone.'},
 {slug:'collect-dots-connect-dots-create-something-new',title:'D.O.T.S. is a way of seeing problems.',topic:'Learning & Innovation',summary:'Move from label to structure, expand the search space, transfer what fits, and create something useful.'},
 {slug:'living-legacy',title:'A Living Legacy of Wisdom.',topic:'Legacy & Stewardship',summary:'Preserve what matters, connect what we learn, and pass wisdom forward so those who come after inherit a stronger starting point.'},
 {slug:'automate-the-repetition-preserve-human-judgment',title:'Automate the Repetition. Preserve Human Judgment.',topic:'Technology & AI',summary:'Technology is most useful when it removes mechanical work without pretending that every decision is mechanical.'},
