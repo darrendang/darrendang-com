@@ -1,16 +1,25 @@
 import type { Metadata } from "next";
 import { ideas } from "@/content/seed";
 
+const indexableIdeaSlugs = new Set([
+  "generative-dialogue",
+  "living-legacy",
+  "wisdom-has-no-rank",
+]);
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const idea = ideas.find((item) => item.slug === slug);
   if (!idea) return {};
 
   const canonical = `/ideas/${idea.slug}/`;
+  const isIndexable = indexableIdeaSlugs.has(idea.slug);
+
   return {
     title: idea.title.replace("™", ""),
     description: idea.summary,
     alternates: { canonical },
+    robots: isIndexable ? { index: true, follow: true } : { index: false, follow: true },
     openGraph: {
       title: `${idea.title} | Darren Dang`,
       description: idea.summary,
