@@ -3,9 +3,15 @@ import { ideas } from '@/content/seed';
 
 export const dynamic = 'force-static';
 
+const indexableIdeaSlugs = new Set([
+  'generative-dialogue',
+  'living-legacy',
+  'wisdom-has-no-rank',
+]);
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://darrendang.com';
-  const lastModified = new Date('2026-08-31T00:00:00Z');
+  const lastModified = new Date('2026-09-03T00:00:00Z');
   const routes = [
     '',
     '/the-way/',
@@ -33,7 +39,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/books/wisdom-has-no-rank/',
     '/books/wisdom-has-no-rank/prologue-excerpt/',
     '/books/wisdom-has-no-rank/person-i-developed/',
-    '/books/wisdom-has-no-rank/test-child-map/',
     '/books/dots/',
     '/about/',
     '/connect/',
@@ -44,9 +49,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     ...routes.map((path) => ({ url: base + path, lastModified })),
-    ...ideas.map((idea) => ({
-      url: `${base}/ideas/${idea.slug}/`,
-      lastModified,
-    })),
+    ...ideas
+      .filter((idea) => indexableIdeaSlugs.has(idea.slug))
+      .map((idea) => ({
+        url: `${base}/ideas/${idea.slug}/`,
+        lastModified,
+      })),
   ];
 }
