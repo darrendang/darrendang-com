@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
 import { ideas } from "@/content/seed";
 
-export function generateStaticParams() {
-  return ideas.map((idea) => ({ slug: idea.slug }));
-}
-
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const idea = ideas.find((item) => item.slug === slug);
