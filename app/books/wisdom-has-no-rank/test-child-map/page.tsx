@@ -3,6 +3,7 @@ import { BookExcerptPage } from "@/components/BookExcerptPage";
 export const metadata = {
   title: "The Test Child Gave Us a Map — Wisdom Has No Rank",
   description: "Read a selected passage from Wisdom Has No Rank about experience, parenting, and why a map should never become a script.",
+  robots: { index: false, follow: true },
 };
 
 export default function TestChildMapPage() {
