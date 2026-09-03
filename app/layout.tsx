@@ -17,7 +17,6 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://darrendang.com"),
   title: { default: "Darren Dang | The Way", template: "%s | Darren Dang" },
   description: "The Way is Darren Dang's living philosophy for learning from what came before, questioning it, making it your own, and passing forward a stronger starting point.",
-  alternates: { canonical: "/" },
   authors: [{ name: "Darren Dang", url: "https://darrendang.com/about/" }],
   creator: "Darren Dang",
   publisher: "Darren Dang",
