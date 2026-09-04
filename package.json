@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node scripts/add-self-canonicals.mjs",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "export:check": "test -f out/index.html",
