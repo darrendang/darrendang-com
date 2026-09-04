@@ -32,6 +32,11 @@ for (const required of [
   '.progression',
   '.book-movement',
   '.map-sequence article>span',
+  '.idea-canonical-intro .book-quote',
+  '.development-question .book-quote',
+  '.development-principles .book-quote',
+  '.idea-canonical-intro .lead',
+  '-webkit-text-fill-color:var(--muted)',
 ]) {
   if (!siteContrast.includes(required)) fail(`site contrast guard is missing: ${required}`);
 }
@@ -52,10 +57,13 @@ function contrast(a, b) {
 
 const lightSurfaces = ['#FBF8F2', '#F5EFE4', '#F8F3EB'];
 for (const bg of lightSurfaces) {
-  const ratio = contrast('#7A5C21', bg);
-  if (ratio < 4.5) fail(`--gold-text contrast is ${ratio.toFixed(2)}:1 on ${bg}; expected >= 4.5:1.`);
+  const goldRatio = contrast('#7A5C21', bg);
+  if (goldRatio < 4.5) fail(`--gold-text contrast is ${goldRatio.toFixed(2)}:1 on ${bg}; expected >= 4.5:1.`);
+
+  const mutedRatio = contrast('#4F5963', bg);
+  if (mutedRatio < 4.5) fail(`--muted contrast is ${mutedRatio.toFixed(2)}:1 on ${bg}; expected >= 4.5:1.`);
 }
 
 if (!process.exitCode) {
-  console.log('Contrast guard passed: readable gold and shared quote protections are intact.');
+  console.log('Contrast guard passed: readable gold, Idea-page leads, and shared quote protections are intact.');
 }
