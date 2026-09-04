@@ -1,0 +1,31 @@
+/* Page-specific readability guard for the Generative Dialogue emphasis lines.
+   Imported last so generic quote/lead treatments cannot wash these passages out. */
+.lead.generative-dialogue-thesis{
+  color:#7A5C21!important;
+  -webkit-text-fill-color:#7A5C21!important;
+  opacity:1!important;
+  background:none!important;
+  -webkit-background-clip:border-box!important;
+  background-clip:border-box!important;
+  -webkit-mask:none!important;
+  mask:none!important;
+  filter:none!important;
+  mix-blend-mode:normal!important;
+  text-shadow:none!important;
+  font-weight:600!important;
+}
+.book-quote.generative-dialogue-quote{
+  color:#7A5C21!important;
+  -webkit-text-fill-color:#7A5C21!important;
+  opacity:1!important;
+  background:none!important;
+  -webkit-background-clip:border-box!important;
+  background-clip:border-box!important;
+  -webkit-mask:none!important;
+  mask:none!important;
+  filter:none!important;
+  mix-blend-mode:normal!important;
+  text-shadow:none!important;
+  font-weight:600!important;
+  border-left-color:#C79A45!important;
+}
