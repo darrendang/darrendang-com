@@ -91,6 +91,29 @@
 .idea-canonical-intro .book-quote{
   margin-top:38px;
 }
+.generative-dialogue-thesis{
+  margin:0;
+  max-width:900px;
+  color:#8A6B31;
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(30px,3.1vw,42px);
+  font-weight:600;
+  line-height:1.22;
+  opacity:1;
+}
+.generative-dialogue-quote{
+  max-width:900px;
+  margin-left:0;
+  margin-right:0;
+  padding:4px 0 4px 26px;
+  border-left:3px solid var(--gold);
+  color:#8A6B31;
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(27px,2.7vw,36px);
+  font-weight:600;
+  line-height:1.28;
+  opacity:1;
+}
 .related-idea-links{
   display:grid;
   grid-template-columns:repeat(2,1fr);
@@ -132,6 +155,8 @@
   .map-sequence{grid-template-columns:1fr;border-left:0}
   .map-sequence article{min-height:0;padding:25px 0;border-right:0}
   .map-bridge-text{padding:21px 20px;font-size:24px}
+  .generative-dialogue-thesis{font-size:31px}
+  .generative-dialogue-quote{padding-left:20px;font-size:28px}
   .related-idea-links{border-left:0}
   .related-idea-links a{padding:25px 0;border-right:0}
 }
