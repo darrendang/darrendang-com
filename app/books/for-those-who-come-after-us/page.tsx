@@ -40,7 +40,7 @@ const samples = [
 
 export default function Book() {
   return (
-    <InteriorPage eyebrow="Book 1 · Preparing for publication" title="For Those Who Come After Us">
+    <InteriorPage eyebrow="Book 1 · Preparing for Publication" title="For Those Who Come After Us">
       <div className="book-detail-grid">
         <div>
           <div className="book-covers" aria-label="Front and back covers of For Those Who Come After Us">
@@ -77,7 +77,7 @@ export default function Book() {
 
           <aside className="development-status-note">
             <strong>Publication status</strong>
-            <p>Publication is targeted for September 2026. Paperback, hardcover, and ebook editions are prepared for Amazon KDP. Completed Vietnamese, Mandarin Chinese, Korean, and Spanish translations are being reviewed by friends and family for tone and language before release decisions are finalized.</p>
+            <p><em>For Those Who Come After Us</em> is preparing for publication. Paperback, hardcover, and ebook editions are prepared for Amazon KDP. Completed Vietnamese, Mandarin Chinese, Korean, and Spanish translations are being reviewed by friends and family for tone and language before release decisions are finalized.</p>
           </aside>
 
           <h2>Beyond the book</h2>
@@ -85,7 +85,7 @@ export default function Book() {
           <p>The book is the first major book-length artifact in a larger body of work. DarrenDang.com connects its lessons to evolving ideas, future writing, talks, and other artifacts.</p>
           <div className="book-detail-actions">
             <Link className="button button-light" href="#inside-the-book">Read Inside the Book</Link>
-            <Link className="text-link" href="/books/">Explore the three-book system →</Link>
+            <Link className="text-link" href="/books/">Explore The Path Forward trilogy →</Link>
           </div>
         </div>
       </div>
