@@ -71,8 +71,8 @@ export default function GenerativeDialoguePage() {
     <>
       <InteriorPage eyebrow="Conversation, Discovery & Human Judgment" title="Generative Dialogue" wide>
         <section className="idea-canonical-intro">
-          <p className="lead">Generative Dialogue is disciplined conversation that changes what becomes possible next.</p>
-          <blockquote className="book-quote">The purpose is not to get an answer faster. It is to think more deeply than either participant might have thought alone.</blockquote>
+          <p className="lead generative-dialogue-thesis">Generative Dialogue is disciplined conversation that changes what becomes possible next.</p>
+          <blockquote className="book-quote generative-dialogue-quote">The purpose is not to get an answer faster. It is to think more deeply than either participant might have thought alone.</blockquote>
         </section>
 
         <section className="development-question">
@@ -170,7 +170,7 @@ export default function GenerativeDialoguePage() {
         <section className="development-principles">
           <div className="eyebrow bronze">The standard</div>
           <h2>A generative conversation should leave the thinking stronger.</h2>
-          <blockquote className="book-quote">Question deeply. Challenge respectfully. Preserve provenance. Keep human judgment intact. Pass forward what survives the dialogue.</blockquote>
+          <blockquote className="book-quote generative-dialogue-quote">Question deeply. Challenge respectfully. Preserve provenance. Keep human judgment intact. Pass forward what survives the dialogue.</blockquote>
           <p>Generative Dialogue is useful when it increases clarity without pretending certainty, expands perspective without erasing authorship, and creates something that can withstand another round of questioning.</p>
           <p style={{ marginTop: "30px" }}><Link className="text-link" href="/ideas/">Explore related ideas →</Link></p>
         </section>
