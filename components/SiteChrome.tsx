@@ -41,7 +41,7 @@ export function SiteFooter() {
           <strong>Books, Ideas &amp; About</strong>
           <Link href="/books/">Books · The Path Forward</Link>
           <Link href="/ideas/">Ideas</Link>
-          <Link href="/ideas/generative-dialogue/">DANG Generative Dialogue™</Link>
+          <Link href="/ideas/generative-dialogue/">Generative Dialogue</Link>
           <Link href="/dots/">D.O.T.S.</Link>
           <Link href="/papers/">The Way Papers</Link>
           <Link href="/the-way-in-motion/">The Way in Motion</Link>
