@@ -1,0 +1,51 @@
+/* Sitewide contrast guard.
+   Bright legacy gold (#C79A45) is excellent on dark fields but is only ~2.4:1
+   against the site's light paper surfaces, so it must not be used for normal
+   readable text there. Use --gold-text for readable gold on light surfaces. */
+:root{--gold-text:#7A5C21}
+
+/* Shared pull quotes are light-surface content by default. Protect them from
+   inherited ivory, text-fill, clipping, opacity, masking, and blend effects. */
+.book-quote{
+  color:var(--gold-text)!important;
+  -webkit-text-fill-color:var(--gold-text)!important;
+  opacity:1!important;
+  background:none!important;
+  -webkit-background-clip:border-box!important;
+  background-clip:border-box!important;
+  -webkit-mask:none!important;
+  mask:none!important;
+  filter:none!important;
+  mix-blend-mode:normal!important;
+  text-shadow:none!important;
+}
+
+/* Explicit dark-surface exceptions. */
+.navy .book-quote,
+.book-film .book-quote,
+.book-song .book-quote,
+.brand-hero .book-quote,
+.final .book-quote,
+.quality-band .book-quote,
+.dots-feature .book-quote{
+  color:var(--ivory)!important;
+  -webkit-text-fill-color:var(--ivory)!important;
+}
+
+/* Readable legacy-gold text on light surfaces. Keep bright gold for borders,
+   rules, dots, stars, and dark-background text. */
+.progression,
+.book-movement,
+.book-card .book-movement,
+.framework-sequence span,
+.system-arc>article>span,
+.map-sequence article>span,
+.book2-trilogy-flow article>span,
+.dual-return>span{
+  color:var(--gold-text)!important;
+  -webkit-text-fill-color:var(--gold-text)!important;
+  opacity:1!important;
+}
+
+/* The bright gold border/rule remains part of the visual language. */
+.book-quote{border-left-color:var(--gold)!important}
