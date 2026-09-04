@@ -3,12 +3,12 @@ import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 
 export const metadata: Metadata = {
-  title: "DANG Generative Dialogue",
-  description: "DANG Generative Dialogue™ is a disciplined, recursive way of creating insight through question, conversation, reflection, challenge, refinement, discovery, and human judgment.",
+  title: "Generative Dialogue",
+  description: "Generative Dialogue is disciplined conversation through which ideas are clarified, challenged, refined, and transformed into discovery.",
   alternates: { canonical: "/ideas/generative-dialogue/" },
   openGraph: {
-    title: "DANG Generative Dialogue™ | Darren Dang",
-    description: "A disciplined dialogue that creates insight through question, challenge, reflection, refinement, and human judgment.",
+    title: "Generative Dialogue | Darren Dang",
+    description: "Disciplined conversation through which ideas are clarified, challenged, refined, and transformed into discovery.",
     type: "article",
     url: "/ideas/generative-dialogue/",
   },
@@ -21,7 +21,7 @@ const dialogueStages = [
   ["04", "CHALLENGE", "Test the emerging idea", "Agreement is not the goal. Useful challenge asks what is missing, what does not fit, what has been assumed, and what would change the conclusion."],
   ["05", "REFINEMENT", "Make the idea more precise", "Language, boundaries, relationships, and implications are revised until the idea better matches the evidence and the larger whole."],
   ["06", "DISCOVERY", "Recognize what did not exist at the start", "The result can be a new distinction, framework, principle, question, or connection that neither participant brought fully formed into the dialogue."],
-  ["07", "PRACTICE / CANON", "Decide what deserves to endure", "Discovery becomes useful only when it is tested, applied, preserved with provenance, revised when necessary, and—when warranted—approved as something worth carrying forward."],
+  ["07", "PRACTICE", "Decide what deserves to endure", "Discovery becomes useful when it is tested, applied, preserved with provenance, revised when necessary, and—when warranted—carried into practice."],
   ["08", "PASS FORWARD", "Let the next dialogue begin stronger", "What was learned becomes a better starting point for another person, another context, or another generation—not a predetermined destination."],
 ];
 
@@ -47,8 +47,8 @@ export default function GenerativeDialoguePage() {
       {
         "@type": "DefinedTerm",
         "@id": "https://darrendang.com/ideas/generative-dialogue/#idea",
-        name: "DANG Generative Dialogue",
-        description: "A disciplined, recursive dialogue that creates insight through question, conversation, reflection, challenge, refinement, discovery, and human judgment.",
+        name: "Generative Dialogue",
+        description: "Disciplined conversation through which ideas are clarified, challenged, refined, and transformed into discovery.",
         url: "https://darrendang.com/ideas/generative-dialogue/",
         inDefinedTermSet: {
           "@type": "DefinedTermSet",
@@ -61,7 +61,7 @@ export default function GenerativeDialoguePage() {
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: "https://darrendang.com/" },
           { "@type": "ListItem", position: 2, name: "Ideas", item: "https://darrendang.com/ideas/" },
-          { "@type": "ListItem", position: 3, name: "DANG Generative Dialogue", item: "https://darrendang.com/ideas/generative-dialogue/" },
+          { "@type": "ListItem", position: 3, name: "Generative Dialogue", item: "https://darrendang.com/ideas/generative-dialogue/" },
         ],
       },
     ],
@@ -69,24 +69,25 @@ export default function GenerativeDialoguePage() {
 
   return (
     <>
-      <InteriorPage eyebrow="Human–AI Collaboration & Discovery" title="DANG Generative Dialogue™" wide>
+      <InteriorPage eyebrow="Conversation, Discovery & Human Judgment" title="Generative Dialogue" wide>
         <section className="idea-canonical-intro">
-          <p className="lead">A disciplined dialogue that creates insight through question, conversation, reflection, challenge, refinement, and human judgment.</p>
+          <p className="lead">Generative Dialogue is disciplined conversation that changes what becomes possible next.</p>
           <blockquote className="book-quote">The purpose is not to get an answer faster. It is to think more deeply than either participant might have thought alone.</blockquote>
         </section>
 
         <section className="development-question">
           <div className="eyebrow bronze">What it is</div>
-          <h2>Dialogue can do more than exchange what people already know.</h2>
-          <p>Some conversations simply transfer information. Others negotiate, persuade, brainstorm, or solve a defined problem. Generative Dialogue is different: the conversation itself becomes part of the discovery process.</p>
+          <h2>Some conversations exchange information. Others change what you can see.</h2>
+          <p>Generative Dialogue is a disciplined form of exchange through which ideas are clarified, challenged, refined, and sometimes transformed into discoveries that neither participant fully possessed at the beginning. It is not merely discussion. It is conversation that becomes a mode of thinking.</p>
           <p>The participants do not need to begin with the answer. They bring questions, experience, evidence, assumptions, patterns, and partial ideas into a recursive exchange. Each round can expose something that was previously invisible: a contradiction, a missing distinction, a connection across domains, or a better way to frame the problem.</p>
           <p>The result is not merely a better version of the first response. At its best, the dialogue produces understanding that did not exist in finished form when the conversation began.</p>
         </section>
 
         <section className="development-question">
           <div className="eyebrow bronze">The movement</div>
-          <h2>Discovery emerges through recursion.</h2>
-          <div className="map-sequence" aria-label="The DANG Generative Dialogue sequence">
+          <h2>Discovery often emerges through a recognizable recursive pattern.</h2>
+          <p className="lead">The process is recursive rather than rigid, but Generative Dialogue often moves through a recognizable pattern:</p>
+          <div className="map-sequence" aria-label="The Generative Dialogue sequence">
             {dialogueStages.map(([number, label, title, copy]) => (
               <article key={number}>
                 <span>{number}</span>
@@ -96,7 +97,7 @@ export default function GenerativeDialoguePage() {
               </article>
             ))}
           </div>
-          <p className="map-not-script">This is a recursive movement, not a rigid eight-step procedure. A useful dialogue may move backward, repeat stages, or open an entirely new question.</p>
+          <p className="map-not-script">Question → Conversation → Reflection → Challenge → Refinement → Discovery → Practice → Pass Forward. A useful dialogue may move backward, repeat stages, or open an entirely new question.</p>
         </section>
 
         <section className="development-principles">
@@ -144,18 +145,20 @@ export default function GenerativeDialoguePage() {
         </section>
 
         <section className="development-question">
-          <div className="eyebrow bronze">A demonstrated case</div>
-          <h2>The Way itself emerged through Generative Dialogue.</h2>
-          <p>The development of The Way became an unusually visible case of this mechanism in practice. Individual stories, book chapters, family lessons, frameworks, website architecture, questions about inheritance, and conversations about human–AI collaboration began as separate dots.</p>
-          <p>Through repeated dialogue, those dots were questioned, connected, reorganized, challenged, and placed against a larger whole. The architecture changed when the evidence no longer supported the earlier frame. Contradictions were surfaced. Language became more precise. Ideas that first appeared incidental became foundational, while other ideas were narrowed or discarded.</p>
-          <p>That process eventually revealed something larger than the artifacts that started it: a philosophy about inheriting wisdom without inheriting dogma, developing Your Way, creating The Way Forward, and leaving those who come after a stronger starting point without narrowing their future.</p>
-          <p>The case matters because it makes the process inspectable. Generative Dialogue is not a theory invented after the fact; it is a name for a pattern that became visible through the work itself.</p>
+          <div className="eyebrow bronze">A living case study</div>
+          <h2><em>The Making of The Way</em> documents the process from inside the work.</h2>
+          <p><em>The Making of The Way: How Conversation Becomes Discovery</em> is the primary longitudinal case study behind this idea. It documents how sustained dialogue contributed to the emergence of broader patterns, language, and philosophical structure over time.</p>
+          <p>Individual stories, book chapters, family lessons, frameworks, website architecture, questions about inheritance, and conversations about human–AI collaboration began as separate dots. Through repeated dialogue, those dots were questioned, connected, reorganized, challenged, and placed against a larger whole.</p>
+          <p>The architecture changed when the evidence no longer supported the earlier frame. Contradictions were surfaced. Language became more precise. Ideas that first appeared incidental became foundational, while other ideas were narrowed or discarded.</p>
+          <p>The pattern came before the name. The value of the case is that enough of the development history can be preserved for the reader to inspect how the thinking changed rather than simply being shown the finished result.</p>
+          <p style={{ marginTop: "30px" }}><Link className="text-link" href="/books/the-making-of-the-way/">Explore The Making of The Way →</Link></p>
         </section>
 
         <section className="development-principles">
           <div className="eyebrow bronze">Relationship to the larger system</div>
           <h2>Generative Dialogue is a discovery and refinement mechanism inside The Way.</h2>
           <div className="related-idea-links">
+            <Link href="/books/the-making-of-the-way/"><strong>The Making of The Way</strong><span>The longitudinal companion work documenting how sustained dialogue became discovery.</span></Link>
             <Link href="/dots/"><strong>D.O.T.S.</strong><span>Collect dots, observe patterns, transfer principles across contexts, and synthesize something useful.</span></Link>
             <Link href="/the-way/"><strong>The Way</strong><span>The larger philosophy that asks what is worth learning, adapting, living, and passing forward.</span></Link>
             <Link href="/ideas/living-legacy/"><strong>Living Legacy</strong><span>Preserve what is learned without freezing it into a script for the next generation.</span></Link>
