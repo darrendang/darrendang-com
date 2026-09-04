@@ -5,7 +5,7 @@ import { ConnectedDots } from "@/components/ConnectedDots";
 
 export const metadata = {
   title: "Wisdom Has No Rank",
-  description: "Explore Wisdom Has No Rank, Darren Dang's Book 2 in final editorial review, including selected excerpts, six-part structure, and place in the INHERIT → BECOME → CREATE trilogy.",
+  description: "Explore Wisdom Has No Rank, Darren Dang's Book 2 in final editorial preparation, including selected excerpts, six-part structure, and place in the INHERIT → BECOME → CREATE trilogy.",
 };
 
 const parts = [
@@ -55,14 +55,14 @@ const samples = [
 
 export default function WisdomHasNoRank() {
   return (
-    <InteriorPage eyebrow="Book 2 · BECOME · Final Editorial Stage" title="Wisdom Has No Rank" wide>
+    <InteriorPage eyebrow="Book 2 · BECOME · In Final Editorial Preparation" title="Wisdom Has No Rank" wide>
       <div className="development-book-grid">
         <div className="development-cover-wrap">
           <Image src="/images/wisdom-has-no-rank-cover.webp" width={480} height={720} alt="Current cover for Wisdom Has No Rank by Darren Dang." className="development-cover" sizes="(max-width: 900px) 76vw, 34vw" priority />
-          <p className="book-caption">Current cover direction. The manuscript is in final editorial review.</p>
+          <p className="book-caption">Current cover direction. The manuscript is in final editorial preparation.</p>
         </div>
         <div className="development-copy">
-          <div className="book-status">Final Editorial Stage</div>
+          <div className="book-status">In Final Editorial Preparation</div>
           <p className="book-hook">Who can I still learn from?</p>
           <p className="lead">Experience matters. Expertise matters. Responsibility matters. Rank matters. But none gives us a monopoly on wisdom.</p>
           <p><em>Wisdom Has No Rank</em> begins where <em>For Those Who Come After Us</em> leaves off. Book 1 asks what we can learn from the lives that came before us. Book 2 asks whether we remain teachable when wisdom comes from someone younger, more junior, closer to us, or simply unexpected.</p>
@@ -146,7 +146,7 @@ export default function WisdomHasNoRank() {
         <p><strong>INHERIT → BECOME → CREATE</strong> becomes a continuing practice: receive what is useful, question what no longer fits, connect what you learn, create something better, and pass it forward.</p>
         <div className="development-actions">
           <Link className="button button-dark" href="/books/dots/">Continue to D.O.T.S.</Link>
-          <Link className="text-link" href="/books/">Explore all three books →</Link>
+          <Link className="text-link" href="/books/">Explore The Path Forward trilogy →</Link>
         </div>
       </section>
 
@@ -163,7 +163,7 @@ export default function WisdomHasNoRank() {
 
       <aside className="development-status-note">
         <strong>Editorial status</strong>
-        <p><em>Wisdom Has No Rank</em> has entered final editorial review. The central thesis, six-part structure, and manuscript are established; selected wording and sequencing may still receive final editorial or copyediting refinement before publication.</p>
+        <p><em>Wisdom Has No Rank</em> is in final editorial preparation. The central thesis, six-part structure, and manuscript are established; selected wording and sequencing may still receive final editorial or copyediting refinement before publication.</p>
       </aside>
     </InteriorPage>
   );
