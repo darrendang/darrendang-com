@@ -41,7 +41,7 @@ npm run export:check
 
 ## Deployment status
 
-Pushes and pull requests run CI. GitHub Pages deployment is intentionally controlled and remains manual so production changes pass an explicit release gate.
+Pushes and pull requests run validation CI. Pushes to `main` also run the production GitHub Pages build and deployment workflow; manual workflow dispatch remains available when needed.
 
 ## Repository policy
 
