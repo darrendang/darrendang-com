@@ -13,6 +13,7 @@ import "./genome.css";
 import "./way-ux.css";
 import "./listen.css";
 import "./generative-dialogue.css";
+import "./site-contrast.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://darrendang.com"),
