@@ -2,11 +2,14 @@
 
 Source for **DarrenDang.com — the place where Darren's ideas live**.
 
-The site is a long-term intellectual platform for ideas, writing, books, talks, and related media. The current v2 direction makes the emerging three-book body of work visible while keeping the platform idea-first:
+The site is a long-term intellectual platform for ideas, writing, books, talks, and related media. The current public direction keeps the platform idea-first while making **The Path Forward** trilogy visible and acknowledging a separate companion work in development:
 
-- **Book 1 — _For Those Who Come After Us — A Life in Lessons_** — preparing for publication, targeted for September 2026
-- **Book 2 — _Wisdom Has No Rank_** — in development
-- **Book 3 — _D.O.T.S._** — in development
+- **Book 1 — _For Those Who Come After Us — A Life in Lessons_** — preparing for publication
+- **Book 2 — _Wisdom Has No Rank_** — in final editorial preparation
+- **Book 3 — _D.O.T.S._** — in advanced development
+- **Companion work — _The Making of The Way: How Conversation Becomes Discovery_** — in development; connected to the public idea of Generative Dialogue
+
+Books 1–3 remain the bounded **The Path Forward** trilogy. _The Making of The Way_ is presented as a companion work rather than an extension of the trilogy architecture. Its public posture is presence without launch pressure: no preorder, countdown, or public release-date commitment.
 
 The books are major expressions of a larger connected system of thought, not the container for the DarrenDang.com brand.
 
