@@ -11,7 +11,7 @@ const indexableIdeaSlugs = new Set([
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://darrendang.com';
-  const lastModified = new Date('2026-09-03T00:00:00Z');
+  const lastModified = new Date('2026-09-04T00:00:00Z');
   const routes = [
     '',
     '/the-way/',
@@ -40,6 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/books/wisdom-has-no-rank/prologue-excerpt/',
     '/books/wisdom-has-no-rank/person-i-developed/',
     '/books/dots/',
+    '/books/the-making-of-the-way/',
     '/about/',
     '/connect/',
     '/independence/',
