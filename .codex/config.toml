@@ -1,0 +1,8 @@
+# Conservative project defaults for DarrenDang.com.
+# Main-branch merge/deployment remains a separate human-authorized action.
+
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+
+[agents]
+max_concurrent_threads_per_session = 6
