@@ -10,8 +10,8 @@ export const ideas=[
 ];
 
 export const books=[
-{slug:'for-those-who-come-after-us',title:'For Those Who Come After Us',subtitle:'A Life in Lessons',status:'preparing-for-publication',movement:'INHERIT',summary:'A life in lessons about inheritance, identity, learning, failure, systems, leadership, family, purpose, and what we pass forward. Preparing for publication.'},
-{slug:'wisdom-has-no-rank',title:'Wisdom Has No Rank',subtitle:'',status:'final-editorial-preparation',movement:'BECOME',summary:'A six-part book about reciprocal wisdom and what changes when the person you expected to teach becomes someone capable of teaching you. Selected excerpts are now available.'},
+{slug:'for-those-who-come-after-us',title:'For Those Who Come After Us',subtitle:'A Life in Lessons',status:'published',movement:'INHERIT',summary:'A life in lessons about inheritance, identity, learning, failure, systems, leadership, family, purpose, and what we pass forward. Published in English and available on Amazon.'},
+{slug:'wisdom-has-no-rank',title:'Wisdom Has No Rank',subtitle:'',status:'ready-for-publication',movement:'BECOME',summary:'A reviewed six-part book about reciprocal wisdom and what changes when the person you expected to teach becomes someone capable of teaching you.'},
 {slug:'dots',title:'D.O.T.S.',subtitle:'Collect Dots. Connect Dots. Create Something New.',status:'advanced-development',movement:'CREATE',summary:'An exploration of D.O.T.S. as a way of seeing problems: label to structure to search space, followed by disciplined transfer and useful synthesis.'},
 {slug:'the-making-of-the-way',title:'The Making of The Way',subtitle:'How Conversation Becomes Discovery',status:'in-development',movement:'COMPANION',summary:'A companion work exploring Generative Dialogue and how sustained conversation can turn observation into pattern, pattern into discovery, and discovery into practice.'}
 ];

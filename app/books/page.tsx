@@ -9,14 +9,14 @@ export const metadata = {
 
 const books = [
   {
-    status: "Preparing for Publication",
+    status: "Published · Official Launch Oct. 13",
     title: "For Those Who Come After Us",
     subtitle: "A Life in Lessons",
     cover: "/images/for-those-who-come-after-us-front-book-v3.webp",
     width: 360,
     height: 576,
     alt: "Front cover of For Those Who Come After Us: A Life in Lessons by Darren Dang.",
-    copy: "A life in lessons about inheritance, identity, learning, failure, systems, leadership, family, purpose, and what we pass forward. Preparing for publication.",
+    copy: "A life in lessons about inheritance, identity, learning, failure, systems, leadership, family, purpose, and what we pass forward. Available now on Amazon.",
     movement: "INHERIT",
     question: "What have I learned?",
     bridge: "Lessons can cross generations.",
@@ -24,7 +24,7 @@ const books = [
     href: "/books/for-those-who-come-after-us/",
   },
   {
-    status: "In Final Editorial Preparation",
+    status: "Reviewed · Ready for Publication",
     title: "Wisdom Has No Rank",
     subtitle: "",
     cover: "/images/wisdom-has-no-rank-cover.webp",
@@ -60,7 +60,7 @@ export default function Books() {
     <InteriorPage eyebrow="Books" title="Three books. One trilogy. A companion work." wide>
       <div className="books-library-intro">
         <p className="lead">The books are major expressions of the ideas—not the container for the whole platform. <em>The Path Forward</em> is the original three-book trilogy, tracing a movement from what we inherit, to who we become, to what we can create from what we learn.</p>
-        <p>Book 1 is preparing for publication. Book 2 is in final editorial preparation. Book 3 is in advanced development. A separate companion work, <em>The Making of The Way</em>, examines how the larger thinking itself became visible through sustained conversation.</p>
+        <p>Book 1 is published, with its official launch set for October 13, 2026. Book 2 has been reviewed and is ready for publication. Book 3 is in advanced development. A separate companion work, <em>The Making of The Way</em>, examines how the larger thinking itself became visible through sustained conversation.</p>
       </div>
 
       <div className="book-system-strip" aria-label="The Path Forward trilogy intellectual progression">

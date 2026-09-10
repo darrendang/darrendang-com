@@ -5,7 +5,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 const books = [
   {
     number: "01",
-    status: "Preparing for Publication",
+    status: "Published · Official Launch Oct. 13",
     title: "For Those Who Come After Us",
     subtitle: "A Life in Lessons",
     cover: "/images/for-those-who-come-after-us-front-home-v3.webp",
@@ -16,7 +16,7 @@ const books = [
   },
   {
     number: "02",
-    status: "In Final Editorial Preparation",
+    status: "Reviewed · Ready for Publication",
     title: "Wisdom Has No Rank",
     subtitle: "",
     cover: "/images/wisdom-has-no-rank-cover.webp",

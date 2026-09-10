@@ -5,8 +5,10 @@ import { ConnectedDots } from "@/components/ConnectedDots";
 
 export const metadata = {
   title: "For Those Who Come After Us",
-  description: "Explore For Those Who Come After Us — A Life in Lessons, including selected reading, the Book 1 companion song, and the ideas behind the book.",
+  description: "Explore the published Book 1, For Those Who Come After Us — A Life in Lessons, including selected reading, the companion song, and the ideas behind the book.",
 };
+
+const amazonBookUrl = "https://www.amazon.com/dp/B0HFDKVC3J";
 
 const samples = [
   {
@@ -40,7 +42,7 @@ const samples = [
 
 export default function Book() {
   return (
-    <InteriorPage eyebrow="Book 1 · Preparing for Publication" title="For Those Who Come After Us">
+    <InteriorPage eyebrow="Book 1 · Published · Official Launch October 13, 2026" title="For Those Who Come After Us">
       <div className="book-detail-grid">
         <div>
           <div className="book-covers" aria-label="Front and back covers of For Those Who Come After Us">
@@ -77,13 +79,16 @@ export default function Book() {
 
           <aside className="development-status-note">
             <strong>Publication status</strong>
-            <p><em>For Those Who Come After Us</em> is preparing for publication. Paperback, hardcover, and ebook editions are prepared for Amazon KDP. Completed Vietnamese, Mandarin Chinese, Korean, and Spanish translations are being reviewed by friends and family for tone and language before release decisions are finalized.</p>
+            <p><em>For Those Who Come After Us</em> is published in English, with paperback, hardcover, and Kindle editions available on Amazon. The official Book 1 launch is October 13, 2026.</p>
+            <p>The French, Spanish, and Vietnamese native translations have been reviewed and approved. Each translated edition remains subject to its separate production and release process before publication.</p>
+            <p>The English audiobook has been published exclusively through ACX. A consumer listening link will be added once its retail listing is available and verified.</p>
           </aside>
 
           <h2>Beyond the book</h2>
           <p>What we inherit is not a script. It is a starting map—routes others traveled, hazards they discovered, landmarks worth remembering, and questions they could not answer for us. The next generation still has to decide where to go.</p>
           <p>The book is the first major book-length artifact in a larger body of work. DarrenDang.com connects its lessons to evolving ideas, future writing, talks, and other artifacts.</p>
           <div className="book-detail-actions">
+            <a className="button button-dark" href={amazonBookUrl} target="_blank" rel="noreferrer">Buy on Amazon</a>
             <Link className="button button-light" href="#inside-the-book">Read Inside the Book</Link>
             <Link className="text-link" href="/books/">Explore The Path Forward trilogy →</Link>
           </div>
