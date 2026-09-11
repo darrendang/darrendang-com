@@ -5,7 +5,7 @@ import { ConnectedDots } from "@/components/ConnectedDots";
 
 export const metadata = {
   title: "Wisdom Has No Rank",
-  description: "Explore Wisdom Has No Rank, Darren Dang's Book 2 in final editorial preparation, including selected excerpts, six-part structure, and place in the INHERIT → BECOME → CREATE trilogy.",
+  description: "Explore Wisdom Has No Rank, Darren Dang's Book 2 in final editorial preparation: a book about teachability, expanding possible teachers, and learning across relationship, culture, experience, and unexpected sources.",
 };
 
 const parts = [
@@ -18,9 +18,9 @@ const parts = [
 ];
 
 const trilogy = [
-  ["01", "INHERIT", "Receive the map.", "For Those Who Come After Us", "What have I learned?"],
-  ["02", "BECOME", "Question and revise the map.", "Wisdom Has No Rank", "Who can I learn from?"],
-  ["03", "CREATE", "Explore beyond the map.", "D.O.T.S.", "What can I create from what I learn?"],
+  ["01", "ACROSS TIME", "Learn from what came before.", "For Those Who Come After Us", "What can I learn from what was lived before me?"],
+  ["02", "ACROSS SOURCE", "Expand who and what can teach you.", "Wisdom Has No Rank", "Who or what might teach me if I stop pre-ranking the teacher?"],
+  ["03", "ACROSS DOMAIN", "Widen where you look.", "D.O.T.S.", "What becomes possible when I search beyond the familiar domain?"],
 ];
 
 const samples = [
@@ -63,10 +63,10 @@ export default function WisdomHasNoRank() {
         </div>
         <div className="development-copy">
           <div className="book-status">In Final Editorial Preparation</div>
-          <p className="book-hook">Who can I still learn from?</p>
-          <p className="lead">Experience matters. Expertise matters. Responsibility matters. Rank matters. But none gives us a monopoly on wisdom.</p>
-          <p><em>Wisdom Has No Rank</em> begins where <em>For Those Who Come After Us</em> leaves off. Book 1 asks what we can learn from the lives that came before us. Book 2 asks whether we remain teachable when wisdom comes from someone younger, more junior, closer to us, or simply unexpected.</p>
-          <p>The book follows the moments when familiar roles reverse—when children teach parents, teams teach leaders, protégés become people worth calling for advice, and the person who thought he was teaching realizes he still has something to learn.</p>
+          <p className="book-hook">Who or what might I still learn from?</p>
+          <p className="lead">Experience matters. Expertise matters. Responsibility matters. Rank can matter. But none gives us a monopoly on wisdom.</p>
+          <p><em>Wisdom Has No Rank</em> begins where <em>For Those Who Come After Us</em> leaves off. Book 1 asks what we can learn from the lives that came before us. Book 2 asks a wider question: what happens when we stop pre-ranking the source of learning before we have examined what it can teach?</p>
+          <p>The book begins with familiar reversals—children teaching parents, teams teaching leaders, protégés becoming trusted advisers—but the deeper idea is broader. Wisdom can arrive through relationships, cultures, ordinary experiences, mistakes, unfamiliar practices, and other sources that do not announce themselves as teachers.</p>
           <div className="development-actions">
             <Link className="button button-dark" href="#inside-book-2">Read Inside Book 2</Link>
             <Link className="text-link" href="/ideas/wisdom-has-no-rank/">Explore the core idea →</Link>
@@ -76,10 +76,10 @@ export default function WisdomHasNoRank() {
 
       <section className="development-themes book2-trilogy-section">
         <div className="eyebrow bronze">The hinge in the trilogy</div>
-        <h2>Receive what came before. Stay teachable enough to revise it. Then create what comes next.</h2>
-        <p className="lead">The trilogy moves from inheritance, to teachability, to creation. Book 2 is the hinge: accumulated experience becomes more useful when it stays open to correction.</p>
-        <blockquote className="trilogy-map-quote">The people who go before us give us a map. The people who come after us show us where the map is incomplete.</blockquote>
-        <div className="book2-trilogy-flow" aria-label="Three-book progression from inheritance to creation">
+        <h2>Book 1 widens time. Book 2 widens the teacher. Book 3 widens the search.</h2>
+        <p className="lead">The trilogy progressively dismantles boundaries around where useful learning is allowed to come from. Book 2 is the hinge: inherited experience becomes more useful when we remain open to correction from sources we might otherwise dismiss too quickly.</p>
+        <blockquote className="trilogy-map-quote">Wisdom itself may arrive unranked.</blockquote>
+        <div className="book2-trilogy-flow" aria-label="Three-book progression across time, source, and domain">
           {trilogy.map(([number, movement, action, title, question]) => (
             <article key={number} className={number === "02" ? "current" : ""}>
               <span>{number}</span>
@@ -90,12 +90,13 @@ export default function WisdomHasNoRank() {
             </article>
           ))}
         </div>
-        <p className="map-not-script">A map helps us navigate. It does not tell us exactly where to go.</p>
+        <p className="map-not-script">Openness expands the pool. Discernment decides what is actually wise.</p>
       </section>
 
       <section className="development-themes">
         <div className="eyebrow bronze">Inside the structure</div>
         <h2>Six movements from seeing yourself more clearly to letting wisdom flow both ways.</h2>
+        <p className="lead">The current six-part structure remains the narrative architecture. The broader lens is not a new checklist; it is the posture underneath the stories.</p>
         <div className="book2-part-grid">
           {parts.map(([number, title, question]) => (
             <article key={number}>
@@ -111,10 +112,10 @@ export default function WisdomHasNoRank() {
         <div className="eyebrow bronze">Ideas emerging from the book</div>
         <h2>Teachability is not the absence of judgment. It is keeping judgment open long enough to be tested.</h2>
         <div className="principle-grid">
-          <article><blockquote>Wisdom has no rank.</blockquote><p>Useful insight can arrive from a direction the hierarchy did not predict.</p></article>
-          <article><blockquote>To teach well, sometimes you have to become a student first.</blockquote><p>Responsibility can require learning before leading, explaining, or teaching.</p></article>
-          <article><blockquote>Experience is useful only if it makes you better prepared without making you too certain.</blockquote><p>What worked before should become context, not a script for the next person.</p></article>
-          <article><blockquote>A map can show you where someone else has been. It cannot tell you exactly where another person should go.</blockquote><p>The next traveler still has to exercise judgment—and may reveal where the inherited map is incomplete.</p></article>
+          <article><blockquote>Wisdom has no rank.</blockquote><p>Do not let age, title, familiarity, status, culture, or category decide in advance whether a source is worth examining.</p></article>
+          <article><blockquote>The personal story is the doorway. The human pattern is the destination.</blockquote><p>A story becomes transferable when a reader can remove Darren from it and still recognize something true in their own life.</p></article>
+          <article><blockquote>Your default is not universal.</blockquote><p>Different relationships, cultures, and everyday practices can reveal assumptions that remain invisible from inside a single frame.</p></article>
+          <article><blockquote>Experience is context, not a script.</blockquote><p>What worked before can orient the next decision without predetermining it.</p></article>
         </div>
       </section>
 
@@ -141,9 +142,9 @@ export default function WisdomHasNoRank() {
 
       <section className="development-question book2-next-question">
         <div className="eyebrow bronze">The bridge to Book 3</div>
-        <h2>The next question is not only who can teach us. It is where else we should look for ideas.</h2>
-        <p className="lead">Book 2 widens the direction from which wisdom can arrive. Book 3 widens the places from which useful solutions can come.</p>
-        <p><strong>INHERIT → BECOME → CREATE</strong> becomes a continuing practice: receive what is useful, question what no longer fits, connect what you learn, create something better, and pass it forward.</p>
+        <h2>Once we widen who or what can teach us, the next question is where else we should look.</h2>
+        <p className="lead">Book 2 expands possible teachers. Book 3 expands the search space itself.</p>
+        <p>The handoff is intentionally unfinished. The aim is not to close every chapter with Darren&apos;s answer, but to help the reader begin noticing possible teachers and patterns in their own life before Book 3 gives that widening a more explicit method.</p>
         <div className="development-actions">
           <Link className="button button-dark" href="/books/dots/">Continue to D.O.T.S.</Link>
           <Link className="text-link" href="/books/">Explore The Path Forward trilogy →</Link>
@@ -152,18 +153,18 @@ export default function WisdomHasNoRank() {
 
       <ConnectedDots
         intro="Book 2 is where the inherited map becomes explicitly revisable. Its stories connect the trilogy, the constitutional principle of teachability, other people's wisdom, and the reader's own willingness to change."
-        question="Who might understand part of your current terrain better than you do—even if they have less age, rank, status, or experience overall?"
+        question="Who or what might be teaching you something that you have already decided not to count as a teacher?"
         connections={[
           { label: "IDEA", title: "Wisdom Has No Rank", copy: "Explore the durable idea beneath the book, including what the principle means and what it does not mean.", href: "/ideas/wisdom-has-no-rank/" },
-          { label: "BOOK 1", title: "For Those Who Come After Us", copy: "Book 1 supplies the starting map. Book 2 asks whether you can remain teachable enough to revise it.", href: "/books/for-those-who-come-after-us/" },
-          { label: "BOOK 3", title: "D.O.T.S.", copy: "Once wisdom can arrive from any rank, the next question is whether useful ideas can arrive from any discipline or domain.", href: "/books/dots/" },
+          { label: "BOOK 1", title: "For Those Who Come After Us", copy: "Book 1 widens learning across time. Book 2 widens it across source and relationship.", href: "/books/for-those-who-come-after-us/" },
+          { label: "BOOK 3", title: "D.O.T.S.", copy: "Book 2 widens who or what can teach us. Book 3 widens where useful possibilities can come from.", href: "/books/dots/" },
           { label: "OTHER VOICES", title: "Shared Wisdom", copy: "The public Genome preserves selected lessons from lives other than Darren's without erasing their authorship.", href: "/shared-wisdom/" },
         ]}
       />
 
       <aside className="development-status-note">
         <strong>Editorial status</strong>
-        <p><em>Wisdom Has No Rank</em> is in final editorial preparation. The central thesis, six-part structure, and manuscript are established; selected wording and sequencing may still receive final editorial or copyediting refinement before publication.</p>
+        <p><em>Wisdom Has No Rank</em> is in final editorial preparation. The central thesis, six-part structure, and manuscript are established; the current editorial work is testing how clearly each personal story opens into a transferable human pattern without over-closing the reader&apos;s interpretation.</p>
       </aside>
     </InteriorPage>
   );
