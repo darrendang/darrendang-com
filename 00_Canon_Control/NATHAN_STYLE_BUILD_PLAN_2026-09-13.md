@@ -1,0 +1,1 @@
+Build plan: exact web fonts via next/font/google; global design tokens; semantic signature/editorial/structural roles; site chrome and interior-shell redesign; responsive and accessibility preservation; review before deploy.
