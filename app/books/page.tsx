@@ -60,7 +60,7 @@ const currentState = [
   ["02", "Wisdom Has No Rank", "Complete / Gold Master", "The manuscript is complete and the print Gold Masters are locked."],
   ["03", "D.O.T.S.", "Nearing Completion", "The method and architecture are established; the manuscript is approaching completion."],
   ["04", "The Making of The Way", "Collaboration / Provenance Emerging", "The collaboration that helped reveal The Way becomes part of the work itself."],
-  ["05", "The Way Forward", "Integration Layer", "The wider body of work is brought together without replacing the reader's ownership of what comes next."],
+  ["05", "The Way Forward", "Integration Layer", "The wider body of work is brought together without replacing the reader&apos;s ownership of what comes next."],
 ];
 
 export default function Books() {
@@ -135,11 +135,29 @@ export default function Books() {
         </article>
       </section>
 
-      <section className="books-system-note">
+      <section className="development-themes">
         <div className="eyebrow bronze">Book 5 · Integration Layer</div>
-        <h2>The Way Forward brings the wider system together without prescribing the reader's destination.</h2>
-        <p className="lead">The fifth book is not simply the next installment. It is the integration layer: a place where inheritance, teachability, discovery, creation, dialogue, and stewardship can be brought into a reader-owned practice.</p>
-        <div className="actions"><Link className="button button-dark" href="/the-way-forward/">Explore The Way Forward</Link><Link className="text-link" href="/the-way/">Return to The Way →</Link></div>
+        <h2>The Way Forward gathers the wider body of work into a reader-owned practice.</h2>
+        <p className="lead">The fifth book is not simply the next installment. It is the integration layer: where inheritance, teachability, discovery, creation, dialogue, and stewardship can be brought together without turning The Way into a prescribed destination.</p>
+
+        <article className="book-library-card">
+          <div className="book-library-cover">
+            <Image src="/images/the-way-forward.webp" width={1024} height={1536} alt="Cover of The Way Forward: Learning, Discovering, Creating, and Passing It On by Darren Dang." sizes="(max-width: 900px) 70vw, 27vw" />
+          </div>
+          <div className="book-library-copy">
+            <div className="book-status">Integration Layer</div>
+            <div className="book-movement">BOOK 5</div>
+            <h2>The Way Forward</h2>
+            <p className="book-library-sub"><em>Learning, Discovering, Creating, and Passing It On</em></p>
+            <p className="book-library-question">How do the lessons, methods, and discoveries become something you can actually live?</p>
+            <p><em>The Way Forward</em> brings the first four books into relationship. Book 1 preserves what was learned. Book 2 expands who and what can teach us. Book 3 widens where we look and what we can create. Book 4 makes the collaboration and discovery process visible. Book 5 asks the integrative question: what do you do with all of that now?</p>
+            <p>The answer is deliberately not Darren&apos;s destination for the reader. The book is designed as a compass and integration layer—helping readers connect what they inherit, what they discover, what they create, and what they may one day choose to pass forward.</p>
+            <div className="development-actions">
+              <Link className="button button-dark" href="/the-way-forward/">Explore The Way Forward</Link>
+              <Link className="text-link" href="/the-way/">Return to The Way →</Link>
+            </div>
+          </div>
+        </article>
       </section>
 
       <section className="books-system-note">
