@@ -72,7 +72,7 @@ export default function DotsPage() {
     </section>
 
     <section className="dots-book-bridge">
-      <div className="eyebrow bronze">Book 3 · In development</div>
+      <div className="eyebrow bronze">Book 3 · Nearing Completion</div>
       <h2>D.O.T.S.</h2>
       <p className="lead">The book develops this way of seeing through stories, cases, principles, limits, and the deeper discipline of deconstructing, observing, transferring, synthesizing, and creating usefully.</p>
       <div className="actions"><Link className="button button-dark" href="/books/dots/">Explore Book 3</Link><Link className="text-link" href="/ideas/collect-dots-connect-dots-create-something-new/">Explore the origin idea →</Link></div>
