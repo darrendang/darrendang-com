@@ -5,7 +5,7 @@ import { ConnectedDots } from "@/components/ConnectedDots";
 
 export const metadata = {
   title: "Wisdom Has No Rank",
-  description: "Explore Wisdom Has No Rank, Darren Dang's Book 2 in final editorial preparation: a book about teachability, expanding possible teachers, and learning across relationship, culture, experience, and unexpected sources.",
+  description: "Explore Wisdom Has No Rank, Darren Dang's complete Book 2 with print Gold Masters locked: a book about teachability, expanding possible teachers, and learning across relationship, culture, experience, and unexpected sources.",
 };
 
 const parts = [
@@ -55,14 +55,14 @@ const samples = [
 
 export default function WisdomHasNoRank() {
   return (
-    <InteriorPage eyebrow="Book 2 · BECOME · In Final Editorial Preparation" title="Wisdom Has No Rank" wide>
+    <InteriorPage eyebrow="Book 2 · BECOME · Complete / Gold Master" title="Wisdom Has No Rank" wide>
       <div className="development-book-grid">
         <div className="development-cover-wrap">
           <Image src="/images/wisdom-has-no-rank-cover.webp" width={480} height={720} alt="Current cover for Wisdom Has No Rank by Darren Dang." className="development-cover" sizes="(max-width: 900px) 76vw, 34vw" priority />
-          <p className="book-caption">Current cover direction. The manuscript is in final editorial preparation.</p>
+          <p className="book-caption">Print Gold Master cover direction. Physical proof review remains the final print-release gate.</p>
         </div>
         <div className="development-copy">
-          <div className="book-status">In Final Editorial Preparation</div>
+          <div className="book-status">Complete / Gold Master</div>
           <p className="book-hook">Who or what might I still learn from?</p>
           <p className="lead">Experience matters. Expertise matters. Responsibility matters. Rank can matter. But none gives us a monopoly on wisdom.</p>
           <p><em>Wisdom Has No Rank</em> begins where <em>For Those Who Come After Us</em> leaves off. Book 1 asks what we can learn from the lives that came before us. Book 2 asks a wider question: what happens when we stop pre-ranking the source of learning before we have examined what it can teach?</p>
@@ -96,7 +96,7 @@ export default function WisdomHasNoRank() {
       <section className="development-themes">
         <div className="eyebrow bronze">Inside the structure</div>
         <h2>Six movements from seeing yourself more clearly to letting wisdom flow both ways.</h2>
-        <p className="lead">The current six-part structure remains the narrative architecture. The broader lens is not a new checklist; it is the posture underneath the stories.</p>
+        <p className="lead">The six-part structure is complete. The broader lens is not a checklist; it is the posture underneath the stories.</p>
         <div className="book2-part-grid">
           {parts.map(([number, title, question]) => (
             <article key={number}>
@@ -147,7 +147,7 @@ export default function WisdomHasNoRank() {
         <p>The handoff is intentionally unfinished. The aim is not to close every chapter with Darren&apos;s answer, but to help the reader begin noticing possible teachers and patterns in their own life before Book 3 gives that widening a more explicit method.</p>
         <div className="development-actions">
           <Link className="button button-dark" href="/books/dots/">Continue to D.O.T.S.</Link>
-          <Link className="text-link" href="/books/">Explore The Path Forward trilogy →</Link>
+          <Link className="text-link" href="/books/">Explore the wider body of work →</Link>
         </div>
       </section>
 
@@ -163,8 +163,8 @@ export default function WisdomHasNoRank() {
       />
 
       <aside className="development-status-note">
-        <strong>Editorial status</strong>
-        <p><em>Wisdom Has No Rank</em> is in final editorial preparation. The central thesis, six-part structure, and manuscript are established; the current editorial work is testing how clearly each personal story opens into a transferable human pattern without over-closing the reader&apos;s interpretation.</p>
+        <strong>Production status</strong>
+        <p><em>Wisdom Has No Rank</em> is complete. The manuscript is locked and the paperback/hardcover print Gold Masters have passed KDP digital preview. Physical proof copies have been ordered; print publication release authorization remains pending proof approval. The eBook remains on its own preflight/release track.</p>
       </aside>
     </InteriorPage>
   );

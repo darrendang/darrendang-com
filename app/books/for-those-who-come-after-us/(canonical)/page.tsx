@@ -5,7 +5,7 @@ import { ConnectedDots } from "@/components/ConnectedDots";
 
 export const metadata = {
   title: "For Those Who Come After Us",
-  description: "Explore For Those Who Come After Us — A Life in Lessons, including selected reading, the Book 1 companion song, and the ideas behind the book.",
+  description: "Explore the published Book 1, For Those Who Come After Us — A Life in Lessons, including selected reading, the companion song, and the ideas behind the book.",
 };
 
 const samples = [
@@ -40,7 +40,7 @@ const samples = [
 
 export default function Book() {
   return (
-    <InteriorPage eyebrow="Book 1 · Preparing for Publication" title="For Those Who Come After Us">
+    <InteriorPage eyebrow="Book 1 · Published" title="For Those Who Come After Us">
       <div className="book-detail-grid">
         <div>
           <div className="book-covers" aria-label="Front and back covers of For Those Who Come After Us">
@@ -62,7 +62,7 @@ export default function Book() {
               sizes="(max-width: 900px) 42vw, 21vw"
             />
           </div>
-          <p className="book-caption">Front and back cover artwork for <em>For Those Who Come After Us — A Life in Lessons</em>.</p>
+          <p className="book-caption">Published cover artwork for <em>For Those Who Come After Us — A Life in Lessons</em>.</p>
         </div>
 
         <div className="book-detail-copy">
@@ -77,15 +77,15 @@ export default function Book() {
 
           <aside className="development-status-note">
             <strong>Publication status</strong>
-            <p><em>For Those Who Come After Us</em> is preparing for publication. Paperback, hardcover, and ebook editions are prepared for Amazon KDP. Completed Vietnamese, Mandarin Chinese, Korean, and Spanish translations are being reviewed by friends and family for tone and language before release decisions are finalized.</p>
+            <p><em>For Those Who Come After Us</em> is published in hardcover, paperback, and Kindle editions through Dang Legacy Press. The published English first edition is locked; future revisions or translated editions remain separately governed.</p>
           </aside>
 
           <h2>Beyond the book</h2>
           <p>What we inherit is not a script. It is a starting map—routes others traveled, hazards they discovered, landmarks worth remembering, and questions they could not answer for us. The next generation still has to decide where to go.</p>
-          <p>The book is the first major book-length artifact in a larger body of work. DarrenDang.com connects its lessons to evolving ideas, future writing, talks, and other artifacts.</p>
+          <p>The book is the first completed book-length expression in a larger body of work. DarrenDang.com connects its lessons to evolving ideas, later books, Letters, talks, Papers, and The Way in Motion.</p>
           <div className="book-detail-actions">
             <Link className="button button-light" href="#inside-the-book">Read Inside the Book</Link>
-            <Link className="text-link" href="/books/">Explore The Path Forward trilogy →</Link>
+            <Link className="text-link" href="/books/">Explore the wider body of work →</Link>
           </div>
         </div>
       </div>
