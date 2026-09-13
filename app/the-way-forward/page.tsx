@@ -3,21 +3,22 @@ import { InteriorPage } from "@/components/InteriorPage";
 
 export const metadata = {
   title: "The Way Forward",
-  description: "The Way Forward is the direction you choose when inherited wisdom meets present reality—personal, contextual, and accountable to consequence.",
+  description: "The Way Forward is the direction you choose when inherited wisdom meets present reality. Book 5 is the integration layer that helps bring the wider body of work into a reader-owned practice without prescribing the destination.",
 };
 
 export default function TheWayForwardPage() {
   return (
-    <InteriorPage eyebrow="The Way Forward" title="What does your next context require?" wide>
+    <InteriorPage eyebrow="The Way Forward · Book 5 Integration Layer" title="What does your next context require?" wide>
       <div className="genome-lead-grid">
         <div>
           <p className="lead">The Way Forward is the direction you choose when inherited wisdom meets present reality. It is not one universal definition of progress, and it is not the same thing as contributing content to this website.</p>
+          <p>Book 5, <em>The Way Forward</em>, is the integration layer in the wider body of work: it brings inheritance, teachability, discovery, creation, dialogue, and stewardship together without taking ownership of the reader&apos;s destination.</p>
           <p>Your direction may involve building, healing, learning, serving, changing course, strengthening a relationship, becoming more independent, becoming more connected, pursuing greater achievement, choosing less, waiting, letting go, or beginning again.</p>
         </div>
         <aside className="steward-card">
-          <div className="eyebrow bronze">The test</div>
-          <h2>Progress is personal. Consequences are real.</h2>
-          <p>A claimed improvement should still be questioned if it destroys dignity, diminishes agency, ignores evidence, harms others without justification, or leaves a narrower future.</p>
+          <div className="eyebrow bronze">The integration layer</div>
+          <h2>The book can integrate the ideas. It cannot decide your Way.</h2>
+          <p>The developing Book 5 expression exists to help a reader bring the wider system into practice while preserving agency. Progress remains personal; consequences remain real.</p>
         </aside>
       </div>
 
