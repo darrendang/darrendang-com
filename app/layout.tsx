@@ -16,6 +16,7 @@ import "./listen.css";
 import "./generative-dialogue.css";
 import "./site-contrast.css";
 import "./nathan-style.css";
+import "./nathan-style-overrides.css";
 
 const signatureSerif = Cormorant_Garamond({
   subsets: ["latin"],
