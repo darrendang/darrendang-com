@@ -5,11 +5,11 @@ import { InteriorPage } from "@/components/InteriorPage";
 
 export const metadata: Metadata = {
   title: "The Making of The Way",
-  description: "The Making of The Way: How Conversation Becomes Discovery is a companion work in development by Darren Dang exploring Generative Dialogue and how new understanding can emerge between minds.",
+  description: "The Making of The Way: How Conversation Becomes Discovery is Darren Dang's companion work where the collaboration and provenance behind The Way are emerging into a reader-first account of Generative Dialogue.",
   alternates: { canonical: "/books/the-making-of-the-way/" },
   openGraph: {
     title: "The Making of The Way | Darren Dang",
-    description: "A companion work in development exploring Generative Dialogue and how sustained conversation can become a mode of discovery.",
+    description: "A companion work where collaboration and provenance become visible through Generative Dialogue and sustained human–AI discovery.",
     type: "article",
     url: "/books/the-making-of-the-way/",
     images: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 export default function TheMakingOfTheWayPage() {
   return (
-    <InteriorPage eyebrow="Companion Work · In Development" title="The Making of The Way" wide>
+    <InteriorPage eyebrow="Book 4 · Collaboration / Provenance Emerging" title="The Making of The Way" wide>
       <div className="development-book-grid">
         <div className="development-cover-wrap">
           <Image
@@ -37,14 +37,14 @@ export default function TheMakingOfTheWayPage() {
             sizes="200px"
             priority
           />
-          <p className="book-caption">Current approved cover. <em>The Path Forward</em> remains a three-book trilogy; this volume is presented here as a companion work in development.</p>
+          <p className="book-caption">Current approved cover. <em>The Path Forward</em> remains a three-book trilogy; this companion work makes the collaboration and provenance behind The Way visible.</p>
         </div>
 
         <div className="development-copy">
-          <div className="book-status">In Development</div>
+          <div className="book-status">Collaboration / Provenance Emerging</div>
           <p className="book-hook">How Conversation Becomes Discovery</p>
           <p className="lead"><em>The Making of The Way</em> asks what happens when discovery does not belong to one mind alone.</p>
-          <p>What began as an effort to develop and refine a set of books became a sustained human–AI dialogue through which patterns, language, contradictions, and larger principles gradually became visible.</p>
+          <p>What began as an effort to develop and refine a set of books became a sustained human–AI dialogue through which patterns, language, contradictions, corrections, and larger principles gradually became visible.</p>
           <p>This work examines that process and the idea of <strong>Generative Dialogue</strong>—disciplined conversation in which participants do more than exchange what they already know. Through questioning, reflection, challenge, transfer, correction, and synthesis, something new can emerge between them.</p>
           <div className="development-actions">
             <Link className="button button-dark" href="/ideas/generative-dialogue/">Explore Generative Dialogue</Link>
@@ -55,7 +55,7 @@ export default function TheMakingOfTheWayPage() {
 
       <section className="development-themes">
         <div className="eyebrow bronze">How this work fits</div>
-        <h2>A companion to the trilogy, and a case study in how knowledge can emerge.</h2>
+        <h2>A companion to the trilogy, and a provenance record of how knowledge emerged.</h2>
         <div className="theme-grid">
           <article>
             <h3>The Path Forward</h3>
@@ -88,8 +88,8 @@ export default function TheMakingOfTheWayPage() {
       </section>
 
       <aside className="development-status-note">
-        <strong>Development status</strong>
-        <p><em>The Making of The Way</em> is in development. Its title, subtitle, public thesis, and current cover are established enough to share selectively. Manuscript structure, wording, examples, and publication timing may continue to evolve. No release date or preorder has been announced.</p>
+        <strong>Current state</strong>
+        <p><em>The Making of The Way</em> is where the collaboration and provenance behind The Way are emerging into the work itself. The reader-first direction, title, subtitle, public thesis, and current cover are established; manuscript structure and final publication timing remain developmental.</p>
       </aside>
     </InteriorPage>
   );
