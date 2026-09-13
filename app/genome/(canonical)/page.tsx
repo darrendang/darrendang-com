@@ -9,9 +9,10 @@ export const metadata = {
 const cycle = ['Curiosity','Connection','Discovery','Transformation','Contribution','Stewardship'];
 
 export default function GenomePage(){
-  return <InteriorPage eyebrow="The Dang Genome" title="A living body of wisdom, built to evolve." wide>
+  return <InteriorPage eyebrow="Living family knowledge" title="The Dang Genome" titleRole="signature" wide>
     <div className="genome-lead-grid">
       <div>
+        <h2>A living body of wisdom, built to evolve.</h2>
         <p className="lead">The Dang Genome is the first living family implementation of The Way: a governed body of knowledge, wisdom, experience, relationships, ideas, lineage, and creations. DarrenDang.com is the public experience layer—not the Genome itself and not the entirety of The Way.</p>
         <p>The Genome begins with Darren&apos;s ideas, stories, relationships, books, Letters, frameworks, and lived experience. It may grow through carefully governed contributions from other people while preserving authorship, provenance, context, privacy, permission, correction, and editorial status.</p>
       </div>
