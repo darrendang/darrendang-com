@@ -2,16 +2,23 @@
 
 Source for **DarrenDang.com — the place where Darren's ideas live**.
 
-The site is a long-term intellectual platform for ideas, writing, books, talks, and related media. The current public direction keeps the platform idea-first while making **The Path Forward** trilogy visible and acknowledging a separate companion work in development:
+The site is a long-term intellectual platform for ideas, writing, books, talks, and related media. The current public direction is idea-first and rooted in **The Way**, with the books presented as major expressions of the larger body of work.
 
-- **Book 1 — _For Those Who Come After Us — A Life in Lessons_** — preparing for publication
-- **Book 2 — _Wisdom Has No Rank_** — in final editorial preparation
-- **Book 3 — _D.O.T.S._** — in advanced development
-- **Companion work — _The Making of The Way: How Conversation Becomes Discovery_** — in development; connected to the public idea of Generative Dialogue
+## Current public book state — September 13, 2026
 
-Books 1–3 remain the bounded **The Path Forward** trilogy. _The Making of The Way_ is presented as a companion work rather than an extension of the trilogy architecture. Its public posture is presence without launch pressure: no preorder, countdown, or public release-date commitment.
+- **Book 1 — _For Those Who Come After Us — A Life in Lessons_** — **Published**
+- **Book 2 — _Wisdom Has No Rank_** — **Complete / Gold Master**
+- **Book 3 — _D.O.T.S._** — **Nearing Completion**
+- **Book 4 — _The Making of The Way: How Conversation Becomes Discovery_** — **Collaboration / Provenance Emerging**
+- **Book 5 — _The Way Forward_** — **Integration Layer**
 
-The books are major expressions of a larger connected system of thought, not the container for the DarrenDang.com brand.
+Books 1–3 remain **The Path Forward** trilogy. Book 4 makes the human–AI collaboration and provenance behind the work increasingly visible. Book 5 integrates the wider body of work without replacing the reader's ownership of what comes next.
+
+The books are expressions of **The Way**, not the container for it. The public site also connects Ideas, Letters, The Way Papers, The Way in Motion, Shared Wisdom, Generative Dialogue, D.O.T.S., and the public-facing Dang Genome.
+
+## Public current-state authority
+
+For the public website, `main` is the production source of truth. Current public status language and route relationships must agree with the live site and `content/seed.ts`. Historical decision records remain provenance, but must be explicitly marked superseded when later public-state decisions replace them.
 
 ## Production architecture
 
@@ -20,7 +27,7 @@ The books are major expressions of a larger connected system of thought, not the
 - Hosting: GitHub Pages
 - Deployment: GitHub Actions
 - Front end: Next.js + TypeScript, static export
-- Structured content: Sanity, read at build time
+- Structured content: Sanity, read at build time where applicable
 
 ## Local development
 
