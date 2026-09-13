@@ -5,7 +5,7 @@ import { ConnectedDots } from "@/components/ConnectedDots";
 
 export const metadata = {
   title: "D.O.T.S. — Book 3",
-  description: "Explore Darren Dang's Book 3 in advanced development, D.O.T.S. — a way of seeing problems that widens the search space, discovers possibilities across domains, and uses CREATE to test what deserves to become real.",
+  description: "Explore Darren Dang's Book 3 nearing completion, D.O.T.S. — a way of seeing problems that widens the search space, discovers possibilities across domains, and uses CREATE to test what deserves to become real.",
 };
 
 const themes = [
@@ -58,14 +58,14 @@ const progression = [
 
 export default function DotsBook() {
   return (
-    <InteriorPage eyebrow="Book 3 · CREATE · In Advanced Development" title="D.O.T.S." wide>
+    <InteriorPage eyebrow="Book 3 · CREATE · Nearing Completion" title="D.O.T.S." wide>
       <div className="development-book-grid">
         <div className="development-cover-wrap">
           <Image src="/images/dots-cover.webp" width={480} height={720} alt="Current cover for D.O.T.S. by Darren Dang." className="development-cover" sizes="(max-width: 900px) 76vw, 34vw" priority />
-          <p className="book-caption">Current cover direction. The book is in advanced development.</p>
+          <p className="book-caption">Current cover direction. The manuscript is nearing completion.</p>
         </div>
         <div className="development-copy">
-          <div className="book-status">In Advanced Development</div>
+          <div className="book-status">Nearing Completion</div>
           <p className="dots-line">Collect Dots. Connect Dots. Create Something New.</p>
           <p className="lead">D.O.T.S. is a way of seeing problems.</p>
           <p>The world organizes knowledge into disciplines. Problems do not. The book explores what becomes possible when we stop letting a problem&apos;s label decide where we are allowed to look for answers.</p>
@@ -113,7 +113,7 @@ export default function DotsBook() {
             </article>
           ))}
         </div>
-        <p className="sample-note">These are intentionally selective chapter glimpses rather than full excerpts. The manuscript is still developing, so wording and sequence may continue to evolve.</p>
+        <p className="sample-note">These are intentionally selective chapter glimpses. The core architecture is established, while exact wording and final sequencing may still change before a publication master is locked.</p>
       </section>
 
       <section className="development-themes">
@@ -173,7 +173,7 @@ export default function DotsBook() {
 
       <aside className="development-status-note">
         <strong>Development status</strong>
-        <p><em>D.O.T.S.</em> is in advanced development. The title, core line, central thesis, public high-level model, and reader-centered direction are established enough to share selectively. The manuscript, exact chapter wording and sequence, detailed method, case studies, excerpts, and publication timing may still change as the book develops.</p>
+        <p><em>D.O.T.S.</em> is nearing completion. The title, core line, central thesis, public high-level model, v6.0 architecture, and reader-centered direction are established. Final manuscript wording, sequencing, production files, and publication timing remain subject to the final completion and release gates.</p>
       </aside>
     </InteriorPage>
   );
