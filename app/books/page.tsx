@@ -4,19 +4,19 @@ import { InteriorPage } from "@/components/InteriorPage";
 
 export const metadata = {
   title: "Books",
-  description: "Explore The Path Forward trilogy by Darren Dang, along with companion works in development including The Making of The Way.",
+  description: "Explore The Path Forward trilogy by Darren Dang, along with The Making of The Way and The Way Forward as the wider body of work continues to develop.",
 };
 
 const books = [
   {
-    status: "Preparing for Publication",
+    status: "Published",
     title: "For Those Who Come After Us",
     subtitle: "A Life in Lessons",
     cover: "/images/for-those-who-come-after-us-front-book-v3.webp",
     width: 360,
     height: 576,
     alt: "Front cover of For Those Who Come After Us: A Life in Lessons by Darren Dang.",
-    copy: "A life in lessons about inheritance, identity, learning, failure, systems, leadership, family, purpose, and what we pass forward. Preparing for publication.",
+    copy: "A published life in lessons about inheritance, identity, learning, failure, systems, leadership, family, purpose, and what we pass forward.",
     movement: "INHERIT",
     question: "What have I learned?",
     bridge: "Lessons can cross generations.",
@@ -24,14 +24,14 @@ const books = [
     href: "/books/for-those-who-come-after-us/",
   },
   {
-    status: "In Final Editorial Preparation",
+    status: "Complete / Gold Master",
     title: "Wisdom Has No Rank",
     subtitle: "",
     cover: "/images/wisdom-has-no-rank-cover.webp",
     width: 360,
     height: 540,
     alt: "Current cover for Wisdom Has No Rank by Darren Dang.",
-    copy: "A six-part book about reciprocal wisdom: what changes when the person you expected to teach becomes someone capable of teaching you. Selected excerpts are now available.",
+    copy: "A complete six-part book about reciprocal wisdom and what changes when we stop pre-ranking who or what can teach us. Print Gold Masters are locked; physical proof review remains the final print-release gate.",
     movement: "BECOME",
     question: "Who can I learn from?",
     bridge: "Wisdom can cross hierarchy.",
@@ -39,14 +39,14 @@ const books = [
     href: "/books/wisdom-has-no-rank/",
   },
   {
-    status: "In Advanced Development",
+    status: "Nearing Completion",
     title: "D.O.T.S.",
     subtitle: "Collect Dots. Connect Dots. Create Something New.",
     cover: "/images/dots-cover.webp",
     width: 360,
     height: 540,
     alt: "Current cover for D.O.T.S. by Darren Dang.",
-    copy: "A book about learning across boundaries, seeing structural relationships, expanding the search space, transferring carefully, and creating useful new possibilities.",
+    copy: "A nearing-completion book about learning across boundaries, seeing structural relationships, expanding the search space, transferring carefully, and creating useful new possibilities.",
     movement: "CREATE",
     question: "What can I create from what I learn?",
     bridge: "Ideas can cross disciplines.",
@@ -55,13 +55,36 @@ const books = [
   },
 ];
 
+const currentState = [
+  ["01", "For Those Who Come After Us", "Published", "The first completed public book-length expression of The Way."],
+  ["02", "Wisdom Has No Rank", "Complete / Gold Master", "The manuscript is complete and the print Gold Masters are locked."],
+  ["03", "D.O.T.S.", "Nearing Completion", "The method and architecture are established; the manuscript is approaching completion."],
+  ["04", "The Making of The Way", "Collaboration / Provenance Emerging", "The collaboration that helped reveal The Way becomes part of the work itself."],
+  ["05", "The Way Forward", "Integration Layer", "The wider body of work is brought together without replacing the reader's ownership of what comes next."],
+];
+
 export default function Books() {
   return (
-    <InteriorPage eyebrow="Books" title="Three books. One trilogy. A companion work." wide>
+    <InteriorPage eyebrow="Books" title="A body of work in motion." wide>
       <div className="books-library-intro">
-        <p className="lead">The books are major expressions of the ideas—not the container for the whole platform. <em>The Path Forward</em> is the original three-book trilogy, tracing a movement from what we inherit, to who we become, to what we can create from what we learn.</p>
-        <p>Book 1 is preparing for publication. Book 2 is in final editorial preparation. Book 3 is in advanced development. A separate companion work, <em>The Making of The Way</em>, examines how the larger thinking itself became visible through sustained conversation.</p>
+        <p className="lead">The books are major expressions of The Way—not the container for the whole philosophy. The first three form <em>The Path Forward</em> trilogy, progressively widening where learning can come from. Books 4 and 5 widen the frame again: first toward the collaboration and provenance behind the work, then toward integration.</p>
+        <p>The public state now reflects where the work actually is: Book 1 is published. Book 2 is complete with print Gold Masters locked. Book 3 is nearing completion. Book 4 is where the collaboration and provenance are emerging. Book 5 is the integration layer.</p>
       </div>
+
+      <section className="development-themes" aria-labelledby="current-state-title">
+        <div className="eyebrow bronze">Current state · September 2026</div>
+        <h2 id="current-state-title">The work is moving from inheritance toward integration.</h2>
+        <div className="theme-grid theme-grid-five">
+          {currentState.map(([number, title, status, copy]) => (
+            <article key={number}>
+              <small>{number}</small>
+              <h3>{title}</h3>
+              <div className="book-status">{status}</div>
+              <p>{copy}</p>
+            </article>
+          ))}
+        </div>
+      </section>
 
       <div className="book-system-strip" aria-label="The Path Forward trilogy intellectual progression">
         <span>INHERIT</span><b>→</b><span>BECOME</span><b>→</b><span>CREATE</span>
@@ -89,27 +112,34 @@ export default function Books() {
       </div>
 
       <section className="development-themes">
-        <div className="eyebrow bronze">A Companion Work in Development</div>
-        <h2>A fourth work looks at how the thinking itself was made.</h2>
-        <p className="lead"><em>The Path Forward</em> remains a three-book trilogy. <em>The Making of The Way</em> sits beside it as a companion work—present enough to explore, but not being treated as an active launch.</p>
+        <div className="eyebrow bronze">Book 4 · Collaboration / Provenance Emerging</div>
+        <h2>The fourth work looks at how the thinking itself was made.</h2>
+        <p className="lead"><em>The Path Forward</em> remains a three-book trilogy. <em>The Making of The Way</em> sits beside it as a companion work, examining the sustained human–AI dialogue through which questions changed, patterns became visible, and the larger architecture emerged.</p>
 
         <article className="book-library-card">
           <div className="book-library-cover">
             <Image src="/images/the-making-of-the-way-cover.webp" width={200} height={300} alt="Cover of The Making of The Way: How Conversation Becomes Discovery by Darren Dang." sizes="200px" />
           </div>
           <div className="book-library-copy">
-            <div className="book-status">In Development</div>
+            <div className="book-status">Collaboration / Provenance Emerging</div>
             <div className="book-movement">COMPANION WORK</div>
             <h2>The Making of The Way</h2>
             <p className="book-library-sub"><em>How Conversation Becomes Discovery</em></p>
             <p className="book-library-question">How can conversation become a mode of discovery?</p>
-            <p>What began as an effort to preserve lessons for one family became something Darren did not expect: a sustained human–AI dialogue that changed the questions, the books, and eventually the larger philosophy around them. <em>The Making of The Way</em> explores how conversation itself can become a mode of discovery.</p>
+            <p>What began as an effort to preserve lessons for one family became something Darren did not expect: a sustained human–AI dialogue that changed the questions, the books, and eventually the larger philosophy around them. <em>The Making of The Way</em> makes that collaboration and provenance visible.</p>
             <div className="development-actions">
-              <Link className="button button-dark" href="/books/the-making-of-the-way/">Learn more about Book 4</Link>
+              <Link className="button button-dark" href="/books/the-making-of-the-way/">Explore Book 4</Link>
               <Link className="text-link" href="/ideas/generative-dialogue/">Explore Generative Dialogue →</Link>
             </div>
           </div>
         </article>
+      </section>
+
+      <section className="books-system-note">
+        <div className="eyebrow bronze">Book 5 · Integration Layer</div>
+        <h2>The Way Forward brings the wider system together without prescribing the reader's destination.</h2>
+        <p className="lead">The fifth book is not simply the next installment. It is the integration layer: a place where inheritance, teachability, discovery, creation, dialogue, and stewardship can be brought into a reader-owned practice.</p>
+        <div className="actions"><Link className="button button-dark" href="/the-way-forward/">Explore The Way Forward</Link><Link className="text-link" href="/the-way/">Return to The Way →</Link></div>
       </section>
 
       <section className="books-system-note">
