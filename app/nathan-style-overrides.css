@@ -1,0 +1,39 @@
+/* Final semantic corrections layered after legacy route styles. */
+
+/* genome-hero is a legacy layout class used by Home, The Way, and Letters; it is not a typography role. */
+.genome-hero h1,
+.brand-hero h1,
+.hero-copy h1 {
+  font-family: var(--font-editorial-family) !important;
+}
+
+/* Only explicit signature-role elements use Cormorant. */
+.type-signature,
+.signature-heading,
+.wordmark,
+.brand-genome,
+.footer-genome,
+.genome-name,
+[data-type-role="signature"] {
+  font-family: var(--font-signature-family) !important;
+}
+
+/* Preserve Newsreader for idea-bearing headings and titles. */
+.type-editorial,
+.book-card h3,
+.book-grid h2,
+.reading h2,
+.reading h3,
+.content-card h2,
+.idea-feature h3,
+.idea-mini h3,
+.question,
+.trilogy-map-quote {
+  font-family: var(--font-editorial-family) !important;
+}
+
+/* D.O.T.S. is an idea/method title when presented as a principal heading. */
+.dots-title,
+[data-type-role="editorial"] {
+  font-family: var(--font-editorial-family) !important;
+}
