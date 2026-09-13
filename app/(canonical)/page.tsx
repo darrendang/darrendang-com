@@ -5,7 +5,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 const books = [
   {
     number: "01",
-    status: "Preparing for Publication",
+    status: "Published",
     title: "For Those Who Come After Us",
     subtitle: "A Life in Lessons",
     cover: "/images/for-those-who-come-after-us-front-home-v3.webp",
@@ -16,7 +16,7 @@ const books = [
   },
   {
     number: "02",
-    status: "In Final Editorial Preparation",
+    status: "Complete / Gold Master",
     title: "Wisdom Has No Rank",
     subtitle: "",
     cover: "/images/wisdom-has-no-rank-cover.webp",
@@ -27,7 +27,7 @@ const books = [
   },
   {
     number: "03",
-    status: "In Advanced Development",
+    status: "Nearing Completion",
     title: "D.O.T.S.",
     subtitle: "A Way of Seeing Problems",
     cover: "/images/dots-cover.webp",
@@ -93,7 +93,7 @@ export default function Home() {
         <section className="hero brand-hero genome-hero">
           <div className="container hero-grid">
             <div className="hero-copy">
-              <div className="eyebrow">The Way → Your Way → The Way Forward</div>
+              <div className="eyebrow">The Way → Your Way → The Way Forward → Pass Forward</div>
               <h1>A stronger starting point. The freedom to go farther.</h1>
               <p>Learn from what came before. Understand it deeply. Look beyond what you already know. Create what does not yet exist. Then pass forward a stronger starting point for someone else.</p>
               <div className="actions">
@@ -198,7 +198,7 @@ export default function Home() {
             <div className="section-intro compact">
               <div className="eyebrow bronze">Books · The Path Forward</div>
               <h2>Three books that progressively widen where learning can come from.</h2>
-              <p className="lead"><strong>Book 1</strong> looks across time. <strong>Book 2</strong> widens who or what can teach us. <strong>Book 3</strong> widens where we look for possibilities and solutions. Together they are Darren&apos;s three-book exploration within The Way; <strong>The Way Forward</strong> still belongs to the reader.</p>
+              <p className="lead"><strong>Book 1</strong> looks across time. <strong>Book 2</strong> widens who or what can teach us. <strong>Book 3</strong> widens where we look for possibilities and solutions. Book 1 is published, Book 2 is complete with print Gold Masters locked, and Book 3 is nearing completion. The wider body then turns toward collaboration and provenance in Book 4, and integration in Book 5.</p>
             </div>
             <div className="book-cards">
               {books.map((book) => (
@@ -218,9 +218,9 @@ export default function Home() {
               ))}
             </div>
             <div className="section-link">
-              <Link className="text-link" href="/books/">Explore The Path Forward →</Link>
+              <Link className="text-link" href="/books/">Explore the full five-work progression →</Link>
               <span> · </span>
-              <Link className="text-link" href="/books/the-making-of-the-way/">Companion work: The Making of The Way →</Link>
+              <Link className="text-link" href="/books/the-making-of-the-way/">Book 4: The Making of The Way →</Link>
             </div>
           </div>
         </section>
