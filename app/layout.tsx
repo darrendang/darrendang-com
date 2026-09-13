@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Cormorant_Garamond, Newsreader, Source_Sans_3 } from "next/font/google";
 import { ListeningLayer } from "@/components/ListeningLayer";
 import "./globals.css";
 import "./trilogy.css";
@@ -14,6 +15,31 @@ import "./way-ux.css";
 import "./listen.css";
 import "./generative-dialogue.css";
 import "./site-contrast.css";
+import "./nathan-style.css";
+
+const signatureSerif = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["500", "600"],
+  style: ["normal", "italic"],
+  display: "swap",
+  variable: "--font-signature",
+});
+
+const editorialSerif = Newsreader({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
+  display: "swap",
+  variable: "--font-editorial",
+});
+
+const structuralSans = Source_Sans_3({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
+  display: "swap",
+  variable: "--font-structural",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://darrendang.com"),
@@ -69,7 +95,7 @@ const structuredData = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${signatureSerif.variable} ${editorialSerif.variable} ${structuralSans.variable}`}>
         <a className="skip-link" href="#main">Skip to content</a>
         {children}
         <ListeningLayer />
