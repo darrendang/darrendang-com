@@ -10,9 +10,9 @@ export function SiteHeader() {
         </Link>
         <nav aria-label="Primary" className="primary-nav">
           <Link href="/the-way/">The Way</Link>
-          <Link href="/genome/">Genome</Link>
           <Link href="/books/">Books</Link>
           <Link href="/ideas/">Ideas</Link>
+          <Link href="/genome/">Genome</Link>
           <Link href="/papers/">Papers &amp; Talks</Link>
           <Link className="nav-cta" href="/explore/">Explore</Link>
         </nav>
