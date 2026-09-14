@@ -7,12 +7,12 @@ The site is a long-term intellectual platform for ideas, writing, books, talks, 
 ## Current public book state — September 13, 2026
 
 - **Book 1 — _For Those Who Come After Us — A Life in Lessons_** — **Published**
-- **Book 2 — _Wisdom Has No Rank_** — **Complete / Gold Master**
-- **Book 3 — _D.O.T.S._** — **Nearing Completion**
+- **Book 2 — _Wisdom Has No Rank_** — **Final Proof**
+- **Book 3 — _D.O.T.S._** — **First Print Proof**
 - **Book 4 — _The Making of The Way: How Conversation Becomes Discovery_** — **Collaboration / Provenance Emerging**
 - **Book 5 — _The Way Forward_** — **Integration Layer**
 
-Books 1–3 remain **The Path Forward** trilogy. Book 4 makes the human–AI collaboration and provenance behind the work increasingly visible. Book 5 integrates the wider body of work without replacing the reader's ownership of what comes next.
+Books 1–3 remain **The Path Forward** trilogy. Book 2's manuscript and print Gold Masters are locked, with final physical proof review remaining the print-release gate. Book 3 has reached its first hard-copy proof. Book 4 makes the human–AI collaboration and provenance behind the work increasingly visible. Book 5 integrates the wider body of work without replacing the reader's ownership of what comes next.
 
 The books are expressions of **The Way**, not the container for it. The public site also connects Ideas, Letters, The Way Papers, The Way in Motion, Shared Wisdom, Generative Dialogue, D.O.T.S., and the public-facing Dang Genome.
 
