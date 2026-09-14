@@ -38,7 +38,7 @@ export default function DotsIdeaPage() {
     primary={{ title: "Explore the full D.O.T.S. method", label: "Explore the full D.O.T.S. page", href: "/dots/", copy: "The extensive public framework, cases, guardrails, and method." }}
     connections={[
       { title: "D.O.T.S. — full method", href: "/dots/", copy: "The extensive public treatment of Deconstruct → Observe → Transfer → Synthesize → CREATE." },
-      { title: "Book 3 · D.O.T.S.", href: "/books/dots/", copy: "The book-length expression, now nearing completion." },
+      { title: "Book 3 · D.O.T.S.", href: "/books/dots/", copy: "The book-length expression, now in first hard-copy proof." },
       { title: "Connect the Dots · Book 1", href: "/books/for-those-who-come-after-us/connect-the-dots/", copy: "An earlier lived example of cross-domain transfer before the larger method was fully named." },
       { title: "From AI Experiments to Institutional Capability", href: "/papers/from-ai-experiments-to-institutional-capability/", copy: "A public example of widening an AI problem into a stewardship and institutional-capability problem." },
       { title: "Generative Dialogue", href: "/ideas/generative-dialogue/", copy: "A complementary discovery mechanism that can expose new dots, patterns, contradictions, and frames." },
