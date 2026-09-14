@@ -24,14 +24,14 @@ const books = [
     href: "/books/for-those-who-come-after-us/",
   },
   {
-    status: "Complete / Gold Master",
+    status: "Final Proof",
     title: "Wisdom Has No Rank",
     subtitle: "",
     cover: "/images/wisdom-has-no-rank-cover.webp",
     width: 360,
     height: 540,
     alt: "Current cover for Wisdom Has No Rank by Darren Dang.",
-    copy: "A complete six-part book about reciprocal wisdom and what changes when we stop pre-ranking who or what can teach us. Print Gold Masters are locked; physical proof review remains the final print-release gate.",
+    copy: "A complete six-part book about reciprocal wisdom and what changes when we stop pre-ranking who or what can teach us. The manuscript and print Gold Masters are locked; final physical proof review remains the print-release gate.",
     movement: "BECOME",
     question: "Who can I learn from?",
     bridge: "Wisdom can cross hierarchy.",
@@ -39,14 +39,14 @@ const books = [
     href: "/books/wisdom-has-no-rank/",
   },
   {
-    status: "Nearing Completion",
+    status: "First Print Proof",
     title: "D.O.T.S.",
     subtitle: "Collect Dots. Connect Dots. Create Something New.",
     cover: "/images/dots-cover.webp",
     width: 360,
     height: 540,
     alt: "Current cover for D.O.T.S. by Darren Dang.",
-    copy: "A nearing-completion book about learning across boundaries, seeing structural relationships, expanding the search space, transferring carefully, and creating useful new possibilities.",
+    copy: "A book about learning across boundaries, seeing structural relationships, expanding the search space, transferring carefully, and creating useful new possibilities. The first hard-copy proof is now in review.",
     movement: "CREATE",
     question: "What can I create from what I learn?",
     bridge: "Ideas can cross disciplines.",
@@ -57,8 +57,8 @@ const books = [
 
 const currentState = [
   ["01", "For Those Who Come After Us", "Published", "The first completed public book-length expression of The Way."],
-  ["02", "Wisdom Has No Rank", "Complete / Gold Master", "The manuscript is complete and the print Gold Masters are locked."],
-  ["03", "D.O.T.S.", "Nearing Completion", "The method and architecture are established; the manuscript is approaching completion."],
+  ["02", "Wisdom Has No Rank", "Final Proof", "The manuscript and print Gold Masters are locked; final physical proof review remains the release gate."],
+  ["03", "D.O.T.S.", "First Print Proof", "The first hard-copy proof has been produced and is now being reviewed."],
   ["04", "The Making of The Way", "Collaboration / Provenance Emerging", "The collaboration that helped reveal The Way becomes part of the work itself."],
   ["05", "The Way Forward", "Integration Layer", "The wider body of work is brought together without replacing the reader&apos;s ownership of what comes next."],
 ];
@@ -68,7 +68,7 @@ export default function Books() {
     <InteriorPage eyebrow="Books" title="A body of work in motion." wide>
       <div className="books-library-intro">
         <p className="lead">The books are major expressions of The Way—not the container for the whole philosophy. The first three form <em>The Path Forward</em> trilogy, progressively widening where learning can come from. Books 4 and 5 widen the frame again: first toward the collaboration and provenance behind the work, then toward integration.</p>
-        <p>The public state now reflects where the work actually is: Book 1 is published. Book 2 is complete with print Gold Masters locked. Book 3 is nearing completion. Book 4 is where the collaboration and provenance are emerging. Book 5 is the integration layer.</p>
+        <p>The public state now reflects where the work actually is: Book 1 is published. Book 2 is in final physical proof. Book 3 has reached its first hard-copy proof. Book 4 is where the collaboration and provenance are emerging. Book 5 is the integration layer.</p>
       </div>
 
       <section className="development-themes" aria-labelledby="current-state-title">
