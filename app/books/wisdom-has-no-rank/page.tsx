@@ -5,7 +5,7 @@ import { ConnectedDots } from "@/components/ConnectedDots";
 
 export const metadata = {
   title: "Wisdom Has No Rank",
-  description: "Explore Wisdom Has No Rank, Darren Dang's complete Book 2 with print Gold Masters locked: a book about teachability, expanding possible teachers, and learning across relationship, culture, experience, and unexpected sources.",
+  description: "Explore Wisdom Has No Rank, Darren Dang's Book 2 now in final physical proof: a book about teachability, expanding possible teachers, and learning across relationship, culture, experience, and unexpected sources.",
 };
 
 const parts = [
@@ -55,14 +55,14 @@ const samples = [
 
 export default function WisdomHasNoRank() {
   return (
-    <InteriorPage eyebrow="Book 2 · BECOME · Complete / Gold Master" title="Wisdom Has No Rank" wide>
+    <InteriorPage eyebrow="Book 2 · BECOME · Final Proof" title="Wisdom Has No Rank" wide>
       <div className="development-book-grid">
         <div className="development-cover-wrap">
           <Image src="/images/wisdom-has-no-rank-cover.webp" width={480} height={720} alt="Current cover for Wisdom Has No Rank by Darren Dang." className="development-cover" sizes="(max-width: 900px) 76vw, 34vw" priority />
-          <p className="book-caption">Print Gold Master cover direction. Physical proof review remains the final print-release gate.</p>
+          <p className="book-caption">Final proof cover. The manuscript and print Gold Masters are locked; physical proof review remains the final print-release gate.</p>
         </div>
         <div className="development-copy">
-          <div className="book-status">Complete / Gold Master</div>
+          <div className="book-status">Final Proof</div>
           <p className="book-hook">Who or what might I still learn from?</p>
           <p className="lead">Experience matters. Expertise matters. Responsibility matters. Rank can matter. But none gives us a monopoly on wisdom.</p>
           <p><em>Wisdom Has No Rank</em> begins where <em>For Those Who Come After Us</em> leaves off. Book 1 asks what we can learn from the lives that came before us. Book 2 asks a wider question: what happens when we stop pre-ranking the source of learning before we have examined what it can teach?</p>
@@ -164,7 +164,7 @@ export default function WisdomHasNoRank() {
 
       <aside className="development-status-note">
         <strong>Production status</strong>
-        <p><em>Wisdom Has No Rank</em> is complete. The manuscript is locked and the paperback/hardcover print Gold Masters have passed KDP digital preview. Physical proof copies have been ordered; print publication release authorization remains pending proof approval. The eBook remains on its own preflight/release track.</p>
+        <p><em>Wisdom Has No Rank</em> is in final physical proof. The manuscript is locked and the paperback/hardcover print Gold Masters have passed KDP digital preview. Final print publication authorization remains pending physical proof approval. The eBook remains on its own preflight/release track.</p>
       </aside>
     </InteriorPage>
   );
