@@ -11,8 +11,8 @@ export const ideas=[
 
 export const books=[
 {slug:'for-those-who-come-after-us',title:'For Those Who Come After Us',subtitle:'A Life in Lessons',status:'published',movement:'INHERIT',summary:'A published life in lessons about inheritance, identity, learning, failure, systems, leadership, family, purpose, and what we pass forward.'},
-{slug:'wisdom-has-no-rank',title:'Wisdom Has No Rank',subtitle:'',status:'complete-gold-master',movement:'BECOME',summary:'A complete manuscript with locked print Gold Masters, exploring reciprocal wisdom and what changes when we stop pre-ranking who or what can teach us.'},
-{slug:'dots',title:'D.O.T.S.',subtitle:'Collect Dots. Connect Dots. Create Something New.',status:'nearing-completion',movement:'CREATE',summary:'A nearing-completion exploration of D.O.T.S. as a way of seeing problems: label to structure to search space, followed by disciplined transfer and useful synthesis.'},
+{slug:'wisdom-has-no-rank',title:'Wisdom Has No Rank',subtitle:'',status:'final-proof',movement:'BECOME',summary:'A complete manuscript with locked print Gold Masters, now in final physical proof before print release authorization.'},
+{slug:'dots',title:'D.O.T.S.',subtitle:'Collect Dots. Connect Dots. Create Something New.',status:'first-print-proof',movement:'CREATE',summary:'A book-length exploration of D.O.T.S. as a way of seeing problems: label to structure to search space, followed by disciplined transfer and useful synthesis, now in first hard-copy proof.'},
 {slug:'the-making-of-the-way',title:'The Making of The Way',subtitle:'How Conversation Becomes Discovery',status:'collaboration-provenance-emerging',movement:'COMPANION',summary:'A companion work where the collaboration and provenance behind The Way are emerging into a reader-first account of Generative Dialogue and discovery.'},
 {slug:'the-way-forward',title:'The Way Forward',subtitle:'',status:'integration-layer',movement:'INTEGRATE',summary:'The integration layer that brings the wider body of work into a reader-owned practice without replacing The Way as the philosophical root.'}
 ];
