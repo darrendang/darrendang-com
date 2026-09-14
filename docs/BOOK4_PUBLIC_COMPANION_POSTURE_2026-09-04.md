@@ -10,7 +10,7 @@
 
 This document records the September 4 public posture for Book 4 and remains useful as provenance. It is **not** the current source for public book-status language.
 
-Current public-state language is:
+At the time this document was superseded, the then-current public-state language was:
 
 - Book 1 — **Published**
 - Book 2 — **Complete / Gold Master**
@@ -18,7 +18,7 @@ Current public-state language is:
 - Book 4 — **Collaboration / Provenance Emerging**
 - Book 5 — **Integration Layer**
 
-For current public implementation, use the production `main` branch, `content/seed.ts`, the Books pages, and the current-state records dated September 13, 2026 or later.
+Those status labels are historical and must not be treated as current. For current public implementation and maturity language, use the production `main` branch, `content/seed.ts`, the Books pages, and `docs/CURRENT_PUBLIC_STATE_2026-09-13.md` or a later current-state record.
 
 ## Historical decision retained
 
@@ -50,9 +50,7 @@ _The Making of The Way_ remains the primary longitudinal case study behind the p
 
 ## Navigation and restraint
 
-The primary navigation remains:
-
-> **The Way | Explore | Books | Ideas | About**
+The primary navigation at the time of the original posture has since evolved. Current navigation is governed by the production source and current-state record rather than this historical document.
 
 Book 4 and Generative Dialogue remain inside the site architecture rather than being promoted into top-level navigation.
 
