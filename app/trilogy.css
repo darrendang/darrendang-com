@@ -29,8 +29,8 @@
 .book-library-card:nth-child(even){grid-template-columns:1.28fr .72fr}
 .book-library-card:nth-child(even) .book-library-cover{order:2}
 .book-library-card:nth-child(even) .book-library-copy{order:1}
-.book-library-cover{display:flex;justify-content:center}
-.book-library-cover img{width:auto;max-width:100%;height:auto;max-height:570px;box-shadow:0 26px 65px rgba(13,31,49,.18)}
+.book-library-cover{display:flex;justify-content:center;align-items:center;min-height:570px}
+.book-library-cover img{width:auto;max-width:100%;height:570px;object-fit:contain;box-shadow:0 26px 65px rgba(13,31,49,.18)}
 .book-library-copy h2{font-size:52px;margin:9px 0 12px}
 .book-movement{color:var(--gold);margin-top:10px}
 .book-library-sub{font-family:'Cormorant Garamond',serif;font-size:25px;line-height:1.25;margin:0 0 19px;color:var(--muted)}
@@ -65,7 +65,8 @@
   .book-grid-reverse>.book-cover-wrap,.book-grid-reverse>div:not(.book-cover-wrap){order:initial}
   .book-library-card,.book-library-card:nth-child(even){grid-template-columns:1fr;gap:44px}
   .book-library-card:nth-child(even) .book-library-cover,.book-library-card:nth-child(even) .book-library-copy{order:initial}
-  .book-library-cover img{max-height:520px}
+  .book-library-cover{min-height:520px}
+  .book-library-cover img{height:520px}
   .development-book-grid{grid-template-columns:1fr;gap:50px}
   .development-cover{max-height:600px}
   .theme-grid{grid-template-columns:1fr}
@@ -76,6 +77,8 @@
   .system-loop{font-size:23px;text-align:left}
   .book-system-strip{justify-content:flex-start;gap:10px 14px}
   .book-library-card{padding-bottom:60px}
+  .book-library-cover{min-height:0}
+  .book-library-cover img{height:auto;max-height:460px}
   .book-library-copy h2,.books-system-note h2{font-size:42px}
   .development-copy .book-hook,.development-copy .dots-line{font-size:29px}
   .development-actions{align-items:flex-start;flex-direction:column}
