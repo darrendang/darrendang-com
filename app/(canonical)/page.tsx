@@ -16,7 +16,7 @@ const books = [
   },
   {
     number: "02",
-    status: "Complete / Gold Master",
+    status: "Final Proof",
     title: "Wisdom Has No Rank",
     subtitle: "",
     cover: "/images/wisdom-has-no-rank-cover.webp",
@@ -27,7 +27,7 @@ const books = [
   },
   {
     number: "03",
-    status: "Nearing Completion",
+    status: "First Print Proof",
     title: "D.O.T.S.",
     subtitle: "A Way of Seeing Problems",
     cover: "/images/dots-cover.webp",
@@ -127,6 +127,38 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="section book-showcase">
+          <div className="container">
+            <div className="section-intro compact">
+              <div className="eyebrow bronze">Books · The Path Forward</div>
+              <h2>Three books that progressively widen where learning can come from.</h2>
+              <p className="lead"><strong>Book 1</strong> looks across time. <strong>Book 2</strong> widens who or what can teach us. <strong>Book 3</strong> widens where we look for possibilities and solutions. Book 1 is published, Book 2 is in final physical proof, and Book 3 has reached its first hard-copy proof. The wider body then turns toward collaboration and provenance in Book 4, and integration in Book 5.</p>
+            </div>
+            <div className="book-cards">
+              {books.map((book) => (
+                <article className="book-card" key={book.title}>
+                  <Link href={book.href} className="book-card-cover">
+                    <Image src={book.cover} width={360} height={540} alt={book.alt} sizes="(max-width: 800px) 70vw, 26vw" />
+                  </Link>
+                  <div className="book-card-copy">
+                    <div className="book-status">{book.status}</div>
+                    <div className="book-movement">{book.number} · {book.lens}</div>
+                    <h3>{book.title}</h3>
+                    {book.subtitle && <p className="book-card-sub">{book.subtitle}</p>}
+                    <p className="book-card-hook">{book.question}</p>
+                    <div className="book-card-actions"><Link className="text-link" href={book.href}>Explore the book →</Link></div>
+                  </div>
+                </article>
+              ))}
+            </div>
+            <div className="section-link">
+              <Link className="text-link" href="/books/">Explore the full five-work progression →</Link>
+              <span> · </span>
+              <Link className="text-link" href="/books/the-making-of-the-way/">Book 4: The Making of The Way →</Link>
+            </div>
+          </div>
+        </section>
+
         <section className="section shared-wisdom-home">
           <div className="container shared-wisdom-home-grid">
             <div>
@@ -190,38 +222,6 @@ export default function Home() {
               ))}
             </div>
             <div className="section-link"><Link className="button button-dark" href="/use-the-way/">Use the Five Movements</Link></div>
-          </div>
-        </section>
-
-        <section className="section book-showcase">
-          <div className="container">
-            <div className="section-intro compact">
-              <div className="eyebrow bronze">Books · The Path Forward</div>
-              <h2>Three books that progressively widen where learning can come from.</h2>
-              <p className="lead"><strong>Book 1</strong> looks across time. <strong>Book 2</strong> widens who or what can teach us. <strong>Book 3</strong> widens where we look for possibilities and solutions. Book 1 is published, Book 2 is complete with print Gold Masters locked, and Book 3 is nearing completion. The wider body then turns toward collaboration and provenance in Book 4, and integration in Book 5.</p>
-            </div>
-            <div className="book-cards">
-              {books.map((book) => (
-                <article className="book-card" key={book.title}>
-                  <Link href={book.href} className="book-card-cover">
-                    <Image src={book.cover} width={360} height={540} alt={book.alt} sizes="(max-width: 800px) 70vw, 26vw" />
-                  </Link>
-                  <div className="book-card-copy">
-                    <div className="book-status">{book.status}</div>
-                    <div className="book-movement">{book.number} · {book.lens}</div>
-                    <h3>{book.title}</h3>
-                    {book.subtitle && <p className="book-card-sub">{book.subtitle}</p>}
-                    <p className="book-card-hook">{book.question}</p>
-                    <div className="book-card-actions"><Link className="text-link" href={book.href}>Explore the book →</Link></div>
-                  </div>
-                </article>
-              ))}
-            </div>
-            <div className="section-link">
-              <Link className="text-link" href="/books/">Explore the full five-work progression →</Link>
-              <span> · </span>
-              <Link className="text-link" href="/books/the-making-of-the-way/">Book 4: The Making of The Way →</Link>
-            </div>
           </div>
         </section>
 
