@@ -118,7 +118,7 @@ export default function Books() {
 
         <article className="book-library-card">
           <div className="book-library-cover">
-            <Image src="/images/the-making-of-the-way-cover.webp" width={200} height={300} alt="Cover of The Making of The Way: How Conversation Becomes Discovery by Darren Dang." sizes="200px" />
+            <Image src="/images/the-making-of-the-way-cover.webp" width={1024} height={1536} alt="Cover of The Making of The Way: How Conversation Becomes Discovery by Darren Dang." sizes="(max-width: 900px) 70vw, 27vw" />
           </div>
           <div className="book-library-copy">
             <div className="book-status">Collaboration / Provenance Emerging</div>
