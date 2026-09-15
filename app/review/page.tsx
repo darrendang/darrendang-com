@@ -25,13 +25,13 @@ export default function ReviewPage() {
         <section id="review-loading" className="review-state-card">
           <div className="eyebrow bronze">Secure workspace</div>
           <h2>Checking your review session…</h2>
-          <p>This area is not part of the public Genome. Submission data is only requested after authentication.</p>
+          <p>This area is not part of the public Genome. Submission data is only requested after authentication and authorization.</p>
         </section>
 
         <section id="review-login" className="review-state-card" hidden>
           <div className="eyebrow bronze">Private access</div>
           <h2>Sign in to review submissions.</h2>
-          <p className="lead">Use the approved Google account for DarrenDang.com. Access is enforced in the data layer as well as in this interface.</p>
+          <p className="lead">Use an approved family-admin Google account for DarrenDang.com. Access is enforced by the private authorization layer as well as in this interface.</p>
           <a className="button button-dark" href={authStart}>Sign in with Google</a>
           <p id="review-auth-message" className="review-small-note"></p>
         </section>
@@ -39,7 +39,7 @@ export default function ReviewPage() {
         <section id="review-denied" className="review-state-card review-denied" hidden>
           <div className="eyebrow bronze">Access denied</div>
           <h2>This Google account is not authorized.</h2>
-          <p>The private review queue is restricted to Darren&apos;s approved account.</p>
+          <p>The private review queue is restricted to approved family-admin identities.</p>
           <button id="review-denied-signout" className="button button-outline" type="button">Sign out</button>
         </section>
 
@@ -105,7 +105,7 @@ export default function ReviewPage() {
         </section>
       </div>
 
-      <Script id="shared-wisdom-review-console" src="/review-console-v2.js?v=20260826-2" strategy="afterInteractive" />
+      <Script id="shared-wisdom-review-console" src="/review-console-v2.js?v=20260914-1" strategy="afterInteractive" />
       <Script id="contribution-governance-review-console" src="/review-governance.js?v=20260830-1" strategy="afterInteractive" />
     </InteriorPage>
   );
