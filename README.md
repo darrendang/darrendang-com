@@ -2,23 +2,29 @@
 
 Source for **DarrenDang.com — the place where Darren's ideas live**.
 
-The site is a long-term intellectual platform for ideas, writing, books, talks, and related media. The current public direction is idea-first and rooted in **The Way**, with the books presented as major expressions of the larger body of work.
+The site is a long-term intellectual platform for books, ideas, writing, talks, and related media. The current public direction is **human- and books-first**: lived experience and the five-book journey are the primary doorway, with **The Way** introduced as the larger pattern that emerged through them.
 
-## Current public book state — September 13, 2026
+## Current public book state — September 14, 2026
 
 - **Book 1 — _For Those Who Come After Us — A Life in Lessons_** — **Published**
 - **Book 2 — _Wisdom Has No Rank_** — **Final Proof**
 - **Book 3 — _D.O.T.S._** — **First Print Proof**
-- **Book 4 — _The Making of The Way: How Conversation Becomes Discovery_** — **Collaboration / Provenance Emerging**
-- **Book 5 — _The Way Forward_** — **Integration Layer**
+- **Book 4 — _The Making of The Way: How Conversation Becomes Discovery_** — **In Development**
+- **Book 5 — _The Way Forward_** — **In Development**
 
-Books 1–3 remain **The Path Forward** trilogy. Book 2's manuscript and print Gold Masters are locked, with final physical proof review remaining the print-release gate. Book 3 has reached its first hard-copy proof. Book 4 makes the human–AI collaboration and provenance behind the work increasingly visible. Book 5 integrates the wider body of work without replacing the reader's ownership of what comes next.
+Books 1–3 remain **The Path Forward** trilogy. Book 2's manuscript and print Gold Masters are locked, with final physical proof review remaining the print-release gate. Book 3 has reached its first hard-copy proof. Book 4 is publicly positioned as the making story behind the books and The Way. Book 5 is publicly positioned as the handoff to the reader: what will you do with what you inherit, learn, and discover?
 
-The books are expressions of **The Way**, not the container for it. The public site also connects Ideas, Letters, The Way Papers, The Way in Motion, Shared Wisdom, Generative Dialogue, D.O.T.S., and the public-facing Dang Genome.
+The current reader journey is:
+
+**Lived experience → stories and books → recurring patterns become visible → The Way emerges → Your Way / The Way Forward → deeper ecosystem**
+
+The public site also connects Ideas, Letters, The Way Papers, The Way in Motion, Shared Wisdom, Generative Dialogue, D.O.T.S., and the public-facing Dang Genome.
 
 ## Public current-state authority
 
-For the public website, `main` is the production source of truth. Current public status language and route relationships must agree with the live site and `content/seed.ts`. Historical decision records remain provenance, but must be explicitly marked superseded when later public-state decisions replace them.
+For the public website, `main` is the production source of truth. Current public status language and route relationships must agree with the live site, `content/seed.ts`, `docs/CURRENT_PUBLIC_STATE_2026-09-14.md`, and the canon-control records in `00_Canon_Control/`.
+
+Historical decision records remain provenance, but must be explicitly marked superseded when later public-state decisions replace them.
 
 ## Production architecture
 
