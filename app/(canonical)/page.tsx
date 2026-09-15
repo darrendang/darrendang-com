@@ -195,6 +195,29 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="section sand">
+          <div className="container worldview-grid">
+            <div>
+              <div className="eyebrow bronze">A new Letter · September 15, 2026</div>
+              <h2>To Chrystina — The Way Was Us</h2>
+              <p className="lead">A birthday song for my wife, partner, and soulmate—and a reflection on the life behind so much of what I later came to call The Way.</p>
+              <p><strong>Before I ever named The Way, we were already living it.</strong></p>
+              <Link className="text-link" href="/letters/the-way-was-us/">Listen &amp; read →</Link>
+            </div>
+            <figure style={{ margin: 0 }}>
+              <Image
+                src="/images/darren-chrystina-vow-renewal-santorini.webp"
+                width={3236}
+                height={1960}
+                alt="Darren and Chrystina during their vow renewal in Santorini on June 19, 2019."
+                sizes="(max-width: 900px) 100vw, 520px"
+                style={{ width: "100%", height: "auto", borderRadius: "22px", boxShadow: "0 20px 54px rgba(13,31,49,.12)" }}
+              />
+              <figcaption className="note" style={{ marginTop: "10px" }}>Santorini, June 19, 2019.</figcaption>
+            </figure>
+          </div>
+        </section>
+
         <section className="section worldview-section">
           <div className="container worldview-grid">
             <div>
