@@ -7,6 +7,15 @@
   "review_notes": "This manifest fingerprints the exact MP3 bytes currently in the public repository. A matching Git blob SHA proves the file is byte-for-byte unchanged. Semantic review state is tracked separately from fingerprint state so provenance is not overstated.",
   "files": [
     {
+      "path": "public/audio/Song-You-Are-My-Way1.mp3",
+      "git_blob_sha1": "6f0bf9bfe470ccf77b65612b82796eed32f4643b",
+      "size_bytes": 10659800,
+      "public_role": "Letters from Darren — To Chrystina / The Way Was Us embedded song",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-15",
+      "review_basis": "explicit Darren publication direction for the Chrystina birthday dedication; embedded only on /letters/the-way-was-us/ and not part of the route-based ListeningLayer"
+    },
+    {
       "path": "public/audio/about-what-im-trying-to-leave-behind.mp3",
       "git_blob_sha1": "c80ed0e9537ba81f874cd39f7d0da1562c3c8be7",
       "size_bytes": 953639,
