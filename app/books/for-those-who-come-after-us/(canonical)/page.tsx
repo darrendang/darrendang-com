@@ -2,10 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 import { ConnectedDots } from "@/components/ConnectedDots";
+import { MusicCompanion } from "@/components/MusicCompanion";
+import { takeTheBestLyrics } from "@/lib/songLyrics";
 
 export const metadata = {
   title: "For Those Who Come After Us",
-  description: "Explore the published Book 1, For Those Who Come After Us — A Life in Lessons, including selected reading, the companion song, and the ideas behind the book.",
+  description: "Explore the published Book 1, For Those Who Come After Us — A Life in Lessons, including selected reading, companion songs, and the ideas behind the book.",
 };
 
 const samples = [
@@ -90,28 +92,25 @@ export default function Book() {
         </div>
       </div>
 
-      <section className="book-song" id="song" aria-labelledby="book-song-title">
-        <div className="book-song-grid">
-          <div>
-            <div className="eyebrow">A small companion to Book 1 · just for fun</div>
-            <h2 id="book-song-title">For Those Who Come After Us — The Song</h2>
-            <p className="lead-light">Books are where I develop the ideas. This one found its way into a song.</p>
-            <p>I made this as a small companion to <em>For Those Who Come After Us</em>—not a new direction for the site, just another way to experience the story and the idea of what we carry forward.</p>
-            <div className="song-relationship" aria-label="Book to ideas to story to song">Book → Ideas → Story → Song</div>
-          </div>
-          <div className="song-player">
-            <div className="song-player-label">
-              <strong>For Those Who Come After Us</strong>
-              <span>4:05</span>
-            </div>
-            <audio controls preload="metadata" aria-label="Listen to For Those Who Come After Us — The Song">
-              <source src="/audio/for-those-who-come-after-us.mp3" type="audio/mpeg" />
-              Your browser does not support the audio player. <a href="/audio/for-those-who-come-after-us.mp3">Open the song.</a>
-            </audio>
-            <small>A companion to the book. No autoplay—press play when you feel like listening.</small>
-          </div>
-        </div>
-      </section>
+      <MusicCompanion
+        eyebrow="Listen · Songs from Book 1"
+        title="Hear the book another way."
+        description="The book carries the full stories and arguments. These songs are musical interpretations of two related movements: what one generation hopes to leave, and what the next generation must make its own."
+        tracks={[
+          {
+            title: "For Those Who Come After Us",
+            src: "/audio/for-those-who-come-after-us.mp3",
+            description: "The emotional signature of Book 1: what we hope can remain useful after the conversation ends.",
+          },
+          {
+            title: "Take the Best",
+            src: "/audio/Song-Take-The-Best.mp3",
+            description: "A parent-and-child conversation about inheritance with agency: keep your roots, choose your steps, and leave a little light for whoever comes next.",
+            lyrics: takeTheBestLyrics,
+          },
+        ]}
+        note="The songs are companion interpretations, not substitutes for the book. Nothing plays automatically."
+      />
 
       <section className="book-samples" id="inside-the-book" aria-labelledby="inside-the-book-title">
         <div className="book-samples-intro">
