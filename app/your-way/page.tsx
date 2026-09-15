@@ -12,7 +12,6 @@ export default function YourWayPage() {
       <div className="genome-lead-grid">
         <div>
           <p className="lead">The Way can give you a stronger starting point. It cannot decide your destination. Your Way is the evolving lived pattern that emerges as inherited wisdom meets your experience, context, relationships, choices, and consequences.</p>
-          <p>Your Way is yours, but it is rarely made alone. We become who we are through parents, children, partners, friends, teachers, colleagues, communities, strangers, and people whose influence we may not recognize until much later. Agency matters. So does relationship.</p>
           <p>You do not need to agree with Darren. You do not need to reproduce his life, values, methods, career, family choices, or conclusions. The constitutional question is whether something here helps you see more clearly and choose more deliberately.</p>
         </div>
         <aside className="steward-card">

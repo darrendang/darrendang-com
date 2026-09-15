@@ -11,8 +11,8 @@ const books = [
     cover: "/images/for-those-who-come-after-us-front-home-v3.webp",
     alt: "Front cover of For Those Who Come After Us: A Life in Lessons by Darren Dang.",
     href: "/books/for-those-who-come-after-us/",
-    lens: "LEARNING ACROSS TIME",
-    question: "What can I learn from what was lived before me?",
+    lens: "A LIFE IN LESSONS",
+    question: "What has life taught me—and what is worth passing forward?",
   },
   {
     number: "02",
@@ -22,36 +22,42 @@ const books = [
     cover: "/images/wisdom-has-no-rank-cover.webp",
     alt: "Current cover for Wisdom Has No Rank by Darren Dang.",
     href: "/books/wisdom-has-no-rank/",
-    lens: "LEARNING ACROSS SOURCE",
-    question: "Who or what might teach me if I stop pre-ranking the teacher?",
+    lens: "UNEXPECTED TEACHERS",
+    question: "Who else might have something to teach me?",
   },
   {
     number: "03",
     status: "First Print Proof",
     title: "D.O.T.S.",
-    subtitle: "A Way of Seeing Problems",
+    subtitle: "Collect Dots. Connect Dots. Create Something New.",
     cover: "/images/dots-cover.webp",
     alt: "Current cover for D.O.T.S. by Darren Dang.",
     href: "/books/dots/",
-    lens: "LEARNING ACROSS DOMAIN",
-    question: "What becomes possible when I widen where I look?",
+    lens: "SEEING & CREATING",
+    question: "What can I make from everything I have learned?",
   },
-];
-
-const philosophicalCycle = [
-  ["Learn", "Receive experience, perspective, and what came before."],
-  ["Know", "Reflect deeply enough to form judgment while remaining revisable."],
-  ["Discover", "Widen the frame beyond what is already visible or familiar."],
-  ["Create", "Turn possibility into something that can meet reality."],
-  ["Transmit", "Pass forward what is worth carrying so others can begin farther ahead."],
-];
-
-const fiveMovements = [
-  ["Receive", "What am I carrying into this?"],
-  ["Examine", "What might I be wrong or uncertain about?"],
-  ["Connect", "Who or what am I not seeing?"],
-  ["Practice", "What is the next responsible action—or non-action?"],
-  ["Pass Forward", "What will this leave behind?"],
+  {
+    number: "04",
+    status: "In Development",
+    title: "The Making of The Way",
+    subtitle: "How Conversation Becomes Discovery",
+    cover: "/images/the-making-of-the-way-cover.webp",
+    alt: "Cover of The Making of The Way: How Conversation Becomes Discovery by Darren Dang.",
+    href: "/books/the-making-of-the-way/",
+    lens: "HOW THE WORK WAS MADE",
+    question: "What happens when a human and AI think together over time?",
+  },
+  {
+    number: "05",
+    status: "In Development",
+    title: "The Way Forward",
+    subtitle: "Learning, Discovering, Creating, and Passing It On",
+    cover: "/images/the-way-forward.webp",
+    alt: "Cover of The Way Forward by Darren Dang.",
+    href: "/the-way-forward/",
+    lens: "YOUR NEXT STEP",
+    question: "What will you do with what you inherit, learn, and discover?",
+  },
 ];
 
 function HeroNetwork() {
@@ -93,36 +99,36 @@ export default function Home() {
         <section className="hero brand-hero genome-hero">
           <div className="container hero-grid">
             <div className="hero-copy">
-              <div className="eyebrow">The Way → Your Way → The Way Forward → Pass Forward</div>
+              <div className="eyebrow">Books, ideas, and a way of thinking passed forward</div>
               <h1>A stronger starting point. The freedom to go farther.</h1>
-              <p>Learn from what came before. Understand it deeply. Look beyond what you already know. Create what does not yet exist. Then pass forward a stronger starting point for someone else.</p>
+              <p>I began writing because I wanted some of the thinking behind my choices to remain available to my children after the conversation ended. The books grew from there—into questions about what we inherit, who can teach us, what we create, and what we choose to pass forward.</p>
               <div className="actions">
-                <Link className="button button-gold" href="/the-way/">Begin with The Way</Link>
-                <Link className="button button-outline" href="/explore/">Explore what speaks to you</Link>
+                <Link className="button button-gold" href="/books/">Begin with the books</Link>
+                <Link className="button button-outline" href="/the-way/">Discover The Way</Link>
               </div>
             </div>
             <HeroNetwork />
           </div>
           <div className="container hero-note">
             <strong>Leave those who come after a stronger starting point and the freedom to go farther.</strong>
-            <span>The Way offers inheritance without prescribing a destination.</span>
+            <span>The story begins with lived experience, not a system.</span>
           </div>
         </section>
 
         <section className="section worldview-section">
           <div className="container worldview-grid">
             <div>
-              <div className="eyebrow bronze">Start with a human question</div>
-              <h2>You do not need to understand the whole system before something becomes useful.</h2>
-              <p className="lead">Begin with what is already alive in your life. Questions can lead into stories, Letters, books, ideas, methods, cases, and other perspectives without forcing you through a prescribed sequence.</p>
-              <Link className="text-link" href="/explore/">Explore by question →</Link>
+              <div className="eyebrow bronze">Where it began</div>
+              <h2>A life becomes useful to someone else when the story leaves room for their own.</h2>
+              <p className="lead">These books are personal, but they are not meant to make someone else live my life. They preserve stories, mistakes, relationships, decisions, questions, and ways of thinking so a reader can recognize something in their own experience—and then decide what belongs in their own way forward.</p>
+              <Link className="text-link" href="/books/for-those-who-come-after-us/">Start with Book 1 →</Link>
             </div>
             <div className="boundary-stack">
-              <article><span>Inheritance</span><strong>What am I carrying into this?</strong></article>
-              <article><span>Perspective</span><strong>What might I be wrong or uncertain about?</strong></article>
-              <article><span>Relationship</span><strong>Who or what am I not seeing?</strong></article>
-              <article><span>Decision</span><strong>What is the next responsible action—or non-action?</strong></article>
-              <article><span>Legacy</span><strong>What will this leave behind?</strong></article>
+              <article><span>INHERIT</span><strong>What came before me?</strong></article>
+              <article><span>LEARN</span><strong>Who else can teach me?</strong></article>
+              <article><span>CREATE</span><strong>What can I make from what I know?</strong></article>
+              <article><span>DISCOVER</span><strong>What becomes visible in dialogue?</strong></article>
+              <article><span>CONTINUE</span><strong>What will I do with all of this?</strong></article>
             </div>
           </div>
         </section>
@@ -130,9 +136,9 @@ export default function Home() {
         <section className="section book-showcase">
           <div className="container">
             <div className="section-intro compact">
-              <div className="eyebrow bronze">Books · The Path Forward</div>
-              <h2>Three books that progressively widen where learning can come from.</h2>
-              <p className="lead"><strong>Book 1</strong> looks across time. <strong>Book 2</strong> widens who or what can teach us. <strong>Book 3</strong> widens where we look for possibilities and solutions. Book 1 is published, Book 2 is in final physical proof, and Book 3 has reached its first hard-copy proof. The wider body then turns toward collaboration and provenance in Book 4, and integration in Book 5.</p>
+              <div className="eyebrow bronze">The books</div>
+              <h2>Five works. One widening journey.</h2>
+              <p className="lead">The first book begins with one life. The second widens the circle of teachers. The third asks what we can create from everything we have learned. The fourth opens the making of the work itself. The fifth turns the question toward the reader: what will you do with all of it now?</p>
             </div>
             <div className="book-cards">
               {books.map((book) => (
@@ -151,10 +157,21 @@ export default function Home() {
                 </article>
               ))}
             </div>
-            <div className="section-link">
-              <Link className="text-link" href="/books/">Explore the full five-work progression →</Link>
-              <span> · </span>
-              <Link className="text-link" href="/books/the-making-of-the-way/">Book 4: The Making of The Way →</Link>
+            <div className="section-link"><Link className="text-link" href="/books/">Explore the full book journey →</Link></div>
+          </div>
+        </section>
+
+        <section className="section genome-purpose-home">
+          <div className="container">
+            <div className="section-intro compact">
+              <div className="eyebrow bronze">What the books began to reveal</div>
+              <h2>I eventually needed a name for the pattern underneath the stories.</h2>
+              <p className="lead">The books came first. Across them, a larger pattern kept becoming visible: learn from what came before, remain teachable, widen where you look, create with judgment, and leave room for the next person to continue. I came to call that pattern <strong>The Way</strong>.</p>
+            </div>
+            <div className="purpose-grid home-purpose-grid">
+              <article><span>01 · The Way</span><h3>Receive what may help.</h3><p>Stories, lessons, mistakes, relationships, questions, and accumulated experience can give someone else a stronger place to begin.</p><Link className="text-link" href="/the-way/">Explore The Way →</Link></article>
+              <article><span>02 · Your Way</span><h3>Question it. Test it. Make it your own.</h3><p>No inheritance should decide another person&apos;s destination. Keep what helps, challenge what does not, and let reality refine the map.</p><Link className="text-link" href="/your-way/">Explore Your Way →</Link></article>
+              <article><span>03 · The Way Forward</span><h3>Live what comes next.</h3><p>The Way Forward is what happens when inherited wisdom meets present reality and your own judgment, relationships, choices, and consequences.</p><Link className="text-link" href="/the-way-forward/">Explore The Way Forward →</Link></article>
             </div>
           </div>
         </section>
@@ -164,97 +181,16 @@ export default function Home() {
             <div>
               <div className="eyebrow bronze">Letters from Darren</div>
               <h2>Things I am still learning.</h2>
-              <p className="lead">The Way begins in lived experience, not doctrine. Letters preserve a story, question, failure, discovery, changed judgment, or connection while the learning is still unfolding.</p>
+              <p className="lead">Not every lesson waits for a book. The Letters preserve stories, questions, failures, discoveries, and changed judgments while the learning is still moving.</p>
               <div className="actions">
                 <Link className="button button-dark" href="/letters/why-these-letters/">Read “Why These Letters”</Link>
                 <Link className="text-link" href="/letters/">Explore Letters →</Link>
               </div>
             </div>
             <div className="shared-wisdom-principles">
-              <article><span>FROM LIFE</span><strong>Begin with something real.</strong><p>Experience supplies context, tension, and consequence.</p></article>
-              <article><span>STILL REVISABLE</span><strong>Reality keeps the right to change the map.</strong><p>Learning can be preserved without pretending the question is closed.</p></article>
-              <article><span>FOR YOUR WAY</span><strong>Take what helps. Question what does not.</strong><p>The handoff matters more than agreement.</p></article>
-            </div>
-          </div>
-        </section>
-
-        <section className="section system-section">
-          <div className="container">
-            <div className="section-intro compact">
-              <div className="eyebrow bronze">The living cycle of The Way</div>
-              <h2>Learning → Knowing → Discovering → Creating → Transmitting</h2>
-              <p className="lead">The purpose is not to pass down answers. It is to help each generation inherit the capacity to learn, discover, create, and go farther. What one person transmits becomes another person&apos;s starting point, and the cycle begins again.</p>
-            </div>
-            <div className="genome-cycle" aria-label="Learning, knowing, discovering, creating, transmitting">
-              {philosophicalCycle.map(([title, copy], index) => (
-                <div key={title}><span>{String(index + 1).padStart(2, "0")}</span><strong>{title}</strong><p>{copy}</p></div>
-              ))}
-            </div>
-            <blockquote className="trilogy-map-quote">Open enough to discover. Commit enough to learn. Humble enough to revise.</blockquote>
-          </div>
-        </section>
-
-        <section className="section genome-purpose-home">
-          <div className="container">
-            <div className="section-intro compact">
-              <div className="eyebrow bronze">The philosophical spine</div>
-              <h2>The Way becomes Your Way when inheritance meets agency.</h2>
-              <p className="lead">The Way is a stronger starting point. Your Way is what happens when that inheritance meets your context, judgment, and experience. The Way Forward is what you create next—and what you may eventually choose to pass forward.</p>
-            </div>
-            <div className="purpose-grid home-purpose-grid">
-              <article><span>01 · The Way</span><h3>Receive what has been learned and preserved.</h3><p>Stories, lessons, principles, mistakes, questions, methods, relationships, and accumulated experience can give us a stronger place to begin.</p><Link className="text-link" href="/the-way/">Explore The Way →</Link></article>
-              <article><span>02 · Your Way</span><h3>Question it. Test it. Make it your own.</h3><p>Inherited wisdom is a starting point, not a script. Keep what helps, challenge what does not, and let reality refine the map.</p><Link className="text-link" href="/your-way/">Explore Your Way →</Link></article>
-              <article><span>03 · The Way Forward</span><h3>Create what comes next.</h3><p>The Way Forward is not predetermined. It is what you choose, build, test, revise, and eventually decide is worth transmitting.</p><Link className="text-link" href="/the-way-forward/">Explore The Way Forward →</Link></article>
-            </div>
-          </div>
-        </section>
-
-        <section className="section system-section">
-          <div className="container">
-            <div className="section-intro compact">
-              <div className="eyebrow bronze">The practice layer</div>
-              <h2>Receive. Examine. Connect. Practice. Pass Forward.</h2>
-              <p className="lead">The Five Movements are a portable way to practice The Way in a real situation. They support the philosophy without turning it into commandments or a productivity system.</p>
-            </div>
-            <div className="genome-cycle" aria-label="Receive, examine, connect, practice, pass forward">
-              {fiveMovements.map(([title, question], index) => (
-                <div key={title}><span>{String(index + 1).padStart(2, "0")}</span><strong>{title}</strong><p>{question}</p></div>
-              ))}
-            </div>
-            <div className="section-link"><Link className="button button-dark" href="/use-the-way/">Use the Five Movements</Link></div>
-          </div>
-        </section>
-
-        <section className="section genome-purpose-home">
-          <div className="container">
-            <div className="section-intro compact">
-              <div className="eyebrow bronze">Living thought · demonstrated practice</div>
-              <h2>Some ideas are still developing. Some need to meet reality.</h2>
-              <p className="lead">The public ecosystem makes that difference visible. The Way Papers develop living ideas; The Way in Motion preserves what happened when ideas were practiced, tested, limited, or changed.</p>
-            </div>
-            <div className="purpose-grid home-purpose-grid">
-              <article><span>THE WAY PAPERS</span><h3>Develop the thinking.</h3><p>Consequential propositions, frameworks, inquiries, and syntheses with room for evidence, challenge, and revision.</p><Link className="text-link" href="/papers/">Explore Papers →</Link></article>
-              <article><span>THE WAY IN MOTION</span><h3>Examine what happened.</h3><p>Cases that preserve context, practice, observed change, evidence, limitations, interpretation, and what should happen next.</p><Link className="text-link" href="/the-way-in-motion/">Explore The Way in Motion →</Link></article>
-            </div>
-          </div>
-        </section>
-
-        <section className="section shared-wisdom-home">
-          <div className="container shared-wisdom-home-grid">
-            <div>
-              <div className="eyebrow bronze">Transmit</div>
-              <h2>The Way should not become one person talking forever.</h2>
-              <p className="lead">What is learned, discovered, created, and responsibly passed forward can become someone else&apos;s stronger starting point. Other people&apos;s lives can add stories, corrections, questions, counterexamples, practices, and new connections.</p>
-              <div className="actions">
-                <Link className="button button-dark" href="/shared-wisdom/">Explore Shared Wisdom</Link>
-                <Link className="text-link" href="/contribute/">How contribution works →</Link>
-              </div>
-              <p className="note">Rich public contribution intake is temporarily closed while the permission, safety, minor/vulnerable, withdrawal, storage/AI, and legal production controls are completed.</p>
-            </div>
-            <div className="shared-wisdom-principles">
-              <article><span>OWNERSHIP</span><strong>Your contribution remains yours.</strong><p>Offering a story does not surrender identity, authorship, or future control.</p></article>
-              <article><span>DIFFERENCE</span><strong>Correction and disagreement belong.</strong><p>The system should learn from perspectives that challenge Darren or existing canon.</p></article>
-              <article><span>STEWARDSHIP</span><strong>Contribution is not acquisition.</strong><p>People are not content sources. Participation remains optional.</p></article>
+              <article><span>FROM LIFE</span><strong>Begin with something real.</strong><p>Experience supplies context, tension, consequence, and humanity.</p></article>
+              <article><span>STILL LEARNING</span><strong>Leave room to be corrected.</strong><p>A preserved lesson can remain open to better evidence and a better question.</p></article>
+              <article><span>PASS FORWARD</span><strong>Offer a starting point, not a script.</strong><p>The handoff matters more than agreement.</p></article>
             </div>
           </div>
         </section>
@@ -263,30 +199,14 @@ export default function Home() {
           <div className="container worldview-grid">
             <div>
               <div className="eyebrow bronze">Go deeper</div>
-              <h2>The philosophy is simple enough to use before you learn the architecture behind it.</h2>
-              <p className="lead">When you want the deeper layer, the Constitution protects the boundaries of The Way and the Dang Genome preserves the connected body of learning beneath the public experience.</p>
-              <div className="actions">
-                <Link className="button button-dark" href="/the-way/constitution/">Read the Constitution</Link>
-                <Link className="text-link" href="/genome/">How the Dang Genome works →</Link>
-              </div>
+              <h2>The books are the doorway. The wider ecosystem preserves what keeps growing around them.</h2>
+              <p className="lead">Ideas develop beyond a single chapter. Papers test larger propositions. The Dang Genome preserves relationships, provenance, and connected learning. Shared Wisdom leaves room for other voices to add, correct, and continue the work.</p>
             </div>
             <div className="boundary-stack">
-              <article><span>North Star</span><strong>Leave those who come after a stronger starting point and the freedom to go farther.</strong></article>
-              <article><span>Agency</span><strong>The Way provides a stronger starting point, not a predetermined destination.</strong></article>
-              <article><span>Evolution</span><strong>Inherit wisdom, not dogma. Preserve what was learned. Remain free to learn more.</strong></article>
-              <article><span>Teachability</span><strong>Reality has the right to change our minds.</strong></article>
-            </div>
-          </div>
-        </section>
-
-        <section className="section final">
-          <div className="container">
-            <div className="final-star">✦</div>
-            <h2>What will you do with what you inherit—and what will someone else inherit from you?</h2>
-            <p>The Way offers a stronger starting point. Your Way is what you learn, discover, and create from it. The Way Forward is what you choose to carry into reality and, one day, pass forward.</p>
-            <div className="actions center">
-              <Link className="button button-light" href="/use-the-way/">Use The Way</Link>
-              <Link className="text-link light" href="/the-way-forward/">Explore The Way Forward →</Link>
+              <article><span>IDEAS</span><strong>Explore durable ideas that emerged from the work.</strong></article>
+              <article><span>PAPERS & TALKS</span><strong>Follow longer-form thinking and public applications.</strong></article>
+              <article><span>THE DANG GENOME</span><strong>See how stories, people, works, and ideas connect.</strong></article>
+              <article><span>SHARED WISDOM</span><strong>Make room for learning that does not belong to one voice.</strong></article>
             </div>
           </div>
         </section>

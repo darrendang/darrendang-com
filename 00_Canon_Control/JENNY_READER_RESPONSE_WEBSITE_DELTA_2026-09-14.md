@@ -1,36 +1,35 @@
-# Jenny Reader-Response Website Delta — Canonical
+# Jenny Reader-Response Website Delta — Superseded
 
 Date: 2026-09-14
-Status: CANONICAL
+Status: SUPERSEDED
+Superseded: 2026-09-14
 Source: Darren Dang–Jenny Sadosky reader-response conversation, September 14, 2026
 Scope: Public website expression only
 
-## Canonical findings
+## Why this record was superseded
 
-The Jenny conversation validates the existing public architecture of The Way rather than replacing it. The website should retain the stronger-starting-point / non-prescriptive framing and the sequence The Way → Your Way → The Way Forward → Pass Forward.
+The findings in this record remain useful reader-response provenance, but the initial website implementation promoted them too directly into public philosophy and page structure. After rereading the Karen Hill Scott and Jenny Sadosky interviews together and reviewing the website as a whole, Darren concluded that the site had moved backward by explaining the system before allowing readers to encounter the human stories and books that earned it.
 
-Three surgical public-expression changes are approved:
+The public implementation approved under this record is therefore unwound. The interviews remain primary provenance and continue to inform Book 4, The Way, stewardship, and reader-response analysis.
 
-1. **Your Way — relational agency**
-   Your Way remains reader-owned and non-prescriptive, while making explicit that a life is rarely made alone. Agency and relationship coexist. People become who they are through parents, children, partners, friends, teachers, colleagues, communities, strangers, and influences recognized only later.
+## Findings retained as provenance
 
-2. **Living Legacy — preserve context, not merely history**
-   Stewardship should preserve enough context for later generations to understand how a life was actually lived. Names and dates establish existence; stories, relationships, decisions, motivations, rituals, recipes, failures, ordinary moments, and circumstances preserve meaning.
+- Your Way remains reader-owned and non-prescriptive; human lives are relational rather than self-made.
+- Stewardship preserves context and meaning, not merely names, dates, or conclusions.
+- Human-AI collaboration should strengthen rather than displace human judgment, relationship, responsibility, and care.
 
-3. **Book 4 — humanity test**
-   Human–AI collaboration should be evaluated not only by whether it increases thinking or creation, but by whether the result leaves human judgment, relationship, responsibility, and care stronger rather than weaker.
+## Public implementation no longer canonical
 
-## Guardrails
+The following prior website changes are no longer canonical as standalone public-expression changes:
 
-- Do not redesign the homepage or alter its hero framing on the basis of this conversation.
-- Do not turn the grief material from the Jenny conversation into marketing language.
-- Treat the conversation as reader-response provenance and evidence, not as a mandate to rewrite The Way.
-- Preserve the existing distinction between inheritance and prescription.
+- added relational-agency paragraph on `app/your-way/page.tsx`
+- separate static `/ideas/living-legacy/` implementation created from the Jenny genealogy observation
+- added bold humanity-test sentence on `app/books/the-making-of-the-way/page.tsx`
 
-## Approved implementation surfaces
+These ideas may still appear where they arise naturally from stories, books, provenance, or deeper idea pages.
 
-- `app/your-way/page.tsx`
-- `/ideas/living-legacy/`
-- `app/books/the-making-of-the-way/page.tsx`
+## Superseding record
 
-This canon record documents the public website delta only. It does not supersede book-specific canon, manuscript gates, privacy controls, or provenance records elsewhere in The Way / Dang Genome ecosystem.
+See `00_Canon_Control/WEBSITE_POSITIONING_KAREN_JENNY_2026-09-14.md`.
+
+This supersession changes public positioning and implementation only. It does not erase the Jenny interview, its emotional provenance, or any book-specific canon derived from it.

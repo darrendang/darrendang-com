@@ -9,8 +9,8 @@ export function SiteHeader() {
           <span className="brand-genome type-signature">The Dang Genome</span>
         </Link>
         <nav aria-label="Primary" className="primary-nav">
-          <Link href="/the-way/">The Way</Link>
           <Link href="/books/">Books</Link>
+          <Link href="/the-way/">The Way</Link>
           <Link href="/ideas/">Ideas</Link>
           <Link href="/genome/">Genome</Link>
           <Link href="/papers/">Papers &amp; Talks</Link>
@@ -28,28 +28,29 @@ export function SiteFooter() {
         <div className="footer-brand">
           <div className="wordmark type-signature">Darren Dang</div>
           <div className="footer-genome type-signature">The Dang Genome</div>
-          <p>The public experience layer for The Way: learn from what came before, question it, make it your own, and pass forward what life teaches without narrowing another person&apos;s future.</p>
+          <p>Books, ideas, and a living body of learning about what we inherit, who can teach us, what we create, and what we choose to pass forward.</p>
           <p className="footer-independence">Independent ideas and writing. Views expressed here are Darren&apos;s own and do not necessarily represent OCERS or any other institution with which he is affiliated.</p>
         </div>
         <div>
-          <strong>The Way</strong>
-          <Link href="/the-way/">The Way</Link>
-          <Link href="/the-way/constitution/">The Constitution</Link>
-          <Link href="/your-way/">Your Way</Link>
+          <strong>Books &amp; The Way</strong>
+          <Link href="/books/">Books</Link>
+          <Link href="/books/for-those-who-come-after-us/">For Those Who Come After Us</Link>
+          <Link href="/books/wisdom-has-no-rank/">Wisdom Has No Rank</Link>
+          <Link href="/books/dots/">D.O.T.S.</Link>
+          <Link href="/books/the-making-of-the-way/">The Making of The Way</Link>
           <Link href="/the-way-forward/">The Way Forward</Link>
-          <Link href="/use-the-way/">Use The Way</Link>
-          <Link href="/shared-wisdom/">Shared Wisdom</Link>
-          <Link href="/contribute/">Pass It Forward</Link>
+          <Link href="/the-way/">The Way</Link>
+          <Link href="/your-way/">Your Way</Link>
         </div>
         <div>
-          <strong>Works &amp; Ideas</strong>
-          <Link href="/books/">Books · The Path Forward</Link>
+          <strong>Explore</strong>
           <Link href="/ideas/">Ideas</Link>
           <Link href="/ideas/generative-dialogue/">Generative Dialogue</Link>
-          <Link href="/dots/">D.O.T.S.</Link>
-          <Link href="/papers/">The Way Papers</Link>
+          <Link href="/dots/">D.O.T.S. Method</Link>
+          <Link href="/papers/">Papers &amp; Talks</Link>
           <Link href="/the-way-in-motion/">The Way in Motion</Link>
           <Link href="/letters/">Letters from Darren</Link>
+          <Link href="/shared-wisdom/">Shared Wisdom</Link>
           <Link href="/genome/">The Dang Genome</Link>
           <Link href="/about/">About Darren</Link>
           <Link href="/speaking/">Speaking</Link>

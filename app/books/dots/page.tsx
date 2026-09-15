@@ -5,15 +5,15 @@ import { ConnectedDots } from "@/components/ConnectedDots";
 
 export const metadata = {
   title: "D.O.T.S. — Book 3",
-  description: "Explore Darren Dang's Book 3 now in first print proof, D.O.T.S. — a way of seeing problems that widens the search space, discovers possibilities across domains, and uses CREATE to test what deserves to become real.",
+  description: "Explore Darren Dang's Book 3, D.O.T.S. — Collect Dots. Connect Dots. Create Something New. A reader-first book about seeing connections across experience and disciplines and turning them into useful possibilities.",
 };
 
 const themes = [
-  ["See past labels", "A problem's category can be useful for organization and still be a poor guide to where the best solution might come from."],
-  ["Find structure", "Look beneath the surface for the underlying allocation, uncertainty, tradeoff, feedback, adoption, incentive, or system pattern."],
-  ["Expand the search space", "Once the structure is visible, look across disciplines and lived experience for other places where the same shape appears."],
-  ["Transfer carefully", "Ask what travels, where the analogy breaks, what must be adapted, and what does not belong."],
-  ["Create and test", "A possibility earns its place when it is given form, tested against reality, and allowed to generate new evidence."],
+  ["Collect", "Notice ideas, experiences, tools, patterns, and questions before you know exactly where they will matter."],
+  ["See", "Look beneath a problem's label for the structure that is actually making it hard."],
+  ["Connect", "Search across disciplines, roles, cultures, and lived experience for places where the same structure appears."],
+  ["Create", "Combine what fits into a new possibility, then give it enough form for reality to answer back."],
+  ["Learn again", "What happens next becomes a new dot: evidence for the next round of seeing and creating."],
 ];
 
 const samples = [
@@ -40,25 +40,9 @@ const samples = [
   },
 ];
 
-const selectedChapters = [
-  ["01", "The Pattern I Lived Before I Named It", "The origin story: the behavior came before the label."],
-  ["02", "The Label Is Not the Problem", "Why a category can organize a problem while still narrowing the search for answers."],
-  ["03", "Who Has No Choice But to Be Good at This?", "A practical question for finding useful expertise in unexpected places."],
-  ["04", "A Map Is Not a Script", "How to borrow direction without surrendering judgment."],
-  ["05", "Now You Look", "The reader's turn: the lens is handed over rather than closed around a final lesson."],
-];
-
-const progression = [
-  ["COLLECT", "Notice useful ideas, experiences, tools, patterns, and questions before you know exactly where they will matter."],
-  ["D.O.T.S.", "Deconstruct, observe, transfer, and synthesize to widen the space of possible answers."],
-  ["POSSIBILITY", "Hold more than one plausible path long enough to see what the original frame excluded."],
-  ["CREATE", "Give one possibility form, test it, evaluate it, adapt it, and make what works repeatable."],
-  ["NEW DOTS", "Consequences and evidence become new material for the next round of seeing."],
-];
-
 export default function DotsBook() {
   return (
-    <InteriorPage eyebrow="Book 3 · CREATE · First Print Proof" title="D.O.T.S." wide>
+    <InteriorPage eyebrow="Book 3 · First Print Proof" title="D.O.T.S." wide>
       <div className="development-book-grid">
         <div className="development-cover-wrap">
           <Image src="/images/dots-cover.webp" width={480} height={720} alt="Current cover for D.O.T.S. by Darren Dang." className="development-cover" sizes="(max-width: 900px) 76vw, 34vw" priority />
@@ -67,32 +51,39 @@ export default function DotsBook() {
         <div className="development-copy">
           <div className="book-status">First Print Proof</div>
           <p className="dots-line">Collect Dots. Connect Dots. Create Something New.</p>
-          <p className="lead">D.O.T.S. is a way of seeing problems.</p>
-          <p>The world organizes knowledge into disciplines. Problems do not. The book explores what becomes possible when we stop letting a problem&apos;s label decide where we are allowed to look for answers.</p>
-          <p>The core move is perceptual before it is methodological: <strong>LABEL → STRUCTURE → SEARCH SPACE.</strong> See the structure beneath the category, widen where you look, discover possibilities the original frame excluded, then use CREATE to let reality test what deserves to remain.</p>
+          <p className="lead">What can I make from everything I have learned?</p>
+          <p>Book 1 begins with what life and the people before us can leave behind. Book 2 widens the circle of teachers. Book 3 asks what happens when we connect all of those dots—along with ideas from other disciplines, roles, cultures, and problems—and try to create something useful from them.</p>
+          <p>D.O.T.S. is the name I eventually gave to a pattern I had been using for years: look past the label, find the underlying structure, search more widely than the obvious domain, transfer carefully, and make something new enough for reality to test.</p>
           <div className="development-actions">
             <Link className="button button-dark" href="#inside-book-3">Look Inside Book 3</Link>
-            <Link className="text-link" href="/dots/">Explore the public D.O.T.S. idea →</Link>
+            <Link className="text-link" href="/dots/">Explore the D.O.T.S. method →</Link>
           </div>
         </div>
       </div>
 
+      <section className="development-question">
+        <div className="eyebrow bronze">Why this book exists</div>
+        <h2>Learning becomes more powerful when we can do something new with it.</h2>
+        <p className="lead">The goal is not to collect clever analogies. It is to become better at seeing connections that matter—and disciplined enough to know when a connection does not transfer.</p>
+        <p>A familiar problem label can quietly limit where we look for answers. D.O.T.S. helps widen the search before narrowing toward a choice.</p>
+        <blockquote className="trilogy-map-quote">D.O.T.S. finds possibility. CREATE earns a possibility.</blockquote>
+      </section>
+
       <section className="development-themes">
-        <div className="eyebrow bronze">Key themes</div>
-        <h2>Better solutions often begin with a better description of the problem.</h2>
+        <div className="eyebrow bronze">The journey</div>
+        <h2>Collect. See. Connect. Create. Learn again.</h2>
         <div className="theme-grid theme-grid-five">
           {themes.map(([title, copy]) => <article key={title}><h3>{title}</h3><p>{copy}</p></article>)}
         </div>
       </section>
 
       <section className="development-principles">
-        <div className="eyebrow bronze">The public high-level model</div>
+        <div className="eyebrow bronze">The method underneath</div>
         <h2>Deconstruct → Observe → Transfer → Synthesize</h2>
-        <p className="map-bridge-text">Sometimes the existing map is useful. Sometimes the terrain has changed. And sometimes we enter territory no existing map describes very well. D.O.T.S. begins by helping us see what the existing map may have missed.</p>
-        <p className="lead">The method identifies what kind of problem is actually present, looks for the same structure elsewhere, tests what genuinely transfers, and synthesizes new possibilities for the current context.</p>
+        <p className="lead">The technical method is available for readers who want it. But the human move comes first: describe the problem better, look somewhere new, notice what genuinely transfers, and let judgment decide what is worth making real.</p>
         <div className="principle-grid">
           <article><blockquote>The label narrows where you look. The structure expands where you can look.</blockquote><p>D.O.T.S. expands the search space before narrowing toward a solution.</p></article>
-          <article><blockquote>D.O.T.S. finds possibility. CREATE earns a possibility.</blockquote><p>Discovery is not enough. Creation gives an idea form so consequence, evidence, and reality can answer back.</p></article>
+          <article><blockquote>Human judgment asks whether it is worth doing.</blockquote><p>A possibility can work technically and still fail the larger test of purpose, consequence, responsibility, or care.</p></article>
         </div>
       </section>
 
@@ -100,7 +91,7 @@ export default function DotsBook() {
         <div className="book-samples-intro">
           <div className="eyebrow bronze">Inside Book 3</div>
           <h2 id="inside-book-3-title">Three glimpses at how a connection becomes a new way of seeing.</h2>
-          <p className="lead">Book 3&apos;s narrative engine is discovery: an unexpected problem, a hidden structure, a surprising connection, and then the judgment required to turn possibility into something real.</p>
+          <p className="lead">The book moves from recognizing a pattern Darren had lived before naming it, to learning how to transfer ideas carefully, and finally to handing the lens to the reader.</p>
         </div>
         <div className="sample-path">
           {samples.map((sample) => (
@@ -113,67 +104,30 @@ export default function DotsBook() {
             </article>
           ))}
         </div>
-        <p className="sample-note">These are intentionally selective chapter glimpses. The core architecture is established, while exact wording and final sequencing may still change through proof review before a publication master is locked.</p>
+        <p className="sample-note">These are intentionally selective chapter glimpses. The fuller cases and final sequencing remain in the book.</p>
       </section>
 
-      <section className="development-themes">
-        <div className="eyebrow bronze">Selected chapter signals</div>
-        <h2>The reader is not only being taught a method. The reader is gradually being handed the lens.</h2>
-        <p className="lead">The current architecture moves from recognizing the pattern, to seeing beneath labels, to widening and testing connections, and finally to the reader taking ownership of the act of looking.</p>
-        <div className="theme-grid theme-grid-five">
-          {selectedChapters.map(([number, title, copy]) => (
-            <article key={number}>
-              <small>{number}</small>
-              <h3>{title}</h3>
-              <p>{copy}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="development-themes">
-        <div className="eyebrow bronze">The recursive engine</div>
-        <h2>Open enough to discover. Commit enough to learn. Humble enough to revise.</h2>
-        <div className="theme-grid theme-grid-five">
-          {progression.map(([title, copy]) => (
-            <article key={title}>
-              <h3>{title}</h3>
-              <p>{copy}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="development-principles">
-        <div className="eyebrow bronze">Questions that expand the search</div>
-        <h2>Sometimes the better question is where else to look.</h2>
-        <div className="principle-grid">
-          <article><blockquote>Who has no choice but to be good at this problem?</blockquote><p>Look for environments where the underlying challenge is unavoidable and competence is earned through repeated exposure.</p></article>
-          <article><blockquote>Where else has this problem already been solved?</blockquote><p>Search by structure rather than category, then test carefully whether the borrowed principle fits the new context.</p></article>
-        </div>
-      </section>
-
-      <section className="example-panel">
-        <div className="eyebrow bronze">D.O.T.S. in practice</div>
-        <h3>AI experimentation looked like a technology problem.</h3>
-        <p>Look beneath the label and the structure also includes allocation, uncertainty, evidence, governance, capability, trust, and rebalancing. That opens a larger search space—while still requiring judgment about which analogies genuinely transfer.</p>
-        <Link className="text-link" href="/papers/from-ai-experiments-to-institutional-capability/">Read From AI Experiments to Institutional Capability →</Link>
+      <section className="development-question">
+        <div className="eyebrow bronze">The handoff</div>
+        <h2>The point is not that you learn Darren&apos;s connections. It is that you begin seeing your own.</h2>
+        <p className="lead">The late movement of the book shifts from explanation toward ownership. The reader becomes the one who notices the dots, widens the search, tests the transfer, and decides what deserves to be created.</p>
+        <div className="development-actions"><Link className="button button-dark" href="/books/the-making-of-the-way/">Continue to Book 4</Link><Link className="text-link" href="/books/">Explore the five-book journey →</Link></div>
       </section>
 
       <ConnectedDots
-        intro="Book 3 sits at the discovery-and-creation edge of the trilogy, but the method depends on dots collected from earlier experience, unexpected teachers, applied work, and the reader's own context."
+        intro="Book 3 grows from dots collected across earlier life, unexpected teachers, applied work, other disciplines, and the reader's own context."
         question="What problem in your life or work may be described too narrowly by the label you currently use for it?"
         connections={[
-          { label: "METHOD", title: "D.O.T.S. — the public model", copy: "Explore the method as a reusable way of seeing problems beyond the book manuscript.", href: "/dots/" },
+          { label: "METHOD", title: "D.O.T.S. — the public model", copy: "Go deeper into the reusable method beneath the book.", href: "/dots/" },
           { label: "BOOK 1 CASE", title: "Connect the Dots", copy: "A real cross-domain planning case that shows the behavior before the larger method was fully named.", href: "/books/for-those-who-come-after-us/connect-the-dots/" },
-          { label: "BOOK 2", title: "Wisdom Has No Rank", copy: "Book 2 widens who or what can teach us. Book 3 widens where possibilities and solutions can come from.", href: "/books/wisdom-has-no-rank/" },
-          { label: "COMPANION", title: "The Making of The Way", copy: "The companion work examines how new understanding can emerge through Generative Dialogue rather than inside one mind alone.", href: "/books/the-making-of-the-way/" },
+          { label: "BOOK 2", title: "Wisdom Has No Rank", copy: "Book 2 widens who or what can teach us. Book 3 asks what we can create from what we learn.", href: "/books/wisdom-has-no-rank/" },
+          { label: "BOOK 4", title: "The Making of The Way", copy: "The next book opens the workshop and shows how discovery itself emerged through sustained dialogue.", href: "/books/the-making-of-the-way/" },
         ]}
       />
 
       <aside className="development-status-note">
         <strong>Development status</strong>
-        <p><em>D.O.T.S.</em> is in first hard-copy proof. The title, core line, central thesis, public high-level model, v6.0 architecture, and reader-centered direction are established. Proof review may still refine final manuscript wording, sequencing, and production files before publication authority is locked.</p>
+        <p><em>D.O.T.S.</em> is in first hard-copy proof. The title, core line, central thesis, high-level method, and reader-centered direction are established. Proof review may still refine final manuscript wording, sequencing, and production files before publication authority is locked.</p>
       </aside>
     </InteriorPage>
   );
