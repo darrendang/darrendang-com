@@ -40,6 +40,66 @@ const samples = [
   },
 ];
 
+const forThoseWhoComeAfterUsLyrics = `Verse 1
+
+I was just a child on a small boat, too young to know the cost.
+Others carried what I couldn't when almost all was lost.
+I didn't know what they had given or what they'd give for me.
+I only knew they kept me moving toward a life I couldn't see.
+
+Pre-Chorus
+
+It took me years to understand how far they carried us.
+Now I walk my part of the road for those who come after us.
+
+Chorus
+
+For those who come after us, we walk the road today.
+Someone walked this road before us. We'll leave a path along the way.
+You don't have to walk it like us. You don't have to end where we've been.
+Take the best of what we give you. Then make the road your own again.
+
+Verse 2
+
+I found my way through changing roads, through victories and loss.
+Some dreams were worth the journey. Some taught me what they cost.
+Then came a wife, three children, and a place that we called home.
+And somewhere on that road I learned we never walk it all alone.
+
+Pre-Chorus
+
+I used to ask where roads would lead.
+Now I ask what road I'll leave.
+
+Chorus
+
+For those who come after us, we walk the road today.
+Someone walked this road before us. We'll leave a path along the way.
+You don't have to walk it like us. You don't have to end where we've been.
+Take the best of what we give you. Then make the road your own again.
+
+Bridge
+
+Someday you'll see what I couldn't.
+Someday you'll choose differently.
+I hope you do.
+Keep what is worth keeping. Change what needs to change.
+I don't need you to live my life.
+I only hope I helped you start.
+
+Final Chorus
+
+For those who come after us, this road was never ours alone.
+Someone walked this way before us. Someday you'll carry it on.
+Take the love. Take the lessons. See the things we could not see.
+Make the road a little better. Then go farther than me.
+
+Outro
+
+And when your children ask someday where the road beneath them came from,
+tell them someone walked before you.
+Then go a little farther than me.`;
+
 export default function Book() {
   return (
     <InteriorPage eyebrow="Book 1 · Published" title="For Those Who Come After Us">
@@ -101,6 +161,7 @@ export default function Book() {
             title: "For Those Who Come After Us",
             src: "/audio/for-those-who-come-after-us.mp3",
             description: "The emotional signature of Book 1: what we hope can remain useful after the conversation ends.",
+            lyrics: forThoseWhoComeAfterUsLyrics,
           },
           {
             title: "Take the Best",
