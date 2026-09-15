@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 import { ConnectedDots } from "@/components/ConnectedDots";
+import { MusicCompanion } from "@/components/MusicCompanion";
+import { shapeBeneathLyrics } from "@/lib/songLyrics";
 
 export const metadata = {
   title: "D.O.T.S. — Book 3",
@@ -68,6 +70,21 @@ export default function DotsBook() {
         <p>A familiar problem label can quietly limit where we look for answers. D.O.T.S. helps widen the search before narrowing toward a choice.</p>
         <blockquote className="trilogy-map-quote">D.O.T.S. finds possibility. CREATE earns a possibility.</blockquote>
       </section>
+
+      <MusicCompanion
+        eyebrow="Listen · Hear the pattern"
+        title="The Shape Beneath"
+        description="A musical interpretation of the Book 3 lens: look beneath the label, notice structural resemblance across different contexts, transfer carefully, and let reality answer back."
+        tracks={[
+          {
+            title: "The Shape Beneath",
+            src: "/audio/Song-The-Shape-Beneath.mp3",
+            description: "The song follows the movement from collected fragments to structure, transfer, synthesis, experimentation, and the next dot. It is an artistic interpretation; the adjacent Book 3 text remains the authority for the D.O.T.S. and CREATE methods.",
+            lyrics: shapeBeneathLyrics,
+          },
+        ]}
+        note="The song intentionally compresses and interprets the method. For the canonical D.O.T.S. and CREATE definitions, use the book and method pages."
+      />
 
       <section className="development-themes">
         <div className="eyebrow bronze">The journey</div>
