@@ -1,7 +1,7 @@
 (() => {
   const PROJECT_URL = 'https://zlpjkixskskfcgmkajyd.supabase.co';
   const PUBLIC_KEY = 'sb_publishable_XBESWMhKrcGK0jMH6d9fnA_u_tuspI5';
-  const APPROVED_EMAIL = 'dangphibang@gmail.com';
+  const ACCESS_CHECK = `${PROJECT_URL}/functions/v1/family-access-check`;
   const SESSION_ACCESS = 'dang_review_access';
   const SESSION_REFRESH = 'dang_review_refresh';
 
@@ -110,12 +110,16 @@
   }
 
   const currentClaims = () => decodeJwt(getAccess());
-  const isAuthorized = (claims) => Boolean(
-    claims &&
-    String(claims.email || '').toLowerCase() === APPROVED_EMAIL &&
-    claims.app_metadata &&
-    claims.app_metadata.provider === 'google'
-  );
+
+  async function isAuthorized(claims) {
+    if (!claims || !claims.app_metadata || claims.app_metadata.provider !== 'google') return false;
+    const response = await authenticatedFetch(ACCESS_CHECK, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ role: 'family-admin', surface: 'shared-wisdom-review' }),
+    });
+    return response.ok;
+  }
 
   function showOnly(section) {
     [loading, login, denied, workspace].forEach((el) => { if (el) el.hidden = el !== section; });
@@ -335,7 +339,7 @@
     if (response.status === 401 || response.status === 403) {
       clearSession();
       showOnly(login);
-      authMessage.textContent = 'Your review session expired. Sign in again with Google.';
+      authMessage.textContent = 'Your review session expired or access was revoked. Sign in again with Google.';
       return;
     }
     if (!response.ok) {
@@ -554,14 +558,14 @@
       showOnly(login);
       return;
     }
-    if (!isAuthorized(claims)) {
+    if (!await isAuthorized(claims)) {
       showOnly(denied);
       return;
     }
 
     filter.value = 'all';
     search.value = '';
-    sessionLabel.textContent = `Authenticated with Google as ${claims.email}. Submission content remains private until you explicitly publish it.`;
+    sessionLabel.textContent = `Authenticated with Google as ${claims.email}. Access is governed by the family-admin role. Submission content remains private until you explicitly publish it.`;
     showOnly(workspace);
     await loadSubmissions();
   }
