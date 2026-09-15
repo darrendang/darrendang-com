@@ -25,6 +25,11 @@ const secretPatterns = [
   /[A-Za-z0-9._%+-]+@(gmail|yahoo|hotmail|outlook)\.com/i,
   /\b(?:\+?1[-.\s]?)?\(?\d{3}\)?[-.\s]\d{3}[-.\s]\d{4}\b/,
 ];
+const forbiddenAuthorizationPatterns = [
+  /\bAPPROVED_EMAIL\b/,
+  /\b(?:AUTHORIZED|APPROVED|ALLOWED)_(?:EMAIL|EMAILS|USER|USERS|MEMBER|MEMBERS)\b/i,
+  /(?:approved|authorized|allowed)\s+(?:email|emails|member|members)\s*=\s*\[/i,
+];
 
 const failures = [];
 
@@ -57,6 +62,15 @@ function walk(dir) {
     if (stat.size > 2_000_000) continue;
     let text;
     try { text = fs.readFileSync(full, 'utf8'); } catch { continue; }
+
+    // Authorization membership belongs in the private authorization layer, never
+    // in public source. Public role names are allowed; embedded member allowlists are not.
+    for (const pattern of forbiddenAuthorizationPatterns) {
+      if (pattern.test(text)) {
+        failures.push(`Embedded authorization allowlist pattern in: ${rel}`);
+        break;
+      }
+    }
 
     // Explicitly approved public contact strings are allowed while all other
     // personal email addresses remain blocked by the generic secret scan.
