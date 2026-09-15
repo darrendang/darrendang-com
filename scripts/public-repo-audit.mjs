@@ -26,7 +26,7 @@ const secretPatterns = [
   /\b(?:\+?1[-.\s]?)?\(?\d{3}\)?[-.\s]\d{3}[-.\s]\d{4}\b/,
 ];
 const forbiddenAuthorizationPatterns = [
-  /\bAPPROVED_EMAIL\b/,
+  new RegExp(`\\b${'APPROVED'}${'_EMAIL'}\\b`),
   /\b(?:AUTHORIZED|APPROVED|ALLOWED)_(?:EMAIL|EMAILS|USER|USERS|MEMBER|MEMBERS)\b/i,
   /(?:approved|authorized|allowed)\s+(?:email|emails|member|members)\s*=\s*\[/i,
 ];
