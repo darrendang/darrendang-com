@@ -83,6 +83,7 @@ export default function TheMakingOfTheWayPage() {
         <p><em>The Making of The Way</em> examines the second kind. The story is not simply about artificial intelligence. It is about disciplined dialogue: asking, reflecting, challenging, refining, noticing patterns, transferring ideas across contexts, correcting errors, preserving provenance, and allowing a better question to replace the one that started the exchange.</p>
         <p>In this view, knowledge can sometimes emerge <strong>between minds</strong>. Neither participant has to begin with the final insight. The insight can take shape through the interaction itself.</p>
         <p>In the human–AI case documented here, AI can expand the search space and help test coherence. Human judgment still retains responsibility for purpose, truth, meaning, correction, privacy, canonization, publication, and final direction.</p>
+        <p><strong>The test is not only whether AI helps us think or create more. It is whether what we create leaves human judgment, relationship, responsibility, and care stronger rather than weaker.</strong></p>
         <blockquote className="trilogy-map-quote">Learning receives. Knowing integrates. Discovery widens. Creation gives possibility form. Transmission gives someone else a stronger place to begin.</blockquote>
         <p style={{ marginTop: "30px" }}><Link className="text-link" href="/ideas/generative-dialogue/">Read the public Generative Dialogue idea →</Link></p>
       </section>
