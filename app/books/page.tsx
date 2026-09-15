@@ -90,7 +90,7 @@ export default function Books() {
     <InteriorPage eyebrow="Books" title="Five works. One widening journey." wide>
       <div className="books-library-intro">
         <p className="lead">The books are the clearest doorway into this body of work because that is where it began: with lived experience, relationships, questions, mistakes, and things I wanted to preserve for those who came after me.</p>
-        <p>Only later did a larger pattern become visible across them. The first three move from inheritance, to teachability, to creation. The fourth makes the making visible. The fifth turns the work toward the reader's own life.</p>
+        <p>Only later did a larger pattern become visible across them. The first three move from inheritance, to teachability, to creation. The fourth makes the making visible. The fifth turns the work toward the reader&apos;s own life.</p>
       </div>
 
       <div className="books-library">
