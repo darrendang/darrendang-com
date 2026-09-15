@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 import { ConnectedDots } from "@/components/ConnectedDots";
+import { MusicCompanion } from "@/components/MusicCompanion";
+import { noRankLyrics } from "@/lib/songLyrics";
 
 export const metadata = {
   title: "Wisdom Has No Rank",
@@ -73,6 +75,21 @@ export default function WisdomHasNoRank() {
           </div>
         </div>
       </div>
+
+      <MusicCompanion
+        eyebrow="Listen · The idea in music"
+        title="No Rank (Both Ways)"
+        description="A musical interpretation of Book 2’s central tension: authority, expertise, and responsibility still matter, but hierarchy should not decide in advance what truth is allowed to teach us."
+        tracks={[
+          {
+            title: "No Rank (Both Ways)",
+            src: "/audio/Song-No-Rank.mp3",
+            description: "The song moves through family correction, leadership, complementary strengths, expertise, and the moment a lesson returns improved by the next generation.",
+            lyrics: noRankLyrics,
+          },
+        ]}
+        note="The song interprets the book’s ideas; the book remains the fuller source for the stories, distinctions, and argument."
+      />
 
       <section className="development-themes book2-trilogy-section">
         <div className="eyebrow bronze">The hinge in the trilogy</div>
