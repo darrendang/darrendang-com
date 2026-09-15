@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
+import { MusicCompanion } from "@/components/MusicCompanion";
+import { carryItForwardLyrics } from "@/lib/songLyrics";
 
 const philosophicalCycle = [
   ["Learn", "Receive experience, perspective, and what came before."],
@@ -68,6 +70,25 @@ export default function TheWayPage() {
               <article><span>03 · The Way Forward</span><h3>Create the direction your context requires.</h3><p>Progress may mean building, healing, serving, changing direction, deepening, simplifying, waiting, letting go, beginning again—or making something no inherited map could have anticipated.</p><Link className="text-link" href="/the-way-forward/">Explore The Way Forward →</Link></article>
             </div>
             <blockquote className="trilogy-map-quote">Leave those who come after a stronger starting point and the freedom to go farther.</blockquote>
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="container">
+            <MusicCompanion
+              eyebrow="The Way · In music"
+              title="Carry It Forward"
+              description="The Way began in lived experience and only later acquired a name. This song is one musical expression of the pattern: receive what came before, examine it, make it your own, and leave greater possibility behind."
+              tracks={[
+                {
+                  title: "Carry It Forward",
+                  src: "/audio/Song-Carry-It-Forward.mp3",
+                  description: "A cross-generational interpretation of inheritance without prescription: carry the light, choose your own dawn, and leave the next person a stronger beginning with more freedom.",
+                  lyrics: carryItForwardLyrics,
+                },
+              ]}
+              note="This is an artistic expression of The Way, not a substitute for the philosophy or Constitution."
+            />
           </div>
         </section>
 
