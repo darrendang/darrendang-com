@@ -1,11 +1,47 @@
 {
   "schema_version": "1.0",
   "policy": "Do not re-review an unchanged audio file. Re-review is required only when the file fingerprint changes, the relevant public canon baseline changes materially, or a prior review is explicitly reopened.",
-  "canon_baseline": "DarrenDang.com public expression architecture synchronized 2026-08-31",
+  "canon_baseline": "DarrenDang.com public expression architecture synchronized 2026-08-31; new inline music companions reviewed against the reader-centric site and book canon on 2026-09-15",
   "fingerprint_type": "git_blob_sha1",
-  "baseline_recorded_on": "2026-08-31",
-  "review_notes": "This manifest fingerprints the exact MP3 bytes currently in the public repository. A matching Git blob SHA proves the file is byte-for-byte unchanged. Semantic review state is tracked separately from fingerprint state so provenance is not overstated.",
+  "baseline_recorded_on": "2026-09-15",
+  "review_notes": "This manifest fingerprints the exact MP3 bytes currently in the public repository. A matching Git blob SHA proves the file is byte-for-byte unchanged. Semantic review state is tracked separately from fingerprint state so provenance is not overstated. Inline companion songs are artistic interpretations embedded in their relevant pages and are not part of the route-based Darren-voice ListeningLayer.",
   "files": [
+    {
+      "path": "public/audio/Song-Carry-It-Forward.mp3",
+      "git_blob_sha1": "3e48fa6efdeb6367331b6a20a082bbd523164852",
+      "size_bytes": 5482039,
+      "public_role": "The Way — inline musical interpretation",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-15",
+      "review_basis": "Darren supplied the full lyrics and explicitly approved website integration. Reviewed against current The Way public framing: inheritance without prescription, agency, teachability, transmission, and a stronger starting point with freedom to go farther. Embedded on /the-way/; not authoritative philosophy text and not part of the route-based ListeningLayer."
+    },
+    {
+      "path": "public/audio/Song-No-Rank.mp3",
+      "git_blob_sha1": "ddfabd6a59e604fda7cdf98135a3e34d16424443",
+      "size_bytes": 7533157,
+      "public_role": "Book 2 — Wisdom Has No Rank inline musical interpretation",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-15",
+      "review_basis": "Darren supplied the full lyrics and explicitly approved website integration. Reviewed against Book 2's teachability thesis and its guardrails that expertise, evidence, responsibility, and role still matter even when rank does not determine wisdom. Embedded on /books/wisdom-has-no-rank/; not part of the route-based ListeningLayer."
+    },
+    {
+      "path": "public/audio/Song-Take-The-Best.mp3",
+      "git_blob_sha1": "52feb35016e29b25655ac158fff633e81e6cdff0",
+      "size_bytes": 4150874,
+      "public_role": "Book 1 — secondary inline musical companion",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-15",
+      "review_basis": "Darren supplied the full lyrics and explicitly approved website integration. Reviewed as a Book 1 companion about inheritance with agency: receive a map, choose your own path, and pass something useful forward. Embedded alongside the existing Book 1 song on /books/for-those-who-come-after-us/; not part of the route-based ListeningLayer."
+    },
+    {
+      "path": "public/audio/Song-The-Shape-Beneath.mp3",
+      "git_blob_sha1": "0bcde3f30d843f8f4001364b33aae4a5f216263c",
+      "size_bytes": 6498591,
+      "public_role": "Book 3 — D.O.T.S. inline musical interpretation",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-15",
+      "review_basis": "Darren supplied the full lyrics, explicitly chose to keep the generated song unchanged, and approved website integration. The song is presented as an artistic interpretation, not the method authority; adjacent Book 3 prose remains authoritative for D.O.T.S. and CREATE definitions. Embedded on /books/dots/; not part of the route-based ListeningLayer."
+    },
     {
       "path": "public/audio/Song-You-Are-My-Way1.mp3",
       "git_blob_sha1": "6f0bf9bfe470ccf77b65612b82796eed32f4643b",
@@ -55,10 +91,10 @@
       "path": "public/audio/for-those-who-come-after-us.mp3",
       "git_blob_sha1": "155bb04411e73cbcbf71b59157e0a2bfc7e8b4e1",
       "size_bytes": 5639181,
-      "public_role": "Book 1 promotional audio asset",
-      "review_state": "fingerprinted_not_in_listening_layer",
-      "last_reviewed_on": "2026-08-31",
-      "review_basis": "tracked for change detection; not part of the route-based ListeningLayer"
+      "public_role": "Book 1 primary inline companion song",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-15",
+      "review_basis": "Previously reviewed Book 1 promotional audio asset; now intentionally retained as the primary Book 1 musical companion alongside Take the Best. Exact bytes unchanged. Not part of the route-based ListeningLayer."
     },
     {
       "path": "public/audio/letters-why-these-letters.mp3",
