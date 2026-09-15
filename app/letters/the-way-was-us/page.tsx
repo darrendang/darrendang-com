@@ -26,32 +26,48 @@ export const metadata: Metadata = {
 
 const lyrics = [
   {
+    title: "Intro",
+    text: `Before I ever found the words\nBefore I ever named The Way\nThere was you beside me\nLiving it with me\nDay by day`,
+  },
+  {
     title: "Verse 1",
-    text: `We didn't start with answers\nWe started with a life\nTwo people choosing one another\nA husband and a wife\n\nWe built it in the ordinary\nThe dinners, drives, and late-night talks\nIn all the plans that changed around us\nAnd every road we had to walk\n\nYou were there when I was certain\nYou were there when I was wrong\nYou knew when I needed challenging\nAnd when I just needed someone strong\n\nAnd somewhere in those years together\nThrough everything that life put us through\nI learned that home was never a place\n\nHome was you`,
+    text: `We didn't start with answers\nWe started with a life\nTwo people choosing one another\nA husband and a wife\n\nWe built it in the ordinary\nThe dinners, drives, and late-night talks\nIn all the plans that changed around us\nAnd every road we had to walk\n\nYou were there when I was certain\nYou were there when I was wrong\nYou knew when I needed challenging\nAnd when I just needed someone strong\n\nAnd somewhere in those years together\nThrough everything that life put us through\nI learned that home was never a place\nHome was you`,
+  },
+  {
+    title: "Pre-Chorus",
+    text: `I have spent a lifetime\nTrying to understand\nWhat is worth holding\nAnd what we leave behind\n\nBut the answer was beside me\nHolding my hand`,
   },
   {
     title: "Chorus",
-    text: `Before I ever named The Way\nWe were already living it\nLearning from yesterday\nBut never letting yesterday decide what's next\n\nBuilding something strong enough\nTo give our children room to fly\nA stronger place to start from\nAnd the freedom to choose their sky\n\nIf anything of me lives on\nIn something good that they become\nLet everyone who comes after know\n\nThe Way was never mine alone\n\nThe Way was us`,
+    text: `Before I ever named The Way\nWe were already living it\nLearning from yesterday\nBut never letting yesterday decide what's next\n\nBuilding something strong enough\nTo give our children room to fly\nA stronger place to start from\nAnd the freedom to choose their sky\n\nIf anything of me lives on\nIn something good that they become\nLet everyone who comes after know\nThe Way was never mine alone\nThe Way was us`,
   },
   {
     title: "Verse 2",
-    text: `Look at the three lives that we raised\nLook at who they've grown to be\nSharp minds that know how to question\nStrong enough in heart and body to lead\n\nThey walk into a room with purpose\nThey carry themselves with quiet pride\nNot because we chose their futures\nBut because we stood there by their side\n\nWe taught them strength without hardness\nDiscipline without losing heart\nTo lead without needing the spotlight\nTo finish what they choose to start\n\nAnd when the world looks up to them\nI hope you see what I can see\n\nSo much of everything I admire in them\nCame from you and me\n\nBut so much came from you`,
+    text: `Look at the three lives that we raised\nLook at who they've grown to be\nSharp minds that know how to question\nStrong enough in heart and body to lead\n\nThey walk into a room with purpose\nThey carry themselves with quiet pride\nNot because we chose their futures\nBut because we stood there by their side\n\nWe taught them strength without hardness\nDiscipline without losing heart\nTo lead without needing the spotlight\nTo finish what they choose to start\n\nAnd when the world looks up to them\nI hope you see what I can see\nSo much of everything I admire in them\nCame from you and me\nBut so much came from you`,
+  },
+  {
+    title: "Pre-Chorus 2",
+    text: `Every early morning\nEvery worry you kept inside\nEvery time you carried more\nSo one of us could rise\n\nOur children know my stories\nBut you lived the chapters\nNo one else could write`,
+  },
+  {
+    title: "Chorus 2",
+    text: `Before I ever named The Way\nWe were already living it\nLearning from yesterday\nBut never letting yesterday decide what's next\n\nBuilding something strong enough\nTo give our children room to fly\nA stronger place to start from\nAnd the freedom to choose their sky\n\nIf anything of us lives on\nIn something good that they become\nLet everyone who comes after know\nThe Way was never mine alone\nThe Way was us`,
   },
   {
     title: "Verse 3",
-    text: `And now I write about inheritance\nAbout wisdom passing through\nAbout the things a life can leave\nFor someone we may never know\n\nI write about stewardship\nAbout carrying forward what is true\n\nBut every time I follow that idea\nIt somehow leads me back to you\n\nBecause legacy isn't what we own\nIt isn't books upon a shelf\nIt's giving what we learned away\nSo someone else can become more fully themselves\n\nAnd love was our first inheritance\nAnd love became what we passed on\n\nYou and I were building the future\n\nLong before I knew\nThat's what we'd done`,
+    text: `And now I write about inheritance\nAbout wisdom passing through\nAbout the things a life can leave\nFor someone we may never know\n\nI write about stewardship\nAbout carrying forward what is true\nBut every time I follow that idea\nIt somehow leads me back to you\n\nBecause legacy isn't what we own\nIt isn't books upon a shelf\nIt's giving what we learned away\nSo someone else can become more fully themselves\n\nAnd love was our first inheritance\nAnd love became what we passed on\nYou and I were building the future\nLong before I knew\nThat's what we'd done`,
   },
   {
     title: "Bridge",
-    text: `So on your birthday\nI don't want to count the years\n\nI want to count the lives you've touched\nThe laughter\nThe courage\nThe thousand quiet ways you've loved us\nThat no photograph could ever capture\n\nI want you to know\n\nI saw it\n\nI see it\n\nThe wife who stood beside me\nThe mother who helped shape three remarkable lives\nThe partner who carried dreams with me\nThe woman who could challenge me\nAnd still believe in me\n\nMy confidante\nMy partner\nMy soulmate\nMy home\n\nAnd if I had another lifetime\nKnowing everything I know today\n\nI would still find you\n\nI would still choose you\n\nEvery time\n\nEvery way`,
+    text: `So on your birthday\nI don't want to count the years\n\nI want to count the lives you've touched\nThe laughter\nThe courage\nThe thousand quiet ways you've loved us\nThat no photograph could ever capture\n\nI want you to know\nI saw it\nI see it\n\nThe wife who stood beside me\nThe mother who helped shape three remarkable lives\nThe partner who carried dreams with me\nThe woman who could challenge me\nAnd still believe in me\n\nMy confidante\nMy partner\nMy soulmate\nMy home\n\nAnd if I had another lifetime\nKnowing everything I know today\nI would still find you\nI would still choose you\nEvery time\nEvery way`,
   },
   {
     title: "Final Chorus",
-    text: `Before I ever named The Way\nYou were already part of it\nEvery lesson, every sacrifice\nEvery love that gave it breath\n\nWe gave our children roots strong enough\nThat they never needed chains\nWe gave them somewhere to begin\nAnd permission to go farther than we came\n\nAnd someday when we're older\nAnd the house is quiet again\nWhen the children have their own roads\nAnd their own stories to hand down\n\nI'll still reach across for you\nThe way I've always done\n\nBecause after every road we've traveled\nAfter everything we've built and become\n\nIf they ask me where The Way began\n\nI'll tell them—\n\nNot in a book\nNot in an idea\nNot in something I discovered\n\nIt began in a life\n\nIt began in a family\n\nIt began with us`,
+    text: `Before I ever named The Way\nYou were already part of it\nEvery lesson, every sacrifice\nEvery love that gave it breath\n\nWe gave our children roots strong enough\nThat they never needed chains\nWe gave them somewhere to begin\nAnd permission to go farther than we came\n\nAnd someday when we're older\nAnd the house is quiet again\nWhen the children have their own roads\nAnd their own stories to hand down\n\nI'll still reach across for you\nThe way I've always done\nBecause after every road we've traveled\nAfter everything we've built and become\n\nIf they ask me where The Way began\nI'll tell them—\n\nNot in a book\nNot in an idea\nNot in something I discovered\n\nIt began in a life\nIt began in a family\nIt began with us`,
   },
   {
     title: "Outro",
-    text: `And if there is one thing\nI hope you always know\n\nOf all the things\nI am proud to leave behind\n\nThe life I built with you\nIs the one I'm proudest of\n\nHappy birthday, my love\n\nMy partner\nMy soulmate\n\nMy stronger starting point\n\nMy way home`,
+    text: `And if there is one thing\nI hope you always know\n\nOf all the things\nI am proud to leave behind\n\nThe life I built with you\nIs the one I'm proudest of\n\nHappy birthday, my love\nMy partner\nMy soulmate\nMy stronger starting point\nMy way home`,
   },
 ];
 
