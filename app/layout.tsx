@@ -13,6 +13,7 @@ import "./book2-preview.css";
 import "./genome.css";
 import "./way-ux.css";
 import "./listen.css";
+import "./music-companion.css";
 import "./generative-dialogue.css";
 import "./nathan-style.css";
 import "./nathan-style-overrides.css";
