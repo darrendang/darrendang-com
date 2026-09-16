@@ -1,0 +1,307 @@
+.intro {
+  max-width: 840px;
+  margin-bottom: 42px;
+}
+
+.kicker {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(29px, 3vw, 43px);
+  line-height: 1.12;
+  color: var(--navy);
+  margin: 0 0 20px;
+}
+
+.dedication {
+  margin: 54px auto;
+  max-width: 900px;
+  padding: 38px 42px;
+  border-top: 1px solid var(--sand);
+  border-bottom: 1px solid var(--sand);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(31px, 3.25vw, 47px);
+  line-height: 1.16;
+  text-align: center;
+  color: var(--navy);
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 54px 0 68px;
+}
+
+.timeline article {
+  padding: 25px 24px;
+  border: 1px solid var(--sand);
+  border-radius: 17px;
+  background: #fffdf9;
+  box-shadow: 0 10px 30px rgba(13, 31, 49, 0.04);
+}
+
+.timeline span {
+  display: block;
+  margin-bottom: 9px;
+  color: var(--bronze);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.timeline strong {
+  color: var(--navy);
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.audioCard {
+  max-width: 870px;
+  margin: 0 auto 78px;
+  padding: 36px;
+  border: 1px solid var(--sand);
+  border-radius: 20px;
+  background: #fffdf9;
+  box-shadow: 0 16px 42px rgba(13, 31, 49, 0.07);
+}
+
+.audioCard h2 {
+  margin: 5px 0 12px;
+  font-size: clamp(42px, 5vw, 62px);
+}
+
+.audioCard p {
+  color: var(--muted);
+  max-width: 760px;
+}
+
+.audioCard audio {
+  width: 100%;
+  margin-top: 14px;
+}
+
+.letter {
+  max-width: 800px;
+  margin: 0 auto 84px;
+  font-size: 19px;
+  line-height: 1.78;
+}
+
+.letter > h2 {
+  margin: 5px 0 34px;
+  font-size: clamp(39px, 4vw, 55px);
+}
+
+.letter h3 {
+  margin: 52px 0 20px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(28px, 3vw, 37px);
+  color: var(--navy);
+}
+
+.letter p {
+  margin: 0 0 24px;
+}
+
+.question {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(25px, 2.5vw, 33px);
+  line-height: 1.35;
+  color: var(--navy);
+}
+
+.inlineQuote {
+  margin: 38px 0 48px;
+  padding: 28px 30px;
+  border-left: 3px solid var(--bronze);
+  background: #fffaf1;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(25px, 2.5vw, 32px);
+  line-height: 1.35;
+  color: var(--navy);
+}
+
+.promiseLines,
+.evidenceLines {
+  margin: 34px 0 40px;
+  padding-left: 23px;
+  border-left: 1px solid var(--sand);
+}
+
+.promiseLines p,
+.evidenceLines p {
+  margin-bottom: 12px;
+}
+
+.signature {
+  margin-top: 52px;
+  padding-top: 30px;
+  border-top: 1px solid var(--sand);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  line-height: 1.48;
+  color: var(--navy);
+}
+
+.archive {
+  max-width: 980px;
+  margin: 80px auto;
+  padding-top: 10px;
+}
+
+.archive h2,
+.songSection h2 {
+  margin: 5px 0 16px;
+}
+
+.archiveIntro,
+.songIntro {
+  max-width: 810px;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.provenance {
+  max-width: 810px;
+  margin: 20px 0 28px;
+  padding: 16px 18px;
+  border-left: 2px solid var(--bronze);
+  background: #fffaf1;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.archive details {
+  margin-top: 28px;
+  border-top: 1px solid var(--sand);
+  border-bottom: 1px solid var(--sand);
+  padding: 24px 0;
+}
+
+.archive summary {
+  cursor: pointer;
+  color: var(--navy);
+  font-weight: 650;
+}
+
+.archiveGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 38px;
+  margin-top: 34px;
+}
+
+.archiveGrid h3,
+.lyricsPanel > h3 {
+  margin: 0 0 20px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  color: var(--navy);
+}
+
+.sourceLetter {
+  margin: 0;
+  white-space: pre-line;
+  font-size: 16px;
+  line-height: 1.76;
+}
+
+.songSection {
+  margin: 88px 0;
+}
+
+.lyricsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+  align-items: start;
+  margin-top: 38px;
+}
+
+.lyricsPanel {
+  padding: 32px;
+  border: 1px solid var(--sand);
+  border-radius: 19px;
+  background: #fffdf9;
+}
+
+.lyricSection {
+  margin: 32px 0 40px;
+}
+
+.lyricSection:last-child {
+  margin-bottom: 0;
+}
+
+.lyricSection h4 {
+  margin: 0 0 12px;
+  color: var(--bronze);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+}
+
+.lyricSection p {
+  margin: 0;
+  white-space: pre-line;
+  line-height: 1.67;
+}
+
+.languageNote {
+  max-width: 780px;
+  margin: 30px auto 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.behind {
+  margin: 84px 0 26px;
+  padding: 44px;
+  border-radius: 21px;
+  background: var(--navy);
+  color: var(--ivory);
+}
+
+.behind h2 {
+  margin-top: 0;
+  color: var(--ivory);
+}
+
+.behind p {
+  color: #d7d2ca;
+  max-width: 850px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 28px;
+  margin-top: 28px;
+}
+
+@media (max-width: 850px) {
+  .timeline,
+  .archiveGrid,
+  .lyricsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    gap: 12px;
+  }
+
+  .letter {
+    font-size: 18px;
+  }
+
+  .audioCard,
+  .lyricsPanel,
+  .behind {
+    padding: 28px 24px;
+  }
+
+  .dedication {
+    padding: 30px 12px;
+  }
+}
