@@ -72,3 +72,24 @@ When Darren later authorizes publication, run a separate public-release review. 
 - DANG Signature Style Guide consistency.
 
 The publication decision must be a new human-approved state.
+
+## Authentication incident and correction — September 15, 2026
+
+Initial production testing with the authorized Google identity returned `Access denied` even though Google OAuth succeeded and the `book4-architecture` membership was correct.
+
+The Supabase access audit showed:
+
+- provider: `google`;
+- role: `book4-architecture`;
+- result: denied;
+- authenticated user ID was read as null by the authorization function.
+
+Root cause: the first implementation read the authenticated subject only from `ctx.userClaims.sub`. In this runtime the verified JWT identity was available through the JWT claims path instead, so the valid Google session was rejected before the membership lookup.
+
+Correction: Supabase Edge Function `book4-architecture-data` version 2 now resolves email, subject, and app metadata from both authenticated claim surfaces and authorizes against the exact active Google-email membership. The dedicated role remains restricted to `dangphibang@gmail.com`; no public or family-wide access was added.
+
+Security boundary after correction remains:
+
+`VERIFIED GOOGLE JWT → EXACT GOOGLE EMAIL MEMBERSHIP → PRIVATE PAYLOAD`
+
+The architecture payload remains absent from the public repository and is still not publication-authorized.
