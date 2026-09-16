@@ -198,23 +198,17 @@ export default function Home() {
         <section className="section sand">
           <div className="container worldview-grid">
             <div>
-              <div className="eyebrow bronze">A new Letter · September 15, 2026</div>
-              <h2>To Chrystina — The Way Was Us</h2>
-              <p className="lead">A birthday song for my wife, partner, and soulmate—and a reflection on the life behind so much of what I later came to call The Way.</p>
-              <p><strong>Before I ever named The Way, we were already living it.</strong></p>
-              <Link className="text-link" href="/letters/the-way-was-us/">Listen &amp; read →</Link>
+              <div className="eyebrow bronze">A new Letter / Song · 25 Years After September 14, 2001</div>
+              <h2>Bố Ơi</h2>
+              <p className="lead">Twenty-five years after my father&apos;s passing, I return to the promise I made in his funeral booklet and ask a harder question: what did I do with what he gave me?</p>
+              <p><strong>In 2001, I made a promise in grief. In 2026, I owe him an accounting.</strong></p>
+              <Link className="text-link" href="/letters/bo-oi/">Listen &amp; read →</Link>
             </div>
-            <figure style={{ margin: 0 }}>
-              <Image
-                src="/images/darren-chrystina-vow-renewal-santorini.webp"
-                width={3236}
-                height={1960}
-                alt="Darren and Chrystina during their vow renewal in Santorini on June 19, 2019."
-                sizes="(max-width: 900px) 100vw, 520px"
-                style={{ width: "100%", height: "auto", borderRadius: "22px", boxShadow: "0 20px 54px rgba(13,31,49,.12)" }}
-              />
-              <figcaption className="note" style={{ marginTop: "10px" }}>Santorini, June 19, 2019.</figcaption>
-            </figure>
+            <div className="boundary-stack">
+              <article><span>2001 · CON NHỚ BỐ</span><strong>A promise written at twenty-eight.</strong></article>
+              <article><span>2026 · BỐ ƠI</span><strong>An accounting twenty-five years later.</strong></article>
+              <article><span>THE SONG</span><strong>A Vietnamese memorial for the family that carries him forward.</strong></article>
+            </div>
           </div>
         </section>
 
