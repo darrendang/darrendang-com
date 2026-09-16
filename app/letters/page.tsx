@@ -66,6 +66,23 @@ export default function LettersPage() {
         <section className="section sand">
           <div className="container worldview-grid">
             <div>
+              <div className="eyebrow bronze">Special Letter / Song · 25 Years After September 14, 2001</div>
+              <h2>Bố Ơi</h2>
+              <p className="lead">Twenty-five years after my father&apos;s passing, I return to the promise I made in his funeral booklet and ask a harder question: what did I do with what he gave me?</p>
+              <p><strong>In 2001, I made a promise in grief. In 2026, I owe him an accounting.</strong></p>
+              <Link className="text-link" href="/letters/bo-oi/">Listen &amp; read →</Link>
+            </div>
+            <div className="boundary-stack">
+              <article><span>2001 · CON NHỚ BỐ</span><strong>A promise written at twenty-eight.</strong></article>
+              <article><span>2026 · BỐ ƠI</span><strong>An accounting twenty-five years later.</strong></article>
+              <article><span>THE SONG</span><strong>A Vietnamese memorial for the family that carries him forward.</strong></article>
+            </div>
+          </div>
+        </section>
+
+        <section className="section worldview-section">
+          <div className="container worldview-grid">
+            <div>
               <div className="eyebrow bronze">Special Letter / Song · September 15, 2026</div>
               <h2>To Chrystina — The Way Was Us</h2>
               <p className="lead">A birthday song for my wife, partner, and soulmate—and a reflection on the life and family that existed long before I ever had language for The Way.</p>
