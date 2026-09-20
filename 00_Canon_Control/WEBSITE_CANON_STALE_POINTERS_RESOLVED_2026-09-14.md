@@ -5,6 +5,16 @@ Status: CANONICAL
 Approved by: Darren Dang
 Authority: GitHub `darrendang/darrendang-com` `main`
 
+## Supersession note — 2026-09-20
+
+This September 14 record remains canonical provenance for the books-first repositioning and the stale-pointer cleanup completed that day. It is no longer the current public-state pointer. Current website state is routed through:
+
+- `docs/CURRENT_PUBLIC_STATE_2026-09-20.md`
+- `00_Canon_Control/WEBSITE_BASELINE_GOVERNANCE_2026-09-14.md`
+- `00_Canon_Control/WEBSITE_NAVIGATION_REFINEMENT_2026-09-20.md`
+
+Do not use the September 14 dated state file as a current navigation or Letters-state authority.
+
 ## Canonical public positioning
 
 The current public reader journey is:
@@ -28,7 +38,7 @@ Internal architecture language may remain in private governance/manuscript conte
 - `00_Canon_Control/WEBSITE_POSITIONING_KAREN_JENNY_2026-09-14.md`
 - `00_Canon_Control/ECOSYSTEM_SYNC_2026-09-14_BOOKS_FIRST_REPOSITIONING.md`
 - `00_Canon_Control/ECOSYSTEM_SYNC_2026-09-14_STALE_POINTER_CLEANUP.md`
-- `docs/CURRENT_PUBLIC_STATE_2026-09-14.md`
+- `docs/CURRENT_PUBLIC_STATE_2026-09-14.md` — historical/as-of record; superseded as current state on 2026-09-20
 
 ## Superseded records retained only as provenance
 

@@ -18,7 +18,7 @@ At the time this document was superseded, the then-current public-state language
 - Book 4 — **Collaboration / Provenance Emerging**
 - Book 5 — **Integration Layer**
 
-Those status labels are historical and must not be treated as current. For current public implementation and maturity language, use the production `main` branch, `content/seed.ts`, the Books pages, and `docs/CURRENT_PUBLIC_STATE_2026-09-14.md`.
+Those status labels are historical and must not be treated as current. For current public implementation, use production `main`, `docs/CURRENT_PUBLIC_STATE_2026-09-20.md`, and the exact Book 4 source authority for current maturity or production claims.
 
 ## Historical decision retained
 

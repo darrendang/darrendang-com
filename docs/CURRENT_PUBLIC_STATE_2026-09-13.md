@@ -2,7 +2,7 @@
 
 **Status:** SUPERSEDED / PRESERVED AS HISTORICAL PROVENANCE  
 **Superseded:** 2026-09-14  
-**Current authority:** `docs/CURRENT_PUBLIC_STATE_2026-09-14.md` and production `main`
+**Current authority:** `docs/CURRENT_PUBLIC_STATE_2026-09-20.md` and production `main`
 
 This document previously served as the current public implementation record. It is retained for provenance only.
 
@@ -13,7 +13,7 @@ Do not use this file as a current pointer. For current public implementation, us
 - `main`
 - `README.md`
 - `content/seed.ts`
-- `docs/CURRENT_PUBLIC_STATE_2026-09-14.md`
+- `docs/CURRENT_PUBLIC_STATE_2026-09-20.md`
 - `00_Canon_Control/WEBSITE_POSITIONING_KAREN_JENNY_2026-09-14.md`
 - `00_Canon_Control/ECOSYSTEM_SYNC_2026-09-14_BOOKS_FIRST_REPOSITIONING.md`
 
