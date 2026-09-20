@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 import styles from "./page.module.css";
@@ -110,6 +111,17 @@ export default function BoOiPage() {
         </article>
       </section>
 
+      <figure className={styles.photoFigure}>
+        <Image
+          src="/images/bo-first-arrival-to-us.webp"
+          width={2284}
+          height={2090}
+          alt="Đặng Văn Phi with his sons after the family arrived in the United States from the Philippines."
+          sizes="(max-width: 900px) 100vw, 980px"
+        />
+        <figcaption>Bố with his sons after arriving in the United States from the Philippines.</figcaption>
+      </figure>
+
       <section className={styles.audioCard} aria-labelledby="bo-oi-song">
         <div className="eyebrow bronze">A song for Đặng Văn Phi</div>
         <h2 id="bo-oi-song">Bố Ơi</h2>
@@ -193,6 +205,17 @@ export default function BoOiPage() {
         <p>
           I remember the people who came to say goodbye to you. Some were strangers to me. One man told me what you had done for his family. I had known you as my father. Only then did I begin to understand how many other people had experienced you as a guide, an advocate, a teacher, a person who would sit down and help them figure out the next step.
         </p>
+
+        <figure className={styles.photoInset}>
+          <Image
+            src="/images/bo-chairman-pfac.webp"
+            width={2252}
+            height={1778}
+            alt="Đặng Văn Phi at the Palawan refugee camp beside an organization chart."
+            sizes="(max-width: 850px) 100vw, 760px"
+          />
+          <figcaption>Bố at the Palawan refugee camp, beside the camp organization chart.</figcaption>
+        </figure>
 
         <p>That changed me.</p>
 
@@ -295,6 +318,17 @@ export default function BoOiPage() {
         </div>
       </article>
 
+      <figure className={styles.photoFigure}>
+        <Image
+          src="/images/bo-chair-khoa-iv-thu-duc.JPG"
+          width={2048}
+          height={1366}
+          alt="Đặng Văn Phi serving as chair of Khoa IV Thủ Đức."
+          sizes="(max-width: 900px) 100vw, 980px"
+        />
+        <figcaption>Bố as chair of Khoa IV Thủ Đức.</figcaption>
+      </figure>
+
       <section className={styles.archive}>
         <div className="eyebrow bronze">Then · 2001</div>
         <h2>The letter that made the promise</h2>
@@ -360,8 +394,9 @@ export default function BoOiPage() {
           I do not think honoring Bố means becoming him. It means carrying forward what was worthy in the way he lived, translating it into a different life, and leaving the next generation room to do the same.
         </p>
         <div className={styles.links}>
+          <Link className="text-link light" href="/letters/me-oi/">Mẹ Ơi →</Link>
+          <Link className="text-link light" href="/letters/bo-me/">Bố Mẹ →</Link>
           <Link className="text-link light" href="/books/for-those-who-come-after-us/">For Those Who Come After Us →</Link>
-          <Link className="text-link light" href="/the-way/">The Way →</Link>
           <Link className="text-link light" href="/letters/">More Letters →</Link>
         </div>
       </section>
