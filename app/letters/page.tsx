@@ -83,6 +83,52 @@ export default function LettersPage() {
         <section className="section worldview-section">
           <div className="container worldview-grid">
             <div>
+              <div className="eyebrow bronze">Special Letter / Song · 2004 → 2026</div>
+              <h2>Mẹ Ơi</h2>
+              <p className="lead">I could not write to Bố without writing to Mẹ. Twenty-two years after her passing, I return to the memories and five words I wrote in 2004 and ask what they became after a life lived forward.</p>
+              <p><strong>The hand that steadied a frightened child. A marriage I watched deepen. Five words I am still learning.</strong></p>
+              <Link className="text-link" href="/letters/me-oi/">Listen &amp; read →</Link>
+            </div>
+            <figure style={{ margin: 0 }}>
+              <Image
+                src="/images/me_profile_beautiful.webp"
+                width={1536}
+                height={2048}
+                alt="Portrait of Darren Dang's mother, Lê Thị Chất."
+                sizes="(max-width: 900px) 100vw, 520px"
+                style={{ width: "100%", height: "auto", borderRadius: "22px", boxShadow: "0 20px 54px rgba(13,31,49,.12)" }}
+              />
+              <figcaption className="note" style={{ marginTop: "10px" }}>Mẹ.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section className="section sand">
+          <div className="container worldview-grid">
+            <div>
+              <div className="eyebrow bronze">Letter · To My Parents</div>
+              <h2>Bố Mẹ</h2>
+              <p className="lead">I wrote to each of my parents separately. This letter is about something neither individual letter could hold by itself: the marriage, family, and shared life they built together.</p>
+              <p><strong>What they passed forward was not a script. It was a stronger starting point.</strong></p>
+              <Link className="text-link" href="/letters/bo-me/">Read the letter →</Link>
+            </div>
+            <figure style={{ margin: 0 }}>
+              <Image
+                src="/images/bo_me_classic_bw.webp"
+                width={3712}
+                height={2763}
+                alt="A young Đặng Văn Phi and Lê Thị Chất together."
+                sizes="(max-width: 900px) 100vw, 520px"
+                style={{ width: "100%", height: "auto", borderRadius: "22px", boxShadow: "0 20px 54px rgba(13,31,49,.12)" }}
+              />
+              <figcaption className="note" style={{ marginTop: "10px" }}>Bố and Mẹ, when they were young.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section className="section worldview-section">
+          <div className="container worldview-grid">
+            <div>
               <div className="eyebrow bronze">Special Letter / Song · September 15, 2026</div>
               <h2>To Chrystina — The Way Was Us</h2>
               <p className="lead">A birthday song for my wife, partner, and soulmate—and a reflection on the life and family that existed long before I ever had language for The Way.</p>
