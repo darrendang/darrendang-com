@@ -305,3 +305,100 @@
     padding: 30px 12px;
   }
 }
+
+.photoFigure {
+  max-width: 980px;
+  margin: 44px auto 68px;
+}
+
+.photoFigure img,
+.photoInset img,
+.photoPortrait img,
+.photoPair img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 18px 48px rgba(13, 31, 49, 0.11);
+}
+
+.photoFigure figcaption,
+.photoInset figcaption,
+.photoPortrait figcaption,
+.photoPair figcaption {
+  margin-top: 11px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.photoInset {
+  margin: 42px 0 48px;
+}
+
+.photoPortrait {
+  max-width: 610px;
+  margin: 44px auto 68px;
+}
+
+.photoPair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 48px 0 68px;
+  align-items: start;
+}
+
+.photoPair figure {
+  margin: 0;
+}
+
+.companionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 38px 0 10px;
+}
+
+.companionCard {
+  padding: 25px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.companionCard span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.companionCard strong {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--ivory);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.companionCard p {
+  margin: 0 0 12px;
+}
+
+@media (max-width: 850px) {
+  .photoPair,
+  .companionGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .photoFigure,
+  .photoPortrait {
+    margin-bottom: 52px;
+  }
+}
+

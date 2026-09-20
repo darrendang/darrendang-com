@@ -172,7 +172,7 @@ Do not let stylistic experimentation silently become a structural redesign.
 
 Read `00_Canon_Control/PERMANENT_WEB_ARTIFACTS_FAMILY_LETTERS_2026-09-16.md` before changes affecting Letters, family legacy, Book 1, or public legacy navigation.
 
-The protected Chrystina and Bố Ơi letter/song artifacts may be moved or restyled within governed redesigns, but must remain preserved and publicly reachable unless Darren explicitly revokes that instruction.
+The protected family-letter artifacts listed in `00_Canon_Control/PERMANENT_WEB_ARTIFACTS_FAMILY_LETTERS_2026-09-16.md` may be moved or restyled within governed redesigns, but must remain preserved and publicly reachable unless Darren explicitly revokes that instruction.
 
 If routes change, preserve redirects and provenance.
 

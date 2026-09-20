@@ -158,7 +158,7 @@ Before work affecting Letters, family legacy, Book 1, or public legacy navigatio
 
 `00_Canon_Control/PERMANENT_WEB_ARTIFACTS_FAMILY_LETTERS_2026-09-16.md`
 
-The protected Chrystina and Bố Ơi letter/song artifacts may move or be restyled but must remain preserved and publicly reachable unless Darren explicitly revokes that rule.
+The protected family-letter artifacts listed in `00_Canon_Control/PERMANENT_WEB_ARTIFACTS_FAMILY_LETTERS_2026-09-16.md` may move or be restyled but must remain preserved and publicly reachable unless Darren explicitly revokes that rule.
 
 Navigation is flexible. Preservation is not.
 
