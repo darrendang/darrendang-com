@@ -1,9 +1,13 @@
 # DarrenDang.com — Current Public State
 
 **Date:** 2026-09-14  
-**Status:** CURRENT PUBLIC IMPLEMENTATION RECORD  
+**Status:** SUPERSEDED / PRESERVED AS HISTORICAL PUBLIC-STATE RECORD
+**Superseded:** 2026-09-20
+**Current public-state record:** `docs/CURRENT_PUBLIC_STATE_2026-09-20.md`  
 **Production authority:** `main` branch of `darrendang/darrendang-com`  
 **Positioning authority:** `00_Canon_Control/WEBSITE_POSITIONING_KAREN_JENNY_2026-09-14.md`
+
+> **Supersession note:** This file accurately records the September 14 books-first baseline as it stood then. It no longer owns current navigation, Letters prominence, or current public-state routing. For current implementation, use production `main`, `docs/CURRENT_PUBLIC_STATE_2026-09-20.md`, and the September 20 navigation / parent-letter controls.
 
 ## Governing synchronization rule
 
@@ -65,6 +69,6 @@ The homepage should not front-load internal ontology, governance, or system labe
 - Book 4 is in development; no public release-date commitment is implied.
 - Book 5 is in development; its internal integration function does not constitute publication readiness.
 
-## Stale-reference rule
+## Historical stale-reference rule
 
-Any active/current file that conflicts with this record must be corrected or explicitly marked **SUPERSEDED**. Historical backups and dated provenance may preserve old wording only when their historical status is unmistakable.
+At the time of this record, active/current files were expected to agree with the September 14 baseline. That responsibility has now moved to `docs/CURRENT_PUBLIC_STATE_2026-09-20.md` and the exact current controls. Preserve this file only as dated provenance.
