@@ -4,7 +4,7 @@ Source for **DarrenDang.com — the place where Darren's ideas live**.
 
 The site is a long-term intellectual platform for books, ideas, writing, talks, and related media. The current public direction is **human- and books-first**: lived experience and the five-book journey are the primary doorway, with **The Way** introduced as the larger pattern that emerged through them.
 
-## Current public book state — September 14, 2026
+## Public book state snapshot — September 14, 2026
 
 - **Book 1 — _For Those Who Come After Us — A Life in Lessons_** — **Published**
 - **Book 2 — _Wisdom Has No Rank_** — **Final Proof**
@@ -22,7 +22,9 @@ The public site also connects Ideas, Letters, The Way Papers, The Way in Motion,
 
 ## Public current-state authority
 
-For the public website, `main` is the production source of truth. Current public status language and route relationships must agree with the live site, `content/seed.ts`, `docs/CURRENT_PUBLIC_STATE_2026-09-14.md`, and the canon-control records in `00_Canon_Control/`.
+For the public website, `main` is the production implementation source of truth. Current website routing and public-state framing must agree with `docs/CURRENT_PUBLIC_STATE_2026-09-20.md` and the applicable canon-control records in `00_Canon_Control/`.
+
+Exact book/manuscript/production status remains governed by the scoped source repositories and central cross-project authority rather than this README or a dated website snapshot.
 
 Historical decision records remain provenance, but must be explicitly marked superseded when later public-state decisions replace them.
 
