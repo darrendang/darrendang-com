@@ -464,7 +464,7 @@ export default function MeOiPage() {
 
         <figure className={styles.photoInset}>
           <Image
-            src="/images/2003-me-and-baby-phi-tam.JPG"
+            src="/images/2003-me-and-baby-phi-tam.webp"
             width={1536}
             height={2048}
             alt="Mẹ holding baby Phi Tâm in 2003."
