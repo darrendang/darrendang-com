@@ -11,7 +11,7 @@ const indexableIdeaSlugs = new Set([
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://darrendang.com';
-  const lastModified = new Date('2026-09-16T00:00:00Z');
+  const lastModified = new Date('2026-09-20T00:00:00Z');
   const routes = [
     '',
     '/the-way/',
@@ -23,6 +23,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/letters/',
     '/letters/why-these-letters/',
     '/letters/bo-oi/',
+    '/letters/me-oi/',
+    '/letters/bo-me/',
     '/letters/the-way-was-us/',
     '/books/',
     '/ideas/',
