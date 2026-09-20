@@ -136,7 +136,9 @@ When Darren explicitly provides a file, screenshot, image, PDF, audio file, tran
 The following are governed by `00_Canon_Control/PERMANENT_WEB_ARTIFACTS_FAMILY_LETTERS_2026-09-16.md`:
 
 - `To Chrystina — The Way Was Us` and companion song;
-- `Bố Ơi — Twenty-Five Years Later` and companion song/source lineage.
+- `Bố Ơi — Twenty-Five Years Later` and companion song/source lineage;
+- `Mẹ Ơi — Twenty-Two Years Later` and companion song/source lineage;
+- `Bố Mẹ — What You Built Together` and its paired family-photo narrative.
 
 They may move within approved architecture changes but must not be silently deleted, unpublished, or stripped of identity/provenance.
 
