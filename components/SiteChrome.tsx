@@ -11,9 +11,9 @@ export function SiteHeader() {
         <nav aria-label="Primary" className="primary-nav">
           <Link href="/books/">Books</Link>
           <Link href="/the-way/">The Way</Link>
+          <Link href="/letters/">Letters</Link>
           <Link href="/ideas/">Ideas</Link>
           <Link href="/genome/">Genome</Link>
-          <Link href="/papers/">Papers &amp; Talks</Link>
           <Link className="nav-cta" href="/explore/">Explore</Link>
         </nav>
       </div>

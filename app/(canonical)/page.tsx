@@ -106,6 +106,12 @@ export default function Home() {
                 <Link className="button button-gold" href="/books/">Begin with the books</Link>
                 <Link className="button button-outline" href="/the-way/">Discover The Way</Link>
               </div>
+              <nav className="hero-secondary-links" aria-label="Additional ways to explore">
+                <span>Also explore</span>
+                <Link href="/letters/">Letters</Link>
+                <Link href="/ideas/">Ideas</Link>
+                <Link href="/genome/">Genome</Link>
+              </nav>
             </div>
             <HeroNetwork />
           </div>
@@ -220,10 +226,18 @@ export default function Home() {
               <p className="lead">Ideas develop beyond a single chapter. Papers test larger propositions. The Dang Genome preserves relationships, provenance, and connected learning. Shared Wisdom leaves room for other voices to add, correct, and continue the work.</p>
             </div>
             <div className="boundary-stack">
-              <article><span>IDEAS</span><strong>Explore durable ideas that emerged from the work.</strong></article>
-              <article><span>PAPERS & TALKS</span><strong>Follow longer-form thinking and public applications.</strong></article>
-              <article><span>THE DANG GENOME</span><strong>See how stories, people, works, and ideas connect.</strong></article>
-              <article><span>SHARED WISDOM</span><strong>Make room for learning that does not belong to one voice.</strong></article>
+              <Link className="deep-link-card" href="/ideas/">
+                <article><span>IDEAS</span><strong>Explore durable ideas that emerged from the work.</strong></article>
+              </Link>
+              <Link className="deep-link-card" href="/papers/">
+                <article><span>PAPERS &amp; TALKS</span><strong>Follow longer-form thinking and public applications.</strong></article>
+              </Link>
+              <Link className="deep-link-card" href="/genome/">
+                <article><span>THE DANG GENOME</span><strong>See how stories, people, works, and ideas connect.</strong></article>
+              </Link>
+              <Link className="deep-link-card" href="/shared-wisdom/">
+                <article><span>SHARED WISDOM</span><strong>Make room for learning that does not belong to one voice.</strong></article>
+              </Link>
             </div>
           </div>
         </section>

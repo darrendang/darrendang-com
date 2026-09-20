@@ -87,3 +87,18 @@ Relevant canonical records:
 **Memory provides continuity. GitHub determines current state.**
 
 This baseline remains in force until Darren explicitly approves a replacement website architecture or redesign.
+
+## Current supplemental navigation decision — 2026-09-20
+
+Darren explicitly approved the navigation/discoverability refinement recorded in:
+
+- `00_Canon_Control/WEBSITE_NAVIGATION_REFINEMENT_2026-09-20.md`
+
+That decision supplements this baseline without replacing the books-first reader journey.
+
+Current approved primary navigation:
+
+> **Books · The Way · Letters · Ideas · Genome · Explore**
+
+The hero continues to privilege **Begin with the books** and **Discover The Way**, with **Letters · Ideas · Genome** available as restrained secondary discovery links. Papers & Talks remains part of the deeper ecosystem rather than scarce primary-navigation space.
+
