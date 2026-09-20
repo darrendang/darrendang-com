@@ -26,4 +26,4 @@ Historical public milestones at that point included:
 
 Those Book 4/5 labels are historical, not current public positioning.
 
-Current website authority is production `main`, `docs/CURRENT_PUBLIC_STATE_2026-09-14.md`, `00_Canon_Control/WEBSITE_POSITIONING_KAREN_JENNY_2026-09-14.md`, and `00_Canon_Control/ECOSYSTEM_SYNC_2026-09-14_BOOKS_FIRST_REPOSITIONING.md`.
+Current website authority is production `main`, `docs/CURRENT_PUBLIC_STATE_2026-09-20.md`, `00_Canon_Control/WEBSITE_BASELINE_GOVERNANCE_2026-09-14.md`, and `00_Canon_Control/WEBSITE_NAVIGATION_REFINEMENT_2026-09-20.md`. This September 13 receipt remains historical provenance only.
