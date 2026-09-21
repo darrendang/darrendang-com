@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "policy": "Do not re-review an unchanged audio file. Re-review is required only when the file fingerprint changes, the relevant public canon baseline changes materially, or a prior review is explicitly reopened.",
-  "canon_baseline": "DarrenDang.com public expression architecture synchronized 2026-08-31; inline music companions reviewed against the reader-centric site and relevant book/letter canon through 2026-09-20",
+  "canon_baseline": "DarrenDang.com public expression architecture and protected family-letter layer synchronized through 2026-09-20",
   "fingerprint_type": "git_blob_sha1",
   "baseline_recorded_on": "2026-09-20",
   "review_notes": "This manifest fingerprints the exact MP3 bytes currently in the public repository. A matching Git blob SHA proves the file is byte-for-byte unchanged. Semantic review state is tracked separately from fingerprint state so provenance is not overstated. Inline companion songs are artistic interpretations embedded in their relevant pages and are not part of the route-based Darren-voice ListeningLayer.",
@@ -59,6 +59,15 @@
       "review_state": "accepted_current",
       "last_reviewed_on": "2026-09-16",
       "review_basis": "Darren listened to the generated Vietnamese song, explicitly approved it for publication, and directed that it receive full memorial treatment for the 25th anniversary of his father's September 14, 2001 passing. Lyrics were reviewed against Darren's 2001 funeral-booklet letter and family-source material. Presented on /letters/bo-oi/ as an artistic memorial and family interpretation, not as an authoritative historical record or medical claim. Not part of the route-based ListeningLayer."
+    },
+    {
+      "path": "public/audio/Song-my-father-english.mp3",
+      "git_blob_sha1": "e0d049e82eb327f82a026c4f7963c7d88bdee670",
+      "size_bytes": 6922254,
+      "public_role": "Letters from Darren — Bố Ơi original English companion song",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-20",
+      "review_basis": "Darren listened to the generated original English song, said he loved it, uploaded the exact MP3, and explicitly directed publication on the Bố Ơi letter page with the English lyrics. This is a distinct original work, not a translation of the Vietnamese Bố Ơi song. It is presented as an artistic memorial companion centered on a grown son's deeper understanding of his father after becoming a father himself. Embedded on /letters/bo-oi/; not part of the route-based ListeningLayer."
     },
     {
       "path": "public/audio/Song-me-oi.mp3",
