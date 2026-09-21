@@ -7,12 +7,12 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "Bố Ơi — Twenty-Five Years Later",
   description:
-    "A letter and Vietnamese song from Darren Dang to his father, Dang Van Phi, twenty-five years after his passing—an accounting of a promise made in 2001.",
+    "A letter and two original songs—Bố Ơi in Vietnamese and I Miss You Differently Now in English—from Darren Dang to his father, Dang Van Phi, twenty-five years after his passing.",
   alternates: { canonical: "/letters/bo-oi/" },
   openGraph: {
     title: "Bố Ơi — Twenty-Five Years Later | Darren Dang",
     description:
-      "Twenty-five years after his father's passing, Darren returns to a promise he made in 2001 and asks what he did with what his father gave him.",
+      "Twenty-five years after his father's passing, Darren returns to a promise made in 2001 through a letter and two original songs in Vietnamese and English.",
     type: "article",
     url: "/letters/bo-oi/",
   },
@@ -71,6 +71,169 @@ const songSections = [
   },
 ];
 
+
+const englishSongSections = [
+  {
+    title: "Verse 1",
+    text: `When I was young,
+I thought love looked like answers,
+like knowing what to do
+when I was scared.
+
+I never counted all the hours
+you came home tired.
+I never asked
+what it cost you to be there.
+
+I knew there would be books
+when school began.
+I knew somehow
+we would make it through.
+
+I saw what landed in my hands.
+
+I never saw
+what it took from you.`,
+  },
+  {
+    title: "Pre-Chorus",
+    text: `A child knows what he receives,
+not what somebody had to lose.
+
+It took me years
+to learn the difference.
+
+It took my own children
+to show me you.`,
+  },
+  {
+    title: "Chorus",
+    text: `I understand you now,
+
+in the way I hold my children
+when the world gets hard,
+in the quiet things I do
+that no one sees at all.
+
+I spent so many years
+becoming my own man,
+
+then looked down
+and saw your hands in mine.
+
+Dad,
+I miss you differently now.
+
+I understand you now.`,
+  },
+  {
+    title: "Verse 2",
+    text: `At your funeral,
+strangers came to find me,
+people whose names
+I had never heard.
+
+They told me how you helped their children,
+showed them where to go,
+sat beside them,
+helped them find a start.
+
+I thought I knew
+the man I called my father,
+the one who carried us
+from one life to the next.
+
+I didn't know
+how far your kindness traveled
+
+when nobody was watching,
+when nobody kept score.`,
+  },
+  {
+    title: "Pre-Chorus 2",
+    text: `And maybe that is why
+I didn't understand you then.
+
+You never told us
+what your life had cost.
+
+You just kept giving.`,
+  },
+  {
+    title: "Bridge",
+    text: `There are questions
+I would ask you now
+
+that I was too young
+to know to ask.
+
+Did you ever get tired
+of carrying everybody?
+
+Did you ever wonder
+if it was too much?
+
+Did you ever worry
+we would forget
+where we came from?
+
+I can't hear your answer.
+
+But maybe
+I don't need to.
+
+Your whole life
+already answered me.`,
+  },
+  {
+    title: "Final Chorus",
+    text: `I understand you now,
+
+not because I know
+every burden you carried,
+
+but because I know
+what it means to love someone
+
+and keep giving
+when nobody sees.
+
+I spent so many years
+trying to stand on my own,
+
+only to learn
+who taught me how.
+
+Dad,
+I miss you differently now.
+
+Not less.
+
+Not more.
+
+Just deeper.
+
+And if somehow
+you can still hear me,
+
+I want you to know:
+
+I tried to keep the promise.
+
+I'm still trying.`,
+  },
+  {
+    title: "Coda",
+    text: `You can rest easy now, Dad.
+
+Your son is okay.
+
+And finally...
+
+I understand you.`,
+  },
+];
+
 const letter2001Vi = `Con Nhớ Bố — Đặng Phi Bằng\n\nBố của chúng ta là ai? Bố của chúng ta ra sao? Khi con nhớ tới Bố thì con nhớ tới những điều gì? Bố của chúng ta là một con người nhân từ rộng lượng chỉ coi trọng hai điều: thứ nhất là giúp đỡ gia đình, bà con, họ hàng, bạn bè và mọi người và thứ nhì là sự học hành của con cái.\n\nCon nhớ Bố là người kiên nhẫn biết chịu đựng sự đàn áp của bọn Việt Cộng ở trại tù học tập cải tạo. Con nhớ Bố là người kiên nhẫn từ một đại tá làm nông dân đi hốt phân bò cày ruộng. Nghĩ tới hồi con từng đi hốt phân bò với Bố thì con học được một bài học: bề ngoài không quan trọng - bằng mọi cách ta phải che chở cho gia đình và con cái. Ta hốt phân bò cũng chẳng sao miễn là ta có thể tạo cơ hội cho con cái. Con cũng từng nhớ đến lúc Bố và anh Long uống nước tiểu của con trên ghe vượt biển để dành những giọt nước quý báu cho con. Chúng con sẽ nhớ và học sự kiên nhẫn và chịu đựng của Bố, vì bí quyết thành công là 99 phần trăm kiên nhẫn và nghị lực.\n\nCon nhớ Bố là người rộng lượng, không những chỉ lo lắng cho con cái, họ hàng, mà luôn cả đồng bào Việt Nam. Con từng nhớ mấy đứa nhỏ ở trại tỵ nạn Palawan mỉa mai con là con của ông chủ tịch trại. Con từng trách Bố tại sao làm chủ tịch trại lo cho người dưng mà không che chở cho con để bị trêu chọc. Sau này con mới biết là Bố đã hy sinh sự hạnh phúc gia đình cho đồng bào tỵ nạn Việt Nam để chiến đấu cho tự do, quyền lợi, và an ninh của trại tỵ nạn Palawan. Con rất là hãnh diện có một người cha vĩ đại như Bố.\n\nQuan trọng hơn hết, con nhớ Bố là người coi trọng học vấn. Bố đã trút hết bao nhiêu tâm huyết để cổ vũ và cố vấn học trình của chúng con. Con nhớ Bố đã từng thức nguyên đêm để photocopy sách học 'textbook' từng trang một cho chúng con. Mỗi quyển sách trung bình là bốn năm trăm trang. Con nhớ lúc ban đầu khi tụi con học Anh văn khó khăn, Bố giải thích từng chữ một cho chúng con. Tâm nguyện của Bố là cho chúng con được học thành tài. Hôm nay chúng con mọi người đều thành công: bác sĩ, dược sĩ, và kỹ sư cũng có. Bố đã từng ngưỡng mộ gia đình Kennedy đã thành công, đào tạo danh tiếng từ hai bàn tay không khi bước qua nước Mỹ. Chúng con nguyện tâm sẽ chỉ bảo và đào tạo những con cháu đời sau theo những lời Bố đã truyền lại. Chúng con sẽ hướng dẫn con cháu biết tôn trọng bề trên, hiểu biết phong tục Việt Nam và chúng con sẽ đề cao học vấn và sự kiên nhẫn như Bố đã dạy chúng con.`;
 
 const letter2001En = `I Remember You, Dad — Dang Phi Bang (Darren Dang)\n\nWho was our Dad? What was our Dad like? When I remember Dad, what do I think of? Our Dad was a compassionate and generous human being who valued two things above all: first, helping family, relatives, kin, friends, and everyone; and second, the education of his children.\n\nI remember Dad as a patient man who endured the oppression of the Viet Cong in the re-education prison camps. I remember Dad's patience in transitioning from a colonel to a farmer scooping cow manure and plowing fields. Thinking back to when I used to pick up cow manure with Dad, I learned a lesson: appearances do not matter—by all means, we must protect our family and children. Even picking up cow manure doesn't matter, as long as we can create opportunities for our children. I also remember when Dad and Long drank my urine on the boat during our escape so they could save those precious drops of water for me. We will remember and learn from Dad's patience and endurance, because the secret to success is 99 percent patience and determination.\n\nI remember Dad as a generous person, caring not only for his children and relatives, but also for his fellow Vietnamese compatriots. I remember kids at the Palawan refugee camp mocking me for being the son of the camp president. I used to blame Dad for being the camp president and caring for strangers instead of protecting me from being teased. Only later did I realize that Dad had sacrificed his family's personal comfort for the Vietnamese refugees, fighting for freedom, rights, and security in the Palawan refugee camp. I am so proud to have a great father like Dad.\n\nMost importantly of all, I remember Dad as someone who deeply valued education. Dad poured all his heart into encouraging and guiding our academic journeys. I remember Dad staying up all night to photocopy textbooks page by page for us. Each book averaged four to five hundred pages. I remember when we struggled with English in the beginning, Dad explained every single word to us. Dad's ultimate wish was for us to succeed academically. Today, all of us are successful: we have doctors, pharmacists, and engineers among us. Dad used to admire the Kennedy family for achieving success and building a famous legacy from empty hands upon coming to America. We vow to guide and educate future generations according to the words Dad passed down to us. We will teach our children to respect elders, understand Vietnamese customs, and promote education and patience just as Dad taught us.`;
@@ -122,16 +285,38 @@ export default function BoOiPage() {
         <figcaption>Bố with his sons after arriving in the United States from the Philippines.</figcaption>
       </figure>
 
-      <section className={styles.audioCard} aria-labelledby="bo-oi-song">
-        <div className="eyebrow bronze">A song for Đặng Văn Phi</div>
-        <h2 id="bo-oi-song">Bố Ơi</h2>
-        <p>
-          I wrote this Vietnamese song for the twenty-fifth anniversary of my father&apos;s passing. The words are rooted in memories my brothers, sisters, and I carried from his life: what he endured, what he gave, and the many people he treated as his own.
-        </p>
-        <audio controls preload="metadata" aria-label="Listen to Bố Ơi">
-          <source src="/audio/Song-bo-oi.mp3" type="audio/mpeg" />
-          Your browser does not support audio playback.
-        </audio>
+      <section className={styles.songCollection} aria-labelledby="songs-for-bo">
+        <div className={styles.songCollectionIntro}>
+          <div className="eyebrow bronze">Two original songs for Đặng Văn Phi</div>
+          <h2 id="songs-for-bo">Two languages. Two different ways of missing my father.</h2>
+          <p>
+            <em>Bố Ơi</em> carries the memories in Vietnamese. <em>I Miss You Differently Now</em> is not a translation. It is a second original song, written from the perspective of a son who understands his father differently after becoming a father himself.
+          </p>
+        </div>
+
+        <article className={styles.audioCard} aria-labelledby="bo-oi-song">
+          <div className={styles.songLanguage}>Tiếng Việt · Original Vietnamese Song</div>
+          <h2 id="bo-oi-song">Bố Ơi</h2>
+          <p>
+            Written for the twenty-fifth anniversary of my father&apos;s passing, rooted in the memories my brothers, sisters, and I carried from his life: what he endured, what he gave, and the many people he treated as his own.
+          </p>
+          <audio controls preload="metadata" aria-label="Listen to Bố Ơi">
+            <source src="/audio/Song-bo-oi.mp3" type="audio/mpeg" />
+            Your browser does not support audio playback.
+          </audio>
+        </article>
+
+        <article className={styles.audioCard} aria-labelledby="english-father-song">
+          <div className={styles.songLanguage}>English · Original English Song</div>
+          <h2 id="english-father-song">I Miss You Differently Now</h2>
+          <p>
+            This is not an English version of <em>Bố Ơi</em>. It begins somewhere else: with the realization that I thought I knew my father when I lost him, but understood him much more deeply only after I had children of my own.
+          </p>
+          <audio controls preload="metadata" aria-label="Listen to I Miss You Differently Now">
+            <source src="/audio/Song-my-father-english.mp3" type="audio/mpeg" />
+            Your browser does not support audio playback.
+          </audio>
+        </article>
       </section>
 
       <article className={styles.letter}>
@@ -354,34 +539,56 @@ export default function BoOiPage() {
       </section>
 
       <section className={styles.songSection}>
-        <div className="eyebrow bronze">The song</div>
-        <h2>Bố Ơi · Lyrics and English translation</h2>
+        <div className="eyebrow bronze">The songs</div>
+        <h2>Lyrics · Expand when you want to read along</h2>
         <p className={styles.songIntro}>
-          The Vietnamese is the song. The English below is a faithful literary translation meant to let non-Vietnamese readers understand what the family is hearing; it is not rewritten to rhyme or fit the melody.
+          Both lyric sets are collapsed by default so the letter remains the center of the page. Open either song when you want to read along.
         </p>
-        <div className={styles.lyricsGrid}>
-          <div className={styles.lyricsPanel} lang="vi">
-            <h3>Tiếng Việt</h3>
-            {songSections.map((section) => (
-              <div className={styles.lyricSection} key={`vi-${section.title}`}>
+
+        <details className={styles.lyricsDetails} id="bo-oi-lyrics">
+          <summary>
+            <span><strong>Bố Ơi</strong> · Vietnamese lyrics + English literary translation</span>
+            <span className={styles.detailsHint}>Expand lyrics</span>
+          </summary>
+          <div className={styles.lyricsGrid}>
+            <div className={styles.lyricsPanel} lang="vi">
+              <h3>Tiếng Việt · Original</h3>
+              {songSections.map((section) => (
+                <div className={styles.lyricSection} key={`vi-${section.title}`}>
+                  <h4>{section.title}</h4>
+                  <p>{section.vi}</p>
+                </div>
+              ))}
+            </div>
+            <div className={styles.lyricsPanel} lang="en">
+              <h3>English Literary Translation</h3>
+              {songSections.map((section) => (
+                <div className={styles.lyricSection} key={`en-${section.title}`}>
+                  <h4>{section.title}</h4>
+                  <p>{section.en}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <p className={styles.languageNote}>
+            <strong>Nghĩa</strong> is intentionally left untranslated in the lyric. In my family context, I use it for the sacred duty born of love, sacrifice, and honor—the responsibility we carry because we belong to one another.
+          </p>
+        </details>
+
+        <details className={styles.lyricsDetails} id="i-miss-you-differently-now-lyrics">
+          <summary>
+            <span><strong>I Miss You Differently Now</strong> · Original English lyrics</span>
+            <span className={styles.detailsHint}>Expand lyrics</span>
+          </summary>
+          <div className={styles.englishLyricsPanel} lang="en">
+            {englishSongSections.map((section) => (
+              <div className={styles.lyricSection} key={`english-${section.title}`}>
                 <h4>{section.title}</h4>
-                <p>{section.vi}</p>
+                <p>{section.text}</p>
               </div>
             ))}
           </div>
-          <div className={styles.lyricsPanel} lang="en">
-            <h3>English Translation</h3>
-            {songSections.map((section) => (
-              <div className={styles.lyricSection} key={`en-${section.title}`}>
-                <h4>{section.title}</h4>
-                <p>{section.en}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-        <p className={styles.languageNote}>
-          <strong>Nghĩa</strong> is intentionally left untranslated in the lyric. In my family context, I use it for the sacred duty born of love, sacrifice, and honor—the responsibility we carry because we belong to one another.
-        </p>
+        </details>
       </section>
 
       <section className={styles.behind}>
