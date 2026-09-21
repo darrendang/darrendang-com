@@ -241,7 +241,7 @@ const letter2001En = `I Remember You, Dad — Dang Phi Bang (Darren Dang)\n\nWho
 export default function BoOiPage() {
   return (
     <InteriorPage
-      eyebrow="Letter / Song · Twenty-Five Years After September 14, 2001"
+      eyebrow="Letter / Songs · Twenty-Five Years After September 14, 2001"
       title="Bố Ơi"
       wide
     >
