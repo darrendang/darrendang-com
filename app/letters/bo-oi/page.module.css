@@ -55,6 +55,113 @@
   line-height: 1.35;
 }
 
+
+
+.songCollection {
+  max-width: 920px;
+  margin: 0 auto 86px;
+}
+
+.songCollectionIntro {
+  max-width: 820px;
+  margin: 0 auto 34px;
+  text-align: center;
+}
+
+.songCollectionIntro h2 {
+  margin: 5px 0 16px;
+  font-size: clamp(38px, 4.4vw, 56px);
+}
+
+.songCollectionIntro p {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.songLanguage {
+  margin-bottom: 8px;
+  color: var(--bronze);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.songCollection .audioCard {
+  margin-bottom: 24px;
+}
+
+.lyricsDetails {
+  margin-top: 24px;
+  border: 1px solid var(--sand);
+  border-radius: 18px;
+  background: #fffdf9;
+  overflow: hidden;
+}
+
+.lyricsDetails summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 22px;
+  cursor: pointer;
+  padding: 22px 24px;
+  color: var(--navy);
+  font-size: 17px;
+  line-height: 1.4;
+  list-style: none;
+}
+
+.lyricsDetails summary::-webkit-details-marker {
+  display: none;
+}
+
+.lyricsDetails summary::after {
+  content: "+";
+  flex: 0 0 auto;
+  color: var(--bronze);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.lyricsDetails[open] summary::after {
+  content: "−";
+}
+
+.lyricsDetails[open] summary {
+  border-bottom: 1px solid var(--sand);
+}
+
+.detailsHint {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.lyricsDetails .lyricsGrid {
+  margin: 0;
+  padding: 28px;
+}
+
+.lyricsDetails .languageNote {
+  margin: 0 28px 28px;
+}
+
+.englishLyricsPanel {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 34px 36px;
+}
+
+.englishLyricsPanel .lyricSection:first-child {
+  margin-top: 0;
+}
+
 .audioCard {
   max-width: 870px;
   margin: 0 auto 78px;
@@ -299,6 +406,27 @@
   .lyricsPanel,
   .behind {
     padding: 28px 24px;
+  }
+
+  .lyricsDetails summary {
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .detailsHint {
+    display: none;
+  }
+
+  .lyricsDetails .lyricsGrid {
+    padding: 20px;
+  }
+
+  .lyricsDetails .languageNote {
+    margin: 0 20px 22px;
+  }
+
+  .englishLyricsPanel {
+    padding: 26px 22px;
   }
 
   .dedication {
