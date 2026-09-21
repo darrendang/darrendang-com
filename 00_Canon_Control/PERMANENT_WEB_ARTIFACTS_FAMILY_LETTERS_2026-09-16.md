@@ -26,9 +26,10 @@ A website redesign or reorganization is not, by itself, permission to remove, ar
 
 ### 3. Mẹ Ơi — Twenty-Two Years Later
 - Current route: `/letters/me-oi/`
-- Companion song: **Mẹ Ơi**
-- Current audio: `/public/audio/Song-me-oi.mp3`
-- Meaning: a 2026 letter to Lê Thị Chất grounded in Darren's 2004 `Kỷ Niệm Về Mẹ` funeral letter, preserving childhood care, the marriage Darren witnessed, `Lễ · Nghĩa · Nhân · Tín · Chí`, and the Phi Tâm generational connection.
+- Companion songs:
+  - **Mẹ Ơi** — Vietnamese original; `/public/audio/Song-me-oi.mp3`
+  - **Mom, I Know Now** — English original; `/public/audio/Song-Mom-English-sept-2026.mp3`
+- Meaning: a 2026 letter to Lê Thị Chất grounded in Darren's 2004 `Kỷ Niệm Về Mẹ` funeral letter, preserving childhood care, the marriage Darren witnessed, `Lễ · Nghĩa · Nhân · Tín · Chí`, the Phi Tâm generational connection, and a later English reflection on recognizing a mother's quiet sacrifice after becoming a parent.
 
 ### 4. Bố Mẹ — What You Built Together
 - Current route: `/letters/bo-me/`
