@@ -595,7 +595,7 @@ export default function BoOiPage() {
         <div className="eyebrow">What remains</div>
         <h2>The promise did not end in 2001.</h2>
         <p>
-          The 2001 letter asked who my father was. The 2026 letter asks what I did with what he gave me. The song holds the memories between them. Together they form one twenty-five-year arc: receive, live, and pass forward.
+          The 2001 letter asked who my father was. The 2026 letter asks what I did with what he gave me. The two songs approach him from different directions: one through Vietnamese memory, the other through the understanding that came after I became a father myself. Together they remain part of one twenty-five-year arc: receive, live, and pass forward.
         </p>
         <p>
           I do not think honoring Bố means becoming him. It means carrying forward what was worthy in the way he lived, translating it into a different life, and leaving the next generation room to do the same.
