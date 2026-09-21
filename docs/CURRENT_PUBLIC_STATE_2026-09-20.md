@@ -47,7 +47,7 @@ These secondary links improve discoverability without competing with the books-f
 
 The protected public family-letter collection currently includes:
 - **To Chrystina — The Way Was Us**
-- **Bố Ơi — Twenty-Five Years Later**
+- **Bố Ơi — Twenty-Five Years Later** — now includes two distinct original musical companions: the Vietnamese **Bố Ơi** and the original English **I Miss You Differently Now**; the English work is not a translation.
 - **Mẹ Ơi — Twenty-Two Years Later**
 - **Bố Mẹ — What You Built Together**
 
