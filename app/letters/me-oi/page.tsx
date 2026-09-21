@@ -7,12 +7,12 @@ import styles from "../bo-oi/page.module.css";
 export const metadata: Metadata = {
   title: "Mẹ Ơi — Twenty-Two Years Later",
   description:
-    "A letter and Vietnamese song from Darren Dang to his mother, Lê Thị Chất, returning in 2026 to the memories and lessons he first tried to name after her death in 2004.",
+    "A letter and two original songs—Mẹ Ơi in Vietnamese and Mom, I Know Now in English—from Darren Dang to his mother, Lê Thị Chất, returning in 2026 to the memories and lessons he first tried to name after her death in 2004.",
   alternates: { canonical: "/letters/me-oi/" },
   openGraph: {
     title: "Mẹ Ơi — Twenty-Two Years Later | Darren Dang",
     description:
-      "A son returns to the memories, love, and five words he wrote about his mother in 2004—and asks what became of what she gave him.",
+      "A son returns to the memories, love, and five words he wrote about his mother in 2004 through a letter and two original songs in Vietnamese and English.",
     type: "article",
     url: "/letters/me-oi/",
   },
@@ -229,6 +229,162 @@ is still trying.`,
   },
 ];
 
+const englishSongSections = [
+  {
+    title: "Verse 1",
+    text: `Mom...
+when I was little
+and I couldn't catch my breath,
+you were the one
+who took my hand.
+
+Needles, doctors,
+days I was afraid...
+I don't remember
+everything they did.
+
+I remember you.
+Standing beside me.
+Telling me I'd be okay.
+
+Back then
+I only knew you loved me.
+
+I didn't know
+how much love asks of a person.`,
+  },
+  {
+    title: "Chorus",
+    text: `Mom,
+I know now.
+
+Love is staying
+when you're tired.
+
+Love is giving
+when there's not enough.
+
+Love is putting someone else first
+so many times
+they never even know.
+
+Mom,
+I know now.
+
+So much of what I called
+an ordinary childhood
+was your sacrifice
+made to look like love.`,
+  },
+  {
+    title: "Verse 2",
+    text: `You went without
+so family could have more.
+
+You saved.
+You shared.
+You worried about everyone.
+
+You stayed beside Dad
+when he was sick.
+
+And when he was gone,
+you carried the half of your life
+that was missing
+and still kept loving us.
+
+You never made
+your sacrifice sound heroic.
+
+You just did
+what needed to be done.`,
+  },
+  {
+    title: "Pre-Chorus",
+    text: `And I was your son.
+
+So I received it
+without understanding it.
+
+That may be
+the hardest part to admit.`,
+  },
+  {
+    title: "Second Chorus",
+    text: `Mom,
+I know now.
+
+Love is staying
+when you're tired.
+
+Love is giving
+when there's not enough.
+
+Love is holding a family together
+with hands
+no one thinks to thank.
+
+Mom,
+I know now.
+
+So much of what I became
+began with things you gave me
+that I was too young
+to recognize.`,
+  },
+  {
+    title: "Bridge",
+    text: `There are things
+I wish I could tell you now.
+
+I have children of my own.
+
+And when they need me,
+when I worry,
+when I give something up
+so they won't have to...
+
+I think of you.
+
+I finally understand
+some of what you carried.`,
+  },
+  {
+    title: "Final Chorus",
+    text: `Mom,
+I know now.
+
+I know what your love cost.
+
+I know how much
+you gave away quietly.
+
+I know why family mattered.
+I know why you kept going.
+
+And if there is anything
+of you in the way I love my children,
+then you are still here.
+
+Mom...
+I wish I could tell you
+I understand now.
+
+Not everything.
+
+But enough
+to say thank you
+the way I couldn't then.`,
+  },
+  {
+    title: "Outro",
+    text: `Mẹ...
+your little boy grew up.
+
+And now he knows.`,
+  },
+];
+
 const letter2004Vi = `KỶ NIỆM VỀ MẸ:
 
 Mặc dù Mẹ không còn ở trên thế gian này với chúng con, Mẹ sẽ luôn luôn ở trong lòng của chúng con. Kỷ niệm đầu tiên của con là khi con còn nhỏ ở Việt Nam mới 5, 6 tuổi đã bị bệnh suyễn và mỗi tuần Mẹ phải đưa con đi chích thuốc và châm cứu để trị bệnh. Con còn nhớ Mẹ hay dẫn con đi bán dầu, chữa bệnh, và ăn bún thịt nướng ở chợ Bến Thành sau khi bị chích thuốc. Con nhớ những hình ảnh của người mẹ hiền chăm sóc con, đùm bọc con, và an ủi con trong cơn đau đớn. Khi con thăm Mẹ trong giường bệnh thì con nhớ tới những hình ảnh năm xưa khi Mẹ còn mạnh khỏe và dìu dắt con. Mặc dù Mẹ không có thể dìu dắt tụi con từ hôm nay, nhưng Mẹ vẫn luôn luôn dìu dắt tụi con trong tinh thần và ý chí.
@@ -358,16 +514,38 @@ export default function MeOiPage() {
         <figcaption>Mẹ.</figcaption>
       </figure>
 
-      <section className={styles.audioCard} aria-labelledby="me-oi-song">
-        <div className="eyebrow bronze">A song for Mẹ</div>
-        <h2 id="me-oi-song">Mẹ Ơi</h2>
-        <p>
-          I wrote this Vietnamese song after returning to the letter I wrote when Mẹ died in 2004. Its memories are small and specific because that is how I still know her: a hand beside me when I was afraid, a marriage I watched grow deeper, five words I am still learning, and a grandson whose name carries both Bố and Mẹ.
-        </p>
-        <audio controls preload="metadata" aria-label="Listen to Mẹ Ơi">
-          <source src="/audio/Song-me-oi.mp3" type="audio/mpeg" />
-          Your browser does not support audio playback.
-        </audio>
+      <section className={styles.songCollection} aria-labelledby="songs-for-me">
+        <div className={styles.songCollectionIntro}>
+          <div className="eyebrow bronze">Two original songs for Lê Thị Chất</div>
+          <h2 id="songs-for-me">Two languages. Two ways of understanding my mother.</h2>
+          <p>
+            <em>Mẹ Ơi</em> carries the memories in Vietnamese: the frightened child she steadied, the marriage I watched, the five words I am still learning, and the name Phi Tâm that carries both Bố and Mẹ. <em>Mom, I Know Now</em> is not a translation. It begins somewhere else: with a grown son realizing that much of what felt ordinary in childhood was sacrifice made to feel like love.
+          </p>
+        </div>
+
+        <article className={styles.audioCard} aria-labelledby="me-oi-song">
+          <div className={styles.songLanguage}>Tiếng Việt · Original Vietnamese Song</div>
+          <h2 id="me-oi-song">Mẹ Ơi</h2>
+          <p>
+            Written after returning to the letter I wrote when Mẹ died in 2004, rooted in small memories that still carry her: a hand beside me when I was afraid, a marriage that grew deeper, five family words, and a grandson whose name carries both Bố and Mẹ.
+          </p>
+          <audio controls preload="metadata" aria-label="Listen to Mẹ Ơi">
+            <source src="/audio/Song-me-oi.mp3" type="audio/mpeg" />
+            Your browser does not support audio playback.
+          </audio>
+        </article>
+
+        <article className={styles.audioCard} aria-labelledby="english-mother-song">
+          <div className={styles.songLanguage}>English · Original English Song</div>
+          <h2 id="english-mother-song">Mom, I Know Now</h2>
+          <p>
+            This is not an English version of <em>Mẹ Ơi</em>. It begins with the realization that I received my mother&apos;s care as a child without understanding what it cost—and that becoming a parent finally let me recognize some of what she carried.
+          </p>
+          <audio controls preload="metadata" aria-label="Listen to Mom, I Know Now">
+            <source src="/audio/Song-Mom-English-sept-2026.mp3" type="audio/mpeg" />
+            Your browser does not support audio playback.
+          </audio>
+        </article>
       </section>
 
       <article className={styles.letter}>
@@ -543,41 +721,63 @@ export default function MeOiPage() {
       </section>
 
       <section className={styles.songSection}>
-        <div className="eyebrow bronze">The song</div>
-        <h2>Mẹ Ơi · Lyrics and English translation</h2>
+        <div className="eyebrow bronze">The songs</div>
+        <h2>Lyrics · Expand when you want to read along</h2>
         <p className={styles.songIntro}>
-          The Vietnamese is the song. The English below is a faithful literary translation for readers who do not speak Vietnamese; it is not rewritten to rhyme or fit the melody.
+          Both lyric sets are collapsed by default so the letter remains the center of the page. Open either song when you want to read along.
         </p>
-        <div className={styles.lyricsGrid}>
-          <div className={styles.lyricsPanel} lang="vi">
-            <h3>Tiếng Việt</h3>
-            {songSections.map((section) => (
-              <div className={styles.lyricSection} key={`vi-${section.title}`}>
+
+        <details className={styles.lyricsDetails} id="me-oi-lyrics">
+          <summary>
+            <span><strong>Mẹ Ơi</strong> · Vietnamese lyrics + English literary translation</span>
+            <span className={styles.detailsHint}>Expand lyrics</span>
+          </summary>
+          <div className={styles.lyricsGrid}>
+            <div className={styles.lyricsPanel} lang="vi">
+              <h3>Tiếng Việt · Original</h3>
+              {songSections.map((section) => (
+                <div className={styles.lyricSection} key={`vi-${section.title}`}>
+                  <h4>{section.title}</h4>
+                  <p>{section.vi}</p>
+                </div>
+              ))}
+            </div>
+            <div className={styles.lyricsPanel} lang="en">
+              <h3>English Literary Translation</h3>
+              {songSections.map((section) => (
+                <div className={styles.lyricSection} key={`en-${section.title}`}>
+                  <h4>{section.title}</h4>
+                  <p>{section.en}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <p className={styles.languageNote}>
+            <strong>Lễ · Nghĩa · Nhân · Tín · Chí</strong> remain in Vietnamese because they are family words before they are definitions. The short English phrases convey how the song uses them, not a claim that each term has only one translation.
+          </p>
+        </details>
+
+        <details className={styles.lyricsDetails} id="mom-i-know-now-lyrics">
+          <summary>
+            <span><strong>Mom, I Know Now</strong> · Original English lyrics</span>
+            <span className={styles.detailsHint}>Expand lyrics</span>
+          </summary>
+          <div className={styles.englishLyricsPanel} lang="en">
+            {englishSongSections.map((section) => (
+              <div className={styles.lyricSection} key={`english-${section.title}`}>
                 <h4>{section.title}</h4>
-                <p>{section.vi}</p>
+                <p>{section.text}</p>
               </div>
             ))}
           </div>
-          <div className={styles.lyricsPanel} lang="en">
-            <h3>English Translation</h3>
-            {songSections.map((section) => (
-              <div className={styles.lyricSection} key={`en-${section.title}`}>
-                <h4>{section.title}</h4>
-                <p>{section.en}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-        <p className={styles.languageNote}>
-          <strong>Lễ · Nghĩa · Nhân · Tín · Chí</strong> remain in Vietnamese because they are family words before they are definitions. The short English phrases convey how the song uses them, not a claim that each term has only one translation.
-        </p>
+        </details>
       </section>
 
       <section className={styles.behind}>
         <div className="eyebrow">What remains</div>
         <h2>The five words were only the beginning.</h2>
         <p>
-          The 2004 letter tried to name what Mẹ and Bố had taught me. The 2026 letter asks what those lessons became after another twenty-two years of living. The answer is not a completed scorecard. It is a family still trying to care for one another and a son still trying to understand the people who gave him his starting point.
+          The 2004 letter tried to name what Mẹ and Bố had taught me. The 2026 letter asks what those lessons became after another twenty-two years of living. The two songs approach Mẹ from different directions: one through Vietnamese memory and family inheritance, the other through the understanding that came later after I became a parent myself. The answer is not a completed scorecard. It is a family still trying to care for one another and a son still trying to understand the people who gave him his starting point.
         </p>
         <div className={styles.links}>
           <Link className="text-link light" href="/letters/bo-oi/">Bố Ơi →</Link>

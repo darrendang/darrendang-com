@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "policy": "Do not re-review an unchanged audio file. Re-review is required only when the file fingerprint changes, the relevant public canon baseline changes materially, or a prior review is explicitly reopened.",
-  "canon_baseline": "DarrenDang.com public expression architecture and protected family-letter layer synchronized through 2026-09-20",
+  "canon_baseline": "DarrenDang.com public expression architecture and protected family-letter layer synchronized through 2026-09-21",
   "fingerprint_type": "git_blob_sha1",
-  "baseline_recorded_on": "2026-09-20",
+  "baseline_recorded_on": "2026-09-21",
   "review_notes": "This manifest fingerprints the exact MP3 bytes currently in the public repository. A matching Git blob SHA proves the file is byte-for-byte unchanged. Semantic review state is tracked separately from fingerprint state so provenance is not overstated. Inline companion songs are artistic interpretations embedded in their relevant pages and are not part of the route-based Darren-voice ListeningLayer.",
   "files": [
     {
@@ -77,6 +77,15 @@
       "review_state": "accepted_current",
       "last_reviewed_on": "2026-09-20",
       "review_basis": "Darren listened repeatedly to the generated Vietnamese song, said it moved him to tears, explicitly approved the lyrics and directed creation of the Mẹ Ơi public letter/song page. The song is grounded in Darren's 2004 Kỷ Niệm Về Mẹ funeral letter and presented as an artistic family memorial, not as an authoritative historical or medical record. Embedded on /letters/me-oi/; not part of the route-based ListeningLayer."
+    },
+    {
+      "path": "public/audio/Song-Mom-English-sept-2026.mp3",
+      "git_blob_sha1": "a9c31d21714378da55fa9aae52c154bead2b3ff1",
+      "size_bytes": 7873106,
+      "public_role": "Letters from Darren — Mẹ Ơi original English companion song",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-21",
+      "review_basis": "Darren created the Suno song, said he loved the English lyrics, supplied the exact MP3, uploaded the same asset to the public repository, and explicitly directed publication on the Mẹ Ơi letter page with the same treatment as the Bố Ơi English companion. The embedded lyrics and audio metadata were inspected against the current Mẹ Ơi page and preserved 2004 source-letter context. This is a distinct original English work, not a translation of the Vietnamese Mẹ Ơi song. It is presented as an artistic memorial companion centered on a grown son's recognition of his mother's quiet sacrifice after becoming a parent himself. Embedded on /letters/me-oi/; not part of the route-based ListeningLayer."
     },
     {
       "path": "public/audio/about-what-im-trying-to-leave-behind.mp3",
