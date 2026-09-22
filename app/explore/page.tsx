@@ -46,12 +46,13 @@ export default function ExplorePage() {
       <section className="genome-layers">
         <div className="eyebrow bronze">Expressions of The Way</div>
         <h2>Different forms do different intellectual work.</h2>
-        <p className="lead">You do not need to choose a format first. But when you want to understand how the work fits together, these four expressions have distinct jobs.</p>
+        <p className="lead">You do not need to choose a format first. But when you want to understand how the work fits together, these expressions have distinct jobs.</p>
         <div className="layer-grid">
           <article><div className="book-movement">LIVED REFLECTION</div><h3>Letters from Darren</h3><p>Stories, questions, changed judgments, and lessons still unfolding. The most human entry point into The Way.</p><Link className="text-link" href="/letters/">Read Letters →</Link></article>
           <article><div className="book-movement">PRESERVED WISDOM</div><h3>Books · The Path Forward</h3><p>Bounded works that preserve stories, principles, lessons, and methods that have matured enough to hold in durable form.</p><Link className="text-link" href="/books/">Explore the books →</Link></article>
           <article><div className="book-movement">LIVING IDEAS</div><h3>The Way Papers</h3><p>Longer-form thinking that develops consequential ideas while leaving room for challenge, evidence, and revision.</p><Link className="text-link" href="/papers/">Explore papers →</Link></article>
           <article><div className="book-movement">DEMONSTRATED PRACTICE</div><h3>The Way in Motion</h3><p>Cases that ask what actually happened when an idea met reality—including evidence, limits, consequences, and what changed afterward.</p><Link className="text-link" href="/the-way-in-motion/">Explore The Way in Motion →</Link></article>
+          <article><div className="book-movement">CULTURAL EXPRESSION</div><h3>The Way in Music</h3><p>Original songs that ask what happens when the same philosophical inheritance is allowed to become something different inside each language and culture.</p><Link className="text-link" href="/the-way/music/">Experience the music journey →</Link></article>
         </div>
       </section>
 
