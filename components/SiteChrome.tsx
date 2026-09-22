@@ -49,6 +49,7 @@ export function SiteFooter() {
           <Link href="/dots/">D.O.T.S. Method</Link>
           <Link href="/papers/">Papers &amp; Talks</Link>
           <Link href="/the-way-in-motion/">The Way in Motion</Link>
+          <Link href="/the-way/music/">The Way in Music</Link>
           <Link href="/letters/">Letters from Darren</Link>
           <Link href="/shared-wisdom/">Shared Wisdom</Link>
           <Link href="/genome/">The Dang Genome</Link>
