@@ -1,92 +1,11 @@
 {
   "schema_version": "1.0",
   "policy": "Do not re-review an unchanged audio file. Re-review is required only when the file fingerprint changes, the relevant public canon baseline changes materially, or a prior review is explicitly reopened.",
-  "canon_baseline": "DarrenDang.com public expression architecture and protected family-letter layer synchronized through 2026-09-21",
+  "canon_baseline": "DarrenDang.com public expression architecture, protected family-letter layer, and The Way in Music cultural journey synchronized through 2026-09-21",
   "fingerprint_type": "git_blob_sha1",
   "baseline_recorded_on": "2026-09-21",
   "review_notes": "This manifest fingerprints the exact MP3 bytes currently in the public repository. A matching Git blob SHA proves the file is byte-for-byte unchanged. Semantic review state is tracked separately from fingerprint state so provenance is not overstated. Inline companion songs are artistic interpretations embedded in their relevant pages and are not part of the route-based Darren-voice ListeningLayer.",
   "files": [
-    {
-      "path": "public/audio/Song-Carry-It-Forward.mp3",
-      "git_blob_sha1": "3e48fa6efdeb6367331b6a20a082bbd523164852",
-      "size_bytes": 5482039,
-      "public_role": "The Way — inline musical interpretation",
-      "review_state": "accepted_current",
-      "last_reviewed_on": "2026-09-15",
-      "review_basis": "Darren supplied the full lyrics and explicitly approved website integration. Reviewed against current The Way public framing: inheritance without prescription, agency, teachability, transmission, and a stronger starting point with freedom to go farther. Embedded on /the-way/; not authoritative philosophy text and not part of the route-based ListeningLayer."
-    },
-    {
-      "path": "public/audio/Song-No-Rank.mp3",
-      "git_blob_sha1": "ddfabd6a59e604fda7cdf98135a3e34d16424443",
-      "size_bytes": 7533157,
-      "public_role": "Book 2 — Wisdom Has No Rank inline musical interpretation",
-      "review_state": "accepted_current",
-      "last_reviewed_on": "2026-09-15",
-      "review_basis": "Darren supplied the full lyrics and explicitly approved website integration. Reviewed against Book 2's teachability thesis and its guardrails that expertise, evidence, responsibility, and role still matter even when rank does not determine wisdom. Embedded on /books/wisdom-has-no-rank/; not part of the route-based ListeningLayer."
-    },
-    {
-      "path": "public/audio/Song-Take-The-Best.mp3",
-      "git_blob_sha1": "52feb35016e29b25655ac158fff633e81e6cdff0",
-      "size_bytes": 4150874,
-      "public_role": "Book 1 — secondary inline musical companion",
-      "review_state": "accepted_current",
-      "last_reviewed_on": "2026-09-15",
-      "review_basis": "Darren supplied the full lyrics and explicitly approved website integration. Reviewed as a Book 1 companion about inheritance with agency: receive a map, choose your own path, and pass something useful forward. Embedded alongside the existing Book 1 song on /books/for-those-who-come-after-us/; not part of the route-based ListeningLayer."
-    },
-    {
-      "path": "public/audio/Song-The-Shape-Beneath.mp3",
-      "git_blob_sha1": "0bcde3f30d843f8f4001364b33aae4a5f216263c",
-      "size_bytes": 6498591,
-      "public_role": "Book 3 — D.O.T.S. inline musical interpretation",
-      "review_state": "accepted_current",
-      "last_reviewed_on": "2026-09-15",
-      "review_basis": "Darren supplied the full lyrics, explicitly chose to keep the generated song unchanged, and approved website integration. The song is presented as an artistic interpretation, not the method authority; adjacent Book 3 prose remains authoritative for D.O.T.S. and CREATE definitions. Embedded on /books/dots/; not part of the route-based ListeningLayer."
-    },
-    {
-      "path": "public/audio/Song-You-Are-My-Way1.mp3",
-      "git_blob_sha1": "6f0bf9bfe470ccf77b65612b82796eed32f4643b",
-      "size_bytes": 10659800,
-      "public_role": "Letters from Darren — To Chrystina / The Way Was Us embedded song",
-      "review_state": "accepted_current",
-      "last_reviewed_on": "2026-09-15",
-      "review_basis": "explicit Darren publication direction for the Chrystina birthday dedication; embedded only on /letters/the-way-was-us/ and not part of the route-based ListeningLayer"
-    },
-    {
-      "path": "public/audio/Song-bo-oi.mp3",
-      "git_blob_sha1": "ce1766cf9763e1a34e6fe9375eecc834ef0ba854",
-      "size_bytes": 8286699,
-      "public_role": "Letters from Darren — Bố Ơi / 25-year memorial embedded song",
-      "review_state": "accepted_current",
-      "last_reviewed_on": "2026-09-16",
-      "review_basis": "Darren listened to the generated Vietnamese song, explicitly approved it for publication, and directed that it receive full memorial treatment for the 25th anniversary of his father's September 14, 2001 passing. Lyrics were reviewed against Darren's 2001 funeral-booklet letter and family-source material. Presented on /letters/bo-oi/ as an artistic memorial and family interpretation, not as an authoritative historical record or medical claim. Not part of the route-based ListeningLayer."
-    },
-    {
-      "path": "public/audio/Song-my-father-english.mp3",
-      "git_blob_sha1": "e0d049e82eb327f82a026c4f7963c7d88bdee670",
-      "size_bytes": 6922254,
-      "public_role": "Letters from Darren — Bố Ơi original English companion song",
-      "review_state": "accepted_current",
-      "last_reviewed_on": "2026-09-20",
-      "review_basis": "Darren listened to the generated original English song, said he loved it, uploaded the exact MP3, and explicitly directed publication on the Bố Ơi letter page with the English lyrics. This is a distinct original work, not a translation of the Vietnamese Bố Ơi song. It is presented as an artistic memorial companion centered on a grown son's deeper understanding of his father after becoming a father himself. Embedded on /letters/bo-oi/; not part of the route-based ListeningLayer."
-    },
-    {
-      "path": "public/audio/Song-me-oi.mp3",
-      "git_blob_sha1": "eb6962a654cc05a8e3454382ee558feeeff6ba14",
-      "size_bytes": 7555539,
-      "public_role": "Letters from Darren — Mẹ Ơi embedded song",
-      "review_state": "accepted_current",
-      "last_reviewed_on": "2026-09-20",
-      "review_basis": "Darren listened repeatedly to the generated Vietnamese song, said it moved him to tears, explicitly approved the lyrics and directed creation of the Mẹ Ơi public letter/song page. The song is grounded in Darren's 2004 Kỷ Niệm Về Mẹ funeral letter and presented as an artistic family memorial, not as an authoritative historical or medical record. Embedded on /letters/me-oi/; not part of the route-based ListeningLayer."
-    },
-    {
-      "path": "public/audio/Song-Mom-English-sept-2026.mp3",
-      "git_blob_sha1": "a9c31d21714378da55fa9aae52c154bead2b3ff1",
-      "size_bytes": 7873106,
-      "public_role": "Letters from Darren — Mẹ Ơi original English companion song",
-      "review_state": "accepted_current",
-      "last_reviewed_on": "2026-09-21",
-      "review_basis": "Darren created the Suno song, said he loved the English lyrics, supplied the exact MP3, uploaded the same asset to the public repository, and explicitly directed publication on the Mẹ Ơi letter page with the same treatment as the Bố Ơi English companion. The embedded lyrics and audio metadata were inspected against the current Mẹ Ơi page and preserved 2004 source-letter context. This is a distinct original English work, not a translation of the Vietnamese Mẹ Ơi song. It is presented as an artistic memorial companion centered on a grown son's recognition of his mother's quiet sacrifice after becoming a parent himself. Embedded on /letters/me-oi/; not part of the route-based ListeningLayer."
-    },
     {
       "path": "public/audio/about-what-im-trying-to-leave-behind.mp3",
       "git_blob_sha1": "c80ed0e9537ba81f874cd39f7d0da1562c3c8be7",
@@ -149,6 +68,186 @@
       "review_state": "accepted_current",
       "last_reviewed_on": "2026-08-31",
       "review_basis": "approved contribution invitation and current public framing"
+    },
+    {
+      "path": "public/audio/Song-bo-oi.mp3",
+      "git_blob_sha1": "ce1766cf9763e1a34e6fe9375eecc834ef0ba854",
+      "size_bytes": 8286699,
+      "public_role": "Letters from Darren — Bố Ơi / 25-year memorial embedded song",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-16",
+      "review_basis": "Darren listened to the generated Vietnamese song, explicitly approved it for publication, and directed that it receive full memorial treatment for the 25th anniversary of his father's September 14, 2001 passing. Lyrics were reviewed against Darren's 2001 funeral-booklet letter and family-source material. Presented on /letters/bo-oi/ as an artistic memorial and family interpretation, not as an authoritative historical record or medical claim. Not part of the route-based ListeningLayer."
+    },
+    {
+      "path": "public/audio/Song-Brazil-Nossa-Vez.mp3",
+      "git_blob_sha1": "06e8e8dee0436ddff6ffd29c7faaf47101fd96ff",
+      "size_bytes": 3979339,
+      "public_role": "The Way in Music — Brazilian Portuguese · Brazil — Nossa Vez",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-21",
+      "review_basis": "Darren selected and uploaded this exact MP3 to the public website repository and explicitly directed creation of the public The Way in Music cultural journey featuring the 11-song set. The song is presented as an artistic cultural expression of The Way under the approved principle 'Modern first. Culturally unmistakable. Philosophically The Way.' It is not authoritative philosophy, cultural doctrine, or language canon. Public lyric/source pairing is governed by the dedicated music-journey page."
+    },
+    {
+      "path": "public/audio/Song-Carry-It-Forward.mp3",
+      "git_blob_sha1": "3e48fa6efdeb6367331b6a20a082bbd523164852",
+      "size_bytes": 5482039,
+      "public_role": "The Way — inline musical interpretation",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-15",
+      "review_basis": "Darren supplied the full lyrics and explicitly approved website integration. Reviewed against current The Way public framing: inheritance without prescription, agency, teachability, transmission, and a stronger starting point with freedom to go farther. Embedded on /the-way/; not authoritative philosophy text and not part of the route-based ListeningLayer."
+    },
+    {
+      "path": "public/audio/Song-France-CE-QUON-EN-FAIT.mp3",
+      "git_blob_sha1": "082ddfdea86c38d81df1043ec45cb7dfbb7c9ad3",
+      "size_bytes": 4022312,
+      "public_role": "The Way in Music — French · France — Ce qu’on en fait",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-21",
+      "review_basis": "Darren selected and uploaded this exact MP3 to the public website repository and explicitly directed creation of the public The Way in Music cultural journey featuring the 11-song set. The song is presented as an artistic cultural expression of The Way under the approved principle 'Modern first. Culturally unmistakable. Philosophically The Way.' It is not authoritative philosophy, cultural doctrine, or language canon. Public lyric/source pairing is governed by the dedicated music-journey page."
+    },
+    {
+      "path": "public/audio/Song-Germany-Weiterdenken-Think-Further.mp3",
+      "git_blob_sha1": "e8e25b5c179c0b2a765d6e8e898675f81b0bbfd9",
+      "size_bytes": 3819073,
+      "public_role": "The Way in Music — German · Germany — Weiterdenken",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-21",
+      "review_basis": "Darren selected and uploaded this exact MP3 to the public website repository and explicitly directed creation of the public The Way in Music cultural journey featuring the 11-song set. The song is presented as an artistic cultural expression of The Way under the approved principle 'Modern first. Culturally unmistakable. Philosophically The Way.' It is not authoritative philosophy, cultural doctrine, or language canon. Public lyric/source pairing is governed by the dedicated music-journey page."
+    },
+    {
+      "path": "public/audio/Song-Italian-Da-Qui-in-Poi.mp3",
+      "git_blob_sha1": "c9b0c8fc59f7d96c398eb1880387de1de578df53",
+      "size_bytes": 4455405,
+      "public_role": "The Way in Music — Italian · Italy — Da Qui in Poi",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-21",
+      "review_basis": "Darren selected and uploaded this exact MP3 to the public website repository and explicitly directed creation of the public The Way in Music cultural journey featuring the 11-song set. The song is presented as an artistic cultural expression of The Way under the approved principle 'Modern first. Culturally unmistakable. Philosophically The Way.' It is not authoritative philosophy, cultural doctrine, or language canon. Public lyric/source pairing is governed by the dedicated music-journey page."
+    },
+    {
+      "path": "public/audio/Song-Japan-Beyond-Here-Further-Ahead.mp3",
+      "git_blob_sha1": "2a61241736e13f7d4908e8fad6bc61d6fe736a3d",
+      "size_bytes": 4944948,
+      "public_role": "The Way in Music — Japanese · Japan — その先へ",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-21",
+      "review_basis": "Darren selected and uploaded this exact MP3 to the public website repository and explicitly directed creation of the public The Way in Music cultural journey featuring the 11-song set. The song is presented as an artistic cultural expression of The Way under the approved principle 'Modern first. Culturally unmistakable. Philosophically The Way.' It is not authoritative philosophy, cultural doctrine, or language canon. Public lyric/source pairing is governed by the dedicated music-journey page."
+    },
+    {
+      "path": "public/audio/Song-Korea-In-Our-Own-Way.mp3",
+      "git_blob_sha1": "799e61d53e858432c8faed63dde4b9f8ad41886c",
+      "size_bytes": 4447940,
+      "public_role": "The Way in Music — Korean · South Korea — 우리답게",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-21",
+      "review_basis": "Darren selected and uploaded this exact MP3 to the public website repository and explicitly directed creation of the public The Way in Music cultural journey featuring the 11-song set. The song is presented as an artistic cultural expression of The Way under the approved principle 'Modern first. Culturally unmistakable. Philosophically The Way.' It is not authoritative philosophy, cultural doctrine, or language canon. Public lyric/source pairing is governed by the dedicated music-journey page."
+    },
+    {
+      "path": "public/audio/Song-Mainland-Mandarin-The-Next-Stroke.mp3",
+      "git_blob_sha1": "8712244dc5a9f0302ecad6efb867f284d460dee9",
+      "size_bytes": 4132313,
+      "public_role": "The Way in Music — Simplified Chinese · Mainland China — 下一笔",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-21",
+      "review_basis": "Darren selected and uploaded this exact MP3 to the public website repository and explicitly directed creation of the public The Way in Music cultural journey featuring the 11-song set. The song is presented as an artistic cultural expression of The Way under the approved principle 'Modern first. Culturally unmistakable. Philosophically The Way.' It is not authoritative philosophy, cultural doctrine, or language canon. Public lyric/source pairing is governed by the dedicated music-journey page."
+    },
+    {
+      "path": "public/audio/Song-me-oi.mp3",
+      "git_blob_sha1": "eb6962a654cc05a8e3454382ee558feeeff6ba14",
+      "size_bytes": 7555539,
+      "public_role": "Letters from Darren — Mẹ Ơi embedded song",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-20",
+      "review_basis": "Darren listened repeatedly to the generated Vietnamese song, said it moved him to tears, explicitly approved the lyrics and directed creation of the Mẹ Ơi public letter/song page. The song is grounded in Darren's 2004 Kỷ Niệm Về Mẹ funeral letter and presented as an artistic family memorial, not as an authoritative historical or medical record. Embedded on /letters/me-oi/; not part of the route-based ListeningLayer."
+    },
+    {
+      "path": "public/audio/Song-Mom-English-sept-2026.mp3",
+      "git_blob_sha1": "a9c31d21714378da55fa9aae52c154bead2b3ff1",
+      "size_bytes": 7873106,
+      "public_role": "Letters from Darren — Mẹ Ơi original English companion song",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-21",
+      "review_basis": "Darren created the Suno song, said he loved the English lyrics, supplied the exact MP3, uploaded the same asset to the public repository, and explicitly directed publication on the Mẹ Ơi letter page with the same treatment as the Bố Ơi English companion. The embedded lyrics and audio metadata were inspected against the current Mẹ Ơi page and preserved 2004 source-letter context. This is a distinct original English work, not a translation of the Vietnamese Mẹ Ơi song. It is presented as an artistic memorial companion centered on a grown son's recognition of his mother's quiet sacrifice after becoming a parent himself. Embedded on /letters/me-oi/; not part of the route-based ListeningLayer."
+    },
+    {
+      "path": "public/audio/Song-my-father-english.mp3",
+      "git_blob_sha1": "e0d049e82eb327f82a026c4f7963c7d88bdee670",
+      "size_bytes": 6922254,
+      "public_role": "Letters from Darren — Bố Ơi original English companion song",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-20",
+      "review_basis": "Darren listened to the generated original English song, said he loved it, uploaded the exact MP3, and explicitly directed publication on the Bố Ơi letter page with the English lyrics. This is a distinct original work, not a translation of the Vietnamese Bố Ơi song. It is presented as an artistic memorial companion centered on a grown son's deeper understanding of his father after becoming a father himself. Embedded on /letters/bo-oi/; not part of the route-based ListeningLayer."
+    },
+    {
+      "path": "public/audio/Song-No-Rank.mp3",
+      "git_blob_sha1": "ddfabd6a59e604fda7cdf98135a3e34d16424443",
+      "size_bytes": 7533157,
+      "public_role": "Book 2 — Wisdom Has No Rank inline musical interpretation",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-15",
+      "review_basis": "Darren supplied the full lyrics and explicitly approved website integration. Reviewed against Book 2's teachability thesis and its guardrails that expertise, evidence, responsibility, and role still matter even when rank does not determine wisdom. Embedded on /books/wisdom-has-no-rank/; not part of the route-based ListeningLayer."
+    },
+    {
+      "path": "public/audio/Song-Spain-Queda-Mucho-por-Decir.mp3",
+      "git_blob_sha1": "de0b042cd3ddaeb86d8b4b9054a2e8e282dd284e",
+      "size_bytes": 4472205,
+      "public_role": "The Way in Music — Spanish · Spain — Queda Mucho por Decir",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-21",
+      "review_basis": "Darren selected and uploaded this exact MP3 to the public website repository and explicitly directed creation of the public The Way in Music cultural journey featuring the 11-song set. The song is presented as an artistic cultural expression of The Way under the approved principle 'Modern first. Culturally unmistakable. Philosophically The Way.' It is not authoritative philosophy, cultural doctrine, or language canon. Public lyric/source pairing is governed by the dedicated music-journey page."
+    },
+    {
+      "path": "public/audio/Song-Take-The-Best.mp3",
+      "git_blob_sha1": "52feb35016e29b25655ac158fff633e81e6cdff0",
+      "size_bytes": 4150874,
+      "public_role": "Book 1 — secondary inline musical companion",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-15",
+      "review_basis": "Darren supplied the full lyrics and explicitly approved website integration. Reviewed as a Book 1 companion about inheritance with agency: receive a map, choose your own path, and pass something useful forward. Embedded alongside the existing Book 1 song on /books/for-those-who-come-after-us/; not part of the route-based ListeningLayer."
+    },
+    {
+      "path": "public/audio/Song-The-Shape-Beneath.mp3",
+      "git_blob_sha1": "0bcde3f30d843f8f4001364b33aae4a5f216263c",
+      "size_bytes": 6498591,
+      "public_role": "Book 3 — D.O.T.S. inline musical interpretation",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-15",
+      "review_basis": "Darren supplied the full lyrics, explicitly chose to keep the generated song unchanged, and approved website integration. The song is presented as an artistic interpretation, not the method authority; adjacent Book 3 prose remains authoritative for D.O.T.S. and CREATE definitions. Embedded on /books/dots/; not part of the route-based ListeningLayer."
+    },
+    {
+      "path": "public/audio/Song-Traditional-Chinese-Taiwan-Leave-a-Little-Blank-Space.mp3",
+      "git_blob_sha1": "6c6607b4c3b951298f06515e916fe645586d3272",
+      "size_bytes": 5081653,
+      "public_role": "The Way in Music — Traditional Chinese · Taiwan — 留一點空白",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-21",
+      "review_basis": "Darren selected and uploaded this exact MP3 to the public website repository and explicitly directed creation of the public The Way in Music cultural journey featuring the 11-song set. The song is presented as an artistic cultural expression of The Way under the approved principle 'Modern first. Culturally unmistakable. Philosophically The Way.' It is not authoritative philosophy, cultural doctrine, or language canon. Public lyric/source pairing is governed by the dedicated music-journey page."
+    },
+    {
+      "path": "public/audio/Song-United-States-Room-to-Become.mp3",
+      "git_blob_sha1": "5313ae65fb3a22f0b33e3cbbad8976a1677e4e44",
+      "size_bytes": 4294120,
+      "public_role": "The Way in Music — English · United States — Room to Become",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-21",
+      "review_basis": "Darren selected and uploaded this exact MP3 to the public website repository and explicitly directed creation of the public The Way in Music cultural journey featuring the 11-song set. The song is presented as an artistic cultural expression of The Way under the approved principle 'Modern first. Culturally unmistakable. Philosophically The Way.' It is not authoritative philosophy, cultural doctrine, or language canon. Public lyric/source pairing is governed by the dedicated music-journey page."
+    },
+    {
+      "path": "public/audio/Song-Vietnam-Di-Xa-Hon.mp3",
+      "git_blob_sha1": "32e8a7df5c4cb609930ac54903a4f831cc9f7702",
+      "size_bytes": 4392011,
+      "public_role": "The Way in Music — Vietnamese · Vietnam — Đi Xa Hơn",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-21",
+      "review_basis": "Darren selected and uploaded this exact MP3 to the public website repository and explicitly directed creation of the public The Way in Music cultural journey featuring the 11-song set. The song is presented as an artistic cultural expression of The Way under the approved principle 'Modern first. Culturally unmistakable. Philosophically The Way.' It is not authoritative philosophy, cultural doctrine, or language canon. Public lyric/source pairing is governed by the dedicated music-journey page."
+    },
+    {
+      "path": "public/audio/Song-You-Are-My-Way1.mp3",
+      "git_blob_sha1": "6f0bf9bfe470ccf77b65612b82796eed32f4643b",
+      "size_bytes": 10659800,
+      "public_role": "Letters from Darren — To Chrystina / The Way Was Us embedded song",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-15",
+      "review_basis": "explicit Darren publication direction for the Chrystina birthday dedication; embedded only on /letters/the-way-was-us/ and not part of the route-based ListeningLayer"
     },
     {
       "path": "public/audio/the-way-constitution-introduction.mp3",
