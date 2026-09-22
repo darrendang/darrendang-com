@@ -78,17 +78,21 @@ export default function TheWayPage() {
             <MusicCompanion
               eyebrow="The Way · In music"
               title="Carry It Forward"
-              description="The Way began in lived experience and only later acquired a name. This song is one musical expression of the pattern: receive what came before, examine it, make it your own, and leave greater possibility behind."
+              description="This song was the beginning. Then the experiment widened: instead of translating one song, each language and culture created an original expression from the same philosophical inheritance."
               tracks={[
                 {
                   title: "Carry It Forward",
                   src: "/audio/Song-Carry-It-Forward.mp3",
-                  description: "A cross-generational interpretation of inheritance without prescription: carry the light, choose your own dawn, and leave the next person a stronger beginning with more freedom.",
+                  description: "The originating global expression: receive what came before, examine it, make it your own, and leave the next person a stronger beginning with more freedom.",
                   lyrics: carryItForwardLyrics,
                 },
               ]}
-              note="This is an artistic expression of The Way, not a substitute for the philosophy or Constitution."
+              note="Modern first. Culturally unmistakable. Philosophically The Way."
             />
+            <div className="actions" style={{ marginTop: "28px" }}>
+              <Link className="button button-dark" href="/the-way/music/">Experience The Way across cultures</Link>
+              <span className="note">11 original cultural expressions · native lyrics with English companions</span>
+            </div>
           </div>
         </section>
 
