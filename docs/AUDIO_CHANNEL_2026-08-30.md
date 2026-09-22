@@ -8,7 +8,7 @@ Principles:
 - Nothing autoplays.
 - Spoken Darren-voice audio and musical interpretations are visually and semantically distinct.
 - The route-based listening control stays collapsed until a visitor chooses it.
-- Inline songs stay on the page whose ideas give them context; they are not promoted into a separate top-level Music navigation category.
+- Inline songs stay on the page whose ideas give them context. The Way in Music is a deeper cultural-expression journey under `/the-way/music/`, discoverable from The Way, Explore, and the footer; it is not a separate top-level primary-navigation category.
 - The Way Forward intentionally has no Darren narration or companion song: the reader retains the floor.
 - Book 1 audio previews mirror the existing read previews.
 - The written Constitution remains authoritative; its recording is orientation only.
@@ -48,6 +48,7 @@ Current placements:
 - `/books/wisdom-has-no-rank/` — `No Rank (Both Ways)`
 - `/books/dots/` — `The Shape Beneath`
 - `/the-way/` — `Carry It Forward`
+- `/the-way/music/` — `Carry It Forward` as prologue plus 11 original cultural expressions with expandable native lyrics and English companion translations
 - `/letters/the-way-was-us/` — `The Way Was Us`, embedded as a specific Letter/song artifact rather than part of the reusable music companion component
 
 Book 3 boundary: `The Shape Beneath` is explicitly labeled an artistic interpretation. The Book 3 prose and method pages remain authoritative for D.O.T.S. and CREATE definitions.
