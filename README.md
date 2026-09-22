@@ -18,11 +18,11 @@ The current reader journey is:
 
 **Lived experience → stories and books → recurring patterns become visible → The Way emerges → Your Way / The Way Forward → deeper ecosystem**
 
-The public site also connects Ideas, Letters, The Way Papers, The Way in Motion, Shared Wisdom, Generative Dialogue, D.O.T.S., and the public-facing Dang Genome.
+The public site also connects Ideas, Letters, The Way Papers, The Way in Motion, **The Way in Music**, Shared Wisdom, Generative Dialogue, D.O.T.S., and the public-facing Dang Genome.
 
 ## Public current-state authority
 
-For the public website, `main` is the production implementation source of truth. Current website routing and public-state framing must agree with `docs/CURRENT_PUBLIC_STATE_2026-09-20.md` and the applicable canon-control records in `00_Canon_Control/`.
+For the public website, `main` is the production implementation source of truth. Current website routing and public-state framing must agree with `docs/CURRENT_PUBLIC_STATE_2026-09-21.md` and the applicable canon-control records in `00_Canon_Control/`.
 
 Exact book/manuscript/production status remains governed by the scoped source repositories and central cross-project authority rather than this README or a dated website snapshot.
 
