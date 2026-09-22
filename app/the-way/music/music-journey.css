@@ -1,0 +1,91 @@
+.music-journey-page{background:var(--paper)}
+.music-journey-hero{padding:190px 0 120px;background:radial-gradient(800px 320px at 78% 72%,rgba(199,154,69,.14),transparent 70%),linear-gradient(180deg,#091929,var(--navy));color:var(--ivory)}
+.music-journey-hero-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(280px,.65fr);gap:88px;align-items:end}
+.music-journey-hero h1{font-size:clamp(54px,6vw,88px);line-height:.98;letter-spacing:-.02em;margin:0 0 30px;max-width:900px}
+.music-journey-lead{font-size:22px;line-height:1.55;color:#D8D3CB;max-width:820px;margin:0}
+.music-journey-actions{display:flex;align-items:center;gap:28px;margin-top:38px}
+.music-journey-manifesto{border-top:1px solid rgba(199,154,69,.65);padding-top:28px}
+.music-journey-manifesto>span{display:block;text-transform:uppercase;letter-spacing:.14em;font-size:12px;color:var(--gold);margin-bottom:20px}
+.music-journey-manifesto strong{display:block;font-family:'Newsreader','Cormorant Garamond',serif;font-size:28px;line-height:1.15;font-weight:500;margin:8px 0}
+.music-journey-manifesto p{color:#C8C2B9;font-size:15px;margin:22px 0 0}
+.music-origin-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:90px;align-items:start}
+.music-origin-grid>div>p:not(.lead){max-width:720px}
+.music-origin-player{background:#fff;border:1px solid var(--sand);padding:34px;box-shadow:0 18px 55px rgba(13,31,49,.06)}
+.music-origin-kicker,.lyrics-label{font-size:12px;text-transform:uppercase;letter-spacing:.13em;color:var(--bronze);font-weight:600}
+.music-origin-player audio,.culture-song audio{width:100%;margin:24px 0 0}
+.music-origin-lyrics{margin-top:22px;border-top:1px solid var(--sand);padding-top:16px}
+.music-origin-lyrics summary,.culture-song-lyrics summary{cursor:pointer;font-weight:600;color:var(--navy)}
+.music-origin-lyrics pre{white-space:pre-wrap;font:inherit;font-size:15px;line-height:1.55;margin:22px 0 0;color:var(--muted)}
+.music-method{padding:110px 0}
+.music-method .lead{color:#D2CDC5}
+.music-method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(245,239,228,.16);margin-top:55px}
+.music-method-grid article{background:var(--navy);padding:34px}
+.music-method-grid span{color:var(--gold);font-size:12px;letter-spacing:.14em}
+.music-method-grid strong{display:block;font-family:'Newsreader','Cormorant Garamond',serif;font-size:27px;font-weight:500;margin:14px 0}
+.music-method-grid p{color:#D4CFC7;margin:0;font-size:16px}
+.music-journey-index{padding-bottom:75px}
+.music-language-strip{display:grid;grid-template-columns:repeat(6,1fr);border-top:1px solid var(--sand);border-left:1px solid var(--sand)}
+.music-language-strip a{min-height:88px;padding:18px;border-right:1px solid var(--sand);border-bottom:1px solid var(--sand);display:flex;flex-direction:column;justify-content:space-between;gap:8px;transition:background .18s ease}
+.music-language-strip a:hover{background:#F1E9DD}
+.music-language-strip span{font-size:11px;letter-spacing:.12em;color:var(--bronze)}
+.music-language-strip strong{font-size:15px}
+.music-movement{padding-top:95px}
+.music-movement:nth-of-type(even){background:#F8F3EB}
+.music-movement-head{display:grid;grid-template-columns:1fr .9fr;gap:70px;align-items:end;border-bottom:1px solid var(--sand);padding-bottom:38px;margin-bottom:22px}
+.music-movement-head h2{margin-bottom:0}
+.music-movement-head>p{font-size:19px;color:var(--muted);margin:0 0 8px;max-width:620px}
+.culture-song{display:grid;grid-template-columns:80px 1fr;gap:32px;padding:58px 0;border-bottom:1px solid var(--sand);scroll-margin-top:30px}
+.culture-song-number{font-family:'Newsreader','Cormorant Garamond',serif;font-size:28px;color:#AA9575;padding-top:7px}
+.culture-song-main{max-width:1000px}
+.culture-song-head{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:30px;align-items:end}
+.culture-song-locale{grid-column:1/-1;text-transform:uppercase;letter-spacing:.14em;font-size:12px;color:var(--bronze);font-weight:600;margin-bottom:12px}
+.culture-song-locale span{color:#BDA783;margin:0 3px}
+.culture-song-head h3{font-family:'Newsreader','Cormorant Garamond',serif;font-weight:500;font-size:clamp(38px,4vw,54px);line-height:1.03;margin:0}
+.culture-song-english-title{font-size:16px;color:var(--muted);margin:0 0 4px;text-align:right}
+.culture-song blockquote{font-family:'Newsreader','Cormorant Garamond',serif;font-size:25px;line-height:1.25;margin:25px 0 10px;padding-left:20px;border-left:2px solid var(--gold);color:#2A3440}
+.culture-song-sound{font-size:14px;color:var(--muted);margin:12px 0 4px}
+.culture-song-lyrics{margin-top:25px;border:1px solid var(--sand);background:rgba(255,255,255,.58)}
+.culture-song-lyrics summary{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:18px 20px;list-style:none}
+.culture-song-lyrics summary::-webkit-details-marker{display:none}
+.culture-song-lyrics summary::after{content:"+";font-size:24px;font-weight:400;color:var(--gold);margin-left:auto}
+.culture-song-lyrics[open] summary::after{content:"–"}
+.culture-song-lyrics summary small{font-size:12px;color:var(--muted);font-weight:400;margin-left:auto}
+.lyrics-compare{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--sand)}
+.lyrics-compare>section{padding:28px 30px;min-width:0}
+.lyrics-compare>section+section{border-left:1px solid var(--sand);background:#FFFDF9}
+.lyrics-compare pre{white-space:pre-wrap;word-break:normal;overflow-wrap:anywhere;font:inherit;font-size:15px;line-height:1.62;color:#303A44;margin:18px 0 0}
+.lyrics-compare-single{grid-template-columns:1fr}
+.lyrics-compare-single>section{max-width:760px}
+.music-coda{background:radial-gradient(700px 200px at 75% 100%,rgba(199,154,69,.13),transparent 70%),var(--navy);color:var(--ivory);padding:130px 0}
+.music-coda-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:90px;align-items:center}
+.music-coda .lead{color:var(--ivory)}
+.music-coda p:not(.lead){color:#D3CEC6;max-width:700px}
+.music-coda-quote{margin:0;border-left:1px solid rgba(199,154,69,.65);padding:18px 0 18px 38px}
+.music-coda-quote span,.music-coda-quote strong{display:block;font-family:'Newsreader','Cormorant Garamond',serif;font-weight:500}
+.music-coda-quote span{font-size:34px;line-height:1.08}
+.music-coda-quote strong{font-size:22px;color:var(--gold);margin-top:18px}
+.music-coda-actions{display:flex;gap:28px;align-items:center;margin-top:58px}
+@media(max-width:1000px){
+  .music-journey-hero-grid,.music-origin-grid,.music-movement-head,.music-coda-grid{grid-template-columns:1fr}
+  .music-journey-hero-grid{gap:50px}
+  .music-journey-manifesto{max-width:600px}
+  .music-language-strip{grid-template-columns:repeat(4,1fr)}
+  .music-origin-grid,.music-coda-grid{gap:48px}
+}
+@media(max-width:720px){
+  .music-journey-hero{padding:145px 0 85px}
+  .music-journey-actions,.music-coda-actions{align-items:flex-start;flex-direction:column}
+  .music-method-grid{grid-template-columns:1fr}
+  .music-language-strip{grid-template-columns:repeat(2,1fr)}
+  .culture-song{grid-template-columns:1fr;gap:5px;padding:45px 0}
+  .culture-song-number{font-size:15px;letter-spacing:.12em}
+  .culture-song-head{grid-template-columns:1fr}
+  .culture-song-english-title{text-align:left;margin:8px 0 0}
+  .culture-song blockquote{font-size:22px}
+  .culture-song-lyrics summary{align-items:flex-start;flex-wrap:wrap;gap:4px 16px}
+  .culture-song-lyrics summary small{width:100%;margin-left:0}
+  .lyrics-compare{grid-template-columns:1fr}
+  .lyrics-compare>section+section{border-left:0;border-top:1px solid var(--sand)}
+  .lyrics-compare>section{padding:24px 20px}
+  .music-coda-quote{padding-left:25px}
+}
