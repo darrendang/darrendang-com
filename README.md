@@ -22,7 +22,7 @@ The public site also connects Ideas, Letters, The Way Papers, The Way in Motion,
 
 ## Public current-state authority
 
-For the public website, `main` is the production implementation source of truth. Current website routing and public-state framing must agree with `docs/CURRENT_PUBLIC_STATE_2026-09-21.md` and the applicable canon-control records in `00_Canon_Control/`.
+For the public website, `main` is the production implementation source of truth. Current website routing and public-state framing must agree with `docs/CURRENT_PUBLIC_STATE_2026-09-22.md` and the applicable canon-control records in `00_Canon_Control/`.
 
 Exact book/manuscript/production status remains governed by the scoped source repositories and central cross-project authority rather than this README or a dated website snapshot.
 
