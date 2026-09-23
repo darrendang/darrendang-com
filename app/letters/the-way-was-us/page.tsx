@@ -6,11 +6,11 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "To Chrystina — The Way Was Us",
-  description: "A birthday letter and song from Darren Dang to his wife Chrystina about marriage, family, legacy, and the life behind The Way.",
+  description: "A birthday letter and two musical expressions from Darren Dang to his wife Chrystina about marriage, family, legacy, and the life behind The Way.",
   alternates: { canonical: "/letters/the-way-was-us/" },
   openGraph: {
     title: "To Chrystina — The Way Was Us | Darren Dang",
-    description: "A birthday letter and song about marriage, family, legacy, and the life behind The Way.",
+    description: "A birthday letter and songs about marriage, family, legacy, and the life behind The Way.",
     type: "article",
     url: "/letters/the-way-was-us/",
     images: [
@@ -24,7 +24,51 @@ export const metadata: Metadata = {
   },
 };
 
-const lyrics = [
+type LyricSection = {
+  title: string;
+  text: string;
+};
+
+const popOperaLyrics: LyricSection[] = [
+  {
+    title: "Verse 1",
+    text: `Before I ever found the words,\nbefore I ever named The Way,\nthere was you beside me,\nliving it with me day by day.\n\nWe built it in the ordinary—\nthe dinners, drives, the changing plans.\nYou were there when I was certain,\nand when I needed your steady hand.\n\nSomewhere through those years together,\nthrough every road life put us through,\nI learned that home was never a place.\n\nHome was you.`,
+  },
+  {
+    title: "Pre-Chorus",
+    text: `I spent a lifetime trying to understand\nwhat is worth holding\nand what we leave behind.\n\nBut the answer was beside me,\n\nholding my hand.`,
+  },
+  {
+    title: "Chorus",
+    text: `Before I ever named The Way,\nwe were already living it—\n\nlearning from yesterday,\nnever letting yesterday decide what’s next.\n\nWe gave our children roots to hold\nand all the sky they needed to fly.\n\nAnd if they ever ask me\nwhere The Way began—\n\nit was never mine alone.\n\nThe Way was us.`,
+  },
+  {
+    title: "Verse 2",
+    text: `Look at the three lives that we raised.\nLook at who they’ve grown to be.\n\nStrong enough to find their own roads,\nwise enough to question you and me.\n\nEvery early morning,\nevery worry you kept inside,\nevery quiet sacrifice you made\nso one of us could rise—\n\nwhen I look at everything I love in them,\n\nI see so much of you.`,
+  },
+  {
+    title: "Pre-Chorus 2",
+    text: `Long before I wrote of legacy,\nwe were building one.\n\nLove was what we started with.\n\nLove became\nwhat we passed on.`,
+  },
+  {
+    title: "Chorus 2",
+    text: `Before I ever named The Way,\nwe were already living it—\n\nlearning from yesterday,\nnever letting yesterday decide what’s next.\n\nWe gave our children roots to hold\nand all the sky they needed to fly.\n\nAnd if they ever ask me\nwhere The Way began—\n\nit was never mine alone.\n\nThe Way was us.`,
+  },
+  {
+    title: "Bridge",
+    text: `So on your birthday,\nI don’t want to count the years.\n\nI want you to know—\n\nI saw it.\n\nI see it.\n\nMy wife.\nMy partner.\nMy confidante.\nMy soulmate.\n\nMy home.\n\nAnd if I had another lifetime,\nknowing everything I know today,\n\nI would still find you.\n\nI would still choose you.\n\nTi sceglierei ancora.\n\nIn ogni vita.\n\nEvery time.\n\nEvery way.\n\nAmore mio.`,
+  },
+  {
+    title: "Final Chorus",
+    text: `Before I ever named The Way,\nyou were already part of it—\n\nevery lesson, every sacrifice,\nevery love that gave it breath.\n\nWe gave our children somewhere strong to stand\nand the freedom to go farther than we came.\n\nAnd after every road we’ve traveled,\nafter everything we’ve built and become,\n\nif they ask me where The Way began,\n\nI’ll tell them—\n\nnot in a book.\n\nNot in an idea.\n\nIt began in a life.\n\nIt began in a family.\n\nIt began with us.`,
+  },
+  {
+    title: "Outro",
+    text: `Of all the things\nI am proud to leave behind,\n\nthe life I built with you\nis the one I’m proudest of.\n\nHappy birthday,\n\namore mio.\n\nMy partner.\n\nMy soulmate.\n\nMy way home.\n\nTi sceglierei ancora.`,
+  },
+];
+
+const originalLyrics: LyricSection[] = [
   {
     title: "Intro",
     text: `Before I ever found the words\nBefore I ever named The Way\nThere was you beside me\nLiving it with me\nDay by day`,
@@ -71,6 +115,31 @@ const lyrics = [
   },
 ];
 
+function LyricsDisclosure({
+  summary,
+  sections,
+  note,
+}: {
+  summary: string;
+  sections: LyricSection[];
+  note?: string;
+}) {
+  return (
+    <details className={styles.lyricDisclosure}>
+      <summary>{summary}</summary>
+      <div className={styles.lyricBody}>
+        {note && <p className={styles.lyricNote}>{note}</p>}
+        {sections.map((section) => (
+          <div className={styles.lyricSection} key={section.title}>
+            <h3>{section.title}</h3>
+            <p>{section.text}</p>
+          </div>
+        ))}
+      </div>
+    </details>
+  );
+}
+
 export default function TheWayWasUsPage() {
   return (
     <InteriorPage eyebrow="Letter / Song · September 15, 2026" title="To Chrystina" wide>
@@ -97,14 +166,33 @@ export default function TheWayWasUsPage() {
         <figcaption className={styles.caption}>Santorini, June 19, 2019 — renewing our vows with our three children there with us.</figcaption>
       </figure>
 
-      <section className={styles.audioCard} aria-labelledby="the-way-was-us-song">
-        <div className="eyebrow bronze">A birthday song for Chrystina</div>
-        <h2 id="the-way-was-us-song">The Way Was Us</h2>
-        <p>Instead of another birthday card, I wanted to give Chrystina something that could remain: a song about the life behind the ideas, the family behind the legacy, and the person I would still choose every time.</p>
-        <audio controls preload="metadata" aria-label="Listen to The Way Was Us">
-          <source src="/audio/Song-You-Are-My-Way1.mp3" type="audio/mpeg" />
-          Your browser does not support audio playback.
-        </audio>
+      <section className={styles.songVersions} aria-label="The Way Was Us recordings">
+        <article className={`${styles.audioCard} ${styles.featuredAudio}`} aria-labelledby="the-way-was-us-pop-opera">
+          <div className="eyebrow bronze">Featured arrangement · Pop-opera</div>
+          <h2 id="the-way-was-us-pop-opera">The Way Was Us</h2>
+          <p className={styles.versionLead}>A later, more intimate arrangement led by a deep baritone, Spanish classical guitar, cello, and answering voices. The music gives the words more room to breathe while keeping the same birthday promise at its center.</p>
+          <audio controls preload="metadata" aria-label="Listen to the featured pop-opera arrangement of The Way Was Us">
+            <source src="/audio/Song-The-Way-Was-Us-v2-pop-opera.mp3" type="audio/mpeg" />
+            Your browser does not support audio playback.
+          </audio>
+          <LyricsDisclosure
+            summary="Read the pop-opera lyrics"
+            sections={popOperaLyrics}
+            note="Italian phrases: Ti sceglierei ancora — I would choose you again. In ogni vita — In every life. Amore mio — My love."
+          />
+        </article>
+
+        <article className={styles.audioCard} aria-labelledby="the-way-was-us-original">
+          <div className="eyebrow bronze">Original birthday recording · September 15, 2026</div>
+          <h2 id="the-way-was-us-original">The Way Was Us · Original</h2>
+          <p>The first musical expression remains here as part of the birthday letter&apos;s history—the original, longer telling of the life, family, and partnership behind The Way.</p>
+          <p className={styles.preservationNote}>Preserved as originally published. This recording ends before the complete written outro.</p>
+          <audio controls preload="metadata" aria-label="Listen to the original recording of The Way Was Us">
+            <source src="/audio/Song-You-Are-My-Way1.mp3" type="audio/mpeg" />
+            Your browser does not support audio playback.
+          </audio>
+          <LyricsDisclosure summary="Read the original lyrics" sections={originalLyrics} />
+        </article>
       </section>
 
       <section className={styles.storyGrid}>
@@ -131,20 +219,6 @@ export default function TheWayWasUsPage() {
         <div className="eyebrow bronze">For Chrystina</div>
         <p>I am proud of many things in my life. But when I think about what may matter most after accomplishments and titles fade, I keep returning to the life we built together and the three people we had the privilege of raising.</p>
         <p>This song is my way of saying what ordinary language sometimes cannot: thank you for being my wife, my partner, my soulmate, and my way home.</p>
-      </section>
-
-      <section className={styles.lyrics}>
-        <details>
-          <summary>Read the lyrics</summary>
-          <div>
-            {lyrics.map((section) => (
-              <div className={styles.lyricSection} key={section.title}>
-                <h3>{section.title}</h3>
-                <p>{section.text}</p>
-              </div>
-            ))}
-          </div>
-        </details>
       </section>
 
       <section className={styles.behind}>
