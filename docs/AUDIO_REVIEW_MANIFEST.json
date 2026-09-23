@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "policy": "Do not re-review an unchanged audio file. Re-review is required only when the file fingerprint changes, the relevant public canon baseline changes materially, or a prior review is explicitly reopened.",
-  "canon_baseline": "DarrenDang.com public expression architecture, protected family-letter layer, and The Way in Music cultural journey synchronized through 2026-09-21",
+  "canon_baseline": "DarrenDang.com public expression architecture, protected family-letter layer, The Way in Music cultural journey, and featured Chrystina pop-opera arrangement synchronized through 2026-09-22",
   "fingerprint_type": "git_blob_sha1",
-  "baseline_recorded_on": "2026-09-21",
+  "baseline_recorded_on": "2026-09-22",
   "review_notes": "This manifest fingerprints the exact MP3 bytes currently in the public repository. A matching Git blob SHA proves the file is byte-for-byte unchanged. Semantic review state is tracked separately from fingerprint state so provenance is not overstated. Inline companion songs are artistic interpretations embedded in their relevant pages and are not part of the route-based Darren-voice ListeningLayer.",
   "files": [
     {
@@ -214,6 +214,15 @@
       "review_basis": "Darren supplied the full lyrics, explicitly chose to keep the generated song unchanged, and approved website integration. The song is presented as an artistic interpretation, not the method authority; adjacent Book 3 prose remains authoritative for D.O.T.S. and CREATE definitions. Embedded on /books/dots/; not part of the route-based ListeningLayer."
     },
     {
+      "path": "public/audio/Song-The-Way-Was-Us-v2-pop-opera.mp3",
+      "git_blob_sha1": "9c778f67b2020032ab0ecef94c7187c227f60d7d",
+      "size_bytes": 9476502,
+      "public_role": "Letters from Darren — To Chrystina / The Way Was Us featured pop-opera arrangement",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-22",
+      "review_basis": "Darren supplied the exact Suno settings and lyrics, uploaded the matching MP3 to the public repository, said he strongly preferred this arrangement, and explicitly directed that it be featured first on /letters/the-way-was-us/ while preserving the original recording and exposing both lyric sets. The uploaded task file was analyzed as a 6:53 baritone-led cinematic pop-opera / Mediterranean classical-crossover arrangement co-led by Spanish nylon-string guitar and cello, with female answering voices and restrained late percussion. It remains an artistic family expression, not philosophical authority or a replacement of the original publication history."
+    },
+    {
       "path": "public/audio/Song-Traditional-Chinese-Taiwan-Leave-a-Little-Blank-Space.mp3",
       "git_blob_sha1": "6c6607b4c3b951298f06515e916fe645586d3272",
       "size_bytes": 5081653,
@@ -244,10 +253,10 @@
       "path": "public/audio/Song-You-Are-My-Way1.mp3",
       "git_blob_sha1": "6f0bf9bfe470ccf77b65612b82796eed32f4643b",
       "size_bytes": 10659800,
-      "public_role": "Letters from Darren — To Chrystina / The Way Was Us embedded song",
+      "public_role": "Letters from Darren — To Chrystina / The Way Was Us original embedded song",
       "review_state": "accepted_current",
-      "last_reviewed_on": "2026-09-15",
-      "review_basis": "explicit Darren publication direction for the Chrystina birthday dedication; embedded only on /letters/the-way-was-us/ and not part of the route-based ListeningLayer"
+      "last_reviewed_on": "2026-09-22",
+      "review_basis": "The original birthday recording remains intentionally preserved on /letters/the-way-was-us/ beneath the featured pop-opera arrangement. Darren explicitly directed that it not be replaced and noted that the audio cuts off before the complete written ending. The full original written lyric remains available beside the preserved audio."
     },
     {
       "path": "public/audio/the-way-constitution-introduction.mp3",
