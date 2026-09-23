@@ -1,7 +1,7 @@
 # Permanent Web Artifacts — Family Letters
 
 Status: CANONICAL + PUBLISHED + PERMANENT RETENTION  
-Approved by Darren Dang: 2026-09-16; expanded 2026-09-20
+Approved by Darren Dang: 2026-09-16; expanded 2026-09-20 and 2026-09-22
 
 ## Purpose
 This record establishes a permanent-retention rule for DarrenDang.com family-letter artifacts that Darren has explicitly approved for public publication and preservation.
@@ -14,9 +14,13 @@ A website redesign or reorganization is not, by itself, permission to remove, ar
 
 ### 1. To Chrystina — The Way Was Us
 - Current route: `/letters/the-way-was-us/`
-- Companion song: **The Way Was Us**
-- Current audio: `/public/audio/Song-You-Are-My-Way1.mp3`
-- Meaning: a birthday letter and song to Chrystina preserving the lived family foundation behind much of what Darren later articulated as The Way.
+- Companion song identity: **The Way Was Us**
+- Featured recording: `/public/audio/Song-The-Way-Was-Us-v2-pop-opera.mp3`
+- Original recording: `/public/audio/Song-You-Are-My-Way1.mp3`
+- Presentation rule: the pop-opera arrangement is featured first; the original September 15, 2026 recording remains preserved beneath it and is not replaced.
+- Lyric rule: both recordings retain independently expandable lyrics. The original audio is explicitly identified as ending before the complete written outro; the complete original written lyric remains preserved.
+- Scoped publication control: `CHRYSTINA_THE_WAY_WAS_US_V2_PUBLICATION_2026-09-22.md`
+- Meaning: a birthday letter and two musical expressions to Chrystina preserving the lived family foundation behind much of what Darren later articulated as The Way.
 
 ### 2. Bố Ơi — Twenty-Five Years Later
 - Current route: `/letters/bo-oi/`
@@ -53,6 +57,8 @@ Future website changes must not:
 - rewrite historical or personal source material merely to fit a new website architecture;
 - break old inbound links without redirects when routes change;
 - collapse the works into generic biography or marketing content that loses their identity and provenance.
+
+For the Chrystina artifact specifically, ordinary redesign or cleanup must not silently discard either the featured v2 arrangement or the original recording. The known incomplete ending of the original recording is preserved as publication history rather than hidden or treated as permission to remove it.
 
 ## Reorganization guardrail
 Before any future site restructuring that affects Letters, family material, The Way, Book 1, or the public legacy layer, the implementation review must explicitly verify all protected artifacts still exist and remain reachable.
