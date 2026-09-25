@@ -45,21 +45,21 @@ const structuralSans = Source_Sans_3({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://darrendang.com"),
-  title: { default: "Darren Dang | The Way", template: "%s | Darren Dang" },
-  description: "The Way is Darren Dang's living philosophy for learning from what came before, questioning it, making it your own, and passing forward a stronger starting point.",
+  title: { default: "Darren Dang | Books, Ideas & The Way", template: "%s | Darren Dang" },
+  description: "Books, Letters, ideas, and a way of thinking about what we inherit, who can teach us, what we create, and what we choose to pass forward.",
   authors: [{ name: "Darren Dang", url: "https://darrendang.com/about/" }],
   creator: "Darren Dang",
   publisher: "Darren Dang",
   openGraph: {
-    title: "Darren Dang — The Way",
-    description: "A stronger starting point. The freedom to go farther. Explore The Way, ideas, books, papers, D.O.T.S., and the Dang Genome.",
+    title: "Darren Dang — Books, Ideas & The Way",
+    description: "A stronger starting point. The freedom to go farther. Explore Darren Dang's books, Letters, ideas, D.O.T.S., and The Way.",
     type: "website",
     url: "https://darrendang.com",
     siteName: "Darren Dang",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Darren Dang — The Way",
+    title: "Darren Dang — Books, Ideas & The Way",
     description: "A stronger starting point. The freedom to go farther.",
   },
 };
@@ -72,7 +72,7 @@ const structuredData = {
       "@id": "https://darrendang.com/#website",
       url: "https://darrendang.com/",
       name: "Darren Dang",
-      description: "The public home of The Way, Darren Dang's books, ideas, papers, and related work.",
+      description: "The public home of Darren Dang's books, Letters, ideas, papers, and The Way.",
       publisher: { "@id": "https://darrendang.com/#person" },
     },
     {
