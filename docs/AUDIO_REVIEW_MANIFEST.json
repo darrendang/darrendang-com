@@ -214,6 +214,15 @@
       "review_basis": "Darren supplied the full lyrics, explicitly chose to keep the generated song unchanged, and approved website integration. The song is presented as an artistic interpretation, not the method authority; adjacent Book 3 prose remains authoritative for D.O.T.S. and CREATE definitions. Embedded on /books/dots/; not part of the route-based ListeningLayer."
     },
     {
+      "path": "public/audio/Song-The-Watch-Goes-On-RADM-Nowakowski.mp3",
+      "git_blob_sha1": "97ebca731924deef95a69e0cb2840bec5646f2a6",
+      "size_bytes": 7271502,
+      "public_role": "RADM Nowakowski tribute — public companion audio asset",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-25",
+      "review_basis": "Darren selected the first Suno version of The Watch Goes On for his public RADM Nowakowski tribute, downloaded that version, and later uploaded this exact MP3 to the public website repository. Registration here records the exact public bytes and prior human selection; it does not create a new website route or alter the tribute's editorial framing."
+    },
+    {
       "path": "public/audio/Song-The-Way-Was-Us-v2-pop-opera.mp3",
       "git_blob_sha1": "9c778f67b2020032ab0ecef94c7187c227f60d7d",
       "size_bytes": 9476502,
