@@ -8,11 +8,11 @@ The site is a long-term intellectual platform for books, ideas, writing, talks, 
 
 - **Book 1 — _For Those Who Come After Us — A Life in Lessons_** — **Published**
 - **Book 2 — _Wisdom Has No Rank_** — **Final Proof**
-- **Book 3 — _D.O.T.S._** — **First Print Proof**
+- **Book 3 — _D.O.T.S._** — **Physical Proof Ordered**
 - **Book 4 — _The Making of The Way: How Conversation Becomes Discovery_** — **In Development**
 - **Book 5 — _The Way Forward_** — **In Development**
 
-Books 1–3 remain **The Path Forward** trilogy. Book 2's manuscript and print Gold Masters are locked, with final physical proof review remaining the print-release gate. Book 3 has reached its first hard-copy proof. Book 4 is publicly positioned as the making story behind the books and The Way. Book 5 is publicly positioned as the handoff to the reader: what will you do with what you inherit, learn, and discover?
+Books 1–3 remain **The Path Forward** trilogy. Book 1 is published in eBook, paperback, hardcover, and audiobook formats. Book 2's English manuscript is locked and its current print package has passed KDP digital preview; physical proof review remains pending and the package is not yet Gold/Frozen. Book 3 v6.5.4 has passed local QA and KDP Previewer, with the physical proof ordered and pending review. Book 4 is publicly positioned as the making story behind the books and The Way. Book 5 is publicly positioned as the handoff to the reader: what will you do with what you inherit, learn, and discover?
 
 The current reader journey is:
 
