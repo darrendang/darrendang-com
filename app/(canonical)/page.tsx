@@ -132,7 +132,10 @@ export default function Home() {
               <div className="eyebrow bronze">Where it began</div>
               <h2>A life becomes useful to someone else when the story leaves room for their own.</h2>
               <p className="lead">These books are personal, but they are not meant to make someone else live my life. They preserve stories, mistakes, relationships, decisions, questions, and ways of thinking so a reader can recognize something in their own experience—and then decide what belongs in their own way forward.</p>
-              <Link className="text-link" href="/books/for-those-who-come-after-us/">Start with Book 1 →</Link>
+              <div className="actions">
+                <Link className="text-link" href="/books/for-those-who-come-after-us/">Start with Book 1 →</Link>
+                <Link className="text-link" href="/about/">About Darren →</Link>
+              </div>
             </div>
             <div className="boundary-stack">
               <article><span>INHERIT</span><strong>What came before me?</strong></article>
