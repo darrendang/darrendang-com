@@ -22,36 +22,42 @@ const samples = [
   {
     number: "01",
     stage: "Beginning",
-    type: "Selected Chapter · Origin",
-    title: "The Pattern I Lived Before I Named It",
-    copy: "For years, Darren kept borrowing ideas from places that seemed unrelated to the problem in front of him. Only later did he recognize the pattern: sometimes you live a way of thinking before you know how to name it.",
+    type: "Selected Prologue · Discovery",
+    title: "The Idea That Did Not Belong",
+    copy: "A preschool planning problem becomes clearer when a marketing idea reveals the same decision structure beneath a completely different surface.",
+    href: "/books/dots/the-idea-that-did-not-belong/",
+    cta: "Read the selected passage →",
   },
   {
     number: "02",
     stage: "Middle",
-    type: "Selected Chapter · Transfer",
-    title: "A Map Is Not a Script",
-    copy: "Experience can give us a map. Another discipline can give us a map. Neither tells us exactly what to do in new terrain. The useful question is where the underlying structure matches, where it breaks, and what must change.",
+    type: "Selected Chapter · Search",
+    title: "Who Has No Choice But to Be Good at This?",
+    copy: "Instead of benchmarking only peers, D.O.T.S. asks where the same underlying problem has forced people to develop hard-earned discipline under consequence.",
+    href: "/books/dots/who-has-no-choice-but-to-be-good-at-this/",
+    cta: "Read the selected passage →",
   },
   {
     number: "03",
     stage: "Later",
-    type: "Selected Chapter · Ownership",
-    title: "Now You Look",
-    copy: "The method matters only if the reader begins seeing on their own. The late-book movement gradually transfers the act of looking, testing, and creating from author to reader.",
+    type: "Selected Chapter · Reality",
+    title: "What Did Reality Actually Say?",
+    copy: "A connection is only a candidate until evidence is allowed to challenge it. CREATE turns clever possibility into something reality can accept, change, or reject.",
+    href: "/books/dots/what-did-reality-actually-say/",
+    cta: "Read the selected passage →",
   },
 ];
 
 export default function DotsBook() {
   return (
-    <InteriorPage eyebrow="Book 3 · First Print Proof" title="D.O.T.S." wide>
+    <InteriorPage eyebrow="Book 3 · Physical Proof Ordered" title="D.O.T.S." wide>
       <div className="development-book-grid">
         <div className="development-cover-wrap">
           <Image src="/images/dots-cover.webp" width={480} height={720} alt="Current cover for D.O.T.S. by Darren Dang." className="development-cover" sizes="(max-width: 900px) 76vw, 34vw" priority />
-          <p className="book-caption">First hard-copy proof. The physical book is now being reviewed before final production files are locked.</p>
+          <p className="book-caption">Physical proof ordered. v6.5.4 has passed local QA and KDP Previewer; physical proof review remains the final print gate before any Gold Master or publication decision.</p>
         </div>
         <div className="development-copy">
-          <div className="book-status">First Print Proof</div>
+          <div className="book-status">Physical Proof Ordered</div>
           <p className="dots-line">Collect Dots. Connect Dots. Create Something New.</p>
           <p className="lead">What can I make from everything I have learned?</p>
           <p>Book 1 begins with what life and the people before us can leave behind. Book 2 widens the circle of teachers. Book 3 asks what happens when we connect all of those dots—along with ideas from other disciplines, roles, cultures, and problems—and try to create something useful from them.</p>
@@ -107,8 +113,8 @@ export default function DotsBook() {
       <section className="book-samples" id="inside-book-3" aria-labelledby="inside-book-3-title">
         <div className="book-samples-intro">
           <div className="eyebrow bronze">Inside Book 3</div>
-          <h2 id="inside-book-3-title">Three glimpses at how a connection becomes a new way of seeing.</h2>
-          <p className="lead">The book moves from recognizing a pattern Darren had lived before naming it, to learning how to transfer ideas carefully, and finally to handing the lens to the reader.</p>
+          <h2 id="inside-book-3-title">Three glimpses at how a connection earns the right to travel.</h2>
+          <p className="lead">The book moves from discovering a useful connection outside the obvious field, to searching more deliberately, and then to letting evidence decide whether the possibility deserves to survive.</p>
         </div>
         <div className="sample-path">
           {samples.map((sample) => (
@@ -118,6 +124,7 @@ export default function DotsBook() {
               <div className="sample-type">{sample.type}</div>
               <h3>{sample.title}</h3>
               <p>{sample.copy}</p>
+              <Link className="text-link" href={sample.href}>{sample.cta}</Link>
             </article>
           ))}
         </div>
@@ -144,7 +151,7 @@ export default function DotsBook() {
 
       <aside className="development-status-note">
         <strong>Development status</strong>
-        <p><em>D.O.T.S.</em> is in first hard-copy proof. The title, core line, central thesis, high-level method, and reader-centered direction are established. Proof review may still refine final manuscript wording, sequencing, and production files before publication authority is locked.</p>
+        <p><em>D.O.T.S.</em> v6.5.4 is the current canonical manuscript. Local QA and KDP Previewer are complete for both print bindings; the physical proof is pending review. The book is not yet a Gold Master, and publication remains a separate decision after physical-proof acceptance.</p>
       </aside>
     </InteriorPage>
   );
