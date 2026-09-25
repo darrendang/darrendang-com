@@ -23,10 +23,10 @@ const samples = [
   {
     number: "02",
     stage: "Middle",
-    type: "Complete Chapter · How",
-    title: "Connect the Dots",
-    copy: "A real-world example of borrowing tools across disciplines to break through a complex planning problem.",
-    href: "/books/for-those-who-come-after-us/connect-the-dots/",
+    type: "Complete Chapter · Lived choice",
+    title: "Integrity When It Costs Something",
+    copy: "Nathan finds a grading mistake in his favor and chooses to correct it—showing what happens when inherited values become someone else's own decision.",
+    href: "/books/for-those-who-come-after-us/integrity-when-it-costs-something/",
     cta: "Read the complete chapter →",
   },
   {
@@ -138,8 +138,14 @@ export default function Book() {
           <p>Across twenty-nine short chapters, the book explores inheritance, identity, education, failure, curiosity, systems, leadership, family, money, purpose, and legacy.</p>
 
           <aside className="development-status-note">
-            <strong>Publication status</strong>
-            <p><em>For Those Who Come After Us</em> is published in hardcover, paperback, and Kindle editions through Dang Legacy Press. The published English first edition is locked; future revisions or translated editions remain separately governed.</p>
+            <strong>Available now in four formats</strong>
+            <p><em>For Those Who Come After Us</em> is available as an eBook, paperback, hardcover, and audiobook. The audiobook is narrated by Darren Dang and is available through Audible, Apple Books, and Amazon.</p>
+            <div className="book-detail-actions">
+              <a className="button button-dark" href="https://www.amazon.com/dp/B0HHZRLXKD/" target="_blank" rel="noreferrer">Amazon — all formats</a>
+              <a className="text-link" href="https://www.audible.com/search?keywords=For+Those+Who+Come+After+Us+Darren+Dang" target="_blank" rel="noreferrer">Listen on Audible →</a>
+              <a className="text-link" href="https://books.apple.com/us/search?term=For%20Those%20Who%20Come%20After%20Us%20Darren%20Dang" target="_blank" rel="noreferrer">Listen on Apple Books →</a>
+            </div>
+            <p>The published English first edition remains locked; future revisions or translated editions remain separately governed.</p>
           </aside>
 
           <h2>Beyond the book</h2>
