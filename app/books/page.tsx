@@ -40,7 +40,7 @@ const books = [
   },
   {
     number: "03",
-    status: "First Print Proof",
+    status: "Physical Proof Ordered",
     title: "D.O.T.S.",
     subtitle: "Collect Dots. Connect Dots. Create Something New.",
     cover: "/images/dots-cover.webp",
