@@ -446,12 +446,15 @@ p { orphans: 3; widows: 3; }
 }
 .reading table { font-family: var(--font-structural-family); }
 
-/* Genome identity route and signature references */
-.genome-hero h1,
+/* Explicit identity and semantic title roles */
 .genome-page-title,
 .genome-name,
 [data-type-role="signature"] {
   font-family: var(--font-signature-family) !important;
+}
+.dots-title,
+[data-type-role="editorial"] {
+  font-family: var(--font-editorial-family) !important;
 }
 
 /* Forms */
