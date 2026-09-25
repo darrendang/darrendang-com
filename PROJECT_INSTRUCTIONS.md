@@ -142,7 +142,7 @@ Do not make Darren sound like a guru, movement leader, motivational brand, or in
 
 For consequential Darren-authored or public-facing copy, resolve:
 
-**exact source authority → current central Voice Authority → root Author Voice Canon → website/public-expression context**
+**exact source authority → current central Voice Authority via `darrendang/dang-genome/VOICE_AUTHORITY.md` → root Author Voice Canon → website/public-expression context**
 
 Use Darren's voice: warm, concise, intellectually curious, specific, practical, culturally grounded, humble but confident, and never preachy.
 
