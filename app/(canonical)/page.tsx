@@ -27,7 +27,7 @@ const books = [
   },
   {
     number: "03",
-    status: "First Print Proof",
+    status: "Physical Proof Ordered",
     title: "D.O.T.S.",
     subtitle: "Collect Dots. Connect Dots. Create Something New.",
     cover: "/images/dots-cover.webp",
@@ -70,6 +70,11 @@ function HeroNetwork() {
             <stop offset=".18" stopColor="#c79a45" stopOpacity=".55" />
             <stop offset="1" stopColor="#0D1F31" stopOpacity="0" />
           </radialGradient>
+          <linearGradient id="path" x1="335" y1="650" x2="370" y2="430" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stopColor="#7A5C21" />
+            <stop offset=".62" stopColor="#C79A45" />
+            <stop offset="1" stopColor="#FFE8A6" />
+          </linearGradient>
         </defs>
         <rect width="760" height="650" fill="url(#sun)" />
         <g className="net-lines" fill="none">
@@ -127,7 +132,10 @@ export default function Home() {
               <div className="eyebrow bronze">Where it began</div>
               <h2>A life becomes useful to someone else when the story leaves room for their own.</h2>
               <p className="lead">These books are personal, but they are not meant to make someone else live my life. They preserve stories, mistakes, relationships, decisions, questions, and ways of thinking so a reader can recognize something in their own experience—and then decide what belongs in their own way forward.</p>
-              <Link className="text-link" href="/books/for-those-who-come-after-us/">Start with Book 1 →</Link>
+              <div className="actions">
+                <Link className="text-link" href="/books/for-those-who-come-after-us/">Start with Book 1 →</Link>
+                <Link className="text-link" href="/about/">About Darren →</Link>
+              </div>
             </div>
             <div className="boundary-stack">
               <article><span>INHERIT</span><strong>What came before me?</strong></article>
@@ -179,6 +187,37 @@ export default function Home() {
               <article><span>02 · Your Way</span><h3>Question it. Test it. Make it your own.</h3><p>No inheritance should decide another person&apos;s destination. Keep what helps, challenge what does not, and let reality refine the map.</p><Link className="text-link" href="/your-way/">Explore Your Way →</Link></article>
               <article><span>03 · The Way Forward</span><h3>Live what comes next.</h3><p>The Way Forward is what happens when inherited wisdom meets present reality and your own judgment, relationships, choices, and consequences.</p><Link className="text-link" href="/the-way-forward/">Explore The Way Forward →</Link></article>
             </div>
+          </div>
+        </section>
+
+        <section className="section practice-home">
+          <div className="container">
+            <div className="section-intro compact">
+              <div className="eyebrow bronze">Ideas in practice</div>
+              <h2>The thinking came from doing things that had to work.</h2>
+              <p className="lead">The Way did not grow only from reflection. The same habits were shaped by building systems, making public decisions, working across disciplines, testing ideas, seeing what failed, and changing course when reality disagreed.</p>
+            </div>
+            <div className="layer-grid practice-home-grid">
+              <article>
+                <div className="book-movement">PUBLIC PLANNING</div>
+                <h3>Make the tradeoffs visible.</h3>
+                <p>A preschool planning problem became clearer when a tool from marketing exposed the same decision structure beneath very different surface language.</p>
+                <Link className="text-link" href="/books/dots/the-idea-that-did-not-belong/">See the LAUP case →</Link>
+              </article>
+              <article>
+                <div className="book-movement">TECHNOLOGY</div>
+                <h3>Let reality disagree.</h3>
+                <p>A promising court automation was stopped when the evidence showed the technology was not reliable enough. Persistence stayed attached to the purpose, not the first method.</p>
+                <Link className="text-link" href="/books/dots/what-did-reality-actually-say/">See what the test taught →</Link>
+              </article>
+              <article>
+                <div className="book-movement">KNOWLEDGE WORK</div>
+                <h3>Automate the repetition. Preserve human judgment.</h3>
+                <p>Good technology should move human attention toward the parts of the work that require context, responsibility, and judgment—not merely digitize every step.</p>
+                <Link className="text-link" href="/ideas/automate-the-repetition-preserve-human-judgment/">Explore the idea →</Link>
+              </article>
+            </div>
+            <div className="section-link"><Link className="text-link" href="/the-way-in-motion/">Explore The Way in Motion →</Link></div>
           </div>
         </section>
 

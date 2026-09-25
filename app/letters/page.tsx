@@ -152,31 +152,25 @@ export default function LettersPage() {
         <section className="section shared-wisdom-home">
           <div className="container shared-wisdom-home-grid">
             <div>
-              <div className="eyebrow bronze">The opening collection</div>
-              <h2>Twelve Letters. Released one at a time.</h2>
-              <p className="lead">The first twelve-Letter collection has been developed and preserved. Individual Letters will appear here only after each one clears its public-release review. The collection is curated rather than filled; publication cadence should never become a reason to manufacture certainty or content.</p>
-              <p>The opening collection moves through three quiet arcs. You do not need to read them as a course, and the unpublished Letters are not being posted as teasers. The structure simply shows how the conversation develops.</p>
+              <div className="eyebrow bronze">Where to begin</div>
+              <h2>Different relationships. Different questions. The same willingness to look again.</h2>
+              <p className="lead">The Letters move between family, partnership, memory, culture, work, and the things I am still trying to understand. There is no required order.</p>
+              <div className="actions">
+                <Link className="button button-dark" href="/letters/why-these-letters/">Why These Letters</Link>
+                <Link className="text-link" href="/explore/">Start with a question instead →</Link>
+              </div>
             </div>
             <div className="shared-wisdom-principles">
-              <article><span>01–04</span><strong>Orientation</strong><p>Agency · Inheritance · Humility · Stewardship</p></article>
-              <article><span>05–08</span><strong>Formation</strong><p>Practice · Example · Culture · Release</p></article>
-              <article><span>09–12</span><strong>Learning &amp; Legacy</strong><p>Questions · Interpretation · Perspective · Transmission</p></article>
+              <article><span>INHERITANCE</span><strong>Bố · Mẹ · Bố Mẹ</strong><p>What did I receive, and what did I do with it?</p></article>
+              <article><span>PARTNERSHIP</span><strong>The Way Was Us</strong><p>What was already true in a life together before I had language for it?</p></article>
+              <article><span>STILL LEARNING</span><strong>Why These Letters</strong><p>How do I preserve a lesson without pretending the thinking is finished?</p></article>
             </div>
           </div>
-        </section>
-
-        <section className="section genome-purpose-home">
           <div className="container">
-            <div className="section-intro compact">
-              <div className="eyebrow bronze">Publication discipline</div>
-              <h2>A steady rhythm without a content treadmill.</h2>
-              <p className="lead">Letters are intended to arrive with enough space to be read, considered, and connected to the larger body of thought. New work appears because it is ready—not because an empty slot needs to be filled.</p>
-            </div>
-            <div className="purpose-grid home-purpose-grid">
-              <article><span>01</span><h3>No artificial certainty.</h3><p>Questions and tensions may remain visible.</p></article>
-              <article><span>02</span><h3>No isolated posts.</h3><p>Letters can connect to related Ideas, books, Papers, and Motion cases while remaining their own work.</p></article>
-              <article><span>03</span><h3>Public release is earned.</h3><p>Private preservation and public publication are separate decisions.</p></article>
-            </div>
+            <aside className="development-status-note letters-editorial-note">
+              <strong>Editorial note</strong>
+              <p>New Letters appear when they are ready. The aim is not a publishing schedule; it is to preserve something worth returning to while leaving room for correction, uncertainty, and what I may learn next.</p>
+            </aside>
           </div>
         </section>
 

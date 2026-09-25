@@ -211,6 +211,46 @@ p { orphans: 3; widows: 3; }
 }
 .hero-note span { color: #C9C5BE; }
 
+
+/* Signature motion: one quiet reveal, then stillness */
+.hero-visual .net-lines path {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  animation: networkDraw 2.6s ease-out .18s forwards;
+}
+.hero-visual .net-dots circle {
+  opacity: 0;
+  animation: nodeAppear .55s ease-out forwards;
+}
+.hero-visual .net-dots circle:nth-child(1),
+.hero-visual .net-dots circle:nth-child(4),
+.hero-visual .net-dots circle:nth-child(7),
+.hero-visual .net-dots circle:nth-child(10) { animation-delay: .8s; }
+.hero-visual .net-dots circle:nth-child(2),
+.hero-visual .net-dots circle:nth-child(5),
+.hero-visual .net-dots circle:nth-child(8),
+.hero-visual .net-dots circle:nth-child(11) { animation-delay: 1.15s; }
+.hero-visual .net-dots circle:nth-child(3),
+.hero-visual .net-dots circle:nth-child(6),
+.hero-visual .net-dots circle:nth-child(9) { animation-delay: 1.5s; }
+.hero-visual .hero-path {
+  stroke-dasharray: 330;
+  stroke-dashoffset: 330;
+  animation: pathArrive 1.7s cubic-bezier(.3,.7,.3,1) 1.05s forwards;
+}
+.hero-visual .hero-sun {
+  opacity: 0;
+  transform-origin: 370px 430px;
+  animation: nodeSettle .8s ease-out 2.2s forwards;
+}
+@keyframes networkDraw { to { stroke-dashoffset: 0; } }
+@keyframes pathArrive { to { stroke-dashoffset: 0; } }
+@keyframes nodeAppear { to { opacity: 1; } }
+@keyframes nodeSettle {
+  0% { opacity: 0; transform: scale(.72); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
 /* Buttons / links */
 .button {
   border-radius: 2px;
@@ -406,12 +446,15 @@ p { orphans: 3; widows: 3; }
 }
 .reading table { font-family: var(--font-structural-family); }
 
-/* Genome identity route and signature references */
-.genome-hero h1,
+/* Explicit identity and semantic title roles */
 .genome-page-title,
 .genome-name,
 [data-type-role="signature"] {
   font-family: var(--font-signature-family) !important;
+}
+.dots-title,
+[data-type-role="editorial"] {
+  font-family: var(--font-editorial-family) !important;
 }
 
 /* Forms */
@@ -466,6 +509,10 @@ textarea:focus-visible {
 /* Motion restraint */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+  .hero-visual .net-lines path,
+  .hero-visual .hero-path { stroke-dashoffset: 0 !important; }
+  .hero-visual .net-dots circle,
+  .hero-visual .hero-sun { opacity: 1 !important; transform: none !important; }
 }
 
 /* Responsive */

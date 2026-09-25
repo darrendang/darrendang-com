@@ -117,16 +117,20 @@ export default function TheWayPage() {
         <section className="section worldview-section">
           <div className="container worldview-grid">
             <div>
-              <div className="eyebrow bronze">How The Way becomes visible</div>
-              <h2>The philosophy is larger than any one artifact.</h2>
-              <p className="lead">The Dang Genome is the first living family implementation through which stories, ideas, relationships, books, Letters, frameworks, evidence, and governed contributions can be preserved and connected.</p>
-              <p>DarrenDang.com is the public experience layer. Dang OS privately governs provenance, permissions, privacy, review, contribution controls, and publication.</p>
+              <div className="eyebrow bronze">How it continues</div>
+              <h2>The Way stays alive through what people do with it.</h2>
+              <p className="lead">It continues through books, Letters, ideas, conversations, practice, music, other people&apos;s wisdom, and the new questions that appear when inherited learning meets another life.</p>
+              <p>The Dang Genome is the living connected body that preserves those relationships, sources, corrections, and contributions. You do not need to understand its architecture before something here can be useful.</p>
+              <div className="actions">
+                <Link className="button button-dark" href="/genome/">Explore the Dang Genome</Link>
+                <Link className="text-link" href="/letters/">Read what I am still learning →</Link>
+              </div>
             </div>
             <div className="boundary-stack">
-              <article><span>THE WAY</span><strong>Philosophical root and constitutional guardrails.</strong></article>
-              <article><span>DANG GENOME</span><strong>First living family implementation and connected body of learning.</strong></article>
-              <article><span>DANG OS</span><strong>Private governance and stewardship engine.</strong></article>
-              <article><span>DARRENDANG.COM</span><strong>Governed public experience—not the canonical source of truth.</strong></article>
+              <article><span>BOOKS</span><strong>Preserve bounded works and lessons that have matured enough to hold.</strong></article>
+              <article><span>LETTERS</span><strong>Keep learning visible while the thinking is still moving.</strong></article>
+              <article><span>PRACTICE</span><strong>Let ideas meet evidence, consequence, and reality.</strong></article>
+              <article><span>OTHER VOICES</span><strong>Leave room for correction, difference, and wisdom that did not begin with me.</strong></article>
             </div>
           </div>
         </section>
