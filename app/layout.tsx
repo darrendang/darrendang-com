@@ -16,7 +16,6 @@ import "./listen.css";
 import "./music-companion.css";
 import "./generative-dialogue.css";
 import "./nathan-style.css";
-import "./nathan-style-overrides.css";
 import "./site-contrast.css";
 
 const signatureSerif = Cormorant_Garamond({
@@ -89,6 +88,8 @@ const structuredData = {
         "intergenerational learning",
         "leadership",
         "technology and AI",
+        "public-sector technology",
+        "systems thinking",
       ],
     },
   ],
