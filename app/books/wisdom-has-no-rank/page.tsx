@@ -47,10 +47,10 @@ const samples = [
   {
     number: "03",
     stage: "Later",
-    type: "Selected Chapter · Revised map",
-    title: "The Test Child Gave Us a Map",
-    copy: "Experience gives a family landmarks, not a script. Zachary goes first; Madison reveals where the map is incomplete.",
-    href: "/books/wisdom-has-no-rank/test-child-map/",
+    type: "Selected Interlude · Language & culture",
+    title: "The Word English Could Not Hold",
+    copy: "A word Darren knew less fluently—Nghĩa—gave him a fuller way to name duty, love, memory, and what one generation carries forward.",
+    href: "/books/wisdom-has-no-rank/the-word-english-could-not-hold/",
     cta: "Read the selected passage →",
   },
 ];
@@ -61,7 +61,7 @@ export default function WisdomHasNoRank() {
       <div className="development-book-grid">
         <div className="development-cover-wrap">
           <Image src="/images/wisdom-has-no-rank-cover.webp" width={480} height={720} alt="Current cover for Wisdom Has No Rank by Darren Dang." className="development-cover" sizes="(max-width: 900px) 76vw, 34vw" priority />
-          <p className="book-caption">Final proof cover. The manuscript and print Gold Masters are locked; physical proof review remains the final print-release gate.</p>
+          <p className="book-caption">Final proof cover. The English manuscript is locked, KDP digital preview has passed, and the physical proof is pending review before any Gold Master decision.</p>
         </div>
         <div className="development-copy">
           <div className="book-status">Final Proof</div>
@@ -140,7 +140,7 @@ export default function WisdomHasNoRank() {
         <div className="book-samples-intro">
           <div className="eyebrow bronze">Inside Book 2</div>
           <h2 id="inside-book-2-title">Three glimpses at the changing direction of learning.</h2>
-          <p className="lead">These selections show the book&apos;s narrative engine: a correction from someone close, a reversal between teacher and learner, and a family map that becomes more useful because it remains unfinished.</p>
+          <p className="lead">These selections widen the source of learning: a correction from someone close, a reversal between teacher and learner, and a word from another language that carried an idea English could not fully hold.</p>
         </div>
         <div className="sample-path">
           {samples.map((sample) => (
@@ -161,9 +161,11 @@ export default function WisdomHasNoRank() {
         <div className="eyebrow bronze">The bridge to Book 3</div>
         <h2>Once we widen who or what can teach us, the next question is where else we should look.</h2>
         <p className="lead">Book 2 expands possible teachers. Book 3 expands the search space itself.</p>
-        <p>The handoff is intentionally unfinished. The aim is not to close every chapter with Darren&apos;s answer, but to help the reader begin noticing possible teachers and patterns in their own life before Book 3 gives that widening a more explicit method.</p>
+        <blockquote className="trilogy-map-quote">The map had become a script without my noticing.</blockquote>
+        <p>The handoff is intentionally unfinished. Experience can provide landmarks without owning the next person&apos;s route. Book 3 takes that same discipline beyond family and asks what, exactly, should transfer when we borrow from another experience or domain.</p>
         <div className="development-actions">
           <Link className="button button-dark" href="/books/dots/">Continue to D.O.T.S.</Link>
+          <Link className="text-link" href="/books/wisdom-has-no-rank/test-child-map/">Read the map-to-script bridge →</Link>
           <Link className="text-link" href="/books/">Explore the wider body of work →</Link>
         </div>
       </section>
@@ -181,7 +183,7 @@ export default function WisdomHasNoRank() {
 
       <aside className="development-status-note">
         <strong>Production status</strong>
-        <p><em>Wisdom Has No Rank</em> is in final physical proof. The manuscript is locked and the paperback/hardcover print Gold Masters have passed KDP digital preview. Final print publication authorization remains pending physical proof approval. The eBook remains on its own preflight/release track.</p>
+        <p><em>Wisdom Has No Rank</em> is in final physical proof. The English manuscript is locked and the current print package has passed KDP digital preview. Physical proof review remains pending, and the current production package is not yet Gold/Frozen. The eBook remains on its own preflight/release track.</p>
       </aside>
     </InteriorPage>
   );
