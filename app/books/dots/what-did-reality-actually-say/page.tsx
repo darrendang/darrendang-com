@@ -39,10 +39,10 @@ export default function WhatDidRealityActuallySayPage() {
       <p>Ask what evidence is missing.</p>
       <p>Ask whether the test examined the idea itself or only one particular implementation of it.</p>
       <p>When evidence arrives, I find four levels useful:</p>
-      <p>**The idea.** Is the transferred principle still valid in this setting?</p>
-      <p>**The form.** Did we construct the right expression of the idea?</p>
-      <p>**The conditions.** Did skill, timing, ownership, data, workflow, incentives, or trust shape the outcome?</p>
-      <p>**The boundary.** Has reality shown that this should not proceed?</p>
+      <p><strong>The idea.</strong> Is the transferred principle still valid in this setting?</p>
+      <p><strong>The form.</strong> Did we construct the right expression of the idea?</p>
+      <p><strong>The conditions.</strong> Did skill, timing, ownership, data, workflow, incentives, or trust shape the outcome?</p>
+      <p><strong>The boundary.</strong> Has reality shown that this should not proceed?</p>
       <p>Those questions prevent every disappointing result from becoming the same kind of failure.</p>
       <p>Sometimes the source principle is wrong for the target.</p>
       <p>Sometimes the principle is sound and the prototype is poor.</p>
