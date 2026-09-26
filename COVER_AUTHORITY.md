@@ -1,7 +1,7 @@
 # Books 1–5 Cover Authority
 
 **Status:** PUBLIC-IDENTITY ROUTING CONTROL  
-**Central authority:** `darrendang/dang-genome/00_Canon_Control/BOOKS_1_5_FRONT_COVER_LOCK_v1.0_2026-09-26.md`
+**Central authority:** `darrendang/dang-genome/COVER_AUTHORITY.md` → current versioned Books 1–5 front-cover lock
 
 The current Books 1–5 cover files on DarrenDang.com are locked public identity anchors.
 
@@ -16,3 +16,16 @@ Locked assets:
 - Book 5: `public/images/the-way-forward.webp` — `ff5e2fc8981a7d68d1393a6a8fe4e707a0397b76`
 
 The website communicates the approved cover identity. A book-production rebuild must stay visually synchronized with these anchors.
+
+
+## Book 2 source-project precedence
+
+For *Wisdom Has No Rank*, the exact source-project Canonical Front Cover Master is governed by:
+
+- `darrendang/book2-wisdom-has-no-rank/COVER_AUTHORITY.md`
+- `00.Canon_Control/BOOK2_COVER_MASTER_CORRECTION_2026-09-26.md`
+- exact Drive source ID `12tT_Ktc5D17pTRlpls__Gi6VfYrKbN8G`, SHA-256 `0b81e6753ff96477f11a650b7fa33fc33ac1681d7623c90e4d2ebaf417ceaf66`
+
+The website asset remains a public identity anchor, but source-project exact artifact authority controls if any future comparison reveals a mismatch.
+
+Do not regenerate or font-swap the website cover to resolve a mismatch. Restore/derive from the governed original front artifact.
