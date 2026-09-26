@@ -5,7 +5,7 @@
 Before any Books 1–5 cover, exterior wrap, cover-font, cover-art, KDP cover, eBook cover, website-cover, or promotional-cover work:
 
 1. read repository-root `COVER_AUTHORITY.md` when present;
-2. route to `darrendang/dang-genome/00_Canon_Control/BOOKS_1_5_FRONT_COVER_LOCK_v1.0_2026-09-26.md`;
+2. follow repository-root `COVER_AUTHORITY.md` to central `darrendang/dang-genome/COVER_AUTHORITY.md` and the current versioned Books 1–5 front-cover lock;
 3. read the exact book-specific production/cover control;
 4. preserve the locked public front-cover composition unless Darren explicitly reopens that exact cover.
 
@@ -13,7 +13,7 @@ A generic production rebuild, style-guide application, font update, typography n
 
 > **Manufacturing geometry may change. Front-cover composition may not.**
 
-A cover build must fail rather than silently redesign a locked front.
+A cover build must fail rather than silently redesign a locked front. When an exact Canonical Front Cover Master artifact/hash is governed, use that artifact as the source of truth and require the central FRONT COVER MASTER MATCH production gate.
 
 ## Workspace topology authority
 
