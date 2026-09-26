@@ -18,14 +18,14 @@ const audioByRoute: Record<string, AudioConfig> = {
   "/": {
     summary: "Why This Exists",
     title: "A welcome from Darren",
-    note: "A brief introduction to why The Way exists and what it is meant to pass forward.",
-    items: [{ title: "Why This Exists", src: "/audio/the-way-homepage-why-this-exists.mp3" }],
+    note: "A brief welcome from Darren about the books, the questions that grew from them, and why this site exists.",
+    items: [{ title: "Why This Exists", src: "/audio/homepage-why-this-exists2.mp3" }],
   },
   "/the-way": {
     summary: "The Way in Darren’s voice",
     title: "A Stronger Starting Point",
     note: "The flagship spoken introduction to The Way — inheritance without a predetermined destination.",
-    items: [{ title: "A Stronger Starting Point", src: "/audio/the-way-stronger-starting-point.mp3" }],
+    items: [{ title: "A Stronger Starting Point", src: "/audio/the-way-a-stronger-starting-point-v2.mp3" }],
   },
   "/your-way": {
     summary: "Now It Becomes Yours",
@@ -39,17 +39,11 @@ const audioByRoute: Record<string, AudioConfig> = {
     note: "A brief orientation from Darren. The written Constitution remains the authoritative text.",
     items: [{ title: "Why Have a Constitution?", src: "/audio/the-way-constitution-introduction.mp3" }],
   },
-  "/contribute": {
-    summary: "Add Your Dot",
-    title: "Pass It Forward — Add Your Dot",
-    note: "A personal invitation to preserve something useful from your own lived experience.",
-    items: [{ title: "Add Your Dot", src: "/audio/pass-it-forward-add-your-dot.mp3" }],
-  },
   "/about": {
-    summary: "What I’m Trying to Leave Behind",
-    title: "What I’m Trying to Leave Behind",
-    note: "Darren reflects on legacy, stewardship, and what he hopes becomes possible for those who come after.",
-    items: [{ title: "What I’m Trying to Leave Behind", src: "/audio/about-what-im-trying-to-leave-behind.mp3" }],
+    summary: "A Life Between Worlds",
+    title: "A Life Between Worlds",
+    note: "Darren reflects on the people, places, and work that shaped the way he thinks.",
+    items: [{ title: "A Life Between Worlds", src: "/audio/about-darren-a-life-between-worlds.mp3" }],
   },
   "/letters/why-these-letters": {
     summary: "Hear this Letter",
@@ -63,8 +57,8 @@ const audioByRoute: Record<string, AudioConfig> = {
     note: "The same three selections offered for reading are also available in Darren’s audiobook narration.",
     items: [
       { title: "Prologue — When You Need Me", src: "/audio/book1-prologue-when-you-need-me.mp3" },
-      { title: "Chapter 9 — Connect the Dots", src: "/audio/book1-ch09-connect-the-dots.mp3" },
-      { title: "Chapter 29 — What I Hope You Keep", src: "/audio/book1-ch29-what-i-hope-you-keep.mp3" },
+      { title: "Chapter 18 — Integrity When It Costs Something", src: "/audio/book1-chapter18-integrity-when-it-costs-you-something.mp3" },
+      { title: "Chapter 29 — What I Hope You Keep. What I Hope You Change.", src: "/audio/book1-ch29-what-i-hope-you-keep.mp3" },
     ],
   },
   "/books/for-those-who-come-after-us/prologue": {
@@ -78,6 +72,12 @@ const audioByRoute: Record<string, AudioConfig> = {
     title: "Chapter 9 — Connect the Dots",
     note: "Author-read audiobook narration of this complete chapter preview.",
     items: [{ title: "Connect the Dots", src: "/audio/book1-ch09-connect-the-dots.mp3" }],
+  },
+  "/books/for-those-who-come-after-us/integrity-when-it-costs-something": {
+    summary: "Hear Darren read it",
+    title: "Chapter 18 — Integrity When It Costs Something",
+    note: "Author-read narration of this complete chapter preview.",
+    items: [{ title: "Integrity When It Costs Something", src: "/audio/book1-chapter18-integrity-when-it-costs-you-something.mp3" }],
   },
   "/books/for-those-who-come-after-us/chapter-29-excerpt": {
     summary: "Hear Darren read it",
