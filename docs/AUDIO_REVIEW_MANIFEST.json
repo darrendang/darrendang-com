@@ -1,25 +1,34 @@
 {
   "schema_version": "1.0",
   "policy": "Do not re-review an unchanged audio file. Re-review is required only when the file fingerprint changes, the relevant public canon baseline changes materially, or a prior review is explicitly reopened.",
-  "canon_baseline": "DarrenDang.com public expression architecture, protected family-letter layer, The Way in Music cultural journey, and featured Chrystina pop-opera arrangement synchronized through 2026-09-22",
+  "canon_baseline": "DarrenDang.com books-first reader experience and selected spoken-audio routes synchronized through 2026-09-26; protected family Letters and The Way in Music retain their scoped controls.",
   "fingerprint_type": "git_blob_sha1",
-  "baseline_recorded_on": "2026-09-22",
-  "review_notes": "This manifest fingerprints the exact MP3 bytes currently in the public repository. A matching Git blob SHA proves the file is byte-for-byte unchanged. Semantic review state is tracked separately from fingerprint state so provenance is not overstated. Inline companion songs are artistic interpretations embedded in their relevant pages and are not part of the route-based Darren-voice ListeningLayer.",
+  "baseline_recorded_on": "2026-09-26",
+  "review_notes": "This manifest fingerprints exact public MP3 bytes. Git blob SHA-1 establishes byte identity, while the review basis states the actual semantic evidence and route status. The four 2026-09-26 recordings were supplied and authorized by Darren for integration, decoded successfully, and matched to the approved page roles; their spoken transcripts were not independently verified here. Superseded files remain preserved for provenance without active Listening Layer routes. Inline companion songs remain distinct from route-based Darren-voice audio.",
   "files": [
+    {
+      "path": "public/audio/about-darren-a-life-between-worlds.mp3",
+      "git_blob_sha1": "f092d5369dbff38b9e1adc3628da76dbb4315586",
+      "size_bytes": 2791130,
+      "public_role": "About Darren orientation — A Life Between Worlds",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-26",
+      "review_basis": "The new fuller first-person portrait approved for this route by Darren. The exact uploaded MP3 decoded successfully and its route role was verified against the 2026-09-25 Books 1–3 and reader-experience controls. Spoken wording was not independently transcribed in this review."
+    },
     {
       "path": "public/audio/about-what-im-trying-to-leave-behind.mp3",
       "git_blob_sha1": "c80ed0e9537ba81f874cd39f7d0da1562c3c8be7",
       "size_bytes": 953639,
-      "public_role": "About page orientation",
-      "review_state": "accepted_current",
+      "public_role": "Superseded About orientation — retained without active route",
+      "review_state": "preserved_inactive",
       "last_reviewed_on": "2026-08-31",
-      "review_basis": "approved site audio architecture and current public framing; exact spoken transcript not independently re-transcribed in this review"
+      "review_basis": "approved site audio architecture and current public framing; exact spoken transcript not independently re-transcribed in this review Route retired 2026-09-26; successor: about-darren-a-life-between-worlds.mp3."
     },
     {
       "path": "public/audio/book1-ch09-connect-the-dots.mp3",
       "git_blob_sha1": "8ecfcb52c17461c0c21f5f180f24a30aebfba2c4",
       "size_bytes": 2054705,
-      "public_role": "Book 1 author-read preview — Chapter 9",
+      "public_role": "Book 1 → Book 3 bridge page author-read preview — Chapter 9",
       "review_state": "accepted_current",
       "last_reviewed_on": "2026-08-31",
       "review_basis": "author-read preview tied to approved Book 1 preview"
@@ -32,6 +41,15 @@
       "review_state": "accepted_current",
       "last_reviewed_on": "2026-08-31",
       "review_basis": "author-read preview tied to approved Book 1 preview"
+    },
+    {
+      "path": "public/audio/book1-chapter18-integrity-when-it-costs-you-something.mp3",
+      "git_blob_sha1": "2e8d936cbf68881bc19172ee5d518eb2ac553f8a",
+      "size_bytes": 1664521,
+      "public_role": "Book 1 primary author-read preview and Chapter 18 route — Integrity When It Costs Something",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-26",
+      "review_basis": "Chapter 18 replaces Chapter 9 in the three main Book 1 listening previews and has its own matching excerpt route; Darren approved this exact new recording for site integration. The exact uploaded MP3 decoded successfully and its route role was verified against the 2026-09-25 Books 1–3 and reader-experience controls. Spoken wording was not independently transcribed in this review."
     },
     {
       "path": "public/audio/book1-prologue-when-you-need-me.mp3",
@@ -52,6 +70,15 @@
       "review_basis": "Previously reviewed Book 1 promotional audio asset; now intentionally retained as the primary Book 1 musical companion alongside Take the Best. Exact bytes unchanged. Not part of the route-based ListeningLayer."
     },
     {
+      "path": "public/audio/homepage-why-this-exists2.mp3",
+      "git_blob_sha1": "7119287b549bdf1b74b68416c7fc73aab9afac02",
+      "size_bytes": 1855737,
+      "public_role": "Homepage welcome — Why This Exists v2",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-26",
+      "review_basis": "The new books-first homepage welcome approved for this route by Darren. The exact uploaded MP3 decoded successfully and its route role was verified against the 2026-09-25 Books 1–3 and reader-experience controls. Spoken wording was not independently transcribed in this review."
+    },
+    {
       "path": "public/audio/letters-why-these-letters.mp3",
       "git_blob_sha1": "071ac4384c92ee30c0a3b2db16281e0f3059e48a",
       "size_bytes": 1172127,
@@ -64,10 +91,10 @@
       "path": "public/audio/pass-it-forward-add-your-dot.mp3",
       "git_blob_sha1": "330136f9dd81c902282f817cd46d49810154f3a3",
       "size_bytes": 610964,
-      "public_role": "Contribute page orientation",
-      "review_state": "accepted_current",
+      "public_role": "Retired Contribute invitation — retained without active route while intake is closed",
+      "review_state": "preserved_inactive",
       "last_reviewed_on": "2026-08-31",
-      "review_basis": "approved contribution invitation and current public framing"
+      "review_basis": "approved contribution invitation and current public framing Route retired 2026-09-26 because public contribution intake remains closed."
     },
     {
       "path": "public/audio/Song-bo-oi.mp3",
@@ -268,6 +295,15 @@
       "review_basis": "The original birthday recording remains intentionally preserved on /letters/the-way-was-us/ beneath the featured pop-opera arrangement. Darren explicitly directed that it not be replaced and noted that the audio cuts off before the complete written ending. The full original written lyric remains available beside the preserved audio."
     },
     {
+      "path": "public/audio/the-way-a-stronger-starting-point-v2.mp3",
+      "git_blob_sha1": "a6ad374d576fac7f0665912af7d1d6b5005c5f38",
+      "size_bytes": 5849337,
+      "public_role": "The Way flagship spoken introduction — A Stronger Starting Point v2",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-09-26",
+      "review_basis": "The updated agency-centered The Way orientation approved for this route by Darren. The exact uploaded MP3 decoded successfully and its route role was verified against the 2026-09-25 Books 1–3 and reader-experience controls. Spoken wording was not independently transcribed in this review."
+    },
+    {
       "path": "public/audio/the-way-constitution-introduction.mp3",
       "git_blob_sha1": "1d01ad9366689ee9e6862174c1ce1cd5b435ddae",
       "size_bytes": 565994,
@@ -280,19 +316,19 @@
       "path": "public/audio/the-way-homepage-why-this-exists.mp3",
       "git_blob_sha1": "377051ad0abcef762ed1a16f5f78d423e3cf3009",
       "size_bytes": 670176,
-      "public_role": "Homepage welcome",
-      "review_state": "accepted_current",
+      "public_role": "Superseded homepage orientation — retained without active route",
+      "review_state": "preserved_inactive",
       "last_reviewed_on": "2026-08-31",
-      "review_basis": "approved site audio architecture and current public framing; exact spoken transcript not independently re-transcribed in this review"
+      "review_basis": "approved site audio architecture and current public framing; exact spoken transcript not independently re-transcribed in this review Route retired 2026-09-26; successor: homepage-why-this-exists2.mp3."
     },
     {
       "path": "public/audio/the-way-stronger-starting-point.mp3",
       "git_blob_sha1": "334930e84cfce7575668eb8cb75413c8a98f6f94",
       "size_bytes": 3684517,
-      "public_role": "The Way flagship spoken introduction",
-      "review_state": "accepted_current",
+      "public_role": "Superseded The Way orientation — retained without active route",
+      "review_state": "preserved_inactive",
       "last_reviewed_on": "2026-08-31",
-      "review_basis": "current framing is inheritance without a predetermined destination; exact spoken transcript not independently re-transcribed in this review"
+      "review_basis": "current framing is inheritance without a predetermined destination; exact spoken transcript not independently re-transcribed in this review Route retired 2026-09-26; successor: the-way-a-stronger-starting-point-v2.mp3."
     },
     {
       "path": "public/audio/your-way-now-it-becomes-yours.mp3",
