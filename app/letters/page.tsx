@@ -149,6 +149,30 @@ export default function LettersPage() {
           </div>
         </section>
 
+
+        <section className="section sand">
+          <div className="container worldview-grid">
+            <div>
+              <div className="eyebrow bronze">Letter / Song · September 26, 2026</div>
+              <h2>The Watch Goes On</h2>
+              <p className="lead">A tribute to Rear Admiral Robert C. Nowakowski—and a reflection on what a life of service can make visible to the generations who come after.</p>
+              <p><strong>He never needed to tell our children what their paths should be. His example was enough.</strong></p>
+              <Link className="text-link" href="/letters/the-watch-goes-on/">Watch, listen &amp; read →</Link>
+            </div>
+            <figure style={{ margin: 0 }}>
+              <Image
+                src="/images/nowakowski-retirement-color-guard.jpg"
+                width={2048}
+                height={1153}
+                alt="Rear Admiral Robert Nowakowski with the ceremonial Color Guard aboard USS Iowa at his retirement ceremony."
+                sizes="(max-width: 900px) 100vw, 520px"
+                style={{ width: "100%", height: "auto", borderRadius: "22px", boxShadow: "0 20px 54px rgba(13,31,49,.12)" }}
+              />
+              <figcaption className="note" style={{ marginTop: "10px" }}>USS Iowa · September 26, 2026.</figcaption>
+            </figure>
+          </div>
+        </section>
+
         <section className="section shared-wisdom-home">
           <div className="container shared-wisdom-home-grid">
             <div>
