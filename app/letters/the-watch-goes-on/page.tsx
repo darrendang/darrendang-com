@@ -277,7 +277,7 @@ export default function TheWatchGoesOnPage() {
             poster="/images/nowakowski-retirement-color-guard.jpg"
             aria-label="The Watch Goes On — tribute video for Rear Admiral Robert Nowakowski"
           >
-            <source src="/videos/The-Watch-Goes-On-RADM-Nowakowski-Web.mp4" type="video/mp4" />
+            <source src="/videos/The-Watch-Goes-On-RADM-Nowakowski-Web_24mb.mp4" type="video/mp4" />
             Your browser does not support video playback.
           </video>
         </div>
