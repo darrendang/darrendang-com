@@ -1,7 +1,7 @@
 # Project governance
 
-The production repository intentionally does **not** include DarrenDang.com's private canonical strategy/source files by default.
+DarrenDang.com is the intentional public implementation surface. Private ecosystem governance and source-project authority remain in their governed repositories and artifact stores.
 
-Canonical project files are maintained in Darren's private ChatGPT project workspace (or a separate private repository if later established). Public website content must be synchronized from those approved sources before publication.
+For consequential work, establish current `darrendang/dang-genome` routing, read the exact scoped source/control, and apply this repository's `AGENTS.md`, `PROJECT_INSTRUCTIONS.md`, and `PROJECT_SOURCES.md`. GitHub routes authority; governed Drive artifacts retain their assigned source or production roles. ChatGPT project memory and attachments provide continuity or intake.
 
-This separation allows the GitHub Pages source repository to be public-safe if Darren's GitHub plan requires a public repository for Pages.
+Public content must remain within existing publication permission. Routine source-grounded factual/status maintenance preserves the approved reader journey. Material restructuring and new private-source disclosure require their exact approval scope. Repository implementation and verified live deployment remain separate states.

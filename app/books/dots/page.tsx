@@ -54,7 +54,7 @@ export default function DotsBook() {
       <div className="development-book-grid">
         <div className="development-cover-wrap">
           <Image src="/images/dots-cover.webp" width={480} height={720} alt="Current cover for D.O.T.S. by Darren Dang." className="development-cover" sizes="(max-width: 900px) 76vw, 34vw" priority />
-          <p className="book-caption">Physical proof ordered. v6.5.4 has passed local QA and KDP Previewer; physical proof review remains the final print gate before any Gold Master or publication decision.</p>
+          <p className="book-caption">Physical proof review is pending. The current v6.5.5 R2 print candidate has passed local QA and KDP Previewer; explicit physical-proof acceptance and Gold Master approval remain required before a publication decision.</p>
         </div>
         <div className="development-copy">
           <div className="book-status">Physical Proof Ordered</div>
@@ -151,7 +151,7 @@ export default function DotsBook() {
 
       <aside className="development-status-note">
         <strong>Development status</strong>
-        <p><em>D.O.T.S.</em> v6.5.4 is the current canonical manuscript. Local QA and KDP Previewer are complete for both print bindings; the physical proof is pending review. The book is not yet a Gold Master, and publication remains a separate decision after physical-proof acceptance.</p>
+        <p><em>D.O.T.S.</em> v6.5.5 is the current canonical manuscript. The v6.5.5 R2 print candidate has passed local QA and KDP Previewer for both bindings; physical-proof review is pending. The book is not yet a Gold Master, and publication remains a separate decision after physical-proof acceptance.</p>
       </aside>
     </InteriorPage>
   );
