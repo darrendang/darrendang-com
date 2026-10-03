@@ -1,0 +1,56 @@
+.book-launch-announcement {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px 28px;
+  margin-bottom: 20px;
+  padding: 18px 24px;
+  border: 1px solid rgba(199, 154, 69, .35);
+  border-left: 3px solid var(--gold);
+  background: var(--navy2);
+}
+
+.book-launch-announcement .book-launch-label {
+  margin: 0 0 5px;
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.book-launch-announcement .book-launch-title {
+  margin: 0;
+  color: var(--ivory);
+  font-family: var(--font-editorial-family);
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.book-launch-announcement .book-launch-description {
+  margin: 5px 0 0;
+  color: #D7D2C8;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.book-launch-announcement .book-launch-link {
+  flex-shrink: 0;
+  min-height: 44px;
+  padding: 10px 18px;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .book-launch-announcement {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 18px;
+  }
+
+  .book-launch-announcement .book-launch-title { font-size: 23px; }
+}

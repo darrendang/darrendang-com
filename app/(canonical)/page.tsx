@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
+import "../launch-announcement.css";
 
 const books = [
   {
@@ -102,6 +103,14 @@ export default function Home() {
       <SiteHeader />
       <main id="main">
         <section className="hero brand-hero genome-hero">
+          <aside className="container book-launch-announcement" aria-label="Book 1 launch announcement">
+            <div>
+              <p className="book-launch-label">Book 1 · Official launch</p>
+              <p className="book-launch-title">For Those Who Come After Us is here.</p>
+              <p className="book-launch-description">Read the Prologue, explore selected chapters, or hear a preview.</p>
+            </div>
+            <Link className="button button-outline book-launch-link" href="/books/for-those-who-come-after-us/">Explore Book 1 →</Link>
+          </aside>
           <div className="container hero-grid">
             <div className="hero-copy">
               <div className="eyebrow">Books, ideas, and a way of thinking passed forward</div>
