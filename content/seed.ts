@@ -11,7 +11,7 @@ export const ideas=[
 
 export const books=[
 {slug:'for-those-who-come-after-us',title:'For Those Who Come After Us',subtitle:'A Life in Lessons',status:'published',movement:'INHERIT',summary:'A published life in lessons about inheritance, identity, learning, failure, systems, leadership, family, purpose, and what we pass forward.'},
-{slug:'wisdom-has-no-rank',title:'Wisdom Has No Rank',subtitle:'',status:'final-proof',movement:'LEARN',summary:'A complete manuscript with locked print Gold Masters, now in final physical proof before print release authorization.'},
+{slug:'wisdom-has-no-rank',title:'Wisdom Has No Rank',subtitle:'',status:'final-proof',movement:'LEARN',summary:'A locked final-draft manuscript with an accepted KDP print preview; physical-proof review and explicit Gold Master approval remain pending before print release.'},
 {slug:'dots',title:'D.O.T.S.',subtitle:'Collect Dots. Connect Dots. Create Something New.',status:'first-print-proof',movement:'CREATE',summary:'A book about connecting what we inherit and learn across experience, ideas, and disciplines, then creating and testing something new; now in first hard-copy proof.'},
 {slug:'the-making-of-the-way',title:'The Making of The Way',subtitle:'How Conversation Becomes Discovery',status:'in-development',movement:'DISCOVER',summary:'The making story behind the books and The Way: memory, relationships, correction, discovery, and sustained human-AI dialogue.'},
 {slug:'the-way-forward',title:'The Way Forward',subtitle:'Learning, Discovering, Creating, and Passing It On',status:'in-development',movement:'CONTINUE',summary:'The handoff to the reader: what will you do with what you inherit, learn, discover, and create?'}
