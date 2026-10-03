@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
@@ -5,9 +6,33 @@ import { ConnectedDots } from "@/components/ConnectedDots";
 import { MusicCompanion } from "@/components/MusicCompanion";
 import { takeTheBestLyrics } from "@/lib/songLyrics";
 
-export const metadata = {
+const shareTitle = "For Those Who Come After Us — A Life in Lessons";
+const shareDescription = "A life in stories and lessons about what we inherit, how we live, and what we pass forward. Read or listen to previews of Darren Dang’s first book.";
+const shareImage = {
+  url: "/images/book1-social-preview.png",
+  width: 1200,
+  height: 630,
+  alt: "The complete approved cover of For Those Who Come After Us: A Life in Lessons by Darren Dang, on a navy background.",
+};
+
+export const metadata: Metadata = {
   title: "For Those Who Come After Us",
   description: "Explore the published Book 1, For Those Who Come After Us — A Life in Lessons, including selected reading, companion songs, and the ideas behind the book.",
+  openGraph: {
+    title: shareTitle,
+    description: shareDescription,
+    url: "/books/for-those-who-come-after-us/",
+    siteName: "Darren Dang",
+    type: "website",
+    locale: "en_US",
+    images: [{ ...shareImage, type: "image/png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: shareTitle,
+    description: shareDescription,
+    images: [shareImage],
+  },
 };
 
 const samples = [
