@@ -7,16 +7,21 @@ const indexableIdeaSlugs = new Set([
   'generative-dialogue',
   'living-legacy',
   'wisdom-has-no-rank',
+  'collect-dots-connect-dots-create-something-new',
+  'automate-the-repetition-preserve-human-judgment',
+  'make-knowledge-travel',
+  'have-a-north-star',
+  'leadership-is-not-indispensability',
 ]);
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://darrendang.com';
-  const lastModified = new Date('2026-09-27T00:00:00Z');
   const routes = [
     '',
     '/the-way/',
     '/use-the-way/',
     '/the-way/constitution/',
+    '/the-way/music/',
     '/explore/',
     '/your-way/',
     '/the-way-forward/',
@@ -40,11 +45,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/books/for-those-who-come-after-us/',
     '/books/for-those-who-come-after-us/prologue/',
     '/books/for-those-who-come-after-us/connect-the-dots/',
+    '/books/for-those-who-come-after-us/integrity-when-it-costs-something/',
     '/books/for-those-who-come-after-us/chapter-29-excerpt/',
     '/books/wisdom-has-no-rank/',
     '/books/wisdom-has-no-rank/prologue-excerpt/',
     '/books/wisdom-has-no-rank/person-i-developed/',
+    '/books/wisdom-has-no-rank/the-word-english-could-not-hold/',
     '/books/dots/',
+    '/books/dots/the-idea-that-did-not-belong/',
+    '/books/dots/who-has-no-choice-but-to-be-good-at-this/',
+    '/books/dots/what-did-reality-actually-say/',
     '/books/the-making-of-the-way/',
     '/about/',
     '/connect/',
@@ -54,12 +64,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   return [
-    ...routes.map((path) => ({ url: base + path, lastModified })),
+    ...routes.map((path) => ({ url: base + path })),
     ...ideas
       .filter((idea) => indexableIdeaSlugs.has(idea.slug))
       .map((idea) => ({
         url: `${base}/ideas/${idea.slug}/`,
-        lastModified,
       })),
   ];
 }
