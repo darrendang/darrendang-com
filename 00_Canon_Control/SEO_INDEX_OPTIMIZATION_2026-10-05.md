@@ -22,6 +22,7 @@ It does not change primary navigation, homepage sequencing, book progression, vi
 5. Strengthen the root Darren Dang `Person` entity with the approved public headshot and official OCERS profile as an external identity reference.
 6. Add `ProfilePage` structured data to the About page.
 7. Add `Book` and `BreadcrumbList` structured data to Book 1 using public website, Amazon, and Google Play identifiers already associated with the published work.
+8. Add a public IndexNow verification key so participating search engines can be notified directly when important public URLs change.
 
 ## Index-policy guardrails
 
@@ -31,6 +32,7 @@ It does not change primary navigation, homepage sequencing, book progression, vi
 - The Book 2 test-child-map route remains noindex under its existing explicit control.
 - The paused `/share/` intake route remains excluded from the sitemap in accordance with prior contribution-governance decisions.
 - Sitemap inclusion does not create publication permission for unpublished/private material.
+- The IndexNow key is a public verification token, not a credential or secret, and must contain no private authorization material.
 
 ## Authority and provenance
 
