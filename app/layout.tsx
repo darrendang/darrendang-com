@@ -80,6 +80,8 @@ const structuredData = {
       name: "Darren Dang",
       url: "https://darrendang.com/",
       mainEntityOfPage: "https://darrendang.com/about/",
+      image: "https://darrendang.com/images/darren-headshot.webp",
+      sameAs: ["https://www.ocers.org/post/darren-dang"],
       knowsAbout: [
         "The Way",
         "D.O.T.S.",
