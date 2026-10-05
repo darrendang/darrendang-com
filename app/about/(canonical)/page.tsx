@@ -7,6 +7,22 @@ export const metadata = {
   description: "About Darren Dang: family, Vietnamese-American experience, technology, public service, systems thinking, books, and the lived experiences behind The Way.",
 };
 
+const profileStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "https://darrendang.com/about/#profile",
+  url: "https://darrendang.com/about/",
+  name: "About Darren Dang",
+  mainEntity: {
+    "@type": "Person",
+    "@id": "https://darrendang.com/#person",
+    name: "Darren Dang",
+    url: "https://darrendang.com/",
+    image: "https://darrendang.com/images/darren-headshot.webp",
+    sameAs: ["https://www.ocers.org/post/darren-dang"],
+  },
+};
+
 export default function About() {
   return (
     <InteriorPage eyebrow="About Darren" title="A life between worlds." wide>
@@ -80,6 +96,10 @@ export default function About() {
       </section>
 
       <div className="independence-callout">The views and ideas expressed on DarrenDang.com are my own and do not necessarily represent OCERS or any other institution with which I am affiliated.</div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(profileStructuredData) }}
+      />
     </InteriorPage>
   );
 }
