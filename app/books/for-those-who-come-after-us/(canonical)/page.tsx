@@ -35,6 +35,45 @@ export const metadata: Metadata = {
   },
 };
 
+const bookStructuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Book",
+      "@id": "https://darrendang.com/books/for-those-who-come-after-us/#book",
+      name: shareTitle,
+      alternateName: "For Those Who Come After Us",
+      description: shareDescription,
+      url: "https://darrendang.com/books/for-those-who-come-after-us/",
+      image: "https://darrendang.com/images/for-those-who-come-after-us-front-book-v3.webp",
+      inLanguage: "en",
+      mainEntityOfPage: "https://darrendang.com/books/for-those-who-come-after-us/",
+      author: { "@id": "https://darrendang.com/#person" },
+      publisher: {
+        "@type": "Organization",
+        name: "Dang Legacy Press",
+      },
+      sameAs: [
+        "https://www.amazon.com/dp/B0HHZRLXKD/",
+        "https://play.google.com/store/books/details/Darren_Dang_For_Those_Who_Come_After_Us?id=GQUJEgAAQBAJ",
+      ],
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://darrendang.com/" },
+        { "@type": "ListItem", position: 2, name: "Books", item: "https://darrendang.com/books/" },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "For Those Who Come After Us",
+          item: "https://darrendang.com/books/for-those-who-come-after-us/",
+        },
+      ],
+    },
+  ],
+};
+
 const samples = [
   {
     number: "01",
@@ -235,6 +274,10 @@ export default function Book() {
           { label: "BOOK 2", title: "Wisdom Has No Rank", copy: "Inheritance becomes stronger when the person receiving the map remains free—and willing—to revise it.", href: "/books/wisdom-has-no-rank/" },
           { label: "METHOD", title: "D.O.T.S.", copy: "The Connect the Dots chapter points toward the cross-domain way of seeing developed more fully in Book 3.", href: "/dots/" },
         ]}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(bookStructuredData) }}
       />
     </InteriorPage>
   );
