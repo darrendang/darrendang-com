@@ -1,3 +1,4 @@
+import { WorkStructuredData } from "@/components/WorkStructuredData";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,6 +27,7 @@ export const metadata: Metadata = {
 export default function TheMakingOfTheWayPage() {
   return (
     <InteriorPage eyebrow="Book 4 · Preparing for Publication" title="The Making of The Way" wide>
+      <WorkStructuredData kind="Book" name="The Making of The Way" path="/books/the-making-of-the-way/" description={metadata.description} image="/images/the-making-of-the-way-cover.webp" />
       <div className="development-book-grid">
         <div className="development-cover-wrap">
           <Image
@@ -59,7 +61,7 @@ export default function TheMakingOfTheWayPage() {
         <p>The experiences came first. As the conversations multiplied, so did the need to preserve sources, distinguish memory from interpretation, and keep corrections available. The structure grew because the work needed it.</p>
         <figure className="book-preview-figure">
           <a href="/images/book4-evolution-of-the-way.webp" aria-label="Open Evolution of The Way diagram at full size">
-            <Image src="/images/book4-evolution-of-the-way.webp" width={1536} height={1024} alt="Evolution of The Way: a family book grows through dialogue, multiple expressions, memory and governance into a continuing learning system. Later layers build on earlier work." sizes="(max-width: 760px) 100vw, 680px" />
+            <Image src="/images/book4-evolution-of-the-way-display.webp" width={1536} height={1024} alt="Evolution of The Way: a family book grows through dialogue, multiple expressions, memory and governance into a continuing learning system. Later layers build on earlier work." sizes="(max-width: 760px) 100vw, 680px" />
           </a>
           <figcaption>Evolution of The Way. The layers accumulated; later language did not exist at the beginning. <a href="/images/book4-evolution-of-the-way.webp">Open the full-size diagram.</a></figcaption>
         </figure>

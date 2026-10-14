@@ -1,3 +1,4 @@
+import { WorkStructuredData } from "@/components/WorkStructuredData";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
@@ -13,6 +14,7 @@ export default function WhyTheseLettersPage() {
     <>
       <SiteHeader />
       <main id="main">
+      <WorkStructuredData kind="Article" name="Why These Letters" path="/letters/why-these-letters/" description={metadata.description} />
         <section className="section">
           <div className="container">
             <div className="section-intro compact">

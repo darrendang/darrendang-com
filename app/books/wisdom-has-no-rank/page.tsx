@@ -1,3 +1,4 @@
+import { WorkStructuredData } from "@/components/WorkStructuredData";
 import Image from "next/image";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
@@ -58,6 +59,7 @@ const samples = [
 export default function WisdomHasNoRank() {
   return (
     <InteriorPage eyebrow="Book 2 · BECOME · Final Proof" title="Wisdom Has No Rank" wide>
+      <WorkStructuredData kind="Book" name="Wisdom Has No Rank" path="/books/wisdom-has-no-rank/" description={metadata.description} image="/images/wisdom-has-no-rank-cover.webp" />
       <div className="development-book-grid">
         <div className="development-cover-wrap">
           <Image src="/images/wisdom-has-no-rank-cover.webp" width={480} height={720} alt="Current cover for Wisdom Has No Rank by Darren Dang." className="development-cover" sizes="(max-width: 900px) 76vw, 34vw" priority />

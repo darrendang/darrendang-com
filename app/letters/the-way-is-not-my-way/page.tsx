@@ -1,3 +1,4 @@
+import { WorkStructuredData } from "@/components/WorkStructuredData";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
 export default function Letter001() {
   return (
     <InteriorPage eyebrow="Letters from Darren · Letter 001" title="The Way Is Not My Way">
+      <WorkStructuredData kind="Article" name="The Way Is Not My Way — Letter 001" path="/letters/the-way-is-not-my-way/" description={metadata.description} datePublished="2026-10-14" />
       <p className="note"><time dateTime="2026-10-14">October 14, 2026</time></p>
       <article className="letter-reading">
           <p>{"There are moments when a single word reveals more than we intended."}</p>
