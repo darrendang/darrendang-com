@@ -53,7 +53,7 @@ const books = [
     status: "In Development",
     title: "The Way Forward",
     subtitle: "Learning, Discovering, Creating, and Passing It On",
-    cover: "/images/the-way-forward.webp",
+    cover: "/images/the-way-forward-display.webp",
     alt: "Cover of The Way Forward by Darren Dang.",
     href: "/the-way-forward/",
     lens: "YOUR NEXT STEP",

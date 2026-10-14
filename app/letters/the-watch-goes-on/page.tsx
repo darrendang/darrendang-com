@@ -1,3 +1,4 @@
+import { WorkStructuredData } from "@/components/WorkStructuredData";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -128,6 +129,7 @@ The watch goes on.`,
 export default function TheWatchGoesOnPage() {
   return (
     <InteriorPage eyebrow="Letter / Song · September 26, 2026" title="The Watch Goes On" wide>
+      <WorkStructuredData kind="Article" name="The Watch Goes On — A Tribute to Rear Admiral Robert C. Nowakowski" path="/letters/the-watch-goes-on/" description={metadata.description} />
       <section className={styles.intro}>
         <p className={styles.kicker}>A tribute to Rear Admiral Robert C. Nowakowski</p>
         <p className="lead">

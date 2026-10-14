@@ -1,3 +1,4 @@
+import { WorkStructuredData } from "@/components/WorkStructuredData";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -474,6 +475,7 @@ export default function MeOiPage() {
       title="Mẹ Ơi"
       wide
     >
+      <WorkStructuredData kind="Article" name="Mẹ Ơi — Twenty-Two Years Later" path="/letters/me-oi/" description={metadata.description} />
       <section className={styles.intro}>
         <p className={styles.kicker}>I could not write to Bố without writing to Mẹ.</p>
         <p className="lead">

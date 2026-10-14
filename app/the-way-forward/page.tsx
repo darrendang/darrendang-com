@@ -1,3 +1,4 @@
+import { WorkStructuredData } from "@/components/WorkStructuredData";
 import Link from "next/link";
 import Image from "next/image";
 import { InteriorPage } from "@/components/InteriorPage";
@@ -10,9 +11,10 @@ export const metadata = {
 export default function TheWayForwardPage() {
   return (
     <InteriorPage eyebrow="Book 5 · In Development" title="The Way Forward" wide>
+      <WorkStructuredData kind="Book" name="The Way Forward" path="/the-way-forward/" description={metadata.description} image="/images/the-way-forward.webp" />
       <div className="development-book-grid">
         <div className="development-cover-wrap">
-          <Image src="/images/the-way-forward.webp" width={864} height={1296} alt="The Way Forward: Learning, Discovering, Creating, and Passing It On by Darren Dang." className="development-cover" sizes="200px" priority />
+          <Image src="/images/the-way-forward-display.webp" width={864} height={1296} alt="The Way Forward: Learning, Discovering, Creating, and Passing It On by Darren Dang." className="development-cover" sizes="200px" priority />
         </div>
         <div className="development-copy">
           <p className="book-hook">Learning, Discovering, Creating, and Passing It On</p>

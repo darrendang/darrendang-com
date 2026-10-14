@@ -1,3 +1,4 @@
+import { WorkStructuredData } from "@/components/WorkStructuredData";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -143,6 +144,7 @@ function LyricsDisclosure({
 export default function TheWayWasUsPage() {
   return (
     <InteriorPage eyebrow="Letter / Song · September 15, 2026" title="To Chrystina" wide>
+      <WorkStructuredData kind="Article" name="To Chrystina — The Way Was Us" path="/letters/the-way-was-us/" description={metadata.description} />
       <section className={styles.intro}>
         <p className={styles.kicker}><em>The Way Was Us</em></p>
         <p className="lead">Today is Chrystina&apos;s birthday.</p>

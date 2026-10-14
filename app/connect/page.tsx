@@ -1,6 +1,6 @@
 import {InteriorPage} from '@/components/InteriorPage';
 
-export const metadata={title:'Connect'};
+export const metadata={title:"Connect", description:"Contact Darren Dang for speaking, media, book inquiries, and thoughtful exchange about his independent writing and ideas."};
 
 export default function Connect(){return <InteriorPage eyebrow="Connect" title="Continue the conversation.">
   <p className="lead">DarrenDang.com exists to share ideas and invite thoughtful exchange. For professional discussion, speaking, media, book, or general inquiries, email <a className="text-link" href="mailto:dangphibang@gmail.com">dangphibang@gmail.com</a>.</p>

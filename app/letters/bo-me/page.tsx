@@ -1,3 +1,4 @@
+import { WorkStructuredData } from "@/components/WorkStructuredData";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
 export default function BoMePage() {
   return (
     <InteriorPage eyebrow="Letter · To My Parents" title="Bố Mẹ" wide>
+      <WorkStructuredData kind="Article" name="Bố Mẹ — What You Built Together" path="/letters/bo-me/" description={metadata.description} />
       <section className={styles.intro}>
         <p className={styles.kicker}>I wrote to each of you separately. This letter is to the life between you.</p>
         <p className="lead">

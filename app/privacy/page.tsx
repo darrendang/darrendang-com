@@ -1,6 +1,6 @@
 import { InteriorPage } from '@/components/InteriorPage';
 
-export const metadata={title:'Privacy'};
+export const metadata={title:"Privacy", description:"How DarrenDang.com handles inquiries, previously submitted material, publication permissions, and the current pause on contribution intake."};
 
 export default function Privacy(){
   return <InteriorPage eyebrow="Legal" title="Privacy">

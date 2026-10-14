@@ -1,3 +1,4 @@
+import { WorkStructuredData } from "@/components/WorkStructuredData";
 import Image from "next/image";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
@@ -51,6 +52,7 @@ const samples = [
 export default function DotsBook() {
   return (
     <InteriorPage eyebrow="Book 3 · Physical Proof Ordered" title="D.O.T.S." wide>
+      <WorkStructuredData kind="Book" name="D.O.T.S." path="/books/dots/" description={metadata.description} image="/images/dots-cover.webp" />
       <div className="development-book-grid">
         <div className="development-cover-wrap">
           <Image src="/images/dots-cover.webp" width={480} height={720} alt="Current cover for D.O.T.S. by Darren Dang." className="development-cover" sizes="(max-width: 900px) 76vw, 34vw" priority />

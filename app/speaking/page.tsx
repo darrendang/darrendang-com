@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import {InteriorPage} from '@/components/InteriorPage';
 
-export const metadata={title:'Speaking'};
+export const metadata={title:"Speaking", description:"Explore speaking topics with Darren Dang on AI stewardship, human judgment, D.O.T.S., and learning across generations and institutions."};
 
 const talks=[
   ['D.O.T.S. — A Way of Seeing Problems','How moving from label to structure can expand the search space for better solutions.','/dots/'],
