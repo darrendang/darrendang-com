@@ -39,14 +39,14 @@ const books = [
   },
   {
     number: "04",
-    status: "In Development",
+    status: "Preparing for Publication",
     title: "The Making of The Way",
     subtitle: "How Conversation Becomes Discovery",
     cover: "/images/the-making-of-the-way-cover.webp",
     alt: "Cover of The Making of The Way: How Conversation Becomes Discovery by Darren Dang.",
     href: "/books/the-making-of-the-way/",
     lens: "HOW THE WORK WAS MADE",
-    question: "What happens when a human and AI think together over time?",
+    question: "How does conversation become discovery—and knowledge we can trust?",
   },
   {
     number: "05",
@@ -57,7 +57,7 @@ const books = [
     alt: "Cover of The Way Forward by Darren Dang.",
     href: "/the-way-forward/",
     lens: "YOUR NEXT STEP",
-    question: "What will you do with what you inherit, learn, and discover?",
+    question: "What will you create, learn, and pass forward from your own starting point?",
   },
 ];
 
@@ -235,9 +235,9 @@ export default function Home() {
             <div>
               <div className="eyebrow bronze">Letters from Darren</div>
               <h2>Things I am still learning.</h2>
-              <p className="lead">Not every lesson waits for a book. The Letters preserve stories, questions, failures, discoveries, and changed judgments while the learning is still moving.</p>
+              <p className="lead">Letter 001 begins with one word I caught myself using about my child’s future—and what changing it taught me about passing wisdom forward.</p>
               <div className="actions">
-                <Link className="button button-dark" href="/letters/why-these-letters/">Read “Why These Letters”</Link>
+                <Link className="button button-dark" href="/letters/the-way-is-not-my-way/">Read “The Way Is Not My Way”</Link>
                 <Link className="text-link" href="/letters/">Explore Letters →</Link>
               </div>
             </div>

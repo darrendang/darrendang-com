@@ -20,14 +20,25 @@ export default function LettersPage() {
               <h1>Things I am still learning.</h1>
               <p>These letters are not answers from someone who has finished figuring things out. They are observations, stories, questions, and lessons collected along the way—and offered for someone else to test, challenge, improve, and carry farther.</p>
               <div className="actions">
-                <Link className="button button-gold" href="/letters/why-these-letters/">Read the introduction</Link>
-                <Link className="button button-outline" href="/the-way/">Explore The Way</Link>
+                <Link className="button button-gold" href="/letters/the-way-is-not-my-way/">Read Letter 001</Link>
+                <Link className="button button-outline" href="/letters/why-these-letters/">Read the introduction</Link>
               </div>
             </div>
           </div>
           <div className="container hero-note">
             <strong>A living editorial practice.</strong>
             <span>Letters connect lived experience to ideas without pretending every question has a finished answer.</span>
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="container">
+            <div className="section-intro compact">
+              <div className="eyebrow bronze">Letter 001 · October 14, 2026</div>
+              <h2>The Way Is Not My Way</h2>
+              <p className="lead">I heard myself say “when” about one of my children&apos;s future choices. Changing it to “if” opened a larger question about the wisdom I hoped to pass forward.</p>
+              <Link className="text-link" href="/letters/the-way-is-not-my-way/">Read the letter →</Link>
+            </div>
           </div>
         </section>
 

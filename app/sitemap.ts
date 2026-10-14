@@ -27,6 +27,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/the-way-forward/',
     '/letters/',
     '/letters/why-these-letters/',
+    '/letters/the-way-is-not-my-way/',
+    '/the-way-forward/prologue/',
     '/letters/bo-oi/',
     '/letters/me-oi/',
     '/letters/bo-me/',

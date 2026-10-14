@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { InteriorPage } from "@/components/InteriorPage";
 
 export const metadata = {
@@ -8,7 +9,20 @@ export const metadata = {
 
 export default function TheWayForwardPage() {
   return (
-    <InteriorPage eyebrow="Book 5 · In Development" title="What will you do with all of this?" wide>
+    <InteriorPage eyebrow="Book 5 · In Development" title="The Way Forward" wide>
+      <div className="development-book-grid">
+        <div className="development-cover-wrap">
+          <Image src="/images/the-way-forward.webp" width={864} height={1296} alt="The Way Forward: Learning, Discovering, Creating, and Passing It On by Darren Dang." className="development-cover" sizes="200px" priority />
+        </div>
+        <div className="development-copy">
+          <p className="book-hook">Learning, Discovering, Creating, and Passing It On</p>
+          <h2>What will you do with all of this?</h2>
+          <p className="lead">What we inherit becomes a starting point. What we learn, question, create, and choose to pass forward gives it new possibility.</p>
+          <p>This book brings the earlier journeys together as a compass for the reader. Fifteen chapters, five Compass Checks, and four diagrams connect reflection with choices that must meet real life.</p>
+          <Link className="button button-dark" href="/the-way-forward/prologue/">Read a prologue excerpt</Link>
+        </div>
+      </div>
+
       <div className="genome-lead-grid">
         <div>
           <p className="lead"><em>The Way Forward</em> turns the question toward the reader. After inheritance, unexpected teachers, new ways of seeing, and the making of the work itself, what do you do with what you have learned?</p>
@@ -21,6 +35,19 @@ export default function TheWayForwardPage() {
           <p>The fifth book gathers what came before, then gives the responsibility for the next move back to the reader.</p>
         </aside>
       </div>
+
+      <section className="book-preview-section">
+        <div className="eyebrow bronze">The Way Forward Cycle</div>
+        <h2>Learn. Know. Discover. Create. Transmit. Learn again.</h2>
+        <p>Knowing asks what deserves confidence. Discovery widens the frame. Creation gives a possibility form so reality can answer. Passing something forward gives another person a starting point—and leaves them free to change it.</p>
+        <figure className="book-preview-figure">
+          <a href="/images/book5-way-forward-cycle.svg" aria-label="Open The Way Forward Cycle diagram at full size">
+            <Image src="/images/book5-way-forward-cycle.svg" width={1000} height={1020} alt="Learn, know, discover, create, transmit, and learn again form a returning cycle around The Way, Your Way, and The Way Forward. The reader chooses the direction." sizes="(max-width: 760px) 100vw, 680px" />
+          </a>
+          <figcaption>The Way Forward Cycle. Orientation returns to learning; the reader chooses where to go. <a href="/images/book5-way-forward-cycle.svg">Open the full-size diagram.</a></figcaption>
+        </figure>
+        <p>The cycle is a way to see how the movements connect. The questions below offer a smaller place to begin in a particular situation.</p>
+      </section>
 
       <section>
         <div className="eyebrow bronze">From reflection to direction</div>
@@ -51,6 +78,11 @@ export default function TheWayForwardPage() {
         <p>When you act—or deliberately do not act—reality answers. Reflection can turn consequence into learning. Some learning may later be worth preserving as a story, correction, question, practice, discovery, or new connection.</p>
         <p>Passing something forward is optional. The Way Forward begins with living, not publishing.</p>
       </section>
+
+      <aside className="development-status-note">
+        <strong>Current state</strong>
+        <p><em>The Way Forward</em> is in developmental review. This selected preview introduces the work in progress; final publication timing remains to be confirmed.</p>
+      </aside>
 
       <section className="genome-invitation">
         <div className="eyebrow bronze">The wider journey</div>

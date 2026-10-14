@@ -24,7 +24,7 @@ export default function YourWayPage() {
       <section>
         <div className="eyebrow bronze">A portable practice</div>
         <h2>Receive → Examine → Connect → Practice → Pass Forward</h2>
-        <p className="lead">These are recursive movements, not a checklist. Your Way is not a sixth movement; it is what develops as you use them across life.</p>
+        <p className="lead">These questions help you apply the broader learning cycle to a particular situation. They are recursive movements, not a checklist. Your Way is what develops as you use them across life; what happens next gives you something new to learn.</p>
         <div className="genome-cycle" aria-label="Receive, examine, connect, practice, pass forward">
           <div><span>01</span><strong>Receive</strong><p>What has come to me, and what is life teaching me now?</p></div>
           <div><span>02</span><strong>Examine</strong><p>What is true, what is interpretation, and what deserves reconsideration?</p></div>

@@ -44,7 +44,7 @@ export default function TheWayPage() {
           <div className="container">
             <div className="section-intro compact">
               <div className="eyebrow bronze">The living cycle</div>
-              <h2>Learning → Knowing → Discovering → Creating → Transmitting</h2>
+              <h2>Learning → Knowing → Discovering → Creating → Transmitting → Learning again</h2>
               <p className="lead">The Way is not only about what we inherit. It is about what we do with it: learn from it, understand it well enough to act, widen beyond it, create something that can meet reality, and pass forward what proves worth carrying.</p>
             </div>
             <div className="genome-cycle" aria-label="Learning, knowing, discovering, creating, transmitting">
