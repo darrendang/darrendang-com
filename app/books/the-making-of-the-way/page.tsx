@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 export default function TheMakingOfTheWayPage() {
   return (
-    <InteriorPage eyebrow="Book 4 · In Development" title="The Making of The Way" wide>
+    <InteriorPage eyebrow="Book 4 · Preparing for Publication" title="The Making of The Way" wide>
       <div className="development-book-grid">
         <div className="development-cover-wrap">
           <Image
@@ -41,7 +41,7 @@ export default function TheMakingOfTheWayPage() {
         </div>
 
         <div className="development-copy">
-          <div className="book-status">In Development</div>
+          <div className="book-status">Preparing for Publication</div>
           <p className="book-hook">How Conversation Becomes Discovery</p>
           <p className="lead">I had wanted to turn these experiences and lessons into books for years. What changed was not that AI suddenly had my story. It was that dialogue gave me a new way to work with the story I already carried.</p>
           <p>Memories led to questions. Questions exposed patterns. Old stories looked different beside new ones. Corrections changed conclusions. Conversations with people who had been part of the original experiences widened the record again.</p>
@@ -52,6 +52,21 @@ export default function TheMakingOfTheWayPage() {
           </div>
         </div>
       </div>
+
+      <section className="book-preview-section">
+        <div className="eyebrow bronze">How the work grew</div>
+        <h2>A family book became a larger body of work, one need at a time.</h2>
+        <p>The experiences came first. As the conversations multiplied, so did the need to preserve sources, distinguish memory from interpretation, and keep corrections available. The structure grew because the work needed it.</p>
+        <figure className="book-preview-figure">
+          <a href="/images/book4-evolution-of-the-way.webp" aria-label="Open Evolution of The Way diagram at full size">
+            <Image src="/images/book4-evolution-of-the-way.webp" width={1536} height={1024} alt="Evolution of The Way: a family book grows through dialogue, multiple expressions, memory and governance into a continuing learning system. Later layers build on earlier work." sizes="(max-width: 760px) 100vw, 680px" />
+          </a>
+          <figcaption>Evolution of The Way. The layers accumulated; later language did not exist at the beginning. <a href="/images/book4-evolution-of-the-way.webp">Open the full-size diagram.</a></figcaption>
+        </figure>
+        <h3>What made the work dependable?</h3>
+        <p>An original record, a transcript, and an interpretation do different jobs. A polished response still needs evidence and challenge. A useful conversation becomes durable knowledge when its sources, corrections, and human decisions remain available to the next person who uses it.</p>
+        <p>The book follows those distinctions through the actual making: where dialogue opened possibilities, where it went wrong, and why human judgment had to remain responsible for what was preserved and shared.</p>
+      </section>
 
       <section className="development-themes">
         <div className="eyebrow bronze">Inside the making</div>
@@ -89,7 +104,7 @@ export default function TheMakingOfTheWayPage() {
 
       <aside className="development-status-note">
         <strong>Current state</strong>
-        <p><em>The Making of The Way</em> is in development. Its reader-first direction, title, subtitle, public thesis, and current cover are established; manuscript structure and final publication timing remain developmental.</p>
+        <p><em>The Making of The Way</em> is being prepared for publication. The reader text is approved, and print and ebook preparation is underway. Final proofs and the publication date remain to be confirmed.</p>
       </aside>
     </InteriorPage>
   );
