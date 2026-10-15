@@ -78,7 +78,7 @@ export default function BuildingAgencyBeforeAgents() {
       </ol>
     </nav>
     <article className="agency-paper-body" dangerouslySetInnerHTML={{ __html: articleHtml }} />
-    <aside className="agency-paper-independence"><strong>Author's perspective.</strong> This paper presents Darren Dang's independent views and does not represent the official position of OCERS or any other affiliated institution. It is not legal, fiduciary, investment, security, or regulatory advice.</aside>
+    <aside className="agency-paper-independence"><strong>Author&apos;s perspective.</strong> This paper presents Darren Dang&apos;s independent views and does not represent the official position of OCERS or any other affiliated institution. It is not legal, fiduciary, investment, security, or regulatory advice.</aside>
     <nav className="agency-paper-related" aria-label="Related reading"><Link href="/papers/">All Papers & Talks →</Link><Link href="/the-way/">Discover The Way →</Link></nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
     <style>{paperStyles}</style>
