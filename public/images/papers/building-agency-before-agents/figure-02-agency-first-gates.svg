@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">Figure 2. Agency-First Maturity Model</title>
+<desc id="desc">Five readiness gates: Purpose (outcome and harm criteria), Knowledge (sources dates and permissions), Judgment (criteria exceptions owners), Governance (constraints audit interruption correction), and Bounded Delegation (scoped authority pilot evidence). Experiments may occur throughout, but consequential delegation requires relevant gates to be met and revisited.</desc>
+<rect x="0" y="0" width="1200" height="700" rx="0" fill="#FBF8F2"/>
+<text x="50" y="56" font-family="'Source Sans 3','Arial',sans-serif" font-size="17" font-weight="700" fill="#705A3D" text-anchor="start" letter-spacing="1.8">FIGURE 2 · READINESS GATES</text>
+<text x="50" y="120" font-family="'Newsreader',Georgia,serif" font-size="50" font-weight="500" fill="#0D1F31" text-anchor="start">Agency-First Maturity Model</text>
+<text x="50" y="160" font-family="'Source Sans 3','Arial',sans-serif" font-size="23" font-weight="400" fill="#4F5963" text-anchor="start">Earn the permission to delegate consequential actions.</text>
+<rect x="52" y="228" width="210" height="272" rx="18" fill="#F5EFE4" stroke="#E6DDCF" stroke-width="2"/>
+<text x="74" y="277" font-family="'Source Sans 3','Arial',sans-serif" font-size="28" font-weight="700" fill="#705A3D" text-anchor="start">01</text>
+<text x="72" y="341" font-family="'Source Sans 3','Arial',sans-serif" font-size="21" font-weight="700" fill="#0D1F31" text-anchor="start" letter-spacing="0.5">PURPOSE</text>
+<line x1="74" y1="385" x2="237" y2="385" stroke="#C79A45" stroke-width="2" stroke-linecap="round"/>
+<text x="72" y="427" font-family="'Source Sans 3','Arial',sans-serif" font-size="20" font-weight="500" fill="#4F5963" text-anchor="start">Outcome</text>
+<text x="72" y="457" font-family="'Source Sans 3','Arial',sans-serif" font-size="20" font-weight="500" fill="#4F5963" text-anchor="start">and harm criteria</text>
+<line x1="264" y1="358" x2="277" y2="358" stroke="#705A3D" stroke-width="2" stroke-linecap="round"/><path d="M266.8,364.3 L277,358 L266.8,351.7" fill="none" stroke="#705A3D" stroke-width="2" stroke-linejoin="round"/>
+<rect x="282" y="228" width="210" height="272" rx="18" fill="#F5EFE4" stroke="#E6DDCF" stroke-width="2"/>
+<text x="304" y="277" font-family="'Source Sans 3','Arial',sans-serif" font-size="28" font-weight="700" fill="#705A3D" text-anchor="start">02</text>
+<text x="302" y="341" font-family="'Source Sans 3','Arial',sans-serif" font-size="21" font-weight="700" fill="#0D1F31" text-anchor="start" letter-spacing="0.5">KNOWLEDGE</text>
+<line x1="304" y1="385" x2="467" y2="385" stroke="#C79A45" stroke-width="2" stroke-linecap="round"/>
+<text x="302" y="427" font-family="'Source Sans 3','Arial',sans-serif" font-size="20" font-weight="500" fill="#4F5963" text-anchor="start">Sources, dates,</text>
+<text x="302" y="457" font-family="'Source Sans 3','Arial',sans-serif" font-size="20" font-weight="500" fill="#4F5963" text-anchor="start">permissions</text>
+<line x1="494" y1="358" x2="507" y2="358" stroke="#705A3D" stroke-width="2" stroke-linecap="round"/><path d="M496.8,364.3 L507,358 L496.8,351.7" fill="none" stroke="#705A3D" stroke-width="2" stroke-linejoin="round"/>
+<rect x="512" y="228" width="210" height="272" rx="18" fill="#F5EFE4" stroke="#E6DDCF" stroke-width="2"/>
+<text x="534" y="277" font-family="'Source Sans 3','Arial',sans-serif" font-size="28" font-weight="700" fill="#705A3D" text-anchor="start">03</text>
+<text x="532" y="341" font-family="'Source Sans 3','Arial',sans-serif" font-size="21" font-weight="700" fill="#0D1F31" text-anchor="start" letter-spacing="0.5">JUDGMENT</text>
+<line x1="534" y1="385" x2="697" y2="385" stroke="#C79A45" stroke-width="2" stroke-linecap="round"/>
+<text x="532" y="427" font-family="'Source Sans 3','Arial',sans-serif" font-size="20" font-weight="500" fill="#4F5963" text-anchor="start">Criteria, exceptions,</text>
+<text x="532" y="457" font-family="'Source Sans 3','Arial',sans-serif" font-size="20" font-weight="500" fill="#4F5963" text-anchor="start">decision owners</text>
+<line x1="724" y1="358" x2="737" y2="358" stroke="#705A3D" stroke-width="2" stroke-linecap="round"/><path d="M726.8,364.3 L737,358 L726.8,351.7" fill="none" stroke="#705A3D" stroke-width="2" stroke-linejoin="round"/>
+<rect x="742" y="228" width="210" height="272" rx="18" fill="#F5EFE4" stroke="#E6DDCF" stroke-width="2"/>
+<text x="764" y="277" font-family="'Source Sans 3','Arial',sans-serif" font-size="28" font-weight="700" fill="#705A3D" text-anchor="start">04</text>
+<text x="762" y="341" font-family="'Source Sans 3','Arial',sans-serif" font-size="21" font-weight="700" fill="#0D1F31" text-anchor="start" letter-spacing="0.5">GOVERNANCE</text>
+<line x1="764" y1="385" x2="927" y2="385" stroke="#C79A45" stroke-width="2" stroke-linecap="round"/>
+<text x="762" y="427" font-family="'Source Sans 3','Arial',sans-serif" font-size="20" font-weight="500" fill="#4F5963" text-anchor="start">Constraints, audit,</text>
+<text x="762" y="457" font-family="'Source Sans 3','Arial',sans-serif" font-size="20" font-weight="500" fill="#4F5963" text-anchor="start">interrupt / repair</text>
+<line x1="954" y1="358" x2="967" y2="358" stroke="#705A3D" stroke-width="2" stroke-linecap="round"/><path d="M956.8,364.3 L967,358 L956.8,351.7" fill="none" stroke="#705A3D" stroke-width="2" stroke-linejoin="round"/>
+<rect x="972" y="228" width="210" height="272" rx="18" fill="#14283B" stroke="#C79A45" stroke-width="2"/>
+<text x="994" y="277" font-family="'Source Sans 3','Arial',sans-serif" font-size="28" font-weight="700" fill="#C79A45" text-anchor="start">05</text>
+<text x="992" y="338" font-family="'Source Sans 3','Arial',sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="start">BOUNDED</text>
+<text x="992" y="365" font-family="'Source Sans 3','Arial',sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="start">DELEGATION</text>
+<line x1="994" y1="385" x2="1157" y2="385" stroke="#C79A45" stroke-width="2" stroke-linecap="round"/>
+<text x="992" y="427" font-family="'Source Sans 3','Arial',sans-serif" font-size="20" font-weight="500" fill="#FFFFFF" text-anchor="start">Scoped authority,</text>
+<text x="992" y="457" font-family="'Source Sans 3','Arial',sans-serif" font-size="20" font-weight="500" fill="#FFFFFF" text-anchor="start">pilot evidence</text>
+<rect x="52" y="540" width="1093" height="89" rx="14" fill="#F0E3C8"/>
+<text x="73" y="578" font-family="'Source Sans 3','Arial',sans-serif" font-size="25" font-weight="700" fill="#0D1F31" text-anchor="start">Experiment at any stage to learn.</text>
+<text x="73" y="609" font-family="'Source Sans 3','Arial',sans-serif" font-size="20" font-weight="400" fill="#17202A" text-anchor="start">Consequential delegation requires the relevant gates to be satisfied and revisited.</text>
+<text x="52" y="672" font-family="'Source Sans 3','Arial',sans-serif" font-size="15" font-weight="700" fill="#705A3D" text-anchor="start" letter-spacing="1.0">PROPOSED FRAMEWORK · ITERATIVE READINESS, NOT FIVE SEQUENTIAL PROJECTS</text>
+</svg>

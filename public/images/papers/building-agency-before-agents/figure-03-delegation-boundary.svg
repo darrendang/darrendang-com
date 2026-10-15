@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">Figure 3. The Delegation Boundary</title>
+<desc id="desc">Three layers: human authority sets purpose, values, consequential decisions, appeals, and stopping power; institutional controls provide trusted sources, access limits, evaluation, monitoring and audit; authorized agents may retrieve, recommend, execute within scope, and report exceptions. Actions in scope may execute with logs; out-of-scope actions must stop and escalate.</desc>
+<rect x="0" y="0" width="1200" height="700" rx="0" fill="#FBF8F2"/>
+<text x="52" y="55" font-family="'Source Sans 3','Arial',sans-serif" font-size="17" font-weight="700" fill="#705A3D" text-anchor="start" letter-spacing="1.8">FIGURE 3 · AUTHORITY BOUNDARY</text>
+<text x="52" y="120" font-family="'Newsreader',Georgia,serif" font-size="52" font-weight="500" fill="#0D1F31" text-anchor="start">Capability is not permission</text>
+<text x="52" y="158" font-family="'Source Sans 3','Arial',sans-serif" font-size="23" font-weight="400" fill="#4F5963" text-anchor="start">Delegation changes what an agent may do. It does not transfer ultimate accountability.</text>
+<rect x="52" y="210" width="1096" height="103" rx="16" fill="#14283B" stroke="#E6DDCF" stroke-width="1"/>
+<text x="78" y="251" font-family="'Source Sans 3','Arial',sans-serif" font-size="23" font-weight="700" fill="#C79A45" text-anchor="start" letter-spacing="1.2">HUMAN AUTHORITY</text>
+<text x="78" y="286" font-family="'Source Sans 3','Arial',sans-serif" font-size="23" font-weight="500" fill="#FFFFFF" text-anchor="start">Purpose · values · consequential decisions · appeals · stop</text>
+<rect x="52" y="340" width="1096" height="103" rx="16" fill="#F5EFE4" stroke="#C79A45" stroke-width="2"/>
+<text x="78" y="381" font-family="'Source Sans 3','Arial',sans-serif" font-size="23" font-weight="700" fill="#705A3D" text-anchor="start" letter-spacing="1.2">INSTITUTIONAL CONTROLS</text>
+<text x="78" y="416" font-family="'Source Sans 3','Arial',sans-serif" font-size="23" font-weight="500" fill="#17202A" text-anchor="start">Trusted sources · access limits · evaluation · monitoring · audit</text>
+<rect x="52" y="470" width="1096" height="103" rx="16" fill="#E4EBEF" stroke="#E6DDCF" stroke-width="1"/>
+<text x="78" y="511" font-family="'Source Sans 3','Arial',sans-serif" font-size="23" font-weight="700" fill="#705A3D" text-anchor="start" letter-spacing="1.2">AUTHORIZED AGENT</text>
+<text x="78" y="546" font-family="'Source Sans 3','Arial',sans-serif" font-size="23" font-weight="500" fill="#17202A" text-anchor="start">Retrieve · recommend · act inside scope · report exceptions</text>
+<line x1="600" y1="315" x2="600" y2="337" stroke="#C79A45" stroke-width="4" stroke-linecap="round"/><path d="M593.7,326.8 L600,337 L606.3,326.8" fill="none" stroke="#C79A45" stroke-width="4" stroke-linejoin="round"/>
+<line x1="600" y1="444" x2="600" y2="466" stroke="#C79A45" stroke-width="4" stroke-linecap="round"/><path d="M593.7,455.8 L600,466 L606.3,455.8" fill="none" stroke="#C79A45" stroke-width="4" stroke-linejoin="round"/>
+<rect x="52" y="611" width="526" height="61" rx="10" fill="#F0E3C8"/>
+<text x="75" y="650" font-family="'Source Sans 3','Arial',sans-serif" font-size="21" font-weight="700" fill="#0D1F31" text-anchor="start">IN SCOPE: EXECUTE AND LOG</text>
+<rect x="596" y="611" width="552" height="61" rx="10" fill="#F5E4DD"/>
+<text x="619" y="650" font-family="'Source Sans 3','Arial',sans-serif" font-size="21" font-weight="700" fill="#0D1F31" text-anchor="start">OUT OF SCOPE: STOP AND ESCALATE</text>
+</svg>

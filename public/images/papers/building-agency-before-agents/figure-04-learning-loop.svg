@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">Figure 4. Institutional Learning Loop</title>
+<desc id="desc">Cycle: Capture evidence; Connect context; Judge choices; Act or Create; Observe consequences; Learn from results; Steward and pass forward; Repeat with better evidence and greater human capacity. A conceptual adaptation of the governed Dang OS learning loop, not a claim of empirical validation.</desc>
+<rect x="0" y="0" width="1200" height="700" rx="0" fill="#FBF8F2"/>
+<text x="52" y="56" font-family="'Source Sans 3','Arial',sans-serif" font-size="17" font-weight="700" fill="#705A3D" text-anchor="start" letter-spacing="1.7">FIGURE 4 · ILLUSTRATIVE STEWARDSHIP LOOP</text>
+<text x="52" y="119" font-family="'Newsreader',Georgia,serif" font-size="47" font-weight="500" fill="#0D1F31" text-anchor="start">Institutional learning is continuous</text>
+<text x="52" y="160" font-family="'Source Sans 3','Arial',sans-serif" font-size="22" font-weight="400" fill="#4F5963" text-anchor="start">Every consequential action should have a path back to improved understanding.</text>
+<rect x="44" y="237" width="151" height="174" rx="14" fill="#F5EFE4" stroke="#E6DDCF" stroke-width="2"/>
+<text x="59" y="282" font-family="'Source Sans 3','Arial',sans-serif" font-size="19" font-weight="700" fill="#705A3D" text-anchor="start">01</text>
+<text x="59" y="329" font-family="'Source Sans 3','Arial',sans-serif" font-size="17" font-weight="700" fill="#0D1F31" text-anchor="start">CAPTURE</text>
+<text x="59" y="364" font-family="'Source Sans 3','Arial',sans-serif" font-size="15" font-weight="400" fill="#4F5963" text-anchor="start">Preserve evidence</text>
+<line x1="197" y1="320" x2="206" y2="320" stroke="#705A3D" stroke-width="1.8" stroke-linecap="round"/><path d="M195.8,326.3 L206,320 L195.8,313.7" fill="none" stroke="#705A3D" stroke-width="1.8" stroke-linejoin="round"/>
+<rect x="206" y="237" width="151" height="174" rx="14" fill="#F5EFE4" stroke="#E6DDCF" stroke-width="2"/>
+<text x="221" y="282" font-family="'Source Sans 3','Arial',sans-serif" font-size="19" font-weight="700" fill="#705A3D" text-anchor="start">02</text>
+<text x="221" y="329" font-family="'Source Sans 3','Arial',sans-serif" font-size="17" font-weight="700" fill="#0D1F31" text-anchor="start">CONNECT</text>
+<text x="221" y="364" font-family="'Source Sans 3','Arial',sans-serif" font-size="15" font-weight="400" fill="#4F5963" text-anchor="start">Find context</text>
+<line x1="359" y1="320" x2="368" y2="320" stroke="#705A3D" stroke-width="1.8" stroke-linecap="round"/><path d="M357.8,326.3 L368,320 L357.8,313.7" fill="none" stroke="#705A3D" stroke-width="1.8" stroke-linejoin="round"/>
+<rect x="368" y="237" width="151" height="174" rx="14" fill="#F5EFE4" stroke="#E6DDCF" stroke-width="2"/>
+<text x="383" y="282" font-family="'Source Sans 3','Arial',sans-serif" font-size="19" font-weight="700" fill="#705A3D" text-anchor="start">03</text>
+<text x="383" y="329" font-family="'Source Sans 3','Arial',sans-serif" font-size="17" font-weight="700" fill="#0D1F31" text-anchor="start">JUDGE</text>
+<text x="383" y="364" font-family="'Source Sans 3','Arial',sans-serif" font-size="15" font-weight="400" fill="#4F5963" text-anchor="start">Choose responsibly</text>
+<line x1="521" y1="320" x2="530" y2="320" stroke="#705A3D" stroke-width="1.8" stroke-linecap="round"/><path d="M519.8,326.3 L530,320 L519.8,313.7" fill="none" stroke="#705A3D" stroke-width="1.8" stroke-linejoin="round"/>
+<rect x="530" y="237" width="151" height="174" rx="14" fill="#14283B" stroke="#C79A45" stroke-width="2"/>
+<text x="545" y="282" font-family="'Source Sans 3','Arial',sans-serif" font-size="19" font-weight="700" fill="#C79A45" text-anchor="start">04</text>
+<text x="545" y="329" font-family="'Source Sans 3','Arial',sans-serif" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="start">ACT / CREATE</text>
+<text x="545" y="364" font-family="'Source Sans 3','Arial',sans-serif" font-size="15" font-weight="400" fill="#FFFFFF" text-anchor="start">Test in reality</text>
+<line x1="683" y1="320" x2="692" y2="320" stroke="#705A3D" stroke-width="1.8" stroke-linecap="round"/><path d="M681.8,326.3 L692,320 L681.8,313.7" fill="none" stroke="#705A3D" stroke-width="1.8" stroke-linejoin="round"/>
+<rect x="692" y="237" width="151" height="174" rx="14" fill="#F5EFE4" stroke="#E6DDCF" stroke-width="2"/>
+<text x="707" y="282" font-family="'Source Sans 3','Arial',sans-serif" font-size="19" font-weight="700" fill="#705A3D" text-anchor="start">05</text>
+<text x="707" y="329" font-family="'Source Sans 3','Arial',sans-serif" font-size="17" font-weight="700" fill="#0D1F31" text-anchor="start">OBSERVE</text>
+<text x="707" y="364" font-family="'Source Sans 3','Arial',sans-serif" font-size="15" font-weight="400" fill="#4F5963" text-anchor="start">See consequences</text>
+<line x1="845" y1="320" x2="854" y2="320" stroke="#705A3D" stroke-width="1.8" stroke-linecap="round"/><path d="M843.8,326.3 L854,320 L843.8,313.7" fill="none" stroke="#705A3D" stroke-width="1.8" stroke-linejoin="round"/>
+<rect x="854" y="237" width="151" height="174" rx="14" fill="#F5EFE4" stroke="#E6DDCF" stroke-width="2"/>
+<text x="869" y="282" font-family="'Source Sans 3','Arial',sans-serif" font-size="19" font-weight="700" fill="#705A3D" text-anchor="start">06</text>
+<text x="869" y="329" font-family="'Source Sans 3','Arial',sans-serif" font-size="17" font-weight="700" fill="#0D1F31" text-anchor="start">LEARN</text>
+<text x="869" y="364" font-family="'Source Sans 3','Arial',sans-serif" font-size="15" font-weight="400" fill="#4F5963" text-anchor="start">Update judgment</text>
+<line x1="1007" y1="320" x2="1016" y2="320" stroke="#705A3D" stroke-width="1.8" stroke-linecap="round"/><path d="M1005.8,326.3 L1016,320 L1005.8,313.7" fill="none" stroke="#705A3D" stroke-width="1.8" stroke-linejoin="round"/>
+<rect x="1016" y="237" width="151" height="174" rx="14" fill="#F5EFE4" stroke="#E6DDCF" stroke-width="2"/>
+<text x="1031" y="282" font-family="'Source Sans 3','Arial',sans-serif" font-size="19" font-weight="700" fill="#705A3D" text-anchor="start">07</text>
+<text x="1031" y="329" font-family="'Source Sans 3','Arial',sans-serif" font-size="17" font-weight="700" fill="#0D1F31" text-anchor="start">STEWARD</text>
+<text x="1031" y="364" font-family="'Source Sans 3','Arial',sans-serif" font-size="15" font-weight="400" fill="#4F5963" text-anchor="start">Pass forward</text>
+<line x1="1090" y1="431" x2="1090" y2="479" stroke="#C79A45" stroke-width="3" stroke-linecap="round"/>
+<line x1="1090" y1="479" x2="117" y2="479" stroke="#C79A45" stroke-width="3" stroke-linecap="round"/>
+<line x1="117" y1="479" x2="117" y2="431" stroke="#C79A45" stroke-width="3" stroke-linecap="round"/><path d="M123.3,441.2 L117,431 L110.7,441.2" fill="none" stroke="#C79A45" stroke-width="3" stroke-linejoin="round"/>
+<text x="600" y="517" font-family="'Source Sans 3','Arial',sans-serif" font-size="18" font-weight="700" fill="#705A3D" text-anchor="middle" letter-spacing="1.1">REPEAT WITH BETTER EVIDENCE AND GREATER HUMAN CAPACITY</text>
+</svg>

@@ -14,7 +14,14 @@ export default function Papers() {
       <div className="eyebrow bronze">The Way Papers</div>
       <h2>Living ideas and evolving thought.</h2>
       <p className="lead">The Way Papers give consequential ideas room for disciplined examination: observation, tension, proposition, mechanism, testing, challenge, and open questions.</p>
-      <p>The opening collection is being prepared for individual public release. No unpublished Paper is posted here merely as a teaser. A Paper appears when its publication review is complete.</p>
+      <p>Each Paper is released only after its own publication review. No unpublished draft is promoted merely as a teaser.</p>
+      <div className="paper-index-card">
+        <div className="book-status">The Way Papers · Framework · October 2026</div>
+        <h3 className="type-editorial">Building Agency Before Agents</h3>
+        <p className="paper-subtitle">Why Human Judgment, Institutional Intelligence, and Responsible Governance Must Come Before Autonomous AI</p>
+        <p>AI agents can act. Are organizations ready to govern what they do? A proposed Agency Gap diagnostic and five readiness gates help frame responsible delegation.</p>
+        <div className="actions"><Link className="button button-dark" href="/papers/building-agency-before-agents/">Read the paper</Link></div>
+      </div>
       <div className="boundary-stack">
         <article><span>Foundation</span><strong>A consequential proposition worth establishing clearly.</strong></article>
         <article><span>Framework</span><strong>A useful structure for seeing or working with a problem.</strong></article>
