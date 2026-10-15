@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'AI agents can act. Can organizations govern what they do? Explore the Agency Gap, human judgment, and five readiness gates for responsible delegation.',
     url: 'https://darrendang.com/papers/building-agency-before-agents/',
     type: 'article',
-    publishedTime: '2026-10-14T00:00:00-07:00',
+    publishedTime: '2026-10-14',
   },
 };
 
