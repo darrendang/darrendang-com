@@ -17,6 +17,7 @@ import "./music-companion.css";
 import "./generative-dialogue.css";
 import "./nathan-style.css";
 import "./editorial-previews.css";
+import "./book-purchase.css";
 import "./site-contrast.css";
 
 const signatureSerif = Cormorant_Garamond({

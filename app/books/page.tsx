@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { purchasableBooks } from "@/content/bookstore";
 import { InteriorPage } from "@/components/InteriorPage";
 
 export const metadata = {
@@ -93,6 +94,10 @@ export default function Books() {
         <p>Only later did a larger pattern become visible across them. The first three move from inheritance, to teachability, to creation. The fourth makes the making visible. The fifth turns the work toward the reader&apos;s own life.</p>
       </div>
 
+      <div className="book-buy-entry">
+        <Link className="button button-dark" href="/buy/">Buy available editions →</Link>
+      </div>
+
       <div className="books-library">
         {books.map((book) => (
           <article className="book-library-card" key={book.title}>
@@ -107,7 +112,10 @@ export default function Books() {
               <p className="book-library-question">{book.question}</p>
               <p>{book.copy}</p>
               <p className="book-library-bridge">{book.bridge}</p>
-              <Link className="text-link" href={book.href}>Explore the book →</Link>
+              <div className="book-buy-actions">
+                <Link className="text-link" href={book.href}>Explore the book →</Link>
+                {purchasableBooks().filter((item) => item.href === book.href).map((item) => <Link key={item.id} className="button button-dark" href={`/buy/?book=${item.id}`}>Buy Book {item.number} →</Link>)}
+              </div>
             </div>
           </article>
         ))}

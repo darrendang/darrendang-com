@@ -43,6 +43,9 @@ jobs:
           test -f public/audio/for-those-who-come-after-us.mp3
           test -f public/docs/From_AI_Experiments_to_Institutional_Capability_Darren_Dang.pdf
 
+      - name: Check purchase catalog
+        run: npm run check:bookstore
+
       - name: Type check
         run: npm run typecheck
 
