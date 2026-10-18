@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 import { ConnectedDots } from "@/components/ConnectedDots";
+import { BookPurchase } from "@/components/BookPurchase";
 import { MusicCompanion } from "@/components/MusicCompanion";
 import { takeTheBestLyrics } from "@/lib/songLyrics";
 
@@ -201,16 +202,10 @@ export default function Book() {
           <p className="progression"><strong>INHERIT → BECOME → CONNECT → LEAD → LIVE → PASS FORWARD</strong></p>
           <p>Across twenty-nine short chapters, the book explores inheritance, identity, education, failure, curiosity, systems, leadership, family, money, purpose, and legacy.</p>
 
-          <aside className="development-status-note">
-            <strong>Available now in four formats</strong>
-            <p><em>For Those Who Come After Us</em> is available as an eBook, paperback, hardcover, and audiobook. The audiobook is narrated by Darren Dang and is available through Audible, Apple Books, and Amazon.</p>
-            <div className="book-detail-actions">
-              <a className="button button-dark" href="https://www.amazon.com/dp/B0HHZRLXKD/" target="_blank" rel="noreferrer">Amazon — all formats</a>
-              <a className="text-link" href="https://www.audible.com/search?keywords=For+Those+Who+Come+After+Us+Darren+Dang" target="_blank" rel="noreferrer">Listen on Audible →</a>
-              <a className="text-link" href="https://books.apple.com/us/search?term=For%20Those%20Who%20Come%20After%20Us%20Darren%20Dang" target="_blank" rel="noreferrer">Listen on Apple Books →</a>
-            </div>
-            <p>The published English first edition remains locked; future revisions or translated editions remain separately governed.</p>
-          </aside>
+          <div className="book-buy-entry">
+            <p>Available in English and Vietnamese. Choose hardcover, paperback, eBook, or audiobook where available.</p>
+            <Link className="button button-dark" href="#buy">Choose your edition →</Link>
+          </div>
 
           <h2>Beyond the book</h2>
           <p>What we inherit is not a script. It is a starting map—routes others traveled, hazards they discovered, landmarks worth remembering, and questions they could not answer for us. The next generation still has to decide where to go.</p>
@@ -221,6 +216,8 @@ export default function Book() {
           </div>
         </div>
       </div>
+
+      <BookPurchase bookId="book1" />
 
       <MusicCompanion
         eyebrow="Listen · Songs from Book 1"

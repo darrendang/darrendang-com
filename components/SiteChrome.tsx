@@ -34,6 +34,7 @@ export function SiteFooter() {
         <div>
           <strong>Books &amp; The Way</strong>
           <Link href="/books/">Books</Link>
+          <Link href="/buy/">Buy the books</Link>
           <Link href="/books/for-those-who-come-after-us/">For Those Who Come After Us</Link>
           <Link href="/books/wisdom-has-no-rank/">Wisdom Has No Rank</Link>
           <Link href="/books/dots/">D.O.T.S.</Link>

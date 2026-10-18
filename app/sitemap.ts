@@ -35,6 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/letters/the-way-was-us/',
     '/letters/the-watch-goes-on/',
     '/books/',
+    '/buy/',
     '/ideas/',
     '/genome/',
     '/dots/',
