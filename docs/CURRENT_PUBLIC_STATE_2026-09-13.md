@@ -1,6 +1,8 @@
 # DarrenDang.com — Public State Record — September 13, 2026
 
-**Status:** SUPERSEDED / PRESERVED AS HISTORICAL PROVENANCE  
+> **October 18, 2026 supersession:** Historical as-of record. Active public-state navigation now resolves through `docs/CURRENT_PUBLIC_STATE_2026-10-18.md` and current website main; scoped decisions below retain their authority where applicable. Original dated observations and supersession history are preserved.
+
+**Status:** SUPERSEDED / PRESERVED AS HISTORICAL PROVENANCE
 **Superseded:** 2026-09-14  
 **Current authority:** `docs/CURRENT_PUBLIC_STATE_2026-09-20.md` and production `main`
 

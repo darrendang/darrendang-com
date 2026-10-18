@@ -1,5 +1,7 @@
 # Purchase catalog maintenance
 
+Approved website behavior is recorded in `00_Canon_Control/BOOK_PURCHASE_FLOW_CANON_2026-10-18.md`; current public-state navigation is `docs/CURRENT_PUBLIC_STATE_2026-10-18.md`.
+
 The reusable buyer interface lives at `/buy/` and on Book 1's page at `#buy`.
 `content/bookstore.ts` holds public product destinations; `BookPurchase` renders them.
 

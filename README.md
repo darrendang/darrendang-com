@@ -4,7 +4,9 @@ Source for **DarrenDang.com — the place where Darren's ideas live**.
 
 The site is a long-term intellectual platform for books, ideas, writing, talks, and related media. The current public direction is **human- and books-first**: lived experience and the five-book journey are the primary doorway, with **The Way** introduced as the larger pattern that emerged through them.
 
-## Public book state snapshot — September 14, 2026
+## Historical public book state snapshot — September 14, 2026
+
+These retained labels and proof observations are historical website wording, not current source-book or release authority. Use the scoped book repositories for exact current status and the verified catalog for purchasable offers.
 
 - **Book 1 — _For Those Who Come After Us — A Life in Lessons_** — **Published**
 - **Book 2 — _Wisdom Has No Rank_** — **Final Proof**
@@ -22,11 +24,15 @@ The public site also connects Ideas, Letters, The Way Papers, The Way in Motion,
 
 ## Public current-state authority
 
-For the public website, `main` is the production implementation source of truth. Current website routing and public-state framing must agree with `docs/CURRENT_PUBLIC_STATE_2026-09-22.md` and the applicable canon-control records in `00_Canon_Control/`.
+For the public website, `main` is the production implementation source of truth. Current website routing and public-state framing must agree with `docs/CURRENT_PUBLIC_STATE_2026-10-18.md` and the applicable canon-control records in `00_Canon_Control/`.
 
 Exact book/manuscript/production status remains governed by the scoped source repositories and central cross-project authority rather than this README or a dated website snapshot.
 
 Historical decision records remain provenance, but must be explicitly marked superseded when later public-state decisions replace them.
+
+## Book purchase flow
+
+[Buy the books](https://darrendang.com/buy/) lets readers choose a language, available format and seller. Book 1 also embeds the chooser. The catalog supports future released languages and series books. See [purchase-flow canon](00_Canon_Control/BOOK_PURCHASE_FLOW_CANON_2026-10-18.md) and [catalog maintenance](docs/BOOK_PURCHASE_CATALOG.md).
 
 ## Production architecture
 

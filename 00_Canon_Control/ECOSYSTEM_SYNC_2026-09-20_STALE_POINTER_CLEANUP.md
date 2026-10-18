@@ -1,6 +1,8 @@
 # Ecosystem Sync — Website Stale-Reference Cleanup — 2026-09-20
 
-**Status:** CURRENT SYNC / CLEAN POINTER MARKER  
+> **October 18, 2026 supersession:** This receipt is historical for current-state discovery. Use current main, `docs/CURRENT_PUBLIC_STATE_2026-10-18.md`, and `00_Canon_Control/BOOK_PURCHASE_FLOW_CANON_2026-10-18.md`. Earlier baseline/navigation decisions remain scoped authorities; the dated receipt body is preserved.
+
+**Status:** HISTORICAL SYNC / CLEAN POINTER MARKER
 **Approved by:** Darren Dang  
 **Scope:** DarrenDang.com public implementation, current-state routing, protected family letters, navigation, Google Drive website sync receipts  
 **Authority:** GitHub `darrendang/darrendang-com` `main`

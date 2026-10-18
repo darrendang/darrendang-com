@@ -1,7 +1,9 @@
 # DarrenDang.com — Current Public State
 
+> **October 18, 2026 supersession:** Historical as-of record. Active public-state navigation now resolves through `docs/CURRENT_PUBLIC_STATE_2026-10-18.md` and current website main; scoped decisions below retain their authority where applicable. Original dated observations and supersession history are preserved.
+
 **Date:** 2026-09-21  
-**Status:** CURRENT PUBLIC IMPLEMENTATION RECORD  
+**Status:** HISTORICAL AS-OF PUBLIC IMPLEMENTATION RECORD
 **Production authority:** `main` branch of `darrendang/darrendang-com`  
 **Reader-journey authority:** `00_Canon_Control/WEBSITE_BASELINE_GOVERNANCE_2026-09-14.md` + `00_Canon_Control/WEBSITE_NAVIGATION_REFINEMENT_2026-09-20.md`  
 **Music journey control:** `00_Canon_Control/THE_WAY_IN_MUSIC_CULTURAL_JOURNEY_2026-09-21.md`
