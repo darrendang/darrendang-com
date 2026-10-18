@@ -1,5 +1,7 @@
 # DarrenDang.com — Canonical Website Positioning and Stale-Pointer Resolution
 
+> **October 18, 2026 supersession:** The active website-state pointer is `docs/CURRENT_PUBLIC_STATE_2026-10-18.md` on current website main. Earlier pointer corrections below are retained as dated history; underlying source-project authority remains separate.
+
 Date: 2026-09-14
 Status: CANONICAL
 Approved by: Darren Dang

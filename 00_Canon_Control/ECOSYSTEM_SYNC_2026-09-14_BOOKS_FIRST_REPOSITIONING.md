@@ -1,7 +1,9 @@
 # Ecosystem Sync — Books-First Website Repositioning
 
+> **October 18, 2026 supersession:** This receipt is historical for current-state discovery. Use current main, `docs/CURRENT_PUBLIC_STATE_2026-10-18.md`, and `00_Canon_Control/BOOK_PURCHASE_FLOW_CANON_2026-10-18.md`. Earlier baseline/navigation decisions remain scoped authorities; the dated receipt body is preserved.
+
 Date: 2026-09-14
-Status: CURRENT SYNC MARKER
+Status: HISTORICAL SYNC MARKER
 Authority: GitHub `darrendang/darrendang-com` `main`
 Authoritative commit at sync start: `bd00b0df634e4b520a91fe1d15065199ffdf4e14`
 

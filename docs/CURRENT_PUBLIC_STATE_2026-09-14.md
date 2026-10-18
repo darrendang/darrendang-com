@@ -1,5 +1,7 @@
 # DarrenDang.com — Current Public State
 
+> **October 18, 2026 supersession:** Historical as-of record. Active public-state navigation now resolves through `docs/CURRENT_PUBLIC_STATE_2026-10-18.md` and current website main; scoped decisions below retain their authority where applicable. Original dated observations and supersession history are preserved.
+
 **Date:** 2026-09-14  
 **Status:** SUPERSEDED / PRESERVED AS HISTORICAL PUBLIC-STATE RECORD
 **Superseded:** 2026-09-20

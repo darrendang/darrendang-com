@@ -1,5 +1,7 @@
 # Ecosystem Sync Receipt — 2026-09-13
 
+> **October 18, 2026 supersession:** The active website-state pointer is `docs/CURRENT_PUBLIC_STATE_2026-10-18.md` on current website main. Earlier pointer corrections below are retained as dated history; underlying source-project authority remains separate.
+
 Status: SUPERSEDED / HISTORICAL SYNC RECEIPT
 Superseded: 2026-09-14
 Scope: The Way / Dang Genome, DarrenDang.com, Books 1–5

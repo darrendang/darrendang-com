@@ -1,6 +1,8 @@
 # DarrenDang.com — Book 4 Public Companion Posture
 
-**Status:** SUPERSEDED AS CURRENT-STATE AUTHORITY / PRESERVED AS HISTORICAL PROVENANCE  
+> **October 18, 2026 supersession:** The active website-state pointer is `docs/CURRENT_PUBLIC_STATE_2026-10-18.md` on current website main. Earlier pointer corrections below are retained as dated history; underlying source-project authority remains separate.
+
+**Status:** SUPERSEDED AS CURRENT-STATE AUTHORITY / PRESERVED AS HISTORICAL PROVENANCE
 **Original date:** 2026-09-04  
 **Superseded:** 2026-09-13  
 **Public implementation:** DarrenDang.com  
