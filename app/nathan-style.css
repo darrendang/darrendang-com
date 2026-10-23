@@ -397,7 +397,19 @@ p { orphans: 3; widows: 3; }
 }
 .book-card h3 { font-size: clamp(30px, 3vw, 42px); line-height: 1.02; }
 .book-card-sub { font-family: var(--font-editorial-family); font-style: italic; }
-.book-card-cover img { box-shadow: 0 22px 55px rgba(13,31,49,.18); }
+/* Give every shelf thumbnail the same footprint, including the taller Book 1 source. */
+.book-card-cover { --cover-display-height: 440px; }
+.book-card-cover img {
+  width: min(100%, calc(var(--cover-display-height) * 2 / 3));
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 22px 55px rgba(13,31,49,.18);
+}
+@media (max-width: 700px) {
+  .book-card-cover { --cover-display-height: 470px; }
+}
 
 /* Interior page system */
 .interior-header {
