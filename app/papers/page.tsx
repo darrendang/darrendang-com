@@ -1,13 +1,14 @@
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 
-export const metadata = {
+export const metadata = pageMetadata("/papers/", {
   title: "Papers & Talks",
   description: "Explore The Way Papers and Darren Dang's applied papers and talks on technology, AI, governance, institutional capability, judgment, trust, and public service.",
-};
+});
 
 export default function Papers() {
-  return <InteriorPage eyebrow="Papers & Talks" title="Different kinds of longer-form thinking." wide>
+  return <InteriorPage path="/papers/" eyebrow="Papers & Talks" title="Different kinds of longer-form thinking." wide>
     <p className="lead">Some writing develops the living ideas of The Way. Other work applies ideas to professional and institutional questions. They can inform one another without becoming the same publication stream.</p>
 
     <section className="genome-boundary">

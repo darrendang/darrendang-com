@@ -1,3 +1,6 @@
+import { pageMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { MusicCompanion } from "@/components/MusicCompanion";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
@@ -5,11 +8,11 @@ import { carryItForwardLyrics } from "@/lib/songLyrics";
 import { culturalSongs, musicMovements } from "@/lib/theWayMusicJourney";
 import "./music-journey.css";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/the-way/music/", {
   title: "The Way in Music — One Philosophy, Many Cultures",
   description:
     "A cultural music journey through original expressions of The Way: modern first, culturally unmistakable, philosophically The Way.",
-};
+});
 
 const languageBySong: Record<string, string> = {
   vietnam: "vi",
@@ -35,6 +38,7 @@ export default function TheWayMusicPage() {
         <section className="music-journey-hero">
           <div className="container music-journey-hero-grid">
             <div>
+              <Breadcrumbs path="/the-way/music/" title="The Way in Music" />
               <div className="eyebrow">The Way · In music</div>
               <h1 className="type-editorial">One philosophy. Many cultures. Many ways forward.</h1>
               <p className="music-journey-lead">
@@ -45,6 +49,7 @@ export default function TheWayMusicPage() {
               <div className="music-journey-actions">
                 <a className="button button-gold" href="#journey">Begin the journey</a>
                 <Link className="text-link light" href="/the-way/">Return to The Way</Link>
+                <a className="text-link light" href="#nathans-song">A song for Nathan</a>
               </div>
             </div>
             <aside className="music-journey-manifesto" aria-label="Creative principle">
@@ -232,6 +237,23 @@ export default function TheWayMusicPage() {
           <div className="container music-coda-actions">
             <Link className="button button-light" href="/the-way/">Return to The Way</Link>
             <Link className="text-link light" href="/the-way/constitution/">Read the Constitution →</Link>
+          </div>
+        </section>
+        <section className="section" id="nathans-song">
+          <div className="container">
+            <MusicCompanion
+              eyebrow="Family · In music"
+              title="A song for Nathan"
+              description="A father learning to listen. A son finding his own way."
+              tracks={[
+                {
+                  title: "The Way You See",
+                  src: "/audio/Song-The-Way-You-See-Nathan.mp3",
+                  description: "For Nathan, from Dad.",
+                },
+              ]}
+              note="The original uploaded recording, shared with love. Listening is always optional."
+            />
           </div>
         </section>
       </main>

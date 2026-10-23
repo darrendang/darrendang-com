@@ -1,14 +1,15 @@
+import { pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import { IdeaDetailPage } from "@/components/IdeaDetailPage";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/ideas/automate-the-repetition-preserve-human-judgment/", {
   title: "Automate the Repetition. Preserve Human Judgment.",
   description: "Explore Darren Dang's principle for using technology and AI to remove mechanical work while preserving accountable human judgment.",
   alternates: { canonical: "/ideas/automate-the-repetition-preserve-human-judgment/" },
-};
+});
 
 export default function HumanJudgmentIdeaPage() {
-  return <IdeaDetailPage
+  return <IdeaDetailPage path="/ideas/automate-the-repetition-preserve-human-judgment/"
     eyebrow="Technology & AI"
     title="Automate the Repetition. Preserve Human Judgment."
     thesis="Technology is most valuable when it removes mechanical work without pretending that every consequential decision is mechanical."

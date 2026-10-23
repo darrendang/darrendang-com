@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ideas } from "@/content/seed";
+import { pageMetadata } from "@/lib/seo";
 
 const indexableIdeaSlugs = new Set([
   "generative-dialogue",
@@ -15,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const canonical = `/ideas/${idea.slug}/`;
   const isIndexable = indexableIdeaSlugs.has(idea.slug);
 
-  return {
+  return pageMetadata(canonical, {
     title: idea.title.replace("™", ""),
     description: idea.summary,
     alternates: { canonical },
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       type: "article",
       url: canonical,
     },
-  };
+  });
 }
 
 export default async function IdeaLayout({

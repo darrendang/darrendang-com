@@ -1,13 +1,14 @@
+import { pageMetadata } from "@/lib/seo";
 import { BookExcerptPage } from "@/components/BookExcerptPage";
 
-export const metadata = {
+export const metadata = pageMetadata("/books/wisdom-has-no-rank/prologue-excerpt/", {
   title: "The Correction I Almost Left Out — Wisdom Has No Rank",
   description: "Read a selected passage from the Prologue of Wisdom Has No Rank by Darren Dang.",
-};
+});
 
 export default function PrologueExcerptPage() {
   return (
-    <BookExcerptPage
+    <BookExcerptPage path="/books/wisdom-has-no-rank/prologue-excerpt/"
       eyebrow="Inside Book 2 · Beginning"
       title="The Correction I Almost Left Out"
       dek="A selected passage from the Prologue of Wisdom Has No Rank."

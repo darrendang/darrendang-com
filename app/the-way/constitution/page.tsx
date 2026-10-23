@@ -1,10 +1,11 @@
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 
-export const metadata = {
+export const metadata = pageMetadata("/the-way/constitution/", {
   title: "The Constitution of The Way",
   description: "The Constitution of The Way v1.0, ratified August 28, 2026: the governing philosophical canon for The Way and the systems and expressions beneath it.",
-};
+});
 
 const integrityDistinctions = [
   "fact from interpretation",
@@ -33,7 +34,7 @@ function CanonQuote({ children }: { children: React.ReactNode }) {
 
 export default function ConstitutionPage() {
   return (
-    <InteriorPage eyebrow="The Way" title="The Constitution of The Way" wide>
+    <InteriorPage path="/the-way/constitution/" eyebrow="The Way" title="The Constitution of The Way" wide>
       <div className="genome-lead-grid constitution-intro">
         <div>
           <p className="lead">This is the public text of the canonical Constitution of The Way, published verbatim from Version 1.0.</p>

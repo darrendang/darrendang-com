@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/seo";
 import { WorkStructuredData } from "@/components/WorkStructuredData";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -5,7 +6,7 @@ import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 import styles from "../bo-oi/page.module.css";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/letters/bo-me/", {
   title: "Bố Mẹ — What You Built Together",
   description:
     "A letter from Darren Dang to both of his parents about the marriage, family, and shared life that shaped what came after them.",
@@ -17,11 +18,11 @@ export const metadata: Metadata = {
     type: "article",
     url: "/letters/bo-me/",
   },
-};
+});
 
 export default function BoMePage() {
   return (
-    <InteriorPage eyebrow="Letter · To My Parents" title="Bố Mẹ" wide>
+    <InteriorPage path="/letters/bo-me/" eyebrow="Letter · To My Parents" title="Bố Mẹ" wide>
       <WorkStructuredData kind="Article" name="Bố Mẹ — What You Built Together" path="/letters/bo-me/" description={metadata.description} />
       <section className={styles.intro}>
         <p className={styles.kicker}>I wrote to each of you separately. This letter is to the life between you.</p>

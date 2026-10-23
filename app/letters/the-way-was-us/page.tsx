@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/seo";
 import { WorkStructuredData } from "@/components/WorkStructuredData";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -5,7 +6,7 @@ import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 import styles from "./page.module.css";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/letters/the-way-was-us/", {
   title: "To Chrystina — The Way Was Us",
   description: "A birthday letter and two musical expressions from Darren Dang to his wife Chrystina about marriage, family, legacy, and the life behind The Way.",
   alternates: { canonical: "/letters/the-way-was-us/" },
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+});
 
 type LyricSection = {
   title: string;
@@ -143,7 +144,7 @@ function LyricsDisclosure({
 
 export default function TheWayWasUsPage() {
   return (
-    <InteriorPage eyebrow="Letter / Song · September 15, 2026" title="To Chrystina" wide>
+    <InteriorPage path="/letters/the-way-was-us/" eyebrow="Letter / Song · September 15, 2026" title="To Chrystina" wide>
       <WorkStructuredData kind="Article" name="To Chrystina — The Way Was Us" path="/letters/the-way-was-us/" description={metadata.description} />
       <section className={styles.intro}>
         <p className={styles.kicker}><em>The Way Was Us</em></p>

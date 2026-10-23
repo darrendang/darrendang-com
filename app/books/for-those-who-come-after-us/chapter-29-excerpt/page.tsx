@@ -1,13 +1,14 @@
+import { pageMetadata } from "@/lib/seo";
 import { BookExcerptPage } from "@/components/BookExcerptPage";
 
-export const metadata = {
+export const metadata = pageMetadata("/books/for-those-who-come-after-us/chapter-29-excerpt/", {
   title: "Chapter 29 Excerpt — What I Hope You Keep. What I Hope You Change.",
   description: "Read a selected excerpt from Chapter 29 of For Those Who Come After Us — A Life in Lessons by Darren Dang.",
-};
+});
 
 export default function Chapter29ExcerptPage() {
   return (
-    <BookExcerptPage
+    <BookExcerptPage path="/books/for-those-who-come-after-us/chapter-29-excerpt/"
       eyebrow="Inside the Book · Near the End"
       title="What I Hope You Keep. What I Hope You Change."
       dek="A selected excerpt from Chapter 29 of For Those Who Come After Us — A Life in Lessons."

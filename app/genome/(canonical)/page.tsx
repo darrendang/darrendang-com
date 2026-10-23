@@ -1,15 +1,16 @@
+import { pageMetadata } from "@/lib/seo";
 import Link from 'next/link';
 import { InteriorPage } from '@/components/InteriorPage';
 
-export const metadata = {
+export const metadata = pageMetadata("/genome/", {
   title: 'The Dang Genome',
   description: 'The living body of knowledge, wisdom, experience, relationships, ideas, and creations through which The Way is preserved, connected, tested, expanded, and passed forward.'
-};
+});
 
 const cycle = ['Curiosity','Connection','Discovery','Transformation','Contribution','Stewardship'];
 
 export default function GenomePage(){
-  return <InteriorPage eyebrow="Living family knowledge" title="The Dang Genome" titleRole="signature" wide>
+  return <InteriorPage path="/genome/" eyebrow="Living family knowledge" title="The Dang Genome" titleRole="signature" wide>
     <div className="genome-lead-grid">
       <div>
         <h2>A living body of wisdom, built to evolve.</h2>

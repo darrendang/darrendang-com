@@ -5,10 +5,11 @@ type WorkProps = {
   description?: string | null;
   image?: string;
   datePublished?: string;
+  dateModified?: string;
 };
 
 /** Describe the public work without inventing offers, ratings, or release dates. */
-export function WorkStructuredData({ kind, name, path, description, image, datePublished }: WorkProps) {
+export function WorkStructuredData({ kind, name, path, description, image, datePublished, dateModified }: WorkProps) {
   const url = `https://darrendang.com${path}`;
   const data = {
     "@context": "https://schema.org",
@@ -22,6 +23,11 @@ export function WorkStructuredData({ kind, name, path, description, image, dateP
     ...(description ? { description } : {}),
     ...(image ? { image: `https://darrendang.com${image}` } : {}),
     ...(datePublished ? { datePublished } : {}),
+    ...(dateModified ? { dateModified } : {}),
+    ...(kind === "Article" ? {
+      publisher: { "@id": "https://darrendang.com/#person" },
+      inLanguage: "en", isAccessibleForFree: true,
+    } : {}),
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, "\\u003c") }} />;
 }

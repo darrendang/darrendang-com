@@ -1,9 +1,10 @@
+import { pageMetadata } from "@/lib/seo";
 import { InteriorPage } from '@/components/InteriorPage';
 
-export const metadata={title:"Privacy", description:"How DarrenDang.com handles inquiries, previously submitted material, publication permissions, and the current pause on contribution intake."};
+export const metadata=pageMetadata("/privacy/", {title:"Privacy", description:"How DarrenDang.com handles inquiries, previously submitted material, publication permissions, and the current pause on contribution intake."});
 
 export default function Privacy(){
-  return <InteriorPage eyebrow="Legal" title="Privacy">
+  return <InteriorPage path="/privacy/" eyebrow="Legal" title="Privacy">
     <p>DarrenDang.com is designed to collect only the information needed to operate the site, respond to inquiries, and support separately governed workflows.</p>
 
     <h2>Contribution intake status</h2>

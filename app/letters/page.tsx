@@ -1,12 +1,14 @@
+import { pageMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/letters/", {
   title: "Letters from Darren",
   description: "Letters from Darren: observations, stories, questions, and lessons offered as part of The Way and the living Dang Genome.",
-};
+});
 
 export default function LettersPage() {
   return (
@@ -16,6 +18,7 @@ export default function LettersPage() {
         <section className="hero brand-hero genome-hero">
           <div className="container hero-grid">
             <div className="hero-copy">
+              <Breadcrumbs path="/letters/" title="Letters from Darren" />
               <div className="eyebrow">Letters from Darren</div>
               <h1>Things I am still learning.</h1>
               <p>These letters are not answers from someone who has finished figuring things out. They are observations, stories, questions, and lessons collected along the way—and offered for someone else to test, challenge, improve, and carry farther.</p>

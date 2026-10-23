@@ -1,13 +1,14 @@
+import { pageMetadata } from "@/lib/seo";
 import { BookExcerptPage } from "@/components/BookExcerptPage";
 
-export const metadata = {
+export const metadata = pageMetadata("/books/for-those-who-come-after-us/integrity-when-it-costs-something/", {
   title: "Chapter 18 — Integrity When It Costs Something",
   description: "Read the complete Chapter 18, Integrity When It Costs Something, from For Those Who Come After Us — A Life in Lessons by Darren Dang.",
-};
+});
 
 export default function IntegrityWhenItCostsSomethingPage() {
   return (
-    <BookExcerptPage
+    <BookExcerptPage path="/books/for-those-who-come-after-us/integrity-when-it-costs-something/"
       eyebrow="Inside the Book · Middle"
       title="Integrity When It Costs Something"
       dek="The complete Chapter 18 from For Those Who Come After Us — A Life in Lessons."

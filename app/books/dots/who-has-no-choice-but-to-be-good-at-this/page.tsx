@@ -1,13 +1,14 @@
+import { pageMetadata } from "@/lib/seo";
 import { BookExcerptPage } from "@/components/BookExcerptPage";
 
-export const metadata = {
+export const metadata = pageMetadata("/books/dots/who-has-no-choice-but-to-be-good-at-this/", {
   title: "Who Has No Choice But to Be Good at This? — D.O.T.S.",
   description: "Read a selected passage from D.O.T.S. about widening the search beyond peers and finding structural neighbors with hard-earned expertise.",
-};
+});
 
 export default function WhoHasNoChoicePage() {
   return (
-    <BookExcerptPage
+    <BookExcerptPage path="/books/dots/who-has-no-choice-but-to-be-good-at-this/"
       eyebrow="Inside Book 3 · Middle"
       title="Who Has No Choice But to Be Good at This?"
       dek="A selected passage from Chapter 7 of D.O.T.S."

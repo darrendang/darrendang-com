@@ -1,8 +1,9 @@
+import { pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/ideas/generative-dialogue/", {
   title: "Generative Dialogue",
   description: "Generative Dialogue is disciplined conversation through which ideas are clarified, challenged, refined, and transformed into discovery.",
   alternates: { canonical: "/ideas/generative-dialogue/" },
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     type: "article",
     url: "/ideas/generative-dialogue/",
   },
-};
+});
 
 const dialogueStages = [
   ["01", "QUESTION", "Begin with something worth examining", "The dialogue starts with a real question, tension, uncertainty, or possibility—not a request for a polished answer."],
@@ -69,7 +70,7 @@ export default function GenerativeDialoguePage() {
 
   return (
     <>
-      <InteriorPage eyebrow="Conversation, Discovery & Human Judgment" title="Generative Dialogue" wide>
+      <InteriorPage path="/ideas/generative-dialogue/" eyebrow="Conversation, Discovery & Human Judgment" title="Generative Dialogue" wide>
         <section className="idea-canonical-intro">
           <p className="lead generative-dialogue-thesis">Generative Dialogue is disciplined conversation that changes what becomes possible next.</p>
           <blockquote className="book-quote generative-dialogue-quote">The purpose is not to get an answer faster. It is to think more deeply than either participant might have thought alone.</blockquote>

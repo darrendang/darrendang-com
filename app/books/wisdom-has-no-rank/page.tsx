@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/seo";
 import { WorkStructuredData } from "@/components/WorkStructuredData";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,10 +7,10 @@ import { ConnectedDots } from "@/components/ConnectedDots";
 import { MusicCompanion } from "@/components/MusicCompanion";
 import { noRankLyrics } from "@/lib/songLyrics";
 
-export const metadata = {
+export const metadata = pageMetadata("/books/wisdom-has-no-rank/", {
   title: "Wisdom Has No Rank",
   description: "Explore Wisdom Has No Rank, Darren Dang's Book 2 now in final physical proof: a book about teachability, expanding possible teachers, and learning across relationship, culture, experience, and unexpected sources.",
-};
+});
 
 const parts = [
   ["I", "SEE YOURSELF MORE CLEARLY", "What can the people closest to me see that I cannot?"],
@@ -58,7 +59,7 @@ const samples = [
 
 export default function WisdomHasNoRank() {
   return (
-    <InteriorPage eyebrow="Book 2 · BECOME · Final Proof" title="Wisdom Has No Rank" wide>
+    <InteriorPage path="/books/wisdom-has-no-rank/" eyebrow="Book 2 · BECOME · Final Proof" title="Wisdom Has No Rank" wide>
       <WorkStructuredData kind="Book" name="Wisdom Has No Rank" path="/books/wisdom-has-no-rank/" description={metadata.description} image="/images/wisdom-has-no-rank-cover.webp" />
       <div className="development-book-grid">
         <div className="development-cover-wrap">

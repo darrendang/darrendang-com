@@ -295,6 +295,15 @@
       "review_basis": "The original birthday recording remains intentionally preserved on /letters/the-way-was-us/ beneath the featured pop-opera arrangement. Darren explicitly directed that it not be replaced and noted that the audio cuts off before the complete written ending. The full original written lyric remains available beside the preserved audio."
     },
     {
+      "path": "public/audio/Song-The-Way-You-See-Nathan.mp3",
+      "git_blob_sha1": "b1c1aa25ef31a6ac66a3203f38423d96074c0b13",
+      "size_bytes": 5258860,
+      "public_role": "The Way in Music — separate family companion — The Way You See, for Nathan",
+      "review_state": "accepted_current",
+      "last_reviewed_on": "2026-10-23",
+      "review_basis": "Darren explicitly approved the uploaded Nathan song to be added and canonized on 2026-10-23. This exact MP3, titled The Way You See (v 2.2) in its embedded metadata, decodes successfully and is preserved unchanged. Approval adopts the selected recording as a bounded family musical expression and authorizes its website player; it does not publish the private birthday letter or other song treatments, establish Nathan's beliefs, or change philosophical canon. The performed lyric was not independently transcribed. Scoped control: 00_Canon_Control/NATHAN_SONG_PUBLICATION_2026-10-23.md."
+    },
+    {
       "path": "public/audio/the-way-a-stronger-starting-point-v2.mp3",
       "git_blob_sha1": "a6ad374d576fac7f0665912af7d1d6b5005c5f38",
       "size_bytes": 5849337,

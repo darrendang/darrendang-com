@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,7 +17,7 @@ const shareImage = {
   alt: "The complete approved cover of For Those Who Come After Us: A Life in Lessons by Darren Dang, on a navy background.",
 };
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/books/for-those-who-come-after-us/", {
   title: "For Those Who Come After Us",
   description: "Explore the published Book 1, For Those Who Come After Us — A Life in Lessons, including selected reading, companion songs, and the ideas behind the book.",
   openGraph: {
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     description: shareDescription,
     images: [shareImage],
   },
-};
+});
 
 const bookStructuredData = {
   "@context": "https://schema.org",
@@ -167,7 +168,7 @@ Then go a little farther than me.`;
 
 export default function Book() {
   return (
-    <InteriorPage eyebrow="Book 1 · Published" title="For Those Who Come After Us">
+    <InteriorPage path="/books/for-those-who-come-after-us/" eyebrow="Book 1 · Published" title="For Those Who Come After Us">
       <div className="book-detail-grid">
         <div>
           <div className="book-covers" aria-label="Front and back covers of For Those Who Come After Us">

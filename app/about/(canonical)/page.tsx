@@ -1,11 +1,12 @@
+import { authorId, authorProfiles, pageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 
-export const metadata = {
+export const metadata = pageMetadata("/about/", {
   title: "About Darren",
   description: "About Darren Dang: family, Vietnamese-American experience, technology, public service, systems thinking, books, and the lived experiences behind The Way.",
-};
+});
 
 const profileStructuredData = {
   "@context": "https://schema.org",
@@ -15,17 +16,17 @@ const profileStructuredData = {
   name: "About Darren Dang",
   mainEntity: {
     "@type": "Person",
-    "@id": "https://darrendang.com/#person",
+    "@id": authorId,
     name: "Darren Dang",
     url: "https://darrendang.com/",
     image: "https://darrendang.com/images/darren-headshot.webp",
-    sameAs: ["https://www.ocers.org/post/darren-dang"],
+    sameAs: authorProfiles,
   },
 };
 
 export default function About() {
   return (
-    <InteriorPage eyebrow="About Darren" title="A life between worlds." wide>
+    <InteriorPage path="/about/" eyebrow="About Darren" title="A life between worlds." wide>
       <div className="about-grid about-human-grid">
         <Image
           src="/images/darren-headshot.webp"

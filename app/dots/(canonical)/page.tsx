@@ -1,10 +1,11 @@
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 
-export const metadata = {
+export const metadata = pageMetadata("/dots/", {
   title: "D.O.T.S. — A Way of Seeing Problems",
-  description: "D.O.T.S. is Darren Dang's way of seeing problems: deconstruct the label, observe underlying structure, transfer carefully, synthesize for context, then create something useful.",
-};
+  description: "Explore D.O.T.S., Darren Dang's approach to cross-disciplinary problem solving: deconstruct, observe, transfer, and synthesize before creating something useful.",
+});
 
 const labels = [
   ["The label says", "AI problem", "The category points you toward AI vendors, models, tools, and benchmarks."],
@@ -20,7 +21,7 @@ const sequence = [
 ];
 
 export default function DotsPage() {
-  return <InteriorPage eyebrow="D.O.T.S." title="A way of seeing problems." wide>
+  return <InteriorPage path="/dots/" eyebrow="D.O.T.S." title="A way of seeing problems." wide>
     <section className="dots-intro">
       <p className="dots-line">Deconstruct → Observe → Transfer → Synthesize → Create</p>
       <p className="lead">The world organizes knowledge into disciplines. Problems do not.</p>

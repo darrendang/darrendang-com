@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/seo";
 import { WorkStructuredData } from "@/components/WorkStructuredData";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -5,7 +6,7 @@ import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 import styles from "./page.module.css";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/letters/the-watch-goes-on/", {
   title: "The Watch Goes On — A Tribute to Rear Admiral Robert C. Nowakowski",
   description:
     "A Letter from Darren Dang about Rear Admiral Robert C. Nowakowski, the example he gave the Dang family across three children, and watching the colors pass to a younger generation aboard USS Iowa.",
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+});
 
 const lyrics = [
   {
@@ -128,7 +129,7 @@ The watch goes on.`,
 
 export default function TheWatchGoesOnPage() {
   return (
-    <InteriorPage eyebrow="Letter / Song · September 26, 2026" title="The Watch Goes On" wide>
+    <InteriorPage path="/letters/the-watch-goes-on/" eyebrow="Letter / Song · September 26, 2026" title="The Watch Goes On" wide>
       <WorkStructuredData kind="Article" name="The Watch Goes On — A Tribute to Rear Admiral Robert C. Nowakowski" path="/letters/the-watch-goes-on/" description={metadata.description} />
       <section className={styles.intro}>
         <p className={styles.kicker}>A tribute to Rear Admiral Robert C. Nowakowski</p>

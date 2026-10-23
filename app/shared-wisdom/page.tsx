@@ -1,13 +1,14 @@
+import { pageMetadata } from "@/lib/seo";
 import Link from 'next/link';
 import { InteriorPage } from '@/components/InteriorPage';
 
-export const metadata = {
+export const metadata = pageMetadata("/shared-wisdom/", {
   title: 'Shared Wisdom',
   description: 'A curated collection of lessons, stories, reflections, questions, and lived experience that people have chosen to pass forward with provenance intact.'
-};
+});
 
 export default function SharedWisdomPage(){
-  return <InteriorPage eyebrow="Pass It Forward · Shared Wisdom" title="What others are passing forward." wide>
+  return <InteriorPage path="/shared-wisdom/" eyebrow="Pass It Forward · Shared Wisdom" title="What others are passing forward." wide>
     <link rel="stylesheet" href="/shared-wisdom-public.css" />
 
     <div className="shared-intro-grid">

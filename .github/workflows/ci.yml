@@ -46,6 +46,9 @@ jobs:
       - name: Check purchase catalog
         run: npm run check:bookstore
 
+      - name: Check search safeguards
+        run: npm run check:search
+
       - name: Type check
         run: npm run typecheck
 

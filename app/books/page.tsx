@@ -1,12 +1,13 @@
+import { pageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { purchasableBooks } from "@/content/bookstore";
 import { InteriorPage } from "@/components/InteriorPage";
 
-export const metadata = {
+export const metadata = pageMetadata("/books/", {
   title: "Books",
   description: "Explore Darren Dang's five-book journey from lived experience and inherited wisdom to teachability, creation, human-AI collaboration, and the reader's own way forward.",
-};
+});
 
 const books = [
   {
@@ -59,7 +60,7 @@ const books = [
     status: "Preparing for Publication",
     title: "The Making of The Way",
     subtitle: "How Conversation Becomes Discovery",
-    cover: "/images/the-making-of-the-way-cover.webp",
+    cover: "/images/the-making-of-the-way-display.webp",
     width: 1024,
     height: 1536,
     alt: "Cover of The Making of The Way: How Conversation Becomes Discovery by Darren Dang.",
@@ -88,7 +89,7 @@ const books = [
 
 export default function Books() {
   return (
-    <InteriorPage eyebrow="Books" title="Five works. One widening journey." wide>
+    <InteriorPage path="/books/" eyebrow="Books" title="Five works. One widening journey." wide>
       <div className="books-library-intro">
         <p className="lead">The books are the clearest doorway into this body of work because that is where it began: with lived experience, relationships, questions, mistakes, and things I wanted to preserve for those who came after me.</p>
         <p>Only later did a larger pattern become visible across them. The first three move from inheritance, to teachability, to creation. The fourth makes the making visible. The fifth turns the work toward the reader&apos;s own life.</p>

@@ -1,15 +1,16 @@
+import { pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import { BookExcerptPage } from "@/components/BookExcerptPage";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/the-way-forward/prologue/", {
   title: "The Way Was Never the Destination — Prologue Excerpt",
   description: "A selected prologue excerpt from The Way Forward by Darren Dang: a compass, a stronger starting point, and the freedom to choose your direction.",
   alternates: { canonical: "/the-way-forward/prologue/" },
-};
+});
 
 export default function PrologueExcerpt() {
   return (
-    <BookExcerptPage eyebrow="The Way Forward · Selected prologue excerpt" title="The Way Was Never the Destination"
+    <BookExcerptPage path="/the-way-forward/prologue/" eyebrow="The Way Forward · Selected prologue excerpt" title="The Way Was Never the Destination"
       dek="Two selected passages from the prologue of The Way Forward, currently in developmental review. The intervening cycle explanation and figure appear on the book page."
       ending="Explore the learning cycle and the questions that connect reflection with your next choice."
       bookHref="/the-way-forward/" bookLabel="The Way Forward" secondaryHref="/letters/the-way-is-not-my-way/" secondaryLabel="Read Letter 001 →">

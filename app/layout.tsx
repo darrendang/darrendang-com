@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Newsreader, Source_Sans_3 } from "next/font/google";
 import { ListeningLayer } from "@/components/ListeningLayer";
+import { authorProfiles, pageMetadata } from "@/lib/seo";
+import "./seo.css";
 import "./globals.css";
 import "./trilogy.css";
 import "./v2-brand.css";
@@ -44,7 +46,7 @@ const structuralSans = Source_Sans_3({
   variable: "--font-structural",
 });
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/", {
   metadataBase: new URL("https://darrendang.com"),
   title: { default: "Darren Dang | Books, Ideas & The Way", template: "%s | Darren Dang" },
   description: "Books, Letters, ideas, and a way of thinking about what we inherit, who can teach us, what we create, and what we choose to pass forward.",
@@ -63,7 +65,7 @@ export const metadata: Metadata = {
     title: "Darren Dang — Books, Ideas & The Way",
     description: "A stronger starting point. The freedom to go farther.",
   },
-};
+});
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -83,7 +85,7 @@ const structuredData = {
       url: "https://darrendang.com/",
       mainEntityOfPage: "https://darrendang.com/about/",
       image: "https://darrendang.com/images/darren-headshot.webp",
-      sameAs: ["https://www.ocers.org/post/darren-dang"],
+      sameAs: authorProfiles,
       knowsAbout: [
         "The Way",
         "D.O.T.S.",

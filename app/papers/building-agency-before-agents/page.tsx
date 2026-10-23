@@ -1,10 +1,11 @@
+import { authorId, pageMetadata } from "@/lib/seo";
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { InteriorPage } from '@/components/InteriorPage';
 
 // Author-approved, reviewed editorial v0.3 → public v1.0. This HTML is compiled
 // from the privately governed canonical manuscript, not user-supplied runtime data.
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/papers/building-agency-before-agents/", {
   title: 'Building Agency Before Agents',
   description: 'Why human judgment, institutional knowledge, and governance must precede consequential AI autonomy. Darren Dang proposes an agency-first approach to AI agents.',
   alternates: { canonical: 'https://darrendang.com/papers/building-agency-before-agents/' },
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-10-14',
   },
-};
+});
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -26,11 +27,13 @@ const articleSchema = {
   "description": "Why human judgment, institutional knowledge, and governance must precede consequential AI autonomy.",
   "author": {
     "@type": "Person",
+    "@id": authorId,
     "name": "Darren Dang",
     "url": "https://darrendang.com/about/"
   },
   "publisher": {
     "@type": "Person",
+    "@id": authorId,
     "name": "Darren Dang",
     "url": "https://darrendang.com/"
   },
@@ -48,7 +51,7 @@ const articleHtml = "<p><strong>Author perspective:</strong> Personal thought le
 const paperStyles = "\n.agency-paper-hero{border-bottom:1px solid var(--sand);padding-bottom:32px;margin-bottom:36px}\n.agency-paper-eyebrow{color:var(--bronze);font-size:13px;font-weight:700;letter-spacing:.13em;text-transform:uppercase}\n.agency-paper-subtitle{font-family:var(--font-editorial),Georgia,serif;font-size:clamp(23px,3vw,34px);line-height:1.25;margin:12px 0 22px;color:var(--navy)}\n.agency-paper-deck{font-size:clamp(19px,2.3vw,23px);line-height:1.46;color:var(--muted);max-width:850px}\n.agency-paper-meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;color:var(--muted);font-size:14px}\n.agency-paper-separator{color:var(--bronze)}\n.agency-paper-related{display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin:24px 0 0}\n.agency-paper-related a{color:var(--navy);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px}\n.agency-paper-toc{background:#f5efe4;padding:26px 30px;border-left:3px solid var(--gold);margin:40px 0 50px}\n.agency-paper-toc h2{font-family:var(--font-editorial),Georgia,serif;font-size:27px;margin:0 0 14px;line-height:1.15}\n.agency-paper-toc ol{columns:2;column-gap:32px;margin:0;padding-left:25px;max-width:100%}\n.agency-paper-toc li{font-size:14px;break-inside:avoid;margin:0 0 5px}\n.agency-paper-toc a{text-decoration:underline;text-decoration-color:#c7b496;text-underline-offset:3px}\n.agency-paper-body{max-width:880px;margin:0 auto}\n.agency-paper-body h2{font-family:var(--font-editorial),Georgia,serif;font-size:clamp(28px,3.5vw,43px);line-height:1.16;margin:72px 0 22px;scroll-margin-top:30px}\n.agency-paper-body h3{font-family:var(--font-editorial),Georgia,serif;font-size:clamp(23px,2.8vw,30px);line-height:1.2;margin:42px 0 17px;scroll-margin-top:25px}\n.agency-paper-body h4{font-family:var(--font-editorial),Georgia,serif;font-size:21px;margin:30px 0 14px}\n.agency-paper-body p{font-size:18px;line-height:1.75;margin:0 0 22px}\n.agency-paper-body strong{color:var(--navy)}\n.agency-paper-body a:not(.agency-figure-full){text-decoration:underline;text-decoration-color:#ad8b56;text-underline-offset:3px;overflow-wrap:anywhere}\n.agency-paper-body .agency-cite{font-size:.82em;white-space:nowrap}\n.agency-paper-body ul,.agency-paper-body ol{padding-left:27px;margin:0 0 25px}\n.agency-paper-body li{padding-left:4px;margin:0 0 8px}\n.agency-paper-body blockquote{border-left:3px solid var(--gold);margin:34px 0;padding:12px 22px;color:var(--navy);background:#F5EFE4}\n.agency-paper-body blockquote p{margin:0;font-family:var(--font-editorial),Georgia,serif;font-size:24px;line-height:1.5}\n.agency-paper-body .agency-table-scroll{overflow-x:auto;max-width:100%;outline-offset:2px;margin:22px 0 40px}\n.agency-paper-body table{width:100%;min-width:700px;border-collapse:collapse;font-size:15px;line-height:1.48}\n.agency-paper-body table th,.agency-paper-body table td{border-bottom:1px solid var(--sand);padding:14px 13px;text-align:left;vertical-align:top}\n.agency-paper-body table th{background:var(--navy);color:var(--ivory)}\n.agency-paper-body table th strong{color:var(--ivory)}\n.agency-figure{margin:40px 0 46px;padding:0;max-width:100%}\n.agency-figure-viewport{overflow-x:auto;background:#0D1F31;border:1px solid #d1bf9d;border-radius:4px;overscroll-behavior-x:contain}\n.agency-figure img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain}\n.agency-figure figcaption{font-size:15px;line-height:1.5;color:var(--muted);margin-top:12px}\n.agency-figure-full{display:inline-block;font-size:14px;font-weight:600;border-bottom:1px solid var(--gold);margin-top:7px}\n.agency-figure-description{font-size:14px;color:var(--muted);margin-top:13px}\n.agency-figure-description summary{cursor:pointer;font-weight:600}\n.agency-figure-description p{font-size:14px;margin:9px 0 0;line-height:1.55}\n.agency-paper-independence{border-top:1px solid var(--sand);padding-top:30px;margin:55px 0 22px;font-size:15px;color:var(--muted)}\n.agency-paper-independence strong{color:var(--ink)}\n@media(max-width:700px){.agency-paper-toc{padding:22px}.agency-paper-toc ol{columns:1}.agency-paper-body p{font-size:17px;line-height:1.7}.agency-paper-body table{min-width:620px}.agency-figure img{min-width:650px;max-width:none}.agency-paper-meta{gap:7px}.agency-paper-body h2{margin-top:52px}}\n";
 
 export default function BuildingAgencyBeforeAgents() {
-  return <InteriorPage eyebrow="The Way Papers · Framework · October 2026" title="Building Agency Before Agents" wide>
+  return <InteriorPage path="/papers/building-agency-before-agents/" eyebrow="The Way Papers · Framework · October 2026" title="Building Agency Before Agents" wide>
     <section className="agency-paper-hero">
       <p className="agency-paper-subtitle">Why Human Judgment, Institutional Intelligence, and Responsible Governance Must Come Before Autonomous AI</p>
       <p className="agency-paper-deck">AI agents can act. The harder question is whether people and institutions are ready to govern what they do. This paper explores the conditions that make responsible delegation possible.</p>

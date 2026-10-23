@@ -1,13 +1,14 @@
+import { pageMetadata } from "@/lib/seo";
 import { BookExcerptPage } from "@/components/BookExcerptPage";
 
-export const metadata = {
+export const metadata = pageMetadata("/books/dots/what-did-reality-actually-say/", {
   title: "What Did Reality Actually Say? — D.O.T.S.",
   description: "Read a selected passage from D.O.T.S. about evidence, failed tests, boundaries, and building trustworthy connections.",
-};
+});
 
 export default function WhatDidRealityActuallySayPage() {
   return (
-    <BookExcerptPage
+    <BookExcerptPage path="/books/dots/what-did-reality-actually-say/"
       eyebrow="Inside Book 3 · Later"
       title="What Did Reality Actually Say?"
       dek="A selected passage from Chapter 15 of D.O.T.S."

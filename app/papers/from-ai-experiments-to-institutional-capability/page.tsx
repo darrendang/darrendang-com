@@ -1,10 +1,12 @@
+import { pageMetadata } from "@/lib/seo";
+import { WorkStructuredData } from "@/components/WorkStructuredData";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 
-export const metadata = {
+export const metadata = pageMetadata("/papers/from-ai-experiments-to-institutional-capability/", {
   title: "From AI Experiments to Institutional Capability",
-  description: "Version 1.1 of A Stewardship Agenda for Public Pension Boards and Executive Leaders by Darren Dang. A public leadership lens on AI experimentation, evidence, governance, readiness, trust, and institutional capability.",
-};
+  description: "Darren Dang's stewardship agenda for public pension boards: turn AI experiments into institutional capability through evidence, governance, readiness, and trust.",
+});
 
 const fiveQuestions = [
   ["Mission", "Does the use materially advance institutional purpose or member value?"],
@@ -47,7 +49,8 @@ const discussionQuestions = [
   ["Rebalancing", "What conditions would cause us to continue, condition, pause, stop, or scale—and how often will we revisit the thesis?"],
 ];
 
-export default function PaperPage(){return <InteriorPage eyebrow="Public-sector AI white paper · Version 1.1 · September 2026" title="From AI Experiments to Institutional Capability" wide>
+export default function PaperPage(){return <InteriorPage path="/papers/from-ai-experiments-to-institutional-capability/" eyebrow="Public-sector AI white paper · Version 1.1 · September 2026" title="From AI Experiments to Institutional Capability" wide>
+  <WorkStructuredData kind="Article" name="From AI Experiments to Institutional Capability" path="/papers/from-ai-experiments-to-institutional-capability/" description={metadata.description} image="/images/site-social-preview.png" />
   <section className="paper-hero-copy">
     <p className="paper-subtitle">A Stewardship Agenda for Public Pension Boards and Executive Leaders</p>
     <div className="paper-governing-question"><small>Governing question</small><strong>How can a public pension system turn AI possibility into durable public value without outrunning trust?</strong></div>

@@ -1,14 +1,15 @@
+import { pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import { IdeaDetailPage } from "@/components/IdeaDetailPage";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/ideas/leadership-is-not-indispensability/", {
   title: "Leadership Is Not Indispensability.",
   description: "Explore the idea that strong leadership builds people, judgment, and systems that continue working when the leader is not in the room.",
   alternates: { canonical: "/ideas/leadership-is-not-indispensability/" },
-};
+});
 
 export default function LeadershipIdeaPage() {
-  return <IdeaDetailPage
+  return <IdeaDetailPage path="/ideas/leadership-is-not-indispensability/"
     eyebrow="Leadership & Capability"
     title="Leadership Is Not Indispensability."
     thesis="A leader's value is not measured by how much stops when that leader leaves the room. Strong leadership builds people, judgment, relationships, and systems that can continue without constant rescue."

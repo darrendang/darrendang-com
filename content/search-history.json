@@ -1,0 +1,285 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "url": "https://darrendang.com/",
+      "hash": "fc045e9d51a621e32059cc57d998b91f06da91750b2265ded86046a4ae93217c",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/about/",
+      "hash": "dfe147479c7ba3c05ba3fd60a89ba4fc43e270194f6a54e3f2002e047b067ac7",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/accessibility/",
+      "hash": "480e67938ca7ea0268a552ce5852fac7a38fb14a357574531fd4a8af9aa803dd",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/books/",
+      "hash": "6bb9766be865a559f6179889526463510a350eb7edb2b32007c4f651aa5a1f2c",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/books/dots/",
+      "hash": "6b9ca80dc9895cf171f27d06f80b0df7f19e4d2964c4242d6ad81a6a7958236e",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/books/dots/the-idea-that-did-not-belong/",
+      "hash": "b4121694aa3fa0ad92caef0c12d0fb115f015e5a9de1f632733194749ff5c34f",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/books/dots/what-did-reality-actually-say/",
+      "hash": "a83afb95eaace0748b37e6eab7ab6605f1dc00f74d25e8469b7952ad68b9bd33",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/books/dots/who-has-no-choice-but-to-be-good-at-this/",
+      "hash": "3f65268d725cdf168d0c179bdb07135186f8ce106cbb2204554e1800ce6ee50d",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/books/for-those-who-come-after-us/",
+      "hash": "3c198e9602f4e0677fdc7f241423eab4ffdfe40e63ef9eb48e7b38829d03ccfe",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/books/for-those-who-come-after-us/chapter-29-excerpt/",
+      "hash": "a39ba8a2f00c6d492741fc9062fb5a1a0e600bf29a9fbcda7044fc2f2702b8df",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/books/for-those-who-come-after-us/connect-the-dots/",
+      "hash": "5f1998ad207791bc87535d229c35d8cd2db35141886b7288bc243bf91e393c3d",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/books/for-those-who-come-after-us/integrity-when-it-costs-something/",
+      "hash": "9f506256d37306494f2c9f6f15a643fab5c792e73a59ab46e94dc22ec4ec2830",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/books/for-those-who-come-after-us/prologue/",
+      "hash": "febe3ff7ad112a43964bd91810acf8bdd2defbbfe5f38bfa4c3b70aa129d06a8",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/books/the-making-of-the-way/",
+      "hash": "21fdf760f125a28745a93e7a00f61564fc952cbbffec2e4c56da02e02d43ca96",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/books/wisdom-has-no-rank/",
+      "hash": "4d2df8014aee237c6902e980abf4e4753bf1214565028fa14e25d391b3adf200",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/books/wisdom-has-no-rank/person-i-developed/",
+      "hash": "efdc29643af4670e41f46c1e60b9ac67bb4eea76b964e68dc4a49b4e3c7ac56a",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/books/wisdom-has-no-rank/prologue-excerpt/",
+      "hash": "49b8c036ebac27419445d3a174c9a42ad3a2160985bc00ae91d7400dd9ae4852",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/books/wisdom-has-no-rank/the-word-english-could-not-hold/",
+      "hash": "e31c1d59fef162111432c2bc39348425025d00508323307d37171e048270c842",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/buy/",
+      "hash": "65a0f42e8516d59c2accf237ad79b692780654e7751af14f3009ce9773c4871f",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/connect/",
+      "hash": "49adfc485ab257c504c9d369c589df7a6ba5e6bb65cab3b892f5df38e306b98c",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/contribute/",
+      "hash": "59399b93f120438b657d8a7e5ef4b35b8a43f7ea28b572786bbcb30808191d87",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/dots/",
+      "hash": "de7d90611481c9a3dbd252dd25153d816e3e22b7e8d7f4ec1d9cdd1a3f53e05d",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/explore/",
+      "hash": "34cbd5c2d98f770abe1b84de272128a0d42b9b2f0f9370452ef455ff1a232581",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/genome/",
+      "hash": "a4e3a95ff9750e8fca94fe24e9b90b6f879f3fec691c6514d4086fecc64d5b81",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/ideas/",
+      "hash": "95626ac43b67cdeceeba6541bdb56c168415cc60ece089c4c542c945d3216b81",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/ideas/automate-the-repetition-preserve-human-judgment/",
+      "hash": "727fd446214a131698db057d181ec3b128666cae15691c34a05da9563baf8d8a",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/ideas/collect-dots-connect-dots-create-something-new/",
+      "hash": "3f9c59ca74bd6efb7635f6746162c24958935a9a5eab07876bcc80d86c8c31cd",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/ideas/generative-dialogue/",
+      "hash": "3cbdd98cc27d31a6938b369d3b376872085362801cc2173e9959789e6928cd68",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/ideas/have-a-north-star/",
+      "hash": "4793853f374d26bbe34b1d945554df074502dea63f87b0a7f592f95ba5465fbf",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/ideas/leadership-is-not-indispensability/",
+      "hash": "3f13cca6b3321d017657a93ef586e82b69506c55c7a8a05d3dfcbf9f4cb6b80f",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/ideas/living-legacy/",
+      "hash": "9b0cfb4586964b802de872b0d44bd446226bb98c750fd134b446d20ef898de75",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/ideas/make-knowledge-travel/",
+      "hash": "85f3dbc65c9a5259d2f2c46c4ea54cab660e95abe544271e3e8bd79c41fd529e",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/ideas/wisdom-has-no-rank/",
+      "hash": "ed4ef8b799d9665d46e2823e9dbc71b301ee76d0167c1bc60bca1d3af31a6b39",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/independence/",
+      "hash": "7a84f0c00ab9bd2f09ec69535daf3b9b5b31fe3cca551fcd6e3a40069c4a6786",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/letters/",
+      "hash": "73c8c46614b0d8fe1d21ce67eb634bd0a1fd740e2f7f49133017e478c2873a30",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/letters/bo-me/",
+      "hash": "07f9dadd51d1a791dba96adb46d8babc7ea6998d6e38605eef48ff1722450ec7",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/letters/bo-oi/",
+      "hash": "e2ca4333a4fa1e8537f38d3a76b43b62d59cbe869c2e39e5fa7a95aed3e96df8",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/letters/me-oi/",
+      "hash": "11ae8f6c8f692770c38822d5cc5e8a39024cb75de9007aa1c704791cb7ed9727",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/letters/the-watch-goes-on/",
+      "hash": "1f8316ae70956ac881636203768b8e9f5d45d6a9679246f2bafcdde05df07e12",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/letters/the-way-is-not-my-way/",
+      "hash": "81ec491d94290e1ad99294360515e07271b9b0fbcb77fc57db65af7f7e2cfdfe",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/letters/the-way-was-us/",
+      "hash": "a56a31046831d5ea3c776af842487e0c3b92638871dc567d9035619b652562ef",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/letters/why-these-letters/",
+      "hash": "4ffe5f0ea41f8f08fce7fe14c0b55582802e01bafaa6d5c178e59c373d391988",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/papers/",
+      "hash": "0b0ac2015f2306cf746ea3ad1d61dddb871fde0b81123aa1d49885923288c556",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/papers/building-agency-before-agents/",
+      "hash": "ca578c80cfec2300baa05ee3533b0de3bb7c36f5455a56cdb2fdb4dda7993cf1",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/papers/from-ai-experiments-to-institutional-capability/",
+      "hash": "88d0e08acaf3a553de19c7956e4b64d0a4dac22586d44e2e5cb851302aa118bc",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/privacy/",
+      "hash": "30c33e1abb4bac2b6b51c2cde232924649649ae43429630d6ae599503643dabd",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/shared-wisdom/",
+      "hash": "72ca6082846b149bdd848e135dc464d28976f17aaa2bc154c1cf75f4f065bc32",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/speaking/",
+      "hash": "3017b771c026c163ae4060d488544a318a6e36602ee97c5cb0380a122e55ccd5",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/the-way-forward/",
+      "hash": "30a02bc953dbc7c69154d308e4136228e5a1b884ba5bc79118822d2b232bcb1b",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/the-way-forward/prologue/",
+      "hash": "43fd652418854e6006b44fe027472049f015c844df33a9e54d0cddff2c138f56",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/the-way-in-motion/",
+      "hash": "3409d6402c541b7485d8e75916d88df303e80f24f192937a1b979dd327940e76",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/the-way/",
+      "hash": "3cf877df4d885d8ffa52bdcae0b2b47b8a18dbf3148bee0b4491d22284a40f25",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/the-way/constitution/",
+      "hash": "41ea67790fdce575277e6fa24a45cf159d076eaf8d8a411b4fb07d294f16c901",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/the-way/music/",
+      "hash": "2751fe0f4b302972c14bc9838bbdd40b2306244b9a1d4d53131d2a779e09d1b4",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/use-the-way/",
+      "hash": "f3264b8b303bc8dd7f359c5db4498cbfe594fd425ef5c5c6d9af88541d349ae1",
+      "lastModified": "2026-10-23"
+    },
+    {
+      "url": "https://darrendang.com/your-way/",
+      "hash": "5a24a0f77b0985e599e80552eedb0cb4cf1f215dd174b1421813bca8357af676",
+      "lastModified": "2026-10-23"
+    }
+  ]
+}

@@ -1,14 +1,15 @@
+import { pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import { IdeaDetailPage } from "@/components/IdeaDetailPage";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/ideas/make-knowledge-travel/", {
   title: "Make Knowledge Travel.",
   description: "Explore the idea that knowledge becomes more valuable when another person can understand it, test it, improve it, and pass it forward.",
   alternates: { canonical: "/ideas/make-knowledge-travel/" },
-};
+});
 
 export default function MakeKnowledgeTravelPage() {
-  return <IdeaDetailPage
+  return <IdeaDetailPage path="/ideas/make-knowledge-travel/"
     eyebrow="Learning & Scale"
     title="Make Knowledge Travel."
     thesis="Knowledge compounds when it can leave the mind, meeting, team, or generation where it originated and become useful somewhere else."

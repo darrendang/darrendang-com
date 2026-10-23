@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/seo";
 import { WorkStructuredData } from "@/components/WorkStructuredData";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -5,7 +6,7 @@ import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 import styles from "../bo-oi/page.module.css";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/letters/me-oi/", {
   title: "Mẹ Ơi — Twenty-Two Years Later",
   description:
     "A letter and two original songs—Mẹ Ơi in Vietnamese and Mom, I Know Now in English—from Darren Dang to his mother, Lê Thị Chất, returning in 2026 to the memories and lessons he first tried to name after her death in 2004.",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     type: "article",
     url: "/letters/me-oi/",
   },
-};
+});
 
 const songSections = [
   {
@@ -470,7 +471,7 @@ Dang Phi Bang`;
 
 export default function MeOiPage() {
   return (
-    <InteriorPage
+    <InteriorPage path="/letters/me-oi/"
       eyebrow="Letter / Song · 2004 → 2026"
       title="Mẹ Ơi"
       wide

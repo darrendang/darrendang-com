@@ -1,13 +1,14 @@
+import { pageMetadata } from "@/lib/seo";
 import { BookExcerptPage } from "@/components/BookExcerptPage";
 
-export const metadata = {
+export const metadata = pageMetadata("/books/for-those-who-come-after-us/connect-the-dots/", {
   title: "Chapter 9 — Connect the Dots",
   description: "Read the complete Chapter 9, Connect the Dots, from For Those Who Come After Us — A Life in Lessons by Darren Dang.",
-};
+});
 
 export default function ConnectTheDotsPage() {
   return (
-    <BookExcerptPage
+    <BookExcerptPage path="/books/for-those-who-come-after-us/connect-the-dots/"
       eyebrow="Inside the Book · Middle"
       title="Connect the Dots"
       dek="A complete chapter from For Those Who Come After Us — A Life in Lessons."

@@ -1,14 +1,15 @@
+import { pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import { IdeaDetailPage } from "@/components/IdeaDetailPage";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/ideas/collect-dots-connect-dots-create-something-new/", {
   title: "D.O.T.S. is a way of seeing problems",
   description: "Explore the D.O.T.S. idea, its relationship to the full D.O.T.S. method, Book 3, cases, and The Way.",
   alternates: { canonical: "/ideas/collect-dots-connect-dots-create-something-new/" },
-};
+});
 
 export default function DotsIdeaPage() {
-  return <IdeaDetailPage
+  return <IdeaDetailPage path="/ideas/collect-dots-connect-dots-create-something-new/"
     eyebrow="Learning & Innovation"
     title="D.O.T.S. is a way of seeing problems."
     thesis="The label attached to a problem can quietly limit where we look for answers. D.O.T.S. widens the search by moving from label to structure, then asking where else the same underlying problem has appeared."

@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/seo";
 import { WorkStructuredData } from "@/components/WorkStructuredData";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -5,7 +6,7 @@ import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 import styles from "./page.module.css";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/letters/bo-oi/", {
   title: "Bố Ơi — Twenty-Five Years Later",
   description:
     "A letter and two original songs—Bố Ơi in Vietnamese and I Miss You Differently Now in English—from Darren Dang to his father, Dang Van Phi, twenty-five years after his passing.",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     type: "article",
     url: "/letters/bo-oi/",
   },
-};
+});
 
 const songSections = [
   {
@@ -241,7 +242,7 @@ const letter2001En = `I Remember You, Dad — Dang Phi Bang (Darren Dang)\n\nWho
 
 export default function BoOiPage() {
   return (
-    <InteriorPage
+    <InteriorPage path="/letters/bo-oi/"
       eyebrow="Letter / Songs · Twenty-Five Years After September 14, 2001"
       title="Bố Ơi"
       wide

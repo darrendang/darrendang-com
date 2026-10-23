@@ -1,13 +1,14 @@
+import { pageMetadata } from "@/lib/seo";
 import { BookExcerptPage } from "@/components/BookExcerptPage";
 
-export const metadata = {
+export const metadata = pageMetadata("/books/wisdom-has-no-rank/person-i-developed/", {
   title: "The Person I Developed Developed Me — Wisdom Has No Rank",
   description: "Read a selected passage from Wisdom Has No Rank about a relationship in which the direction of learning changed.",
-};
+});
 
 export default function PersonIDevelopedPage() {
   return (
-    <BookExcerptPage
+    <BookExcerptPage path="/books/wisdom-has-no-rank/person-i-developed/"
       eyebrow="Inside Book 2 · Middle"
       title="The Person I Developed Developed Me"
       dek="A selected passage from Chapter 13 of Wisdom Has No Rank."

@@ -1,13 +1,14 @@
+import { pageMetadata } from "@/lib/seo";
 import { BookExcerptPage } from "@/components/BookExcerptPage";
 
-export const metadata = {
+export const metadata = pageMetadata("/books/dots/the-idea-that-did-not-belong/", {
   title: "The Idea That Did Not Belong — D.O.T.S.",
   description: "Read a selected passage from the Prologue of D.O.T.S. by Darren Dang.",
-};
+});
 
 export default function TheIdeaThatDidNotBelongPage() {
   return (
-    <BookExcerptPage
+    <BookExcerptPage path="/books/dots/the-idea-that-did-not-belong/"
       eyebrow="Inside Book 3 · Beginning"
       title="The Idea That Did Not Belong"
       dek="A selected passage from the Prologue of D.O.T.S."

@@ -1,13 +1,14 @@
+import { pageMetadata } from "@/lib/seo";
 import Link from 'next/link';
 import { InteriorPage } from '@/components/InteriorPage';
 
-export const metadata = {
+export const metadata = pageMetadata("/contribute/", {
   title: 'Pass It Forward',
   description: 'Understand contribution and stewardship in The Way: add stories, corrections, questions, practices, counterexamples, connections, and creations without surrendering ownership or agency.'
-};
+});
 
 export default function ContributePage(){
-  return <InteriorPage eyebrow="Pass It Forward" title="What might your lived experience add for someone who comes after you?" wide>
+  return <InteriorPage path="/contribute/" eyebrow="Pass It Forward" title="What might your lived experience add for someone who comes after you?" wide>
     <div className="genome-lead-grid">
       <div>
         <p className="lead">Contribution is optional. It is what may happen when lived experience becomes specific enough to preserve, correct, question, connect, or offer as a stronger starting point for someone else.</p>

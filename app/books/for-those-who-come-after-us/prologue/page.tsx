@@ -1,13 +1,14 @@
+import { pageMetadata } from "@/lib/seo";
 import { BookExcerptPage } from "@/components/BookExcerptPage";
 
-export const metadata = {
+export const metadata = pageMetadata("/books/for-those-who-come-after-us/prologue/", {
   title: "Prologue — When You Need Me",
   description: "Read the full Prologue, When You Need Me, from For Those Who Come After Us — A Life in Lessons by Darren Dang.",
-};
+});
 
 export default function ProloguePage() {
   return (
-    <BookExcerptPage
+    <BookExcerptPage path="/books/for-those-who-come-after-us/prologue/"
       eyebrow="Inside the Book · Beginning"
       title="When You Need Me"
       dek="The full Prologue from For Those Who Come After Us — A Life in Lessons."

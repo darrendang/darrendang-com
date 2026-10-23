@@ -1,14 +1,15 @@
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 
-export const metadata = {
+export const metadata = pageMetadata("/your-way/", {
   title: "Your Way",
   description: "Your Way is the evolving lived expression that emerges as you receive, examine, connect, practice, and pass forward in your own context.",
-};
+});
 
 export default function YourWayPage() {
   return (
-    <InteriorPage eyebrow="Your Way" title="Do not inherit someone else’s conclusions unchanged." wide>
+    <InteriorPage path="/your-way/" eyebrow="Your Way" title="Do not inherit someone else’s conclusions unchanged." wide>
       <div className="genome-lead-grid">
         <div>
           <p className="lead">The Way can give you a stronger starting point. It cannot decide your destination. Your Way is the evolving lived pattern that emerges as inherited wisdom meets your experience, context, relationships, choices, and consequences.</p>

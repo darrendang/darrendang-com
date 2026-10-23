@@ -1,10 +1,11 @@
+import { pageMetadata } from "@/lib/seo";
 import { WorkStructuredData } from "@/components/WorkStructuredData";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/books/the-making-of-the-way/", {
   title: "The Making of The Way",
   description: "The Making of The Way: How Conversation Becomes Discovery tells the story of how Darren Dang's books and The Way emerged through sustained human-AI dialogue, memory, correction, and discovery.",
   alternates: { canonical: "/books/the-making-of-the-way/" },
@@ -15,23 +16,23 @@ export const metadata: Metadata = {
     url: "/books/the-making-of-the-way/",
     images: [
       {
-        url: "/images/the-making-of-the-way-cover.webp",
-        width: 200,
-        height: 300,
+        url: "/images/the-making-of-the-way-display.webp",
+        width: 1024,
+        height: 1536,
         alt: "Cover of The Making of The Way: How Conversation Becomes Discovery by Darren Dang.",
       },
     ],
   },
-};
+});
 
 export default function TheMakingOfTheWayPage() {
   return (
-    <InteriorPage eyebrow="Book 4 · Preparing for Publication" title="The Making of The Way" wide>
-      <WorkStructuredData kind="Book" name="The Making of The Way" path="/books/the-making-of-the-way/" description={metadata.description} image="/images/the-making-of-the-way-cover.webp" />
+    <InteriorPage path="/books/the-making-of-the-way/" eyebrow="Book 4 · Preparing for Publication" title="The Making of The Way" wide>
+      <WorkStructuredData kind="Book" name="The Making of The Way" path="/books/the-making-of-the-way/" description={metadata.description} image="/images/the-making-of-the-way-display.webp" />
       <div className="development-book-grid">
         <div className="development-cover-wrap">
           <Image
-            src="/images/the-making-of-the-way-cover.webp"
+            src="/images/the-making-of-the-way-display.webp"
             width={200}
             height={300}
             alt="Cover of The Making of The Way: How Conversation Becomes Discovery by Darren Dang."

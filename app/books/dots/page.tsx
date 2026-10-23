@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/seo";
 import { WorkStructuredData } from "@/components/WorkStructuredData";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,10 +7,10 @@ import { ConnectedDots } from "@/components/ConnectedDots";
 import { MusicCompanion } from "@/components/MusicCompanion";
 import { shapeBeneathLyrics } from "@/lib/songLyrics";
 
-export const metadata = {
+export const metadata = pageMetadata("/books/dots/", {
   title: "D.O.T.S. — Book 3",
   description: "Explore Darren Dang's Book 3, D.O.T.S. — Collect Dots. Connect Dots. Create Something New. A reader-first book about seeing connections across experience and disciplines and turning them into useful possibilities.",
-};
+});
 
 const themes = [
   ["Collect", "Notice ideas, experiences, tools, patterns, and questions before you know exactly where they will matter."],
@@ -51,7 +52,7 @@ const samples = [
 
 export default function DotsBook() {
   return (
-    <InteriorPage eyebrow="Book 3 · Physical Proof Ordered" title="D.O.T.S." wide>
+    <InteriorPage path="/books/dots/" eyebrow="Book 3 · Physical Proof Ordered" title="D.O.T.S." wide>
       <WorkStructuredData kind="Book" name="D.O.T.S." path="/books/dots/" description={metadata.description} image="/images/dots-cover.webp" />
       <div className="development-book-grid">
         <div className="development-cover-wrap">

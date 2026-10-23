@@ -42,7 +42,7 @@ const books = [
     status: "Preparing for Publication",
     title: "The Making of The Way",
     subtitle: "How Conversation Becomes Discovery",
-    cover: "/images/the-making-of-the-way-cover.webp",
+    cover: "/images/the-making-of-the-way-display.webp",
     alt: "Cover of The Making of The Way: How Conversation Becomes Discovery by Darren Dang.",
     href: "/books/the-making-of-the-way/",
     lens: "HOW THE WORK WAS MADE",

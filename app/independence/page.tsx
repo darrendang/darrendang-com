@@ -1,11 +1,12 @@
+import { pageMetadata } from "@/lib/seo";
 import { InteriorPage } from "@/components/InteriorPage";
 
-export const metadata = {
+export const metadata = pageMetadata("/independence/", {
   title: "Editorial Independence",
   description: "How DarrenDang.com separates Darren Dang's personal ideas and writing from his professional responsibilities and institutional affiliations.",
-};
+});
 
-export default function Independence(){return <InteriorPage eyebrow="Editorial independence" title="Ideas shared in Darren's own voice.">
+export default function Independence(){return <InteriorPage path="/independence/" eyebrow="Editorial independence" title="Ideas shared in Darren's own voice.">
   <p className="lead">DarrenDang.com is an independent intellectual and publishing platform for Darren&apos;s personal ideas, writing, books, papers, talks, and reflections.</p>
   <h2>Professional experience informs the thinking. It does not make the thinking an official institutional position.</h2>
   <p>Darren currently serves as Chief Technology Officer at the Orange County Employees Retirement System. His work in public institutions, technology, data, cybersecurity, modernization, artificial intelligence, governance, and organizational capability naturally shapes the questions he thinks about.</p>

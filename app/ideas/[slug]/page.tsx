@@ -42,7 +42,7 @@ export default async function IdeaPage({ params }: { params: Promise<{ slug: str
 
   if (idea.slug === "living-legacy") {
     return (
-      <InteriorPage eyebrow={idea.topic} title={idea.title} wide>
+      <InteriorPage path={`/ideas/${idea.slug}/`} eyebrow={idea.topic} title={idea.title} wide>
         <section className="idea-canonical-intro">
           <p className="lead">I have come to think of this work less as owning wisdom than stewarding it: preserving what matters, connecting what we learn, and passing it forward in a form someone else can question, use, improve, and carry farther.</p>
           <blockquote className="book-quote">I am a steward of wisdom.</blockquote>
@@ -122,7 +122,7 @@ export default async function IdeaPage({ params }: { params: Promise<{ slug: str
 
   if (idea.slug === "wisdom-has-no-rank") {
     return (
-      <InteriorPage eyebrow={idea.topic} title={idea.title} wide>
+      <InteriorPage path={`/ideas/${idea.slug}/`} eyebrow={idea.topic} title={idea.title} wide>
         <section className="idea-canonical-intro">
           <p className="lead">Wisdom can move in any direction. Experience, expertise, responsibility, and rank matter—but none gives any one person a monopoly on insight.</p>
           <blockquote className="book-quote">The people who go before us give us a map. The people who come after us show us where the map is incomplete.</blockquote>
@@ -194,7 +194,7 @@ export default async function IdeaPage({ params }: { params: Promise<{ slug: str
   }
 
   return (
-    <InteriorPage eyebrow={idea.topic} title={idea.title}>
+    <InteriorPage path={`/ideas/${idea.slug}/`} eyebrow={idea.topic} title={idea.title}>
       <p className="lead">{idea.summary}</p>
       <h2>Put the idea to work</h2>
       <p>This page is the beginning of a durable Idea record. It will grow with a real origin story, clear boundaries, practical applications, related writing, book chapters, talks, and connected ideas.</p>

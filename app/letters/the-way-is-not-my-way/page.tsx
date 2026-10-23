@@ -1,9 +1,10 @@
+import { pageMetadata } from "@/lib/seo";
 import { WorkStructuredData } from "@/components/WorkStructuredData";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/letters/the-way-is-not-my-way/", {
   title: "The Way Is Not My Way — Letter 001",
   description: "A small change from when to if opened a larger question: how do we pass wisdom forward while leaving another person free to choose? A letter from Darren Dang.",
   alternates: { canonical: "/letters/the-way-is-not-my-way/" },
@@ -14,11 +15,11 @@ export const metadata: Metadata = {
     publishedTime: "2026-10-14",
     url: "/letters/the-way-is-not-my-way/",
   },
-};
+});
 
 export default function Letter001() {
   return (
-    <InteriorPage eyebrow="Letters from Darren · Letter 001" title="The Way Is Not My Way">
+    <InteriorPage path="/letters/the-way-is-not-my-way/" eyebrow="Letters from Darren · Letter 001" title="The Way Is Not My Way">
       <WorkStructuredData kind="Article" name="The Way Is Not My Way — Letter 001" path="/letters/the-way-is-not-my-way/" description={metadata.description} datePublished="2026-10-14" />
       <p className="note"><time dateTime="2026-10-14">October 14, 2026</time></p>
       <article className="letter-reading">

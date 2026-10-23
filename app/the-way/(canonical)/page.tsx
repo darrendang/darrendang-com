@@ -1,3 +1,5 @@
+import { pageMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
@@ -12,10 +14,10 @@ const philosophicalCycle = [
   ["Transmit", "Pass forward what is worth carrying so others can begin farther ahead."],
 ];
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/the-way/", {
   title: "The Way",
   description: "The Way → Your Way → The Way Forward: a living philosophy of learning, knowing, discovering, creating, and transmitting without prescribing a predetermined destination.",
-};
+});
 
 export default function TheWayPage() {
   return (
@@ -25,6 +27,7 @@ export default function TheWayPage() {
         <section className="hero brand-hero genome-hero">
           <div className="container hero-grid">
             <div className="hero-copy">
+              <Breadcrumbs path="/the-way/" title="The Way" />
               <div className="eyebrow">The Way</div>
               <h1>A stronger starting point. Freedom to go farther.</h1>
               <p>The Way is accumulated wisdom, experience, stories, questions, tools, relationships, mistakes, and discoveries offered as a starting point—not a destination someone else has the authority to choose for you.</p>

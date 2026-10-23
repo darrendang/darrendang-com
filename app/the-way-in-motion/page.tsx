@@ -1,14 +1,15 @@
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 
-export const metadata = {
+export const metadata = pageMetadata("/the-way-in-motion/", {
   title: "The Way in Motion",
   description: "The Way in Motion: case studies and demonstrated practice showing what happens when ideas meet reality, evidence, consequences, limits, and revision.",
-};
+});
 
 export default function TheWayInMotionPage() {
   return (
-    <InteriorPage eyebrow="The Way in Motion" title="What happens when an idea meets reality." wide>
+    <InteriorPage path="/the-way-in-motion/" eyebrow="The Way in Motion" title="What happens when an idea meets reality." wide>
       <div className="genome-lead-grid">
         <div>
           <p className="lead">Ideas become more useful when they encounter evidence, constraints, consequences, other people, and conditions we did not control.</p>

@@ -1,13 +1,14 @@
+import { pageMetadata } from "@/lib/seo";
 import Link from 'next/link';
 import { InteriorPage } from '@/components/InteriorPage';
 
-export const metadata = {
+export const metadata = pageMetadata("/share/", {
   title: 'Contribution Intake Temporarily Closed',
   description: 'Rich public contribution intake is temporarily closed while the production governance required by The Way Contribution Architecture 1.0 is completed.'
-};
+});
 
 export default function ShareWisdomPage(){
-  return <InteriorPage eyebrow="Pass It Forward · Contribution Intake" title="Public contribution intake is temporarily closed." wide>
+  return <InteriorPage path="/share/" eyebrow="Pass It Forward · Contribution Intake" title="Public contribution intake is temporarily closed." wide>
     <div className="genome-lead-grid">
       <div>
         <p className="lead">The earlier private-review workflow remains preserved, but new rich public submissions are paused while the contribution system is reconciled to The Way Contribution Architecture 1.0.</p>

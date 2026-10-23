@@ -1,10 +1,11 @@
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 
-export const metadata = {
+export const metadata = pageMetadata("/explore/", {
   title: "Explore",
   description: "Start with a question that matters to you, then explore Darren Dang's books, Letters, ideas, practice, music, Shared Wisdom, and the Dang Genome.",
-};
+});
 
 const questions = [
   { label: "Inheritance", question: "What have I received that deserves to be understood before I decide what to keep?", href: "/books/for-those-who-come-after-us/" },
@@ -24,7 +25,7 @@ const paths = [
 
 export default function ExplorePage() {
   return (
-    <InteriorPage eyebrow="Explore" title="Start with the question that is alive for you." wide>
+    <InteriorPage path="/explore/" eyebrow="Explore" title="Start with the question that is alive for you." wide>
       <div className="books-library-intro">
         <p className="lead">You do not need to learn the architecture of this site before something becomes useful. Begin with a question, a story, a book, an idea, or a piece of practice that already connects to your life.</p>
         <p>Take what helps. Follow the connections that interest you. Leave what does not. You can always go deeper later.</p>

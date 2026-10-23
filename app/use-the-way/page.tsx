@@ -1,10 +1,11 @@
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { InteriorPage } from "@/components/InteriorPage";
 
-export const metadata = {
+export const metadata = pageMetadata("/use-the-way/", {
   title: "Use The Way",
   description: "Use The Way through five recursive movements: Receive, Examine, Connect, Practice, and Pass Forward.",
-};
+});
 
 const movements = [
   ["01", "Receive", "What am I carrying into this?", "Notice what you inherited and what present life is teaching you. Receiving does not mean accepting."],
@@ -16,7 +17,7 @@ const movements = [
 
 export default function UseTheWayPage() {
   return (
-    <InteriorPage eyebrow="Use The Way" title="Five movements for thinking and living without turning wisdom into a script." wide>
+    <InteriorPage path="/use-the-way/" eyebrow="Use The Way" title="Five movements for thinking and living without turning wisdom into a script." wide>
       <div className="genome-lead-grid">
         <div>
           <p className="lead">The Way is a philosophical starting point. The Five Movements are a portable practice for using it in a decision, relationship, transition, problem, or season of life.</p>

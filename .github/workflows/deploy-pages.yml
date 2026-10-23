@@ -35,6 +35,9 @@ jobs:
       - name: Audit public repository
         run: node scripts/public-repo-audit.mjs
 
+      - name: Verify audio review fingerprints
+        run: node scripts/check-audio-review.mjs
+
       - name: Install dependencies
         run: |
           if [ -f package-lock.json ]; then
@@ -47,6 +50,9 @@ jobs:
         run: |
           test -f public/audio/for-those-who-come-after-us.mp3
           test -f public/docs/From_AI_Experiments_to_Institutional_Capability_Darren_Dang.pdf
+
+      - name: Check search and purchase safeguards
+        run: npm run check:search && npm run check:bookstore
 
       - name: Build static export
         env:
@@ -69,6 +75,14 @@ jobs:
         with:
           path: ./out
 
+      - name: Save changed public URLs for post-deployment notification
+        uses: actions/upload-artifact@v4
+        with:
+          name: search-notification
+          path: .search/indexnow.json
+          include-hidden-files: true
+          retention-days: 14
+
   deploy:
     environment:
       name: github-pages
@@ -76,6 +90,34 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - name: Checkout search notification scripts
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Download changed public URLs
+        uses: actions/download-artifact@v4
+        with:
+          name: search-notification
+          path: .search
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Notify participating search engines after live verification
+        continue-on-error: true
+        run: npm run notify:search
+
+      - name: Preserve IndexNow receipt
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: indexnow-receipt
+          path: .search/indexnow-receipt.json
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 30

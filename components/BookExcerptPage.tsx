@@ -11,6 +11,7 @@ type BookExcerptPageProps = {
   bookLabel?: string;
   secondaryHref?: string;
   secondaryLabel?: string;
+  path?: string;
 };
 
 export function BookExcerptPage({
@@ -23,9 +24,10 @@ export function BookExcerptPage({
   bookLabel = "For Those Who Come After Us",
   secondaryHref = "/ideas/",
   secondaryLabel = "Explore the Ideas →",
+  path,
 }: BookExcerptPageProps) {
   return (
-    <InteriorPage eyebrow={eyebrow} title={title}>
+    <InteriorPage path={path} eyebrow={eyebrow} title={title}>
       <div className="excerpt-back">
         <Link className="text-link" href={bookHref}>← {bookLabel}</Link>
       </div>

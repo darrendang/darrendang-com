@@ -4,11 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/generate-seo-assets.mjs",
     "build": "next build",
-    "postbuild": "node scripts/add-self-canonicals.mjs",
+    "postbuild": "node scripts/add-self-canonicals.mjs && node scripts/build-search-manifest.mjs",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
-    "export:check": "test -f out/index.html",
+    "export:check": "test -f out/index.html && node scripts/check-seo-export.mjs",
+    "check:search": "node --experimental-strip-types --test scripts/search.test.mjs",
+    "notify:search": "node scripts/submit-indexnow.mjs",
     "audit:public": "node scripts/public-repo-audit.mjs",
     "audit:audio": "node scripts/check-audio-review.mjs",
     "check:bookstore": "node --experimental-strip-types --test scripts/bookstore.test.mjs"
@@ -24,6 +27,7 @@
     "@types/react-dom": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest",
+    "sharp": "^0.35.3",
     "typescript": "latest"
   }
 }

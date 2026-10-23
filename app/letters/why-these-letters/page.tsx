@@ -1,13 +1,15 @@
+import { pageMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { WorkStructuredData } from "@/components/WorkStructuredData";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ConnectedDots } from "@/components/ConnectedDots";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/letters/why-these-letters/", {
   title: "Why These Letters",
   description: "An introduction to Letters from Darren and why Darren writes them as part of The Way.",
-};
+});
 
 export default function WhyTheseLettersPage() {
   return (
@@ -18,6 +20,7 @@ export default function WhyTheseLettersPage() {
         <section className="section">
           <div className="container">
             <div className="section-intro compact">
+              <Breadcrumbs path="/letters/why-these-letters/" title="Why These Letters" tone="paper" />
               <div className="eyebrow bronze">Letters from Darren · Introduction</div>
               <h1>Why These Letters</h1>
               <p className="lead">I started writing because I knew there would come a day when someone I love might want to ask me a question and I would not be there to answer it.</p>

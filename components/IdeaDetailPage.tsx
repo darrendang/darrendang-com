@@ -5,6 +5,7 @@ type Item = { title: string; copy: string };
 type LinkItem = { title: string; copy: string; href: string; label?: string };
 
 type IdeaDetailPageProps = {
+  path: string;
   eyebrow: string;
   title: string;
   thesis: string;
@@ -19,6 +20,7 @@ type IdeaDetailPageProps = {
 };
 
 export function IdeaDetailPage({
+  path,
   eyebrow,
   title,
   thesis,
@@ -32,7 +34,7 @@ export function IdeaDetailPage({
   primary,
 }: IdeaDetailPageProps) {
   return (
-    <InteriorPage eyebrow={eyebrow} title={title} wide>
+    <InteriorPage path={path} eyebrow={eyebrow} title={title} wide>
       <section className="idea-canonical-intro">
         <p className="lead">{thesis}</p>
         {quote && <blockquote className="book-quote">{quote}</blockquote>}

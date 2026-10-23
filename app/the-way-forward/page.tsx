@@ -1,16 +1,17 @@
+import { pageMetadata } from "@/lib/seo";
 import { WorkStructuredData } from "@/components/WorkStructuredData";
 import Link from "next/link";
 import Image from "next/image";
 import { InteriorPage } from "@/components/InteriorPage";
 
-export const metadata = {
+export const metadata = pageMetadata("/the-way-forward/", {
   title: "The Way Forward",
   description: "The Way Forward is Darren Dang's fifth book: a reader-facing synthesis that asks what you will do with what you inherit, learn, discover, create, and choose to pass forward.",
-};
+});
 
 export default function TheWayForwardPage() {
   return (
-    <InteriorPage eyebrow="Book 5 · In Development" title="The Way Forward" wide>
+    <InteriorPage path="/the-way-forward/" eyebrow="Book 5 · In Development" title="The Way Forward" wide>
       <WorkStructuredData kind="Book" name="The Way Forward" path="/the-way-forward/" description={metadata.description} image="/images/the-way-forward.webp" />
       <div className="development-book-grid">
         <div className="development-cover-wrap">

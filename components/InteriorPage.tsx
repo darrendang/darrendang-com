@@ -1,4 +1,5 @@
 import { SiteFooter, SiteHeader } from '@/components/SiteChrome';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 
 type InteriorPageProps = {
   eyebrow: string;
@@ -6,6 +7,7 @@ type InteriorPageProps = {
   children: React.ReactNode;
   wide?: boolean;
   titleRole?: 'editorial' | 'signature';
+  path?: string;
 };
 
 export function InteriorPage({
@@ -14,6 +16,7 @@ export function InteriorPage({
   children,
   wide = false,
   titleRole = 'editorial',
+  path,
 }: InteriorPageProps) {
   const roleClass = titleRole === 'signature' ? 'type-signature signature-heading' : 'type-editorial';
 
@@ -21,6 +24,7 @@ export function InteriorPage({
     <div className="interior-header">
       <SiteHeader/>
       <div className="container">
+        {path && <Breadcrumbs path={path} title={title} />}
         <div className="eyebrow">{eyebrow}</div>
         <h1 className={`interior-title ${roleClass}`}>{title}</h1>
       </div>

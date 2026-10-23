@@ -1,13 +1,14 @@
+import { pageMetadata } from "@/lib/seo";
 import { BookExcerptPage } from "@/components/BookExcerptPage";
 
-export const metadata = {
+export const metadata = pageMetadata("/books/wisdom-has-no-rank/the-word-english-could-not-hold/", {
   title: "The Word English Could Not Hold — Wisdom Has No Rank",
   description: "Read a selected passage from Wisdom Has No Rank about Nghĩa, language, culture, memory, and what one generation carries forward.",
-};
+});
 
 export default function TheWordEnglishCouldNotHoldPage() {
   return (
-    <BookExcerptPage
+    <BookExcerptPage path="/books/wisdom-has-no-rank/the-word-english-could-not-hold/"
       eyebrow="Inside Book 2 · Later"
       title="The Word English Could Not Hold"
       dek="A selected passage from the Part V interlude of Wisdom Has No Rank."

@@ -1,14 +1,15 @@
+import { pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import { IdeaDetailPage } from "@/components/IdeaDetailPage";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/ideas/have-a-north-star/", {
   title: "Have a North Star.",
   description: "Explore Darren Dang's distinction between a stable purpose and the routes, plans, and tactics that should remain free to change.",
   alternates: { canonical: "/ideas/have-a-north-star/" },
-};
+});
 
 export default function NorthStarIdeaPage() {
-  return <IdeaDetailPage
+  return <IdeaDetailPage path="/ideas/have-a-north-star/"
     eyebrow="Judgment & Purpose"
     title="Have a North Star."
     thesis="A plan is a route. Purpose is the North Star. Good judgment changes the route when reality requires it without losing sight of what the effort is ultimately for."
