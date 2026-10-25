@@ -12,3 +12,5 @@ Traditional Chinese remains unchanged. Vietnamese and Spanish paperback checkout
 The books-first reader journey, existing artwork, protected family letters, manuscripts, production packages, ISBN assignments and Gold controls are unchanged. This supplements the October 18 purchase-flow baseline; earlier checkpoints remain history.
 
 Local validation passed: six catalog tests, public audit, typecheck, lint (five existing stylesheet warnings), production build and static-export SEO checks. Repository checks and deployment/live state must be established from this change's exact GitHub Actions run and the deployed chooser; this checkpoint does not infer deployment from a commit.
+
+PR #48 merged as `cc6206a2d512e528bb8e0c199018790c83308d69`. Validation `40205737623` and Pages deployment `40205737384` succeeded. All nine language selections and their exact Ingram destinations were checked on the live hub, together with the Portuguese selection on the embedded chooser. A follow-up replaces the old English/Vietnamese-only availability sentence above that chooser; later source/deployment refs must be verified separately.
