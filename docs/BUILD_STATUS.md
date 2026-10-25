@@ -1,10 +1,12 @@
-# Build and deployment status — October 18, 2026
+# Build and deployment status — October 25, 2026
 
 **Stage:** DEPLOYED / LIVE VERIFIED.
 
 DarrenDang.com runs on GitHub Pages through the existing GitHub Actions static-export workflow. Pushes and pull requests run validation; pushes to main also trigger production deployment. The old manual-only/pre-launch statements below are historical. No DNS or infrastructure change is required.
 
-PR #46 deployed as `ca87da379c86bf9cc0ae915875c83d8a7ccd7eb7`; validation run `39169434995` and Pages run `39169434913` succeeded. Live purchase choices were verified October 18. Current routing: [public-state checkpoint](CURRENT_PUBLIC_STATE_2026-10-18.md). Future deployment status must be checked against its exact workflow run and live page.
+The nine-language Book 1 catalog in PR #48 deployed as `cc6206a2d512e528bb8e0c199018790c83308d69`; validation run `40205737623` and Pages run `40205737384` succeeded. All nine live language selections and the Book 1 embedded chooser were verified October 25. A follow-up removes the stale English/Vietnamese-only sentence above the chooser. Current routing: [public-state checkpoint](CURRENT_PUBLIC_STATE_2026-10-25.md). Subsequent deployment status must be checked against its exact workflow run and live page.
+
+Historical October 18 checkpoint: PR #46 deployed as `ca87da379c86bf9cc0ae915875c83d8a7ccd7eb7`; validation run `39169434995` and Pages run `39169434913` succeeded. Those purchase observations retain their as-of scope.
 
 ## Preserved historical foundation record
 

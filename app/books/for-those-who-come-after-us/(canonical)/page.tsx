@@ -204,7 +204,7 @@ export default function Book() {
           <p>Across twenty-nine short chapters, the book explores inheritance, identity, education, failure, curiosity, systems, leadership, family, money, purpose, and legacy.</p>
 
           <div className="book-buy-entry">
-            <p>Available in English and Vietnamese. Choose hardcover, paperback, eBook, or audiobook where available.</p>
+            <p>Choose your language and an available format below.</p>
             <Link className="button button-dark" href="#buy">Choose your edition →</Link>
           </div>
 
