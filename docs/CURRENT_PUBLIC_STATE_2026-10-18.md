@@ -1,4 +1,6 @@
 # DarrenDang.com — Public implementation checkpoint
+
+> October 25 update: this remains the October 18 historical checkpoint. Current purchase-catalog discovery routes to [the October 25 checkpoint](CURRENT_PUBLIC_STATE_2026-10-25.md) and current main. The original purchase-flow decision remains governing.
 **Date:** 2026-10-18
 **Status:** CURRENT AS-OF WEBSITE CHECKPOINT / DERIVED
 **Implementation authority:** current `main` of `darrendang/darrendang-com`.

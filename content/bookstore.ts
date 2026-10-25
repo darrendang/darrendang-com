@@ -51,11 +51,11 @@ export const bookstore: StoreBook[] = [
         audioDescription: "Narrated by Darren Dang · 1 hr 34 min",
         formats: {
           hardcover: [
-            { retailer: "IngramSpark", url: "https://shop.ingramspark.com/b/084?params=1iXsHiOEUy1XMZMcOl7yXDtFEVAUqVpA5dlJcMUhp41", authorPrice: 18.88, currency: "USD", fulfillment: "Printed and shipped by IngramSpark. Shipping and applicable tax are added at checkout.", verifiedOn: "2026-10-18" },
+            { retailer: "IngramSpark", url: "https://shop.ingramspark.com/b/084?params=1iXsHiOEUy1XMZMcOl7yXDtFEVAUqVpA5dlJcMUhp41", authorPrice: 18.88, currency: "USD", fulfillment: "Printed and shipped by IngramSpark. Shipping and applicable tax are added at checkout.", verifiedOn: "2026-10-25" },
             { retailer: "Amazon", url: "https://www.amazon.com/dp/B0HHZPRY3V/", verifiedOn: "2026-10-18" },
           ],
           paperback: [
-            { retailer: "IngramSpark", url: "https://shop.ingramspark.com/b/084?params=2xrYMMie8Hb7rlTNZ07ulFfEZxJ4x8XKpqIA3Ze5sGo", authorPrice: 12.88, currency: "USD", fulfillment: "Printed and shipped by IngramSpark. Shipping and applicable tax are added at checkout.", verifiedOn: "2026-10-18" },
+            { retailer: "IngramSpark", url: "https://shop.ingramspark.com/b/084?params=2xrYMMie8Hb7rlTNZ07ulFfEZxJ4x8XKpqIA3Ze5sGo", authorPrice: 12.88, currency: "USD", fulfillment: "Printed and shipped by IngramSpark. Shipping and applicable tax are added at checkout.", verifiedOn: "2026-10-25" },
             { retailer: "Amazon", url: "https://www.amazon.com/dp/B0HHZRLXKD/", verifiedOn: "2026-10-18" },
           ],
           ebook: [
@@ -76,10 +76,59 @@ export const bookstore: StoreBook[] = [
         title: "Dành Cho Những Thế Hệ Mai Sau", subtitle: "Một Đời, Những Bài Học",
         formats: {
           hardcover: [
-            { retailer: "IngramSpark", url: "https://shop.ingramspark.com/b/084?params=E8VQm3D2lmNju76zajwqZypJhLQ6SYnyoKrHOsFH1ot", authorPrice: 18.88, currency: "USD", fulfillment: "Printed and shipped by IngramSpark. Shipping and applicable tax are added at checkout.", verifiedOn: "2026-10-18" },
+            { retailer: "IngramSpark", url: "https://shop.ingramspark.com/b/084?params=E8VQm3D2lmNju76zajwqZypJhLQ6SYnyoKrHOsFH1ot", authorPrice: 18.88, currency: "USD", fulfillment: "Printed and shipped by IngramSpark. Shipping and applicable tax are added at checkout.", verifiedOn: "2026-10-25" },
           ],
         },
         forthcoming: "A Vietnamese paperback is on the way. Its purchase link will appear here when it is available.",
+      },
+      {
+        language: "es", label: "Español",
+        title: "Para Quienes Vienen Después de Nosotros", subtitle: "Una Vida en Lecciones",
+        formats: { hardcover: [
+          { retailer: "IngramSpark", url: "https://shop.ingramspark.com/b/084?params=cgszZR0zsPB1nl8BIcYm7gw3d7n5C7KTkr4fskLJyWH", authorPrice: 18.88, currency: "USD", fulfillment: "Printed and shipped by IngramSpark. Shipping and applicable tax are added at checkout.", verifiedOn: "2026-10-25" },
+        ] },
+      },
+      {
+        language: "ko", label: "한국어",
+        title: "우리 뒤를 이어올 이들을 위하여", subtitle: "삶에서 얻은 교훈들",
+        formats: { hardcover: [
+          { retailer: "IngramSpark", url: "https://shop.ingramspark.com/b/084?params=rgKFYayg8L9sy9LDOFUI5rac0ecZUH1wD37c4HJ0Ad1", authorPrice: 18.88, currency: "USD", fulfillment: "Printed and shipped by IngramSpark. Shipping and applicable tax are added at checkout.", verifiedOn: "2026-10-25" },
+        ] },
+      },
+      {
+        language: "ja", label: "日本語",
+        title: "私たちの後に続く人たちへ", subtitle: "人生から学んだこと",
+        formats: { hardcover: [
+          { retailer: "IngramSpark", url: "https://shop.ingramspark.com/b/084?params=9htd5FlsTpxytu2Y2F9Ik8lmDIcJIqL1Et2UcvuEhYP", authorPrice: 18.88, currency: "USD", fulfillment: "Printed and shipped by IngramSpark. Shipping and applicable tax are added at checkout.", verifiedOn: "2026-10-25" },
+        ] },
+      },
+      {
+        language: "fr", label: "Français",
+        title: "Pour Ceux Qui Viennent Après Nous", subtitle: "Une Vie En Leçons",
+        formats: { hardcover: [
+          { retailer: "IngramSpark", url: "https://shop.ingramspark.com/b/084?params=LyuTu35mex2kx0xNkkyeWMGl3mpuRxoSxPefpfDKQ8L", authorPrice: 18.88, currency: "USD", fulfillment: "Printed and shipped by IngramSpark. Shipping and applicable tax are added at checkout.", verifiedOn: "2026-10-25" },
+        ] },
+      },
+      {
+        language: "de", label: "Deutsch",
+        title: "Für Diejenigen, Die Nach Uns Kommen", subtitle: "Ein Leben Voller Lektionen",
+        formats: { hardcover: [
+          { retailer: "IngramSpark", url: "https://shop.ingramspark.com/b/084?params=cEjXLy7XjR73yAUaD0pPa1tQ7SC5BzvOkcdiNNa4Di3", authorPrice: 18.88, currency: "USD", fulfillment: "Printed and shipped by IngramSpark. Shipping and applicable tax are added at checkout.", verifiedOn: "2026-10-25" },
+        ] },
+      },
+      {
+        language: "pt", label: "Português (Brasil)",
+        title: "Para Quem Vem Depois de Nós", subtitle: "Uma Vida de Lições",
+        formats: { hardcover: [
+          { retailer: "IngramSpark", url: "https://shop.ingramspark.com/b/084?params=LiujVik9EGQ47tjlLHfqmj5Yp0m3v9AphftnQNQg18e", authorPrice: 18.88, currency: "USD", fulfillment: "Printed and shipped by IngramSpark. Shipping and applicable tax are added at checkout.", verifiedOn: "2026-10-25" },
+        ] },
+      },
+      {
+        language: "it", label: "Italiano",
+        title: "Per Chi Verrà Dopo Di Noi", subtitle: "Le Lezioni Di Una Vita",
+        formats: { hardcover: [
+          { retailer: "IngramSpark", url: "https://shop.ingramspark.com/b/084?params=lzmCtsfVtXVxkwP7baf05Dohx06aJ4X6GVYAnLpCty", authorPrice: 18.88, currency: "USD", fulfillment: "Printed and shipped by IngramSpark. Shipping and applicable tax are added at checkout.", verifiedOn: "2026-10-25" },
+        ] },
       },
     ],
   },
