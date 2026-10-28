@@ -1,5 +1,7 @@
 # Build and deployment status — October 25, 2026
 
+> Current purchase-catalog routing: [October 28 checkpoint](CURRENT_PUBLIC_STATE_2026-10-28.md). The deployment refs below preserve the October 25 as-of observations; verify subsequent main deployments through their exact GitHub Actions runs and live pages.
+
 **Stage:** DEPLOYED / LIVE VERIFIED.
 
 DarrenDang.com runs on GitHub Pages through the existing GitHub Actions static-export workflow. Pushes and pull requests run validation; pushes to main also trigger production deployment. The old manual-only/pre-launch statements below are historical. No DNS or infrastructure change is required.

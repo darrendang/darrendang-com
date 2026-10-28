@@ -71,15 +71,17 @@ export const bookstore: StoreBook[] = [
       },
       {
         language: "vi", label: "Tiếng Việt",
-        nativeFormatLabels: { hardcover: "Bìa cứng" },
-        authorBuyLabel: "Mua sách bìa cứng",
+        nativeFormatLabels: { hardcover: "Bìa cứng", paperback: "Bìa mềm" },
+        authorBuyLabel: "Mua sách",
         title: "Dành Cho Những Thế Hệ Mai Sau", subtitle: "Một Đời, Những Bài Học",
         formats: {
           hardcover: [
             { retailer: "IngramSpark", url: "https://shop.ingramspark.com/b/084?params=E8VQm3D2lmNju76zajwqZypJhLQ6SYnyoKrHOsFH1ot", authorPrice: 18.88, currency: "USD", fulfillment: "Printed and shipped by IngramSpark. Shipping and applicable tax are added at checkout.", verifiedOn: "2026-10-25" },
           ],
+          paperback: [
+            { retailer: "IngramSpark", url: "https://shop.ingramspark.com/b/084?params=wH94bg4MZENmdHCYZegRvjpVHjE8EF6RUUmS0k4QwD", authorPrice: 12.88, currency: "USD", fulfillment: "Printed and shipped by IngramSpark. Shipping and applicable tax are added at checkout.", verifiedOn: "2026-10-28" },
+          ],
         },
-        forthcoming: "A Vietnamese paperback is on the way. Its purchase link will appear here when it is available.",
       },
       {
         language: "es", label: "Español",
@@ -93,6 +95,13 @@ export const bookstore: StoreBook[] = [
         title: "우리 뒤를 이어올 이들을 위하여", subtitle: "삶에서 얻은 교훈들",
         formats: { hardcover: [
           { retailer: "IngramSpark", url: "https://shop.ingramspark.com/b/084?params=rgKFYayg8L9sy9LDOFUI5rac0ecZUH1wD37c4HJ0Ad1", authorPrice: 18.88, currency: "USD", fulfillment: "Printed and shipped by IngramSpark. Shipping and applicable tax are added at checkout.", verifiedOn: "2026-10-25" },
+        ] },
+      },
+      {
+        language: "zh", label: "繁體中文",
+        title: "給後來的你們", subtitle: "人生教我的事",
+        formats: { hardcover: [
+          { retailer: "IngramSpark", url: "https://shop.ingramspark.com/b/084?params=a0TkOIYRSmZktJR15wR5K0EWOjOERiguwxQ1Qzg3IBa", authorPrice: 18.88, currency: "USD", fulfillment: "Printed and shipped by IngramSpark. Shipping and applicable tax are added at checkout.", verifiedOn: "2026-10-28" },
         ] },
       },
       {

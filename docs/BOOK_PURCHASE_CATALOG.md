@@ -1,6 +1,6 @@
 # Purchase catalog maintenance
 
-Approved website behavior is recorded in `00_Canon_Control/BOOK_PURCHASE_FLOW_CANON_2026-10-18.md`; current public-state navigation is `docs/CURRENT_PUBLIC_STATE_2026-10-25.md`. The [October 25 catalog update](../00_Canon_Control/BOOK1_PURCHASE_LINKS_UPDATE_2026-10-25.md) supplements the original offer list.
+Approved website behavior is recorded in `00_Canon_Control/BOOK_PURCHASE_FLOW_CANON_2026-10-18.md`; current public-state navigation is `docs/CURRENT_PUBLIC_STATE_2026-10-28.md`. The [October 28 additions](../00_Canon_Control/BOOK1_ZH_HARDCOVER_VI_PAPERBACK_PURCHASE_2026-10-28.md) supplement the [October 25 catalog update](../00_Canon_Control/BOOK1_PURCHASE_LINKS_UPDATE_2026-10-25.md).
 
 The reusable buyer interface lives at `/buy/` and on Book 1's page at `#buy`.
 `content/bookstore.ts` holds public product destinations; `BookPurchase` renders them.
@@ -19,7 +19,18 @@ Books without any available offers stay out of the book picker. A stale or unsup
 
 Use `/buy/?book=book1&lang=vi&format=hardcover` for Vietnamese hardcover, or the corresponding language/format parameters. The same parameters work on Book 1's page. Selection updates preserve other URL parameters. This domain-owned destination can remain stable when retailers change. Keep existing printed retailer QR codes functional where possible; do not replace their destinations by editing an unrelated link.
 
-## Current October 25 purchase scope
+## Current October 28 purchase scope
+
+Book 1 now has ten purchasable languages and twelve Ingram offers. Additions verified October 28:
+
+- Traditional Chinese (`zh`, 繁體中文): hardcover, ISBN 979-8-952578-09-8, $18.88 USD.
+- Vietnamese (`vi`, Tiếng Việt): paperback, ISBN 979-8-952578-13-5, $12.88 USD; the existing hardcover remains available.
+
+Both exact new destinations match the supplied workbook, displayed product ISBN/binding and price, with enabled Buy Now buttons. Shipping and applicable tax are additional. Other offers retain their actual verification dates. The Vietnamese forthcoming message is removed, both bindings have native labels, and its shared “Mua sách” button label works for either binding.
+
+Share links use `/buy/?book=book1&lang=zh&format=hardcover` and `/buy/?book=book1&lang=vi&format=paperback`. Book 1's embedded chooser uses the same catalog. The Spanish Ingram heading now correctly shows “Una Vida en Lecciones”, verified October 28; the earlier subtitle issue is resolved. Spanish paperback still has no supplied purchase URL.
+
+## Historical October 25 purchase scope
 
 Book 1 has nine purchasable languages: English, Vietnamese, Spanish, Korean, Japanese, French, German, Brazilian Portuguese and Italian. All nine have an exact verified Ingram hardcover offer at $18.88 USD; English also has its $12.88 Ingram paperback and existing retailer/digital/audio offers. Ingram prices exclude shipping and applicable tax. The ten Ingram destinations were opened and checked against binding, title/language, displayed ISBN, price and a Buy Now control on October 25.
 

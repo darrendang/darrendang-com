@@ -1,5 +1,7 @@
 # DarrenDang.com — Book 1 purchase catalog checkpoint
 
+> October 28 supersession: current purchase-catalog discovery routes to [the October 28 checkpoint](CURRENT_PUBLIC_STATE_2026-10-28.md). Traditional Chinese hardcover and Vietnamese paperback now have verified offers; the Spanish retailer subtitle is corrected. The dated observations below are preserved as history.
+
 **Date:** 2026-10-25
 **Role:** derived implementation navigation; current main and exact deployment evidence remain controlling.
 
