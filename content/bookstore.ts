@@ -88,6 +88,7 @@ export const bookstore: StoreBook[] = [
         title: "Para Quienes Vienen Después de Nosotros", subtitle: "Una Vida en Lecciones",
         formats: { hardcover: [
           { retailer: "IngramSpark", url: "https://shop.ingramspark.com/b/084?params=cgszZR0zsPB1nl8BIcYm7gw3d7n5C7KTkr4fskLJyWH", authorPrice: 18.88, currency: "USD", fulfillment: "Printed and shipped by IngramSpark. Shipping and applicable tax are added at checkout.", verifiedOn: "2026-10-25" },
+          { retailer: "Amazon", url: "https://www.amazon.com/dp/B0HPZFTYTJ/", verifiedOn: "2026-11-09" },
         ] },
       },
       {
@@ -116,6 +117,7 @@ export const bookstore: StoreBook[] = [
         title: "Pour Ceux Qui Viennent Après Nous", subtitle: "Une Vie En Leçons",
         formats: { hardcover: [
           { retailer: "IngramSpark", url: "https://shop.ingramspark.com/b/084?params=LyuTu35mex2kx0xNkkyeWMGl3mpuRxoSxPefpfDKQ8L", authorPrice: 18.88, currency: "USD", fulfillment: "Printed and shipped by IngramSpark. Shipping and applicable tax are added at checkout.", verifiedOn: "2026-10-25" },
+          { retailer: "Amazon", url: "https://www.amazon.com/dp/B0HMGFYGDT/", verifiedOn: "2026-11-09" },
         ] },
       },
       {
@@ -123,6 +125,7 @@ export const bookstore: StoreBook[] = [
         title: "Für Diejenigen, Die Nach Uns Kommen", subtitle: "Ein Leben Voller Lektionen",
         formats: { hardcover: [
           { retailer: "IngramSpark", url: "https://shop.ingramspark.com/b/084?params=cEjXLy7XjR73yAUaD0pPa1tQ7SC5BzvOkcdiNNa4Di3", authorPrice: 18.88, currency: "USD", fulfillment: "Printed and shipped by IngramSpark. Shipping and applicable tax are added at checkout.", verifiedOn: "2026-10-25" },
+          { retailer: "Amazon", url: "https://www.amazon.com/dp/B0HN9DTKP3/", verifiedOn: "2026-11-09" },
         ] },
       },
       {
@@ -130,6 +133,7 @@ export const bookstore: StoreBook[] = [
         title: "Para Quem Vem Depois de Nós", subtitle: "Uma Vida de Lições",
         formats: { hardcover: [
           { retailer: "IngramSpark", url: "https://shop.ingramspark.com/b/084?params=LiujVik9EGQ47tjlLHfqmj5Yp0m3v9AphftnQNQg18e", authorPrice: 18.88, currency: "USD", fulfillment: "Printed and shipped by IngramSpark. Shipping and applicable tax are added at checkout.", verifiedOn: "2026-10-25" },
+          { retailer: "Amazon", url: "https://www.amazon.com/dp/B0HN9T166C/", verifiedOn: "2026-11-09" },
         ] },
       },
       {
@@ -137,6 +141,7 @@ export const bookstore: StoreBook[] = [
         title: "Per Chi Verrà Dopo Di Noi", subtitle: "Le Lezioni Di Una Vita",
         formats: { hardcover: [
           { retailer: "IngramSpark", url: "https://shop.ingramspark.com/b/084?params=lzmCtsfVtXVxkwP7baf05Dohx06aJ4X6GVYAnLpCty", authorPrice: 18.88, currency: "USD", fulfillment: "Printed and shipped by IngramSpark. Shipping and applicable tax are added at checkout.", verifiedOn: "2026-10-25" },
+          { retailer: "Amazon", url: "https://www.amazon.com/dp/B0HNH9V99K/", verifiedOn: "2026-11-09" },
         ] },
       },
     ],
