@@ -49,3 +49,15 @@ Use `lang=es`, `ko`, `ja`, `fr`, `de`, `pt` or `it` with `format=hardcover` for 
 - Other language and book release states are not changed by this interface. Existing covers, manuscripts, previews, family letters, and primary navigation are preserved.
 
 Public price observations are as of October 18, 2026. Checkout, local delivery eligibility, payment, and order completion are controlled by each seller.
+
+## November 9 Amazon hardcover links — author-supplied
+
+Darren supplied five exact Amazon ASIN product URLs on November 9, 2026. The URLs below have search tracking removed; the Amazon product pages could not be independently fetched in this session. `verifiedOn: 2026-11-09` records the **author-supplied URL identification date**, not a claim of independent Amazon availability, ISBN, or checkout verification. Browser/retailer verification remains required before production promotion.
+
+- Spanish (`es`): `https://www.amazon.com/dp/B0HPZFTYTJ/`
+- Italian (`it`): `https://www.amazon.com/dp/B0HNH9V99K/`
+- Brazilian Portuguese (`pt`): `https://www.amazon.com/dp/B0HN9T166C/`
+- German (`de`): `https://www.amazon.com/dp/B0HN9DTKP3/`
+- French (`fr`): `https://www.amazon.com/dp/B0HMGFYGDT/`
+
+Existing IngramSpark destinations are preserved. These are proposed same-format hardcover alternatives; no new formats, book releases, price assertions, or source/production changes. Tracking issue: #51.
