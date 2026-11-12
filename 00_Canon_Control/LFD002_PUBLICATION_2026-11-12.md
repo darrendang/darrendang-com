@@ -30,6 +30,12 @@
 - Sitemap: add the new canonical route.
 - CI, deployment, live HTTP readback, and mobile visual QA must be reported as completed only when actually observed.
 
+## Build issue and bounded mitigation
+
+The first PR workflow run `43252042090` passed public audit, content safeguards, typecheck and lint, but Next.js 16.3.1 Turbopack failed while resolving an existing `next/font/google` Source Sans 3 font import (`@vercel/turbopack-next/internal/font/google/font`). No changed Letter code or CSS appeared in the error. The `package.json` build command was switched to the supported `next build --webpack` fallback for validation and deployment, preserving source fonts, branding and page layout; this is a bounded toolchain repair rather than a design change. The workaround is subject to CI verification and may be revisited under a separate dependency-maintenance change.
+
 ## Release receipt
 
-Pending website PR, CI and deployed live readback.
+Website PR #54: https://github.com/darrendang/darrendang-com/pull/54
+
+First CI run failed as above. Follow-up validation and deployed live readback remain pending.
