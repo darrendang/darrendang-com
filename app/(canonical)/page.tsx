@@ -235,9 +235,9 @@ export default function Home() {
             <div>
               <div className="eyebrow bronze">Letters from Darren</div>
               <h2>Things I am still learning.</h2>
-              <p className="lead">Letter 001 begins with one word I caught myself using about my child’s future—and what changing it taught me about passing wisdom forward.</p>
+              <p className="lead">Letter 002 revisits the letters I wrote after losing my parents—and the difference between preserving the past and asking the next generation to repeat it.</p>
               <div className="actions">
-                <Link className="button button-dark" href="/letters/the-way-is-not-my-way/">Read “The Way Is Not My Way”</Link>
+                <Link className="button button-dark" href="/letters/know-where-you-came-from-then-keep-going/">Read Letter 002</Link>
                 <Link className="text-link" href="/letters/">Explore Letters →</Link>
               </div>
             </div>
