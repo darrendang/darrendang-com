@@ -23,7 +23,7 @@ export default function LettersPage() {
               <h1>Things I am still learning.</h1>
               <p>These letters are not answers from someone who has finished figuring things out. They are observations, stories, questions, and lessons collected along the way—and offered for someone else to test, challenge, improve, and carry farther.</p>
               <div className="actions">
-                <Link className="button button-gold" href="/letters/the-way-is-not-my-way/">Read Letter 001</Link>
+                <Link className="button button-gold" href="/letters/know-where-you-came-from-then-keep-going/">Read Letter 002</Link>
                 <Link className="button button-outline" href="/letters/why-these-letters/">Read the introduction</Link>
               </div>
             </div>
@@ -31,6 +31,17 @@ export default function LettersPage() {
           <div className="container hero-note">
             <strong>A living editorial practice.</strong>
             <span>Letters connect lived experience to ideas without pretending every question has a finished answer.</span>
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="container">
+            <div className="section-intro compact">
+              <div className="eyebrow bronze">Letter 002 · November 12, 2026</div>
+              <h2>Know Where You Came From. Then Keep Going.</h2>
+              <p className="lead">Rereading the letters I wrote after losing my parents changed how I think about memory, inheritance, and what it means to honor the past while leaving the future open.</p>
+              <Link className="text-link" href="/letters/know-where-you-came-from-then-keep-going/">Read Letter 002 →</Link>
+            </div>
           </div>
         </section>
 

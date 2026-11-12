@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "prebuild": "node scripts/generate-seo-assets.mjs",
-    "build": "next build",
+    "build": "next build --webpack",
     "postbuild": "node scripts/add-self-canonicals.mjs && node scripts/build-search-manifest.mjs",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
