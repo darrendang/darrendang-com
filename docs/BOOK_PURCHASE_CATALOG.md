@@ -61,3 +61,9 @@ Darren supplied five exact Amazon ASIN product URLs on November 9, 2026. The URL
 - French (`fr`): `https://www.amazon.com/dp/B0HMGFYGDT/`
 
 Existing IngramSpark destinations are preserved. These are proposed same-format hardcover alternatives; no new formats, book releases, price assertions, or source/production changes. Tracking issue: #51.
+
+## November 11 production visibility follow-up
+
+Darren reported that the Spanish Book 1 hardcover Amazon purchase option was absent from the live `/buy/` experience even though website PR #52 (merged as `a21c9b7`) already included the exact author-supplied Amazon ASIN `B0HPZFTYTJ` in `content/bookstore.ts`. See [Issue #53](https://github.com/darrendang/darrendang-com/issues/53) for live-deployment and cache diagnostics, including the four other language alternatives from that same PR.
+
+This documentation-only maintenance commit is intended to trigger the existing push-to-`main` Pages build/deploy workflow at the *current* source revision. It does not add or change any purchase destination, book status, price, manuscript or published asset. A successful commit is not evidence that the workflow completed or that the link appears in the live browser; those require independent deployment and live readback.
