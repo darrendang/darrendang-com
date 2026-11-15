@@ -17,6 +17,13 @@ export default function Papers() {
       <p className="lead">The Way Papers give consequential ideas room for disciplined examination: observation, tension, proposition, mechanism, testing, challenge, and open questions.</p>
       <p>Each Paper is released only after its own publication review. No unpublished draft is promoted merely as a teaser.</p>
       <div className="paper-index-card">
+        <div className="book-status">The Way Papers · Framework · November 2026</div>
+        <h3 className="type-editorial">Staying in Sync</h3>
+        <p className="paper-subtitle">How Organizations Can Move Faster With AI</p>
+        <p>What happens when AI speeds up one step and the people or systems receiving the work need more time? A public pension example shows how leaders can keep the work moving and retain the ability to correct errors.</p>
+        <div className="actions"><Link className="button button-dark" href="/papers/staying-in-sync/">Read the paper</Link></div>
+      </div>
+      <div className="paper-index-card">
         <div className="book-status">The Way Papers · Framework · October 2026</div>
         <h3 className="type-editorial">Building Agency Before Agents</h3>
         <p className="paper-subtitle">Why Human Judgment, Institutional Intelligence, and Responsible Governance Must Come Before Autonomous AI</p>
