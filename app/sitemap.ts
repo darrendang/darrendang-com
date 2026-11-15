@@ -41,6 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/genome/',
     '/dots/',
     '/papers/',
+    '/papers/staying-in-sync/',
     '/papers/building-agency-before-agents/',
     '/papers/from-ai-experiments-to-institutional-capability/',
     '/the-way-in-motion/',
