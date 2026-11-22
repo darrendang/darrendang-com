@@ -94,10 +94,6 @@ const writtenLyrics: LyricSection[] = [
   {
     "title": "Outro",
     "text": "Happy birthday, Nathan.\nI love the way you see."
-  },
-  {
-    "title": "End",
-    "text": "=================================================================="
   }
 ];
 
