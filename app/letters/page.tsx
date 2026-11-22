@@ -175,6 +175,23 @@ export default function LettersPage() {
         </section>
 
 
+        <section className="section">
+          <div className="container worldview-grid">
+            <div>
+              <div className="eyebrow bronze">Special Letter / Song · November 2026</div>
+              <h2>To Nathan: The Way You See</h2>
+              <p className="lead">A letter to my son about finding his own voice, and the lessons I have learned from listening to the way he sees the world.</p>
+              <p><strong>Sometimes our children teach us to see what we were missing.</strong></p>
+              <Link className="text-link" href="/letters/to-nathan-the-way-you-see/">Read the letter, listen and explore the lyrics →</Link>
+            </div>
+            <div className="boundary-stack">
+              <article><span>THE LETTER</span><strong>Learning to listen before offering advice.</strong></article>
+              <article><span>THE SONG</span><strong>The Way You See, an original musical dedication to Nathan.</strong></article>
+              <article><span>THE LESSON</span><strong>Every child deserves room to discover their own direction.</strong></article>
+            </div>
+          </div>
+        </section>
+
         <section className="section sand">
           <div className="container worldview-grid">
             <div>
