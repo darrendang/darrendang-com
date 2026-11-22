@@ -35,7 +35,7 @@ for (const page of manifest.pages) {
     for (const candidate of candidates) await access(`out${candidate}`);
   }
 }
-for (const path of ["letters/bo-oi", "letters/me-oi", "letters/bo-me", "letters/the-way-was-us"]) await access(`out/${path}/index.html`);
+for (const path of ["letters/bo-oi", "letters/me-oi", "letters/bo-me", "letters/the-way-was-us", "letters/to-nathan-the-way-you-see"]) await access(`out/${path}/index.html`);
 for (const path of ["review", "review/action", "share/thank-you", "books/the-making-of-the-way/architecture", "books/wisdom-has-no-rank/test-child-map"]) {
   const html = await readFile(`out/${path}/index.html`, "utf8");
   assert(meta(html, "robots").includes("noindex"), `Preserve noindex boundary: ${path}`);
@@ -47,4 +47,12 @@ assert(familySong?.includes('src="/audio/Song-The-Way-You-See-Nathan.mp3"'), "Na
 assert(!/\bauto[Pp]lay\b/.test(familySong), "Nathan's song must never autoplay.");
 const recording = await readFile("out/audio/Song-The-Way-You-See-Nathan.mp3");
 assert.equal(createHash("sha256").update(recording).digest("hex"), "7a53324183a6b5e42df7d5950f47ec980bbe85b0aecc6ccd8a2ba52944ae625d", "Publish only the exact selected Nathan recording.");
+const nathan = await readFile("out/letters/to-nathan-the-way-you-see/index.html", "utf8");
+assert(nathan.includes("November 2026"), "Nathan letter must show month and year.");
+assert(!/November\\s+\\d{1,2}(?:,?\\s+2026)?/.test(nathan), "Nathan letter must not reveal an exact birthday.");
+assert(nathan.includes('src="/audio/Song-The-Way-You-See-Nathan.mp3"'), "Use the exact approved recording on the Nathan letter page.");
+assert(!/<audio\\b[^>]*\\bautoplay\\b/i.test(nathan), "Nathan letter song must not autoplay.");
+assert(nathan.includes("Read the original written lyrics") && nathan.includes("words and phrasing may differ"), "Distinguish original written lyrics from later selected performance.");
+assert(nathan.includes("You do not need to become a version of anyone else."), "Preserve the approved letter's central thought.");
+assert(!nathan.includes("\\u2014"), "Avoid em dash punctuation in the Nathan letter.");
 console.log(`SEO export passed: ${manifest.pages.length} public pages, unique metadata, correct sharing URLs/images, article/breadcrumb schemas, protected routes and ${responsive} responsive image instances.`);
