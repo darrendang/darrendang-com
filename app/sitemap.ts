@@ -34,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/letters/me-oi/',
     '/letters/bo-me/',
     '/letters/the-way-was-us/',
+    '/letters/to-nathan-the-way-you-see/',
     '/letters/the-watch-goes-on/',
     '/books/',
     '/buy/',
