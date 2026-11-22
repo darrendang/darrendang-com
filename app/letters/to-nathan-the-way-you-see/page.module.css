@@ -1,0 +1,123 @@
+.intro {
+  max-width: 810px;
+  margin: 0 auto 40px;
+}
+
+.intro :global(.lead) {
+  color: var(--muted);
+  font-family: "Newsreader", Georgia, serif;
+  font-size: clamp(23px, 2.5vw, 30px);
+  line-height: 1.36;
+}
+
+.byline {
+  font-size: 15px;
+  color: var(--bronze);
+}
+
+.letter {
+  max-width: 810px;
+  margin: 0 auto;
+  font-size: clamp(18px, 1.8vw, 21px);
+  line-height: 1.78;
+}
+
+.letter p {
+  margin: 0 0 25px;
+}
+
+.letter .emphasis {
+  padding: 20px 24px;
+  border-left: 3px solid var(--gold);
+  background: rgba(245, 239, 228, 0.65);
+  font-family: "Newsreader", Georgia, serif;
+  font-size: clamp(22px, 2.35vw, 29px);
+  line-height: 1.4;
+}
+
+.signature {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.song {
+  max-width: 880px;
+  margin: 72px auto 0;
+  padding: 36px;
+  border-radius: 22px;
+  border: 1px solid var(--sand);
+  background: radial-gradient(circle at 85% 0%, rgba(199,154,69,.12), transparent 32%), #fffdf9;
+  box-shadow: 0 16px 46px rgba(13,31,49,.08);
+}
+
+.song h2 {
+  margin: 6px 0 18px;
+}
+
+.songLead {
+  color: var(--muted);
+  max-width: 710px;
+  font-size: 18px;
+}
+
+.song audio {
+  display: block;
+  width: 100%;
+  margin: 28px 0 0;
+}
+
+.lyrics {
+  margin-top: 26px;
+  padding: 18px 0 4px;
+  border-top: 1px solid var(--sand);
+}
+
+.lyrics summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.lyricsBody {
+  padding: 8px 0 0;
+}
+
+.lyricsNote {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.lyricsSection {
+  margin: 30px 0;
+}
+
+.lyricsSection h3 {
+  margin: 0 0 12px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  color: var(--bronze);
+  font-size: 28px;
+}
+
+.lyricsSection p {
+  margin: 0;
+  white-space: pre-line;
+  line-height: 1.8;
+}
+
+.links {
+  display: flex;
+  gap: 20px 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 48px auto 0;
+}
+
+@media (max-width: 700px) {
+  .song { padding: 26px 20px; }
+  .letter p { margin-bottom: 22px; }
+  .letter .emphasis { padding: 18px; }
+  .links { justify-content: flex-start; }
+}
