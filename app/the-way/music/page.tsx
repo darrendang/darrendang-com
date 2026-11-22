@@ -254,6 +254,7 @@ export default function TheWayMusicPage() {
               ]}
               note="The original uploaded recording, shared with love. Listening is always optional."
             />
+            <p style={{ marginTop: "22px" }}><Link className="text-link" href="/letters/to-nathan-the-way-you-see/">Read the companion letter and original written lyrics →</Link></p>
           </div>
         </section>
       </main>
